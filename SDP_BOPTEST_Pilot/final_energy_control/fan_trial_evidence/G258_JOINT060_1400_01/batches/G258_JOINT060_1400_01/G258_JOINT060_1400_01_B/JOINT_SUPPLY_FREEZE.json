@@ -1,0 +1,11 @@
+{
+  "room_k": 297.1544299986388,
+  "native_supply_k": 289.18903033518603,
+  "native_flow_kg_s": 0.36486338907144816,
+  "target_flow_kg_s": 0.33,
+  "supply_command_k": 288.3475126758632,
+  "supply_command_c": 15.197512675863209,
+  "origin": 22341600,
+  "observation_receipt": 72,
+  "cutoff": 77
+}

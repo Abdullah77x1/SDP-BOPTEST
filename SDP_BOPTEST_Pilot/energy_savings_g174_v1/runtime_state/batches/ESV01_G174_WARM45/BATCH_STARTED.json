@@ -1,0 +1,86 @@
+{
+  "batch_id": "ESV01_G174_WARM45",
+  "run_ids": [
+    "ESV01_G174_WARM45"
+  ],
+  "binding": {
+    "authorization": {
+      "implementation_sha256": "036099ebc352e120990a0b28588cee7b562e25ae6ceccb9d549f113d04d61e2b",
+      "campaign_sha256": "762331e19afb49631ab42c2c9000546aeec7a8b484a68f0a51e5c70041bf3579",
+      "version": "SDP_ENERGY_G174_1.0.0",
+      "status": "EXPLICIT_SINGLE_G174_WARM45_AUTHORIZATION",
+      "run_id": "ESV01_G174_WARM45",
+      "maximum_instances": 1,
+      "maximum_initializations": 1,
+      "maximum_advances": 864,
+      "automatic_retries": false,
+      "authorization_sha256": "86598c5297df47ad06d6a32664af661848d8a86f987e96ba48fa61ffdcb5c7a0"
+    },
+    "runtime": {
+      "classification": "PASS",
+      "utc": "2026-11-20T23:42:02.799925+00:00",
+      "container_image_ids": {
+        "provision": "sha256:8a4255e212d70433c71082d9d9c4bb7d484a10e0ab296df4a7301d61df636fe0",
+        "web": "sha256:b7903164b45936f3732b9459171ad30666c7028de19983575ff1b914501d3fdf",
+        "worker": "sha256:4f7f4f5f834c9b3540f2ec03375134144373709a5d73afd24b7bb27d125524e2",
+        "mc": "sha256:2582c2f48b1e31545143ba5285c67d7b38c8b8f6912142d0630686dc7aaac28b",
+        "redis": "sha256:1f88291b4c57bdf249f02eb085a8669889b2d2954e91d4de5118a5da6b78dd53",
+        "minio": "sha256:3f97c5651cb6662b880c787a232b6b34fec8d8922e08d6617b25d241a21164bb"
+      },
+      "worker_identity": {
+        "python_executable": "/miniconda/envs/pyfmi3/bin/python",
+        "python_version": "3.11.18 (main, Oct 26 2026, 18:19:35) [GCC 14.3.0]",
+        "python_executable_sha256": "ad53bcd8c5860cba43f85cf962ead0fdcd53613bffe230bcfbfe4a175bf1ac74",
+        "machine": "x86_64",
+        "boptest_version": "0.9.0",
+        "source_hashes": {
+          "/boptest/lib/testcase.py": "a8a68f01546505888990871464439265e6bc3aaa3900403bf4a4657723868c04",
+          "/boptest/lib/kpis/kpi_calculator.py": "02caf568c6312a80e4e78471fa246928b7262ba5d17aed1b220ce1a49ca59433",
+          "/version.txt": "9d8c94f1ad3ea96b1e2ac4914fda4cb93c76b4a3e0d8cc6dd8976d6c0b227d15"
+        },
+        "packages": {
+          "jmespath": "0.10.0",
+          "cryptography": "50.0.2",
+          "cffi": "2.1.1",
+          "websocket-client": "1.9.2",
+          "pyasn1": "0.6.5",
+          "docutils": "0.15.2",
+          "chardet": "3.0.4",
+          "pyasn1_modules": "0.4.2",
+          "scipy": "1.17.1",
+          "numpy": "2.1.0",
+          "six": "1.17.0",
+          "redis": "3.3.11",
+          "msgpack": "1.0.4",
+          "requests": "2.22.0",
+          "google-auth": "2.62.2",
+          "tzdata": "2026.6",
+          "wheel": "0.48.0",
+          "s3transfer": "0.3.7",
+          "PyFMI": "2.14.1",
+          "pip": "26.3",
+          "pycparser": "3.12",
+          "boto3": "1.11.0",
+          "urllib3": "1.25.11",
+          "certifi": "2026.10.23",
+          "PyYAML": "6.0.3",
+          "botocore": "1.14.0",
+          "python-dateutil": "2.9.0.post0",
+          "packaging": "26.3",
+          "requests-oauthlib": "2.0.0",
+          "oauthlib": "4.0.1",
+          "idna": "2.8",
+          "kubernetes": "18.20.0",
+          "pandas": "2.2.3",
+          "pytz": "2026.6",
+          "Assimulo": "3.8.0",
+          "setuptools": "84.2.1"
+        }
+      },
+      "actual_instance_FMU_must_match_before_scenario_initialization": true,
+      "fresh_simulations_for_launch_check": 0
+    },
+    "source_fmu_sha256": "158008fa3b635280a67dfed8bab5804d1f9a96d218b467dfebab77e5cbf8b86a"
+  },
+  "created_utc": "2026-11-20T23:42:02.897482+00:00"
+}

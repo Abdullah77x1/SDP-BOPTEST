@@ -1,0 +1,23 @@
+{
+  "protocol": "SDP_STAGE4C_1.0.0",
+  "endpoint": "https://api.boptest.net",
+  "expected_version": "0.9.0",
+  "testcase": "bestest_air",
+  "scenario": "peak_cool_day",
+  "electricity_price": "constant",
+  "step": 300,
+  "scenario_start": 24364800,
+  "warmup_seconds": 604800,
+  "evaluation_seconds": 86400,
+  "pulse_start": 24408000,
+  "pulse_end": 24415200,
+  "native_occupied_cooling_k": 297.15,
+  "intervention_cooling_k": 298.15,
+  "occupied_hours": [8, 18],
+  "initialization": "PUT scenario peak_cool_day invokes official day 282 start and seven-day native warmup; assert returned start time",
+  "metrics": "trapezoid of native results power; cooling+fan electrical kWh; heating reported-channel kWh separately (documentation/source thermal-versus-boiler-input ambiguity retained); official KPIs; scheduled occupied temperature degree-hours",
+  "window_selection": "first fixed 24h of documented scenario, includes occupied 08-18; pulse12-14; recovery14-24; chosen before simulator outcomes",
+  "maximum_experiment_arms": 2,
+  "retry_mutations": false,
+  "notes": "No physical calendar-year or annual-benefit claim. All evidence development-exposed synthetic. No additional test case."
+}

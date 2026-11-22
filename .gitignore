@@ -1,0 +1,57 @@
+# Python and local tooling
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage*
+htmlcov/
+.idea/
+.vscode/
+
+# Local credentials and run authorization
+.env
+.env.*
+!.env.example
+.aws/
+.ssh/
+*.pem
+*.key
+*.pfx
+*.p12
+credentials.json
+local_credentials/
+local_authorization/
+*_authorization.json
+
+# Simulation output and downloaded runtime data. Selected frozen files and
+# historical authorization records are explicitly tracked for provenance.
+runtime_state/
+*_runtime_state/
+campaign_evidence/
+live_twin_evidence/
+fan_trial_evidence/
+docker-data/
+docker-volumes/
+volumes/
+redis-data/
+minio-data/
+postgres-data/
+results/
+review-copy/
+
+# Local packaging and generated exports
+*.zip
+*.pdf
+*.tmp
+*.log
+*.joblib
+!ml_research_v1_0_0/models/observational_RandomForest.joblib
+*.ckpt
+*.pt
+*.npz
+~$*
+Thumbs.db
+.DS_Store

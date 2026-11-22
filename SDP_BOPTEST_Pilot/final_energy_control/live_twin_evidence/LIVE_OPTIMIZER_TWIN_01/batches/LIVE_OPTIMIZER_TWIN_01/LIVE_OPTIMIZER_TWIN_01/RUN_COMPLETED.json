@@ -1,0 +1,22 @@
+{
+  "classification": "PASS_VALID_RAW",
+  "cleanup": "STOP_ACK_AND_REMOVAL_VERIFIED",
+  "release": "verified",
+  "fabricated": false,
+  "cleanup_evidence": {
+    "acknowledgement": "OK",
+    "instance_removed": true,
+    "removal_checks": [
+      {
+        "utc": "2026-11-21T13:50:08.722339+00:00",
+        "instance_directory_exists": true
+      },
+      {
+        "utc": "2026-11-21T13:50:09.858231+00:00",
+        "instance_directory_exists": false
+      }
+    ]
+  },
+  "verified_advances": 41,
+  "advance_attempts": 41
+}

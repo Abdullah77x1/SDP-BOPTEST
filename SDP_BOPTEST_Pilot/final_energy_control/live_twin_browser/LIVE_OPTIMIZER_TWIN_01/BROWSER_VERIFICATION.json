@@ -1,0 +1,675 @@
+{
+  "url": "http://127.0.0.1:8770/",
+  "session": "LIVE_OPTIMIZER_TWIN_01",
+  "genuine": true,
+  "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+  "frames": [
+    {
+      "file": "01-paused-live.png",
+      "cursor": 2,
+      "sim_s": 18873000,
+      "lifecycle": "paused",
+      "effective_c": 24,
+      "requested_c": null,
+      "indoor_c": 24.016239879873808,
+      "outdoor_c": 22.05000000000001,
+      "occupied": true,
+      "cooling_w": 585.3695669306816,
+      "fan_w": 23.14319918093956,
+      "kwh": 0.09979346737628311,
+      "recovery_min": 0,
+      "forecast": "unavailable",
+      "selected": null,
+      "dom": {
+        "mode": "BOPTEST LIVE TWIN",
+        "banner": "LIVE_OPTIMIZER_TWIN_01 · live · 2 verified advances · day 219 · 10:30",
+        "twin-lifecycle": "paused · 400 W guard off",
+        "temps": "24.02 / 22.05",
+        "powers": "585.4 / 23.1",
+        "occupancy": "Occupied",
+        "bounds": "Official 21–24°C · project 20–26°C",
+        "energy": "0.100 kWh",
+        "saving": "Single-session measured electricity",
+        "decision": "Predictive live optimizer · outside qualified window or recovery budget",
+        "command": "Requested native schedule · verified cooling 24.00°C · heating 21.00°C",
+        "safety": "Native control verified",
+        "forecast-status": "unavailable · origin 18872700 s · issued outdoor +30 min 22.7°C · Need 2100 seconds of verified native history; have 300 seconds",
+        "optimization-summary": "",
+        "optimizer-feedback": "",
+        "comfort": "Official-schedule discomfort 0.0026 K·h (prefix replay) · project 20–26°C replay 0.0000 K·h · occupied violation 0.0 min · maximum occupied 24.02°C",
+        "error": "",
+        "forecast_rows": 0,
+        "comparison_rows": 0,
+        "candidate_rows": 0,
+        "stop_enabled": true
+      }
+    },
+    {
+      "file": "02-live-forecast.png",
+      "cursor": 8,
+      "sim_s": 18874800,
+      "lifecycle": "running",
+      "effective_c": 24,
+      "requested_c": null,
+      "indoor_c": 24.017982936128817,
+      "outdoor_c": 22.80000000000001,
+      "occupied": true,
+      "cooling_w": 647.3611430236447,
+      "fan_w": 26.904178200040683,
+      "kwh": 0.42013086056587706,
+      "recovery_min": 0,
+      "forecast": "O25 Random Forest",
+      "selected": null,
+      "dom": {
+        "mode": "BOPTEST LIVE TWIN",
+        "banner": "LIVE_OPTIMIZER_TWIN_01 · live · 7 verified advances · day 219 · 10:55",
+        "twin-lifecycle": "running · 400 W guard off",
+        "temps": "24.02 / 22.68",
+        "powers": "636.6 / 26.2",
+        "occupancy": "Occupied",
+        "bounds": "Official 21–24°C · project 20–26°C",
+        "energy": "0.364 kWh",
+        "saving": "Single-session measured electricity",
+        "decision": "Predictive live optimizer · outside qualified window or recovery budget",
+        "command": "Requested native schedule · verified cooling 24.00°C · heating 21.00°C",
+        "safety": "Native control verified",
+        "forecast-status": "unavailable · origin 18874200 s · issued outdoor +30 min 23.3°C · Need 2100 seconds of verified native history; have 1800 seconds",
+        "optimization-summary": "",
+        "optimizer-feedback": "",
+        "comfort": "Official-schedule discomfort 0.0099 K·h (prefix replay) · project 20–26°C replay 0.0000 K·h · occupied violation 0.0 min · maximum occupied 24.02°C",
+        "error": "",
+        "forecast_rows": 0,
+        "comparison_rows": 0,
+        "candidate_rows": 0,
+        "stop_enabled": true
+      }
+    },
+    {
+      "file": "03-live-optimizer-decision.png",
+      "cursor": 9,
+      "sim_s": 18875100,
+      "lifecycle": "running",
+      "effective_c": 24.5,
+      "requested_c": 24.5,
+      "indoor_c": 24.46864879542761,
+      "outdoor_c": 22.922337962962956,
+      "occupied": true,
+      "cooling_w": 550.3447118433269,
+      "fan_w": 18.80544064992225,
+      "kwh": 0.4665545566721779,
+      "recovery_min": 0,
+      "forecast": "unavailable",
+      "selected": "A3",
+      "dom": {
+        "mode": "BOPTEST LIVE TWIN",
+        "banner": "LIVE_OPTIMIZER_TWIN_01 · live · 9 verified advances · day 219 · 11:05",
+        "twin-lifecycle": "running · 400 W guard off",
+        "temps": "24.47 / 22.92",
+        "powers": "550.3 / 18.8",
+        "occupancy": "Occupied",
+        "bounds": "Official 21–24°C · project 20–26°C",
+        "energy": "0.467 kWh",
+        "saving": "Single-session measured electricity",
+        "decision": "Predictive live optimizer · optimizer minimum feasible net electricity",
+        "command": "Requested 24.5°C · verified cooling 24.50°C · heating 21.00°C",
+        "safety": "Verified override",
+        "forecast-status": "unavailable · origin 18874800 s · issued outdoor +30 min 23.5°C · Committed cooling level outside observed domain",
+        "optimization-summary": "Verified collector decision · selected A3 at 18874800 s · qualified action model · 0.5°C temperature reserve · 0.0063 kWh energy uncertainty · 165-minute modeled window",
+        "optimizer-feedback": "Verified A3 response through this frame · predicted / measured 24.452 / 24.469°C · 0.0471 / 0.0464 kWh since decision",
+        "comfort": "Official-schedule discomfort 0.0346 K·h (prefix replay) · project 20–26°C replay 0.0000 K·h · occupied violation 0.0 min · maximum occupied 24.47°C",
+        "error": "",
+        "forecast_rows": 0,
+        "comparison_rows": 2,
+        "candidate_rows": 13,
+        "stop_enabled": true
+      }
+    },
+    {
+      "file": "04-live-response.png",
+      "cursor": 11,
+      "sim_s": 18875700,
+      "lifecycle": "running",
+      "effective_c": 24.5,
+      "requested_c": 24.5,
+      "indoor_c": 24.530527382675473,
+      "outdoor_c": 23.15312499999999,
+      "occupied": true,
+      "cooling_w": 608.7063237537492,
+      "fan_w": 21.691926289128155,
+      "kwh": 0.5677934328116407,
+      "recovery_min": 0,
+      "forecast": "unavailable",
+      "selected": "A3",
+      "dom": {
+        "mode": "BOPTEST LIVE TWIN",
+        "banner": "LIVE_OPTIMIZER_TWIN_01 · live · 10 verified advances · day 219 · 11:10",
+        "twin-lifecycle": "running · 400 W guard off",
+        "temps": "24.55 / 23.04",
+        "powers": "591.0 / 20.6",
+        "occupancy": "Occupied",
+        "bounds": "Official 21–24°C · project 20–26°C",
+        "energy": "0.516 kWh",
+        "saving": "Single-session measured electricity",
+        "decision": "Predictive live optimizer · hold",
+        "command": "Requested 24.5°C · verified cooling 24.50°C · heating 21.00°C",
+        "safety": "Verified override",
+        "forecast-status": "unavailable · origin 18875100 s · issued outdoor +30 min 23.6°C · Committed cooling level outside observed domain",
+        "optimization-summary": "Verified collector decision · selected A3 at 18874800 s · qualified action model · 0.5°C temperature reserve · 0.0063 kWh energy uncertainty · 165-minute modeled window · 40 min planned hold remaining",
+        "optimizer-feedback": "Verified A3 response through this frame · predicted / measured 24.555 / 24.548°C · 0.0966 / 0.0958 kWh since decision",
+        "comfort": "Official-schedule discomfort 0.0785 K·h (prefix replay) · project 20–26°C replay 0.0000 K·h · occupied violation 0.0 min · maximum occupied 24.55°C",
+        "error": "",
+        "forecast_rows": 0,
+        "comparison_rows": 3,
+        "candidate_rows": 13,
+        "stop_enabled": true
+      }
+    },
+    {
+      "file": "05-native-and-recovery.png",
+      "cursor": 18,
+      "sim_s": 18877800,
+      "lifecycle": "running",
+      "effective_c": 24,
+      "requested_c": null,
+      "indoor_c": 24.05755112352449,
+      "outdoor_c": 23.887962962962945,
+      "occupied": true,
+      "cooling_w": 795.995630023627,
+      "fan_w": 36.41109510047402,
+      "kwh": 0.9712904168861578,
+      "recovery_min": 115,
+      "forecast": "O25 Random Forest",
+      "selected": "A0",
+      "dom": {
+        "mode": "BOPTEST LIVE TWIN",
+        "banner": "LIVE_OPTIMIZER_TWIN_01 · live · 18 verified advances · day 219 · 11:50",
+        "twin-lifecycle": "running · 400 W guard off",
+        "temps": "24.06 / 23.89",
+        "powers": "796.0 / 36.4",
+        "occupancy": "Occupied",
+        "bounds": "Official 21–24°C · project 20–26°C",
+        "energy": "0.971 kWh",
+        "saving": "Single-session measured electricity",
+        "decision": "Predictive live optimizer · scheduled release",
+        "command": "Requested native schedule · verified cooling 24.00°C · heating 21.00°C",
+        "safety": "Native control verified · recovery lockout 115 min remaining",
+        "forecast-status": "O25 Random Forest · origin 18877500 s · issued outdoor +30 min 24.4°C",
+        "optimization-summary": "Verified collector decision · selected A0 at 18874800 s · qualified action model · 0.5°C temperature reserve · 0.0063 kWh energy uncertainty · 165-minute modeled window · 0 min planned hold remaining",
+        "optimizer-feedback": "Verified A3 response through this frame · predicted / measured 24.064 / 24.058°C · 0.5435 / 0.5512 kWh since decision",
+        "comfort": "Official-schedule discomfort 0.4040 K·h (prefix replay) · project 20–26°C replay 0.0000 K·h · occupied violation 0.0 min · maximum occupied 24.55°C",
+        "error": "",
+        "forecast_rows": 4,
+        "comparison_rows": 4,
+        "candidate_rows": 13,
+        "stop_enabled": true
+      }
+    },
+    {
+      "file": "06-stopped-live.png",
+      "cursor": 41,
+      "sim_s": 18884700,
+      "lifecycle": "stopped",
+      "effective_c": 24,
+      "requested_c": null,
+      "indoor_c": 24.006352761108815,
+      "outdoor_c": 26.375,
+      "occupied": true,
+      "cooling_w": 947.5962955055567,
+      "fan_w": 47.79028561503497,
+      "kwh": 2.716346625585291,
+      "recovery_min": 0,
+      "forecast": "O25 Random Forest",
+      "selected": "A0",
+      "dom": {
+        "mode": "BOPTEST LIVE TWIN",
+        "banner": "LIVE_OPTIMIZER_TWIN_01 · stopped · 41 verified advances · day 219 · 13:45",
+        "twin-lifecycle": "stopped · 400 W guard off · cleanup STOP ACK AND REMOVAL VERIFIED · native release verified · 41 verified advances",
+        "temps": "24.01 / 26.38",
+        "powers": "947.6 / 47.8",
+        "occupancy": "Occupied",
+        "bounds": "Official 21–24°C · project 20–26°C",
+        "energy": "2.716 kWh",
+        "saving": "Single-session measured electricity",
+        "decision": "Predictive live optimizer · native recovery lockout",
+        "command": "Requested native schedule · verified cooling 24.00°C · heating 21.00°C",
+        "safety": "Native control verified",
+        "forecast-status": "O25 Random Forest · origin 18884400 s · issued outdoor +30 min 26.9°C",
+        "optimization-summary": "Verified collector decision · selected A0 at 18874800 s · qualified action model · 0.5°C temperature reserve · 0.0063 kWh energy uncertainty · 165-minute modeled window · 0 min planned hold remaining",
+        "optimizer-feedback": "Verified A3 response through this frame · predicted / measured 24.004 / 24.006°C · 2.1225 / 2.2962 kWh since decision",
+        "comfort": "Official-schedule discomfort 0.4247 K·h (official API result) · project 20–26°C replay 0.0000 K·h · occupied violation 0.0 min · maximum occupied 24.55°C",
+        "error": "",
+        "forecast_rows": 4,
+        "comparison_rows": 4,
+        "candidate_rows": 13,
+        "stop_enabled": false
+      }
+    }
+  ],
+  "controls": {
+    "start": true,
+    "stop_enabled_while_running": true,
+    "pause_clicked": true,
+    "paused": {
+      "cursor": 2,
+      "time": 18873000,
+      "unchanged": true
+    },
+    "resume_clicked": true,
+    "resumed_to": 18873300,
+    "stop_clicked_after_advance_41_issued": true,
+    "phase_after_stop_request": "stopping",
+    "stop_disabled_after_terminal": true
+  },
+  "qualified_candidates": [
+    {
+      "id": "A0",
+      "target_c": null,
+      "minutes": 0,
+      "predicted": {
+        "cooling_kwh": 2.071021847328175,
+        "fan_kwh": 0.09206033311476869,
+        "total_kwh": 2.163082180442944,
+        "recovery_kwh": null,
+        "peak_c": 24.017216251286186,
+        "minimum_c": 24.00367710027444,
+        "minimum_comfort_margin_c": 1.982783748713814,
+        "trajectory": [
+          [
+            24.017216251286186,
+            0.6509981708776137,
+            0.027090268052222807
+          ],
+          [
+            24.016569758386083,
+            0.6597273596724854,
+            0.027599859470260873
+          ],
+          [
+            24.016046966576628,
+            0.6682452013426625,
+            0.02810147206803678
+          ],
+          [
+            24.015465314228802,
+            0.676547014997958,
+            0.02859533589352899
+          ],
+          [
+            24.0148819204664,
+            0.6845905091602833,
+            0.029078486727030763
+          ],
+          [
+            24.014315735054083,
+            0.6923777868109786,
+            0.029550460950741705
+          ],
+          [
+            24.013629835283812,
+            0.6999020885626941,
+            0.0300106288086669
+          ],
+          [
+            24.012587468868904,
+            0.7069473347072169,
+            0.03044680274084731
+          ],
+          [
+            24.012122506959823,
+            0.7135443967578206,
+            0.03085787682390988
+          ],
+          [
+            24.01196075264515,
+            0.7200715548871144,
+            0.031264740978335745
+          ],
+          [
+            24.01179224302879,
+            0.7265703237696611,
+            0.03167207141048217
+          ],
+          [
+            24.01160364729519,
+            0.7330035437537591,
+            0.03207810965931498
+          ],
+          [
+            24.01139483457794,
+            0.7393589468007519,
+            0.03248187223141307
+          ],
+          [
+            24.01101838821337,
+            0.7456048484881501,
+            0.032881595270518565
+          ],
+          [
+            24.010445659050582,
+            0.7515893302696165,
+            0.03326955942223239
+          ],
+          [
+            24.010054899285045,
+            0.7572803900214222,
+            0.033641255480976726
+          ],
+          [
+            24.00979491964031,
+            0.7628246008084034,
+            0.03400377177661651
+          ],
+          [
+            24.009451281367387,
+            0.7682326669360583,
+            0.03435949557704513
+          ],
+          [
+            24.009015931494602,
+            0.773427844203598,
+            0.034704139644246026
+          ],
+          [
+            24.008395120809677,
+            0.7783437769215406,
+            0.03503346137494307
+          ],
+          [
+            24.007822975169006,
+            0.78288962172825,
+            0.035342102820513546
+          ],
+          [
+            24.007395077128862,
+            0.7871606861908423,
+            0.03563364942882855
+          ],
+          [
+            24.00673412054412,
+            0.7911339076997497,
+            0.03590710721893486
+          ],
+          [
+            24.006339694621243,
+            0.7947303559873484,
+            0.03615613131860068
+          ],
+          [
+            24.006071555388377,
+            0.7981822027984989,
+            0.03639529993860992
+          ],
+          [
+            24.00575020481958,
+            0.8015058254329979,
+            0.03662768690226065
+          ],
+          [
+            24.005287589915653,
+            0.8046018624338548,
+            0.0368483759482585
+          ],
+          [
+            24.005021013213355,
+            0.8074798736466465,
+            0.03705598328171241
+          ],
+          [
+            24.00481129841675,
+            0.810226122192627,
+            0.037254292292120496
+          ],
+          [
+            24.004588244279066,
+            0.8128342936601943,
+            0.03744304987859612
+          ],
+          [
+            24.004313211342865,
+            0.8152850844730153,
+            0.03762102294255709
+          ],
+          [
+            24.003936384923993,
+            0.8175195765823757,
+            0.03778501490640302
+          ],
+          [
+            24.00367710027444,
+            0.8195250653619081,
+            0.03793301613845815
+          ]
+        ]
+      },
+      "feasible": true,
+      "reasons": []
+    },
+    {
+      "id": "A3",
+      "target_c": 24.5,
+      "minutes": 45,
+      "predicted": {
+        "cooling_kwh": 2.034086289976194,
+        "fan_kwh": 0.08841634499010394,
+        "total_kwh": 2.122502634966298,
+        "recovery_kwh": 1.6459730352322706,
+        "peak_c": 24.55515625400489,
+        "minimum_c": 23.984683835758116,
+        "minimum_comfort_margin_c": 1.4448437459951116,
+        "trajectory": [
+          [
+            24.45231127962157,
+            0.5447646062403192,
+            0.020492535918217827
+          ],
+          [
+            24.55515625400489,
+            0.5725784175366223,
+            0.020854678985994107
+          ],
+          [
+            24.536227244416043,
+            0.6007387236344538,
+            0.022113596166057497
+          ],
+          [
+            24.519422248612983,
+            0.6126751413190031,
+            0.02277462236111925
+          ],
+          [
+            24.515885464973152,
+            0.6204340032277124,
+            0.02320897374474993
+          ],
+          [
+            24.5159817171402,
+            0.6283948688014904,
+            0.0236323973844705
+          ],
+          [
+            24.515663648914565,
+            0.6365512348151788,
+            0.024063573122566455
+          ],
+          [
+            24.51449962029954,
+            0.6442728731272872,
+            0.024477289773671255
+          ],
+          [
+            24.51382127596147,
+            0.6514608494572676,
+            0.02486681119214828
+          ],
+          [
+            24.064036605314016,
+            0.7709368606098038,
+            0.03296346104429399
+          ],
+          [
+            23.984683835758116,
+            0.7521045218689676,
+            0.03324193757197362
+          ],
+          [
+            24.000265945978462,
+            0.7426349250972354,
+            0.03277592186179936
+          ],
+          [
+            24.009656571637375,
+            0.7469297927379746,
+            0.03298270876717417
+          ],
+          [
+            24.010549405418974,
+            0.7532547261601937,
+            0.03336197653882424
+          ],
+          [
+            24.00967151971055,
+            0.7589348581427005,
+            0.033729682919329936
+          ],
+          [
+            24.009229129117426,
+            0.7641461956034858,
+            0.03407362978880495
+          ],
+          [
+            24.009089757691697,
+            0.7692630604753138,
+            0.034410733616381035
+          ],
+          [
+            24.00886661796211,
+            0.7743231811952935,
+            0.03474542141817171
+          ],
+          [
+            24.00851841577522,
+            0.7792265364215142,
+            0.035072414411985775
+          ],
+          [
+            24.007963213728782,
+            0.7838900763919248,
+            0.03538652546020103
+          ],
+          [
+            24.007445186238062,
+            0.7882145797837643,
+            0.035681831848739666
+          ],
+          [
+            24.007062038184507,
+            0.7922908031765148,
+            0.035961633219762555
+          ],
+          [
+            24.00643856221336,
+            0.796090962583666,
+            0.03622465357599993
+          ],
+          [
+            24.006076124041375,
+            0.7995328725874934,
+            0.03646432384441894
+          ],
+          [
+            24.005834533352736,
+            0.8028460436799819,
+            0.03669510294071783
+          ],
+          [
+            24.005535734409523,
+            0.8060441917800567,
+            0.03691990593095149
+          ],
+          [
+            24.005093026266564,
+            0.8090257397002538,
+            0.0371336628364948
+          ],
+          [
+            24.004843401788918,
+            0.8117990763369256,
+            0.037334907051454695
+          ],
+          [
+            24.004647784625973,
+            0.8144492087772496,
+            0.037527371150210945
+          ],
+          [
+            24.004436943352,
+            0.8169685179877485,
+            0.037710725142945364
+          ],
+          [
+            24.00417264294273,
+            0.8193367550030536,
+            0.03788367290544173
+          ],
+          [
+            24.00380555561405,
+            0.8214940553584797,
+            0.038042949882225965
+          ],
+          [
+            24.00355467787645,
+            0.8234272200953998,
+            0.03818650750394837
+          ]
+        ],
+        "recovery_penalty_kwh": 0.017408442658073706,
+        "saved_kwh": 0.04057954547664577,
+        "lower_savings_kwh": 0.03425208698097748
+      },
+      "feasible": true,
+      "reasons": []
+    }
+  ],
+  "final": {
+    "classification": "PASS_VALID_RAW",
+    "cleanup": "STOP_ACK_AND_REMOVAL_VERIFIED",
+    "release": "verified",
+    "fabricated": false,
+    "cleanup_evidence": {
+      "acknowledgement": "OK",
+      "instance_removed": true,
+      "removal_checks": [
+        {
+          "utc": "2026-11-21T13:50:08.722339+00:00",
+          "instance_directory_exists": true
+        },
+        {
+          "utc": "2026-11-21T13:50:09.858231+00:00",
+          "instance_directory_exists": false
+        }
+      ]
+    },
+    "verified_advances": 41,
+    "advance_attempts": 41
+  },
+  "final_summary": {
+    "time": 18884700,
+    "cursor": 41,
+    "energy": {
+      "cooling_kwh": 2.5998698165660965,
+      "fan_kwh": 0.11647680901919455,
+      "electricity_kwh": 2.716346625585291,
+      "official_replayed_kh": 0.4247165650681843,
+      "project_replayed_kh": 0,
+      "occupied_project_violation_minutes": 0,
+      "occupied_max_c": 24.5485056861948,
+      "occupied_project_peak_excursion_k": 0,
+      "maximum_indoor_c": 24.5485056861948
+    },
+    "official_discomfort_kh": 0.4247165650681839,
+    "setpoint_c": 24,
+    "recovery_minutes_remaining": 0,
+    "override": false
+  }
+}

@@ -1,0 +1,466 @@
+{
+  "version": "SDP_ML_RESEARCH_1.0.0",
+  "optimizer_ready": false,
+  "interfaces": {
+    "observational": {
+      "contract": "O25",
+      "model": "RandomForest",
+      "dataset": "M0",
+      "features": [
+        "indoor_temp_c",
+        "indoor_temp_5min_ago_c",
+        "indoor_temp_30min_ago_c",
+        "outdoor_temp_c",
+        "solar_irradiance_w_m2",
+        "cooling_setpoint_current_c",
+        "heating_setpoint_current_c",
+        "cooling_override_current",
+        "cooling_override_committed",
+        "cooling_setpoint_change_committed_k",
+        "occupancy_now",
+        "occupancy_forecast_30min",
+        "outdoor_temp_forecast_30min_k",
+        "solar_forecast_30min_w_m2",
+        "time_of_day_sin",
+        "time_of_day_cos",
+        "cooling_electric_power_last_5min_kw",
+        "cooling_electric_power_previous_5min_kw",
+        "cooling_electric_power_30min_ago_kw",
+        "fan_electric_power_last_5min_kw",
+        "fan_electric_power_previous_5min_kw",
+        "fan_electric_power_30min_ago_kw",
+        "heating_thermal_power_last_5min_kw",
+        "heating_thermal_power_previous_5min_kw",
+        "heating_thermal_power_30min_ago_kw"
+      ],
+      "training_rows": 13632,
+      "training_origin_ids_sha256": "82a758c2d59a34c7df59072edc4dbe9a0852fc9e5744dbfedc3f2578f6803235",
+      "training_target_sha256": "b2c874693fa8043fa261b308192bd89018370206d611760faee7273c1adc141d",
+      "training_groups": [
+        "D2_G020",
+        "D2_G044",
+        "D2_G074",
+        "D2_G146",
+        "D2_G174",
+        "D2_G218",
+        "D2_G258",
+        "D2_G288"
+      ],
+      "artifact": "models/observational_RandomForest.joblib",
+      "artifact_sha256": "57159e038df9f27f303246426ae55375441440c3352b3bea396c3e4f069bcce3",
+      "bytes": 33142394,
+      "minimum": [
+        14.941411625516423,
+        14.941411625516423,
+        14.941411625516423,
+        -20.692810457516345,
+        0.0,
+        23.5,
+        15.0,
+        0.0,
+        0.0,
+        -0.5,
+        0.0,
+        0.0,
+        252.47426470566668,
+        0.0,
+        -1.0,
+        -1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "maximum": [
+        29.35822017342764,
+        29.35822017342764,
+        29.35822017342764,
+        31.708134920634905,
+        1025.186798679868,
+        30.0,
+        21.0,
+        1.0,
+        1.0,
+        0.0,
+        2.0,
+        2.0,
+        304.85,
+        1025.18679868,
+        1.0,
+        1.0,
+        1.5588045721769406,
+        1.5588045721769406,
+        1.5588045721769406,
+        0.10397736917590586,
+        0.10397736917590586,
+        0.10397736917590586,
+        6.657993990494097,
+        6.657993990494097,
+        6.657993990494097
+      ],
+      "preprocessing": {},
+      "single_origin_median_ms": 139.34275,
+      "observed_action_tuples": null
+    },
+    "experimental_action": {
+      "contract": "P27",
+      "model": "RandomForest",
+      "dataset": "Mdiv",
+      "features": [
+        "indoor_temp_c",
+        "indoor_temp_5min_ago_c",
+        "indoor_temp_30min_ago_c",
+        "outdoor_temp_c",
+        "solar_irradiance_w_m2",
+        "cooling_setpoint_current_c",
+        "heating_setpoint_current_c",
+        "cooling_override_current",
+        "occupancy_now",
+        "occupancy_forecast_30min",
+        "outdoor_temp_forecast_30min_k",
+        "solar_forecast_30min_w_m2",
+        "time_of_day_sin",
+        "time_of_day_cos",
+        "cooling_electric_power_last_5min_kw",
+        "cooling_electric_power_previous_5min_kw",
+        "cooling_electric_power_30min_ago_kw",
+        "fan_electric_power_last_5min_kw",
+        "fan_electric_power_previous_5min_kw",
+        "fan_electric_power_30min_ago_kw",
+        "heating_thermal_power_last_5min_kw",
+        "heating_thermal_power_previous_5min_kw",
+        "heating_thermal_power_30min_ago_kw",
+        "a__cooling_delta_from_native_k",
+        "a__activation_offset_s",
+        "a__release_offset_s",
+        "c__cooling_veto_latched_before_t"
+      ],
+      "training_rows": 13632,
+      "training_origin_ids_sha256": "23cf699a8c7ef4449d243f0fc0050dbc9ce30a0227a76e7c62ec9ba5800479d9",
+      "training_target_sha256": "c4b7b4d58d57ecfb41d8a620bdf735785dd39a959df0c9c70fd6265053ed2898",
+      "training_groups": [
+        "D2_G020",
+        "D2_G044",
+        "D2_G074",
+        "D2_G146",
+        "D2_G174",
+        "D2_G218",
+        "D2_G258",
+        "D2_G288"
+      ],
+      "artifact": "models/experimental_action_RandomForest.joblib",
+      "artifact_sha256": "d6361bd2fb3d6ce3cee7866afcc5fab9b1843f001a519888392956206c70c5fa",
+      "bytes": 33220342,
+      "minimum": [
+        14.941411625516423,
+        14.941411625516423,
+        14.941411625516423,
+        -20.692810457516345,
+        0.0,
+        23.5,
+        15.0,
+        0.0,
+        0.0,
+        0.0,
+        252.47426470566668,
+        0.0,
+        -1.0,
+        -1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.5,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "maximum": [
+        29.35822017342764,
+        29.35822017342764,
+        29.35822017342764,
+        31.708134920634905,
+        1025.186798679868,
+        30.0,
+        21.0,
+        1.0,
+        2.0,
+        2.0,
+        304.85,
+        1025.18679868,
+        1.0,
+        1.0,
+        1.5588045721769406,
+        1.5588045721769406,
+        1.5588045721769406,
+        0.10397736917590586,
+        0.10397736917590586,
+        0.10397736917590586,
+        6.657993990494097,
+        6.657993990494097,
+        6.657993990494097,
+        0.0,
+        1500.0,
+        1800.0,
+        1.0
+      ],
+      "preprocessing": {},
+      "single_origin_median_ms": 143.09425,
+      "observed_action_tuples": [
+        [
+          -0.5,
+          0.0,
+          300.0,
+          0.0
+        ],
+        [
+          -0.5,
+          0.0,
+          300.0,
+          1.0
+        ],
+        [
+          -0.5,
+          0.0,
+          600.0,
+          0.0
+        ],
+        [
+          -0.5,
+          0.0,
+          600.0,
+          1.0
+        ],
+        [
+          -0.5,
+          0.0,
+          900.0,
+          0.0
+        ],
+        [
+          -0.5,
+          0.0,
+          900.0,
+          1.0
+        ],
+        [
+          -0.5,
+          0.0,
+          1200.0,
+          0.0
+        ],
+        [
+          -0.5,
+          0.0,
+          1200.0,
+          1.0
+        ],
+        [
+          -0.5,
+          0.0,
+          1500.0,
+          0.0
+        ],
+        [
+          -0.5,
+          0.0,
+          1500.0,
+          1.0
+        ],
+        [
+          -0.5,
+          0.0,
+          1800.0,
+          0.0
+        ],
+        [
+          -0.5,
+          300.0,
+          1800.0,
+          0.0
+        ],
+        [
+          -0.5,
+          600.0,
+          1800.0,
+          0.0
+        ],
+        [
+          -0.5,
+          900.0,
+          1800.0,
+          0.0
+        ],
+        [
+          -0.5,
+          1200.0,
+          1800.0,
+          0.0
+        ],
+        [
+          -0.5,
+          1500.0,
+          1800.0,
+          0.0
+        ],
+        [
+          -0.25,
+          0.0,
+          300.0,
+          0.0
+        ],
+        [
+          -0.25,
+          0.0,
+          300.0,
+          1.0
+        ],
+        [
+          -0.25,
+          0.0,
+          600.0,
+          0.0
+        ],
+        [
+          -0.25,
+          0.0,
+          600.0,
+          1.0
+        ],
+        [
+          -0.25,
+          0.0,
+          900.0,
+          0.0
+        ],
+        [
+          -0.25,
+          0.0,
+          900.0,
+          1.0
+        ],
+        [
+          -0.25,
+          0.0,
+          1200.0,
+          0.0
+        ],
+        [
+          -0.25,
+          0.0,
+          1200.0,
+          1.0
+        ],
+        [
+          -0.25,
+          0.0,
+          1500.0,
+          0.0
+        ],
+        [
+          -0.25,
+          0.0,
+          1500.0,
+          1.0
+        ],
+        [
+          -0.25,
+          0.0,
+          1800.0,
+          0.0
+        ],
+        [
+          -0.25,
+          300.0,
+          1800.0,
+          0.0
+        ],
+        [
+          -0.25,
+          600.0,
+          1800.0,
+          0.0
+        ],
+        [
+          -0.25,
+          900.0,
+          1800.0,
+          0.0
+        ],
+        [
+          -0.25,
+          1200.0,
+          1800.0,
+          0.0
+        ],
+        [
+          -0.25,
+          1500.0,
+          1800.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ]
+    },
+    "persistence": {
+      "model": "Persistence",
+      "contract": "state-only baseline",
+      "features": [
+        "indoor_temp_c",
+        "cooling_electric_power_last_5min_kw",
+        "fan_electric_power_last_5min_kw",
+        "heating_thermal_power_last_5min_kw"
+      ]
+    }
+  },
+  "fit_fold_seed_index": 0,
+  "deployment_ridge_cv": "Four frozen outer group assignments reused as full-refit inner folds",
+  "deployment_validation": "No independent final test. Group-held scores are for development model selection.",
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.5.4",
+    "joblib": "1.6.0",
+    "scikit_learn": "1.9.1",
+    "xgboost": "3.4.1"
+  },
+  "horizons_min": [
+    5,
+    10,
+    15,
+    30
+  ],
+  "targets": [
+    "target_indoor_temp_5min_c",
+    "target_indoor_temp_10min_c",
+    "target_indoor_temp_15min_c",
+    "target_indoor_temp_30min_c",
+    "target_cooling_electric_power_5min_kw",
+    "target_cooling_electric_power_10min_kw",
+    "target_cooling_electric_power_15min_kw",
+    "target_cooling_electric_power_30min_kw",
+    "target_fan_electric_power_5min_kw",
+    "target_fan_electric_power_10min_kw",
+    "target_fan_electric_power_15min_kw",
+    "target_fan_electric_power_30min_kw",
+    "target_heating_thermal_power_5min_kw",
+    "target_heating_thermal_power_10min_kw",
+    "target_heating_thermal_power_15min_kw",
+    "target_heating_thermal_power_30min_kw"
+  ],
+  "dataset_manifest_sha256": "caa4403a1d3e36737036b00b5466d1c20b39b5bd6c0effba468e7e7337e99ee6"
+}

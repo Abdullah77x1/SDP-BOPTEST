@@ -1,0 +1,15 @@
+{
+  "session": "LIVE_ROLLING_TWIN_01",
+  "config_sha256": "2a077d1be5b21d287f693d23a53a8bd330b54c571efe023fd9164398a09c46c0",
+  "budgets": {
+    "instances": 1,
+    "initializations": 1,
+    "advances": 41,
+    "warmer_starts": 1,
+    "warmer_advances": 9
+  },
+  "implementation_sha256": "15e6fe4cd3fb319206f5b488a0f6f3c171bd1d4814dc1a45fade83e460b548d6",
+  "automatic_retries": false,
+  "status": "EXPLICITLY_AUTHORIZED_LIVE_ROLLING_TWIN_01",
+  "approval_text": "I explicitly authorize one bounded, disposable live BOPTEST demonstration identified as LIVE_ROLLING_TWIN_01. Use the existing frozen campaign definition and its exact recorded configuration, source hashes, instance count, initialization, maximum advance budget, and cleanup rules. This authorization permits one genuine BOPTEST BESTEST Air simulation session with the existing O25 Random Forest forecasts and partial receding-horizon optimizer, native cooling or the qualified 24.5°C override, automatic five-minute advances, verified commands/readbacks, dashboard updates, safety supervision, native release, and recovery. Do not expand the frozen campaign, run additional scenarios, change controller thresholds, enable unqualified switching actions, or retry a consumed session."
+}

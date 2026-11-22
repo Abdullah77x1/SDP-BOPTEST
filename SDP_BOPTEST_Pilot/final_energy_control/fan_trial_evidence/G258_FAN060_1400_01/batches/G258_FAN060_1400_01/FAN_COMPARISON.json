@@ -1,0 +1,251 @@
+{
+  "technical_validation": "PASS",
+  "fabricated": false,
+  "windows": {
+    "intervention": {
+      "native": {
+        "cooling_kwh": 0.49288447007666736,
+        "fan_kwh": 0.02544131189946528,
+        "electricity_kwh": 0.5183257819761327,
+        "official_replayed_kh": 0.0008329287719227807,
+        "project_replayed_kh": 0.0,
+        "occupied_project_violation_minutes": 0.0,
+        "occupied_max_c": 24.00442999863884,
+        "occupied_project_peak_excursion_k": 0.0,
+        "maximum_indoor_c": 24.00442999863884,
+        "mean_indoor_c": 24.001523175462637
+      },
+      "fan": {
+        "cooling_kwh": 0.48928230107934734,
+        "fan_kwh": 0.018743964409602354,
+        "electricity_kwh": 0.5080262654889497,
+        "official_replayed_kh": 0.025391781170798565,
+        "project_replayed_kh": 0.0,
+        "occupied_project_violation_minutes": 0.0,
+        "occupied_max_c": 24.1614621278207,
+        "occupied_project_peak_excursion_k": 0.0,
+        "maximum_indoor_c": 24.1614621278207,
+        "mean_indoor_c": 24.050474352677156
+      },
+      "net_savings_kwh": 0.01029951648718297,
+      "fan_savings_kwh": 0.006697347489862927,
+      "added_cooling_kwh": -0.003602168997320021,
+      "added_official_kh": 0.024558852398875786,
+      "added_project_kh": 0.0,
+      "saved_percent": 1.9870739302057776
+    },
+    "recovery": {
+      "native": {
+        "cooling_kwh": 1.866343573642832,
+        "fan_kwh": 0.09402506956535235,
+        "electricity_kwh": 1.9603686432081844,
+        "official_replayed_kh": 0.0,
+        "project_replayed_kh": 0.0,
+        "occupied_project_violation_minutes": 0.0,
+        "occupied_max_c": 23.99882966639541,
+        "occupied_project_peak_excursion_k": 0.0,
+        "maximum_indoor_c": 23.99882966639541,
+        "mean_indoor_c": 23.99207763508548
+      },
+      "fan": {
+        "cooling_kwh": 1.869842307484073,
+        "fan_kwh": 0.0945178311339905,
+        "electricity_kwh": 1.9643601386180636,
+        "official_replayed_kh": 0.0,
+        "project_replayed_kh": 0.0,
+        "occupied_project_violation_minutes": 0.0,
+        "occupied_max_c": 23.99938824870725,
+        "occupied_project_peak_excursion_k": 0.0,
+        "maximum_indoor_c": 23.99938824870725,
+        "mean_indoor_c": 23.97983852379241
+      },
+      "net_savings_kwh": -0.003991495409879198,
+      "fan_savings_kwh": -0.0004927615686381448,
+      "added_cooling_kwh": 0.0034987338412411084,
+      "added_official_kh": 0.0,
+      "added_project_kh": 0.0,
+      "saved_percent": -0.2036094294666452
+    },
+    "intervention_and_recovery": {
+      "native": {
+        "cooling_kwh": 2.3592280437194986,
+        "fan_kwh": 0.11946638146481764,
+        "electricity_kwh": 2.478694425184316,
+        "official_replayed_kh": 0.0008329287719227807,
+        "project_replayed_kh": 0.0,
+        "occupied_project_violation_minutes": 0.0,
+        "occupied_max_c": 24.00442999863884,
+        "occupied_project_peak_excursion_k": 0.0,
+        "maximum_indoor_c": 24.00442999863884,
+        "mean_indoor_c": 23.99396674316074
+      },
+      "fan": {
+        "cooling_kwh": 2.3591246085634197,
+        "fan_kwh": 0.11326179554359288,
+        "electricity_kwh": 2.4723864041070125,
+        "official_replayed_kh": 0.025391781170798565,
+        "project_replayed_kh": 0.0,
+        "occupied_project_violation_minutes": 0.0,
+        "occupied_max_c": 24.1614621278207,
+        "occupied_project_peak_excursion_k": 0.0,
+        "maximum_indoor_c": 24.1614621278207,
+        "mean_indoor_c": 23.993965689569393
+      },
+      "net_savings_kwh": 0.0063080210773036605,
+      "fan_savings_kwh": 0.006204585921224762,
+      "added_cooling_kwh": -0.00010343515607891263,
+      "added_official_kh": 0.024558852398875786,
+      "added_project_kh": 0.0,
+      "saved_percent": 0.25448966250991567
+    },
+    "full": {
+      "native": {
+        "cooling_kwh": 2.843648985399025,
+        "fan_kwh": 0.1442197259381785,
+        "electricity_kwh": 2.9878687113372036,
+        "official_replayed_kh": 0.00446353637465009,
+        "project_replayed_kh": 0.0,
+        "occupied_project_violation_minutes": 0.0,
+        "occupied_max_c": 24.01001640349449,
+        "occupied_project_peak_excursion_k": 0.0,
+        "maximum_indoor_c": 24.01001640349449,
+        "mean_indoor_c": 23.996182488501688,
+        "official_reported_kh": 0.00446353637465009
+      },
+      "fan": {
+        "cooling_kwh": 2.8435455502429434,
+        "fan_kwh": 0.13801514001695378,
+        "electricity_kwh": 2.9815606902598972,
+        "official_replayed_kh": 0.029022388773525875,
+        "project_replayed_kh": 0.0,
+        "occupied_project_violation_minutes": 0.0,
+        "occupied_max_c": 24.1614621278207,
+        "occupied_project_peak_excursion_k": 0.0,
+        "maximum_indoor_c": 24.1614621278207,
+        "mean_indoor_c": 23.9961816105087,
+        "official_reported_kh": 0.029022388773525875
+      },
+      "net_savings_kwh": 0.006308021077306325,
+      "fan_savings_kwh": 0.00620458592122472,
+      "added_cooling_kwh": -0.00010343515608157716,
+      "added_official_kh": 0.024558852398875786,
+      "added_project_kh": 0.0,
+      "saved_percent": 0.21112109288373673
+    }
+  },
+  "criteria": {
+    "full_verified_dose": true,
+    "measured_airflow_reduced": true,
+    "net_saving_above_reconciliation_bound": true,
+    "no_added_project_discomfort": true,
+    "no_project_excursion": true,
+    "guard_respected": true,
+    "observed_recovery": true,
+    "no_extra_heating": true
+  },
+  "provisional_fan_result": true,
+  "optimizer_enabled": false,
+  "recovery_marker_min": 15,
+  "reconciliation_bound_kwh": 5.9694294015971015e-05,
+  "added_heating_input_kwh": 0.0,
+  "intervention_readbacks": [
+    {
+      "start": 22341600,
+      "end": 22341900,
+      "reason": "fan_candidate",
+      "command": {
+        "con_oveTSetCoo_activate": 0,
+        "con_oveTSetHea_activate": 0,
+        "fcu_oveFan_activate": 1,
+        "fcu_oveTSup_activate": 0,
+        "fcu_oveFan_u": 0.6
+      },
+      "cutoff": 77,
+      "response_receipt": 81,
+      "fan_active": true,
+      "measured_flow_kg_s": 0.33000004162614727
+    },
+    {
+      "start": 22341900,
+      "end": 22342200,
+      "reason": "fan_candidate",
+      "command": {
+        "con_oveTSetCoo_activate": 0,
+        "con_oveTSetHea_activate": 0,
+        "fcu_oveFan_activate": 1,
+        "fcu_oveTSup_activate": 0,
+        "fcu_oveFan_u": 0.6
+      },
+      "cutoff": 86,
+      "response_receipt": 89,
+      "fan_active": true,
+      "measured_flow_kg_s": 0.3299999871977455
+    },
+    {
+      "start": 22342200,
+      "end": 22342500,
+      "reason": "fan_candidate",
+      "command": {
+        "con_oveTSetCoo_activate": 0,
+        "con_oveTSetHea_activate": 0,
+        "fcu_oveFan_activate": 1,
+        "fcu_oveTSup_activate": 0,
+        "fcu_oveFan_u": 0.6
+      },
+      "cutoff": 94,
+      "response_receipt": 97,
+      "fan_active": true,
+      "measured_flow_kg_s": 0.3299999985584055
+    },
+    {
+      "start": 22342500,
+      "end": 22342800,
+      "reason": "fan_candidate",
+      "command": {
+        "con_oveTSetCoo_activate": 0,
+        "con_oveTSetHea_activate": 0,
+        "fcu_oveFan_activate": 1,
+        "fcu_oveTSup_activate": 0,
+        "fcu_oveFan_u": 0.6
+      },
+      "cutoff": 102,
+      "response_receipt": 105,
+      "fan_active": true,
+      "measured_flow_kg_s": 0.330000000000529
+    },
+    {
+      "start": 22342800,
+      "end": 22343100,
+      "reason": "fan_candidate",
+      "command": {
+        "con_oveTSetCoo_activate": 0,
+        "con_oveTSetHea_activate": 0,
+        "fcu_oveFan_activate": 1,
+        "fcu_oveTSup_activate": 0,
+        "fcu_oveFan_u": 0.6
+      },
+      "cutoff": 110,
+      "response_receipt": 113,
+      "fan_active": true,
+      "measured_flow_kg_s": 0.3300000000000059
+    },
+    {
+      "start": 22343100,
+      "end": 22343400,
+      "reason": "fan_candidate",
+      "command": {
+        "con_oveTSetCoo_activate": 0,
+        "con_oveTSetHea_activate": 0,
+        "fcu_oveFan_activate": 1,
+        "fcu_oveTSup_activate": 0,
+        "fcu_oveFan_u": 0.6
+      },
+      "cutoff": 118,
+      "response_receipt": 121,
+      "fan_active": true,
+      "measured_flow_kg_s": 0.33
+    }
+  ],
+  "verified_native_release": true,
+  "vetoes": []
+}

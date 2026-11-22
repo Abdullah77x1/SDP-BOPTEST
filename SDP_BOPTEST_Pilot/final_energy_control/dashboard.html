@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SDP · HVAC energy and comfort</title>
+<style>
+body{font:16px system-ui;background:#f3f6fa;color:#172a40;margin:0}main{max-width:1160px;margin:auto;padding:30px}h1{margin:0}p{color:#42556b}button,select{font:inherit;padding:10px;margin:4px;border:1px solid #aabbce;border-radius:6px;background:white}button{cursor:pointer}button:hover{background:#dceaf8}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:16px}.card{background:white;border-radius:10px;padding:20px;margin:16px 0;box-shadow:0 2px 8px #1a355511}.value{font-size:26px;font-weight:650}canvas{width:100%;height:210px}pre{white-space:pre-wrap;word-break:break-word;font-size:13px}#error{color:#9c2020}small{color:#52667c}table{width:100%;font-size:13px;text-align:left}td{padding:6px;border-bottom:1px solid #eee}
+body{background:#edf2f7;color:#172a40}main{max-width:1180px}
+header{padding:16px 0 8px}h2{font-size:1.15rem;margin-top:0}strong.badge{display:inline-block;color:#194c65;background:#d7edf2;border-radius:5px;padding:6px 10px}
+.energy-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}.energy-grid .card{margin:0}
+#timeline{width:min(100%,620px)}#banner{color:#374b61;margin:7px 0}#shadow{color:#593c12}
+button:disabled{cursor:default;opacity:.6}.fact{margin:.4rem 0}.scroll{overflow:auto}table td, table th{white-space:nowrap}tbody tr:nth-child(even){background:#f4f7fa}
+</style>
+<main>
+<header>
+  <strong class="badge" id="mode">Opening evidence</strong>
+  <h1>BOPTEST HVAC energy and comfort</h1>
+  <p id="banner" aria-live="polite"></p>
+</header>
+<section class="card" id="twin-controls" hidden>
+  <button id="twin-start">Start</button><button id="twin-pause">Pause</button><button id="twin-resume">Resume</button><button id="twin-stop">Stop</button>
+  <p id="twin-lifecycle" aria-live="polite"></p>
+</section>
+<section class="card" id="replay" hidden>
+  <button id="play">Play replay</button><button id="pause">Pause</button><button id="finish">Show final frame</button>
+  <p><label for="timeline">Verified interval <span id="frame">—</span></label></p>
+  <input type="range" id="timeline" min="1" value="1">
+</section>
+<p id="error" role="alert"></p>
+<div id="data" hidden>
+<div class="energy-grid">
+  <section class="card">Indoor / outdoor<div class="value" id="temps"></div><small>°C · measured simulation endpoints</small></section>
+  <section class="card">Cooling / fan<div class="value" id="powers"></div><small>W electric · endpoint</small></section>
+  <section class="card">Occupancy<div class="value" id="occupancy"></div><small id="bounds"></small></section>
+  <section class="card">Cooling + fan<div class="value" id="energy"></div><small id="saving"></small></section>
+</div>
+<section class="card">
+  <h2>Decision and verified feedback</h2>
+  <p id="decision"></p><p class="fact" id="command"></p><p class="fact" id="safety"></p><p class="fact" id="shadow"></p>
+</section>
+<section class="card">
+  <h2>Observational forecasts</h2><p id="forecast-status"></p>
+  <div class="scroll"><table><thead><tr><th>Lead</th><th>Indoor °C</th><th>Cooling kW</th><th>Fan kW</th><th>Cooling + fan kW</th><th>Heating kW thermal</th></tr></thead><tbody id="forecasts"></tbody></table></div>
+  <small>Power forecasts cover the final five minutes at each lead.</small>
+  <div id="forecast-feedback" hidden>
+    <h3>Latest forecast with a verified observation at each lead</h3>
+    <div class="scroll"><table><thead><tr><th>Lead</th><th>Observed at</th><th>Indoor predicted / measured °C</th><th>Indoor error °C</th><th>Cooling predicted / measured kW</th><th>Fan predicted / measured kW</th><th>Combined error kW</th></tr></thead><tbody id="forecast-actuals"></tbody></table></div>
+  </div>
+</section>
+<section class="card" id="optimization" hidden>
+  <h2>Optimization</h2><p id="optimization-summary"></p>
+  <div class="scroll"><table><thead><tr><th>Candidate</th><th>Predicted peak °C</th><th>Predicted margin °C</th><th>Cooling kWh</th><th>Fan kWh</th><th>First 45 min kWh</th><th>Recovery kWh</th><th>Total kWh</th><th>Decision</th></tr></thead><tbody id="optimization-actions"></tbody></table></div>
+  <p id="optimizer-feedback"></p>
+</section>
+<section class="card" id="rolling" hidden>
+  <h2>Five-minute action-response evaluation</h2><p id="rolling-summary"></p>
+  <div class="scroll"><table><thead><tr><th>Candidate</th><th>Horizon min</th><th>Predicted next indoor °C</th><th>Predicted peak °C</th><th>Predicted 20–26°C margin</th><th>Predicted cooling kWh</th><th>Predicted fan kWh</th><th>Predicted combined kWh</th><th>Predicted recovery kWh</th><th>Validity and decision</th></tr></thead><tbody id="rolling-actions"></tbody></table></div>
+  <p id="rolling-feedback"></p>
+</section>
+<div class="grid">
+  <section class="card"><h2>Temperature history · °C</h2><canvas id="temperature" aria-label="Indoor and outdoor temperature history"></canvas><small id="temp-legend"></small></section>
+  <section class="card"><h2>Electrical demand history · W</h2><canvas id="electric" aria-label="Cooling and fan electricity history"></canvas><small id="power-legend"></small></section>
+</div>
+<section class="card"><h2>Cumulative evaluation</h2><p id="breakdown"></p><p id="comfort"></p><p id="pair-result"></p></section>
+<section class="card" id="comparison" hidden>
+  <h2>Measured G218 comparison</h2>
+  <div class="scroll"><table><thead><tr><th>Measure</th><th>Native</th><th>Autonomous</th></tr></thead><tbody id="paired-metrics"></tbody></table></div>
+</section>
+</div></main>
+<script>
+"use strict";
+function chart(id,rows,keys,offset){let c=document.getElementById(id),ctx=c.getContext('2d');let w=c.width=Math.max(c.clientWidth,400),h=c.height=210;ctx.clearRect(0,0,w,h);let finite=rows.flatMap(r=>keys.map(k=>r[k]-offset)).filter(Number.isFinite);if(!finite.length)return;let lo=Math.min(...finite),hi=Math.max(...finite);if(hi-lo<1)hi=lo+1;ctx.fillStyle='#52667c';ctx.font='12px system-ui';ctx.fillText(hi.toFixed(1),0,15);ctx.fillText(lo.toFixed(1),0,h-22);let start=rows[0].time,end=rows.at(-1).time;ctx.fillText('0 h',45,h-3);ctx.fillText(((end-start)/3600).toFixed(2)+' h',w-55,h-3);keys.forEach((k,j)=>{ctx.strokeStyle=['#2475ba','#d68723','#8553a6','#31825c'][j];ctx.beginPath();let active=false;rows.forEach(r=>{if(!Number.isFinite(r[k])){active=false;return;}let x=45+(w-60)*(r.time-start)/Math.max(end-start,300),y=15+(h-45)*(1-(r[k]-offset-lo)/(hi-lo));if(!active)ctx.moveTo(x,y);else ctx.lineTo(x,y);active=true;});ctx.stroke();});}
+const $ = id => document.getElementById(id);
+const number = (value, digits = 2) => typeof value === "number" ? value.toFixed(digits) : "—";
+const clockLabel = stamp => String(Math.floor(stamp % 86400 / 3600)).padStart(2,"0") + ":" + String(Math.floor(stamp % 3600 / 60)).padStart(2,"0");
+const words = reason => (reason || "").replaceAll("_", " ");
+let pending = false;
+let dragging = false;
+let maxFrame = 1;
+async function action(action, extra = {}) {
+  try {
+    const response = await fetch("/command", {
+      method:"POST", headers:{"Content-Type":"application/json"}, body:JSON.stringify({action,...extra})
+    });
+    const result = await response.json();
+    if (!response.ok) throw new Error(result.error);
+    await refresh();
+  } catch (error) { $("error").textContent = error.message; }
+}
+$("play").onclick = () => action("play");
+$("pause").onclick = () => action("pause");
+$("finish").onclick = () => action("seek",{cursor:maxFrame});
+for (const command of ["start", "pause", "resume", "stop"]) $("twin-" + command).onclick = () => action(command);
+$("timeline").oninput = () => { dragging = true; $("frame").textContent = $("timeline").value + " / " + maxFrame; };
+$("timeline").onchange = () => { dragging = false; action("seek",{cursor:Number($("timeline").value)}); };
+
+async function refresh() {
+  if (pending) return;
+  pending = true;
+  try {
+    const response = await fetch("/state");
+    if (!response.ok) throw new Error("Evidence feed unavailable");
+    const s = await response.json();
+    $("mode").textContent = s.mode === "digital-twin" ? (s.fabricated ? "FABRICATED TEST" : "BOPTEST LIVE TWIN") :
+      s.mode === "smoke" ? (s.connection || "unavailable").toUpperCase() + " · BOPTEST SMOKE" :
+      s.mode.startsWith("follow-") ? (s.connection || "waiting").toUpperCase() + " · READ-ONLY" :
+      s.mode === "optimizer" ? "OPTIMIZER SHADOW · ARCHIVED NATIVE" :
+      s.mode === "follow" ? "LIVE COLLECTOR · READ-ONLY" :
+      ["g218","rolling"].includes(s.mode) ? "MEASURED REPLAY" : "ARCHIVED REPLAY";
+    $("banner").textContent = s.status || "";
+    $("error").textContent = s.session_result?.error || s.error || "";
+    $("twin-controls").hidden = s.mode !== "digital-twin";
+    if (s.mode === "digital-twin") {
+      const phase = s.lifecycle, result = s.session_result;
+      $("twin-start").disabled = phase !== "ready";
+      $("twin-pause").disabled = phase !== "running";
+      $("twin-resume").disabled = phase !== "paused";
+      $("twin-stop").disabled = !["starting","running","pausing","paused","resuming"].includes(phase);
+      const safety = result?.release ? " · native release " + words(result.release) : "";
+      const verified = Number.isInteger(result?.verified_advances) ? " · " + result.verified_advances + " verified advances" : "";
+      $("twin-lifecycle").textContent = phase + (s.rolling_mode ? " · partial receding-horizon optimizer" : "") +
+        " · 400 W guard " + (s.use_400w ? "on" : "off") +
+        (result ? " · cleanup " + words(result.cleanup) + safety + verified : "");
+    }
+    $("data").hidden = !s.ready;
+    if (!s.ready) return;
+    const clock = s.now % 86400;
+    const hours = String(Math.floor(clock / 3600)).padStart(2,"0");
+    const mins = String(Math.floor(clock / 60) % 60).padStart(2,"0");
+    $("banner").textContent += " · benchmark day offset " + Math.floor(s.now / 86400) + " · " + hours + ":" + mins;
+    $("replay").hidden = s.mode.startsWith("follow") || s.mode === "smoke" || s.mode === "digital-twin";
+    maxFrame = s.total;
+    $("timeline").max = s.total;
+    if (!dragging) {
+      $("timeline").value = s.cursor;
+      $("frame").textContent = s.cursor + " / " + s.total;
+    }
+    $("play").disabled = s.playing || s.cursor === s.total;
+    $("pause").disabled = !s.playing;
+    $("temps").textContent = number(s.indoor) + " / " + number(s.outdoor);
+    $("powers").textContent = number(s.cooling_w,1) + " / " + number(s.fan_w,1);
+    $("occupancy").textContent = s.occupied ? "Occupied" : "Unoccupied";
+    $("bounds").textContent = "Official " + s.official_band.map(x=>number(x,0)).join("–") +
+      "°C · project " + (s.project_band ? "20–26°C" : "retains unoccupied schedule");
+    $("energy").textContent = number(s.energy.electricity_kwh,3) + " kWh";
+    $("saving").textContent = ["digital-twin","rolling"].includes(s.mode) ? "Single-arm measured electricity · no matched savings" : s.saved_kwh === null ? "Aligned comparison pending" :
+      "Native minus controlled: " + number(s.saved_kwh,4) + " kWh";
+    $("decision").textContent = words(s.reason);
+    if (s.policy_label) $("decision").textContent = s.policy_label + " · " + words(s.reason);
+    if (s.morning_guard) $("decision").textContent += " · morning mean " +
+      number(s.morning_guard.mean_cooling_w,1) + " W · " + words(s.morning_guard.screen_reason);
+    $("command").textContent = "Requested " + (s.requested_c === null ? "native schedule" : number(s.requested_c,1)+"°C") +
+      " · verified cooling " + number(s.effective_c,2) + "°C · heating " + number(s.heating_setpoint_c,2) + "°C";
+    $("safety").textContent = (s.fallback ? "Safety fallback" : s.safety_veto ? "Safety veto · native verified" :
+      s.override ? "Verified override" : "Native control verified") +
+      (s.recovery_min > 0 ? " · recovery lockout " + number(s.recovery_min,0) + " min remaining" : "");
+    $("shadow").textContent = s.shadow ? "SHADOW DECISION at " + s.shadow.origin +
+      " s: " + (s.shadow.warmer ? "would request 24.5°C" : "remain native") + " · " + words(s.shadow.reason) +
+      ". Replay follows the recorded native trajectory." : "";
+    const f = s.forecast;
+    $("forecast-status").textContent = f.source + " · origin " + f.origin + " s" +
+      " · issued outdoor +30 min " + number(s.weather_30min_c,1) + "°C" + (f.reason ? " · " + f.reason : "");
+    $("forecasts").replaceChildren();
+    for (const entry of f.values) {
+      const cells = [$("forecasts").insertRow(), [
+        "+"+entry.horizon_min+" min", number(entry.indoor_temperature),
+        number(entry.cooling,3), number(entry.fan,3), number(entry.combined,3), number(entry.heating,3)
+      ]];
+      cells[1].forEach(value => cells[0].insertCell().textContent=value);
+    }
+    $("forecast-feedback").hidden = !s.forecast_feedback?.length;
+    if (s.forecast_feedback?.length) {
+      $("forecast-actuals").replaceChildren();
+      for (const entry of s.forecast_feedback) {
+        const row = $("forecast-actuals").insertRow(), p = entry.predicted, a = entry.measured;
+        const pair = (key, digits) => number(p[key],digits) + " / " + number(a[key],digits);
+        ["+" + entry.lead + " min", clockLabel(entry.target), pair("indoor_temperature",3),
+         number(p.indoor_temperature - a.indoor_temperature,3), pair("cooling",4), pair("fan",4),
+         number(p.combined - a.combined,4)].forEach(value => row.insertCell().textContent = value);
+      }
+    }
+    $("optimization").hidden = !s.optimization;
+    if (s.optimization) {
+      const opt = s.optimization, feedback = s.optimizer_feedback;
+      $("optimization-summary").textContent = (opt.shadow ? "Unapplied decision on archived native data · " : "Verified collector decision · ") +
+        "selected " + (feedback?.selected || opt.selected) + " at " + opt.origin + " s · " +
+        (opt.qualified ? "qualified action model" : "action model unqualified") + " · " +
+        number(opt.temperature_reserve_c,1) + "°C temperature reserve · " + number(opt.net_uncertainty_kwh,4) +
+        " kWh energy uncertainty · 165-minute modeled window" +
+        (feedback?.remaining_hold_min != null ? " · " + feedback.remaining_hold_min + " min planned hold remaining" : "");
+      $("optimization-actions").replaceChildren();
+      for (const action of opt.candidates) {
+        const p = action.predicted, row = $("optimization-actions").insertRow();
+        const label = action.id + " · " + (action.target_c === null ? "native" : action.target_c + "°C / " + action.minutes + " min");
+        const first45 = p?.trajectory?.slice(0,9).reduce((sum, point) => sum + (point[1] + point[2]) / 12, 0);
+        const recovery = p?.recovery_kwh ?? (p?.trajectory && p.total_kwh - first45);
+        [label, number(p?.peak_c,3), number(p?.minimum_comfort_margin_c,3), number(p?.cooling_kwh,4),
+         number(p?.fan_kwh,4), number(first45,4), number(recovery,4), number(p?.total_kwh,4),
+         action.reasons.length ? action.reasons.join(" · ") : action.id === opt.selected ? "Selected at origin" : "Feasible"].forEach(
+          value => row.insertCell().textContent = value);
+      }
+      $("optimizer-feedback").textContent = feedback?.measured_c != null ?
+        "Verified " + feedback.applied + " response through this frame · predicted / measured " + number(feedback.predicted_c,3) +
+        " / " + number(feedback.measured_c,3) + "°C · " + number(feedback.predicted_kwh,4) + " / " +
+        number(feedback.measured_kwh,4) + " kWh since decision" : "Matched response comparison unavailable at this frame.";
+    }
+    $("rolling").hidden = !s.rolling;
+    if (s.rolling) {
+      const step = s.rolling, measured = step.measured, errors = step.errors;
+      const selected = step.rolling_candidates.find(candidate => candidate.id === step.selected);
+      const conservative = selected?.prediction?.conservative_savings_kwh;
+      $("rolling-summary").textContent = clockLabel(step.origin) + " · " + step.selected + " · " + step.action +
+        " · " + words(step.reason) + (step.remaining_hold_min ? " · " + step.remaining_hold_min + " min before scheduled release" : "") +
+        (conservative == null ? "" : " · predicted saving after uncertainty and switching cost " + number(conservative,5) + " kWh");
+      $("rolling-actions").replaceChildren();
+      for (const action of step.rolling_candidates) {
+        const p = action.prediction, row = $("rolling-actions").insertRow();
+        [action.id === "A0" ? "A0 · Native" : "A1 · 24.5°C", number(p?.horizon_min,0), number(p?.next_temp_c,3),
+         number(p?.peak_c,3), number(p?.margin_c,3), number(p?.cooling_kwh,4), number(p?.fan_kwh,4),
+         number(p?.combined_kwh,4), number(p?.recovery_kwh,4),
+         (action.id === step.selected ? "Selected · " : "") + (action.valid ? "In-envelope prediction" : "Prediction unavailable") +
+          (action.reasons.length ? " · " + action.reasons.map(words).join(" · ") : "")].forEach(value => row.insertCell().textContent = value);
+      }
+      $("rolling-feedback").textContent = "Verified next step " + number(measured.indoor_temperature,3) + "°C · " +
+        number(measured.cooling,4) + " kW cooling · " + number(measured.fan,4) + " kW fan" +
+        (errors ? " · prediction errors " + number(errors.temperature_c,3) + "°C / " + number(errors.cooling_kw,4) +
+         " kW cooling / " + number(errors.fan_kw,4) + " kW fan" : " · forecast error unavailable for applied action");
+    }
+    const temperatures = ["zon_reaTRooAir_y","zon_weaSta_reaWeaTDryBul_y"];
+    const powers = ["fcu_reaPCoo_y","fcu_reaPFan_y"];
+    if (s.comparison) {
+      temperatures.push("native_zon_reaTRooAir_y");
+      powers.push("native_fcu_reaPCoo_y","native_fcu_reaPFan_y");
+    }
+    chart("temperature",s.history,temperatures,273.15);
+    chart("electric",s.history,powers,0);
+    $("temp-legend").textContent = s.comparison ?
+      "Blue: autonomous indoor · orange: outdoor · purple: native indoor" : "Blue: indoor · orange: outdoor";
+    $("power-legend").textContent = s.comparison ?
+      "Blue/orange: autonomous cooling/fan · purple/green: native cooling/fan" : "Blue: cooling · orange: fan";
+    $("breakdown").textContent = "Cooling " + number(s.energy.cooling_kwh,3) + " kWh · fan " +
+      number(s.energy.fan_kwh,3) + " kWh · heating gas-equivalent input " + number(s.heating_input_kwh,3) + " kWh";
+    $("comfort").textContent = "Official-schedule discomfort " +
+      number(s.official_kpi ?? s.energy.official_replayed_kh,4) + " K·h (" +
+      (s.official_kpi === null ? "prefix replay" : "official API result") + ") · project 20–26°C replay " +
+      number(s.energy.project_replayed_kh,4) + " K·h · occupied violation " +
+      number(s.energy.occupied_project_violation_minutes,1) + " min · maximum occupied " +
+      number(s.energy.occupied_max_c) + "°C";
+    $("pair-result").textContent = s.pair_status ? s.pair_status.result + " · recovery penalty " +
+      number(s.pair_status.recovery_penalty_kwh,5) + " kWh" + (s.pair_status.saved_vs_fixed_kwh == null ? "" :
+      " · measured savings vs fixed " + number(s.pair_status.saved_vs_fixed_kwh,5) + " kWh") : "";
+    $("comparison").hidden = !s.comparison;
+    if (s.comparison) {
+      const n = s.comparison.native, c = s.energy;
+      const officialSource = s.official_kpi === null ? "prefix replay" : "official API result";
+      const metrics = [
+        ["Indoor temperature, °C", s.comparison.native_indoor_c, s.indoor, 2],
+        ["Cooling electricity, kWh", n.cooling_kwh, c.cooling_kwh, 4],
+        ["Fan electricity, kWh", n.fan_kwh, c.fan_kwh, 4],
+        ["Cooling plus fan, kWh", n.electricity_kwh, c.electricity_kwh, 4],
+        ["Benchmark discomfort, K·h (" + officialSource + ")", s.comparison.native_official_kh ?? n.official_replayed_kh,
+         s.official_kpi ?? c.official_replayed_kh, 4],
+        ["Project discomfort, K·h", n.project_replayed_kh, c.project_replayed_kh, 4],
+        ["Occupied project violation, min", n.occupied_project_violation_minutes, c.occupied_project_violation_minutes, 1]
+      ];
+      $("paired-metrics").replaceChildren();
+      for (const [label, native, controlled, digits] of metrics) {
+        const row = $("paired-metrics").insertRow();
+        [label, number(native,digits), number(controlled,digits)].forEach(value => row.insertCell().textContent = value);
+      }
+    }
+  } catch (error) { $("error").textContent = error.message; } finally { pending = false; }
+}
+setInterval(refresh,450);
+refresh();
+</script>
+</html>
+

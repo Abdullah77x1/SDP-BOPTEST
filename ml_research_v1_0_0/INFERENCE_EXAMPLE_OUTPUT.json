@@ -1,0 +1,169 @@
+{
+  "origin": 15073200,
+  "run": "B1V01_G174_C15",
+  "observational": {
+    "version": "SDP_ML_RESEARCH_1.0.0",
+    "status": "ok",
+    "valid": true,
+    "reason": "",
+    "optimizer_ready": false,
+    "horizons_min": [
+      5,
+      10,
+      15,
+      30
+    ],
+    "units": {
+      "indoor_temperature": "degC",
+      "cooling": "kW electric",
+      "fan": "kW electric",
+      "combined": "kW electric",
+      "heating": "kW thermal"
+    },
+    "outside_development_fields": [],
+    "predictions": [
+      {
+        "horizon_min": 5,
+        "indoor_temperature": 23.68527917459584,
+        "cooling": 0.5508861765893616,
+        "fan": 0.02125918943155289,
+        "combined": 0.5721453660209145,
+        "heating": 5.722033319925569e-08
+      },
+      {
+        "horizon_min": 10,
+        "indoor_temperature": 23.63744223657476,
+        "cooling": 0.5604573702131912,
+        "fan": 0.022420380421497747,
+        "combined": 0.5828777506346889,
+        "heating": 2.1684934917778146e-08
+      },
+      {
+        "horizon_min": 15,
+        "indoor_temperature": 23.636326739045764,
+        "cooling": 0.5723389820275036,
+        "fan": 0.02313322886118266,
+        "combined": 0.5954722108886862,
+        "heating": 1.2394846561210326e-07
+      },
+      {
+        "horizon_min": 30,
+        "indoor_temperature": 23.784488875611505,
+        "cooling": 0.5977750405754527,
+        "fan": 0.02483983882417738,
+        "combined": 0.6226148793996301,
+        "heating": 4.721736934182683e-08
+      }
+    ]
+  },
+  "experimental_action": {
+    "version": "SDP_ML_RESEARCH_1.0.0",
+    "status": "experimental_only",
+    "valid": true,
+    "reason": "Research use only",
+    "optimizer_ready": false,
+    "horizons_min": [
+      5,
+      10,
+      15,
+      30
+    ],
+    "units": {
+      "indoor_temperature": "degC",
+      "cooling": "kW electric",
+      "fan": "kW electric",
+      "combined": "kW electric",
+      "heating": "kW thermal"
+    },
+    "outside_development_fields": [],
+    "predictions": [
+      {
+        "horizon_min": 5,
+        "indoor_temperature": 23.856729987656884,
+        "cooling": 0.5545411404025634,
+        "fan": 0.021774699796737858,
+        "combined": 0.5763158401993013,
+        "heating": 1.8153374520025466e-08
+      },
+      {
+        "horizon_min": 10,
+        "indoor_temperature": 23.734972789941267,
+        "cooling": 0.5719001597170487,
+        "fan": 0.02351612907264709,
+        "combined": 0.5954162887896958,
+        "heating": 1.0766745246758024e-07
+      },
+      {
+        "horizon_min": 15,
+        "indoor_temperature": 23.73625706556842,
+        "cooling": 0.5726656331234782,
+        "fan": 0.024310884131707837,
+        "combined": 0.596976517255186,
+        "heating": 8.308299812874041e-08
+      },
+      {
+        "horizon_min": 30,
+        "indoor_temperature": 24.013224340102568,
+        "cooling": 0.5921967486118777,
+        "fan": 0.02401376562722633,
+        "combined": 0.616210514239104,
+        "heating": 5.2703219027617535e-08
+      }
+    ]
+  },
+  "persistence": {
+    "version": "SDP_ML_RESEARCH_1.0.0",
+    "status": "ok",
+    "valid": true,
+    "reason": "",
+    "optimizer_ready": false,
+    "horizons_min": [
+      5,
+      10,
+      15,
+      30
+    ],
+    "units": {
+      "indoor_temperature": "degC",
+      "cooling": "kW electric",
+      "fan": "kW electric",
+      "combined": "kW electric",
+      "heating": "kW thermal"
+    },
+    "outside_development_fields": [],
+    "predictions": [
+      {
+        "horizon_min": 5,
+        "indoor_temperature": 24.019279948855058,
+        "cooling": 0.5218730565468411,
+        "fan": 0.019495393703460102,
+        "combined": 0.5413684502503012,
+        "heating": 0.0
+      },
+      {
+        "horizon_min": 10,
+        "indoor_temperature": 24.019279948855058,
+        "cooling": 0.5218730565468411,
+        "fan": 0.019495393703460102,
+        "combined": 0.5413684502503012,
+        "heating": 0.0
+      },
+      {
+        "horizon_min": 15,
+        "indoor_temperature": 24.019279948855058,
+        "cooling": 0.5218730565468411,
+        "fan": 0.019495393703460102,
+        "combined": 0.5413684502503012,
+        "heating": 0.0
+      },
+      {
+        "horizon_min": 30,
+        "indoor_temperature": 24.019279948855058,
+        "cooling": 0.5218730565468411,
+        "fan": 0.019495393703460102,
+        "combined": 0.5413684502503012,
+        "heating": 0.0
+      }
+    ]
+  }
+}

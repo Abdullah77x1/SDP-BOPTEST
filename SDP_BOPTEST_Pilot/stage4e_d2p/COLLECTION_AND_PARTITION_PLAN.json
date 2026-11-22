@@ -1,0 +1,1555 @@
+{
+  "scope": "PLANNING_ONLY_NOT_EXECUTION_AUTHORIZED",
+  "simulations": 0,
+  "model_fits": 0,
+  "dataset_release": false,
+  "recommended": [
+    {
+      "group_id": "D2_G020",
+      "start_day_offset": 20,
+      "calendar_regime_bin": "winter",
+      "partition": "development",
+      "warmup_start_s": 1123200,
+      "scored_start_s": 1728000,
+      "scored_end_s": 1987200,
+      "scored_hours": 72,
+      "warmup_seconds": 604800,
+      "step_seconds": 300,
+      "arms": [
+        "native",
+        "frozen_safe_cooling_variation"
+      ],
+      "source": "PROPOSED_CUSTOM_INITIALIZATION",
+      "new_instances": 2,
+      "new_scored_advances": 1728,
+      "runtime_status": "NOT_TESTED",
+      "collector_compatibility": "D2_NEW_VERSION_REQUIRED; existing frozen v2 rejects custom initialize",
+      "public_weather_only": {
+        "source_role": "EXOGENOUS_PUBLIC_WEATHER_ONLY_NOT_SIMULATED_BUILDING_OUTCOME",
+        "samples": 289,
+        "outdoor_min_c": -20.691544117999968,
+        "outdoor_max_c": 11.700000000000045,
+        "outdoor_mean_c": -4.1408814261107025,
+        "global_solar_peak_wm2": 547.347595698,
+        "global_solar_kwh_m2": 9.729999999999663,
+        "low_solar_samples_below_20_wm2": 173,
+        "heating_or_cooling_building_activity": "UNKNOWN_WITHOUT_NEW_RUNTIME"
+      },
+      "prior_exposed_connections": []
+    },
+    {
+      "group_id": "D2_G044",
+      "start_day_offset": 44,
+      "calendar_regime_bin": "winter",
+      "partition": "development",
+      "warmup_start_s": 3196800,
+      "scored_start_s": 3801600,
+      "scored_end_s": 4060800,
+      "scored_hours": 72,
+      "warmup_seconds": 604800,
+      "step_seconds": 300,
+      "arms": [
+        "native",
+        "frozen_safe_cooling_variation"
+      ],
+      "source": "REUSE_QUALIFIED_D1_V2",
+      "new_instances": 0,
+      "new_scored_advances": 0,
+      "runtime_status": "VERIFIED_EXISTING_72H_PAIR",
+      "collector_compatibility": "D2_NEW_VERSION_REQUIRED; existing frozen v2 rejects custom initialize",
+      "public_weather_only": {
+        "source_role": "EXOGENOUS_PUBLIC_WEATHER_ONLY_NOT_SIMULATED_BUILDING_OUTCOME",
+        "samples": 289,
+        "outdoor_min_c": -11.754140624999991,
+        "outdoor_max_c": 6.7000000000000455,
+        "outdoor_mean_c": -3.8426210693252347,
+        "global_solar_peak_wm2": 660.378202936,
+        "global_solar_kwh_m2": 7.570000078126071,
+        "low_solar_samples_below_20_wm2": 173,
+        "heating_or_cooling_building_activity": "UNKNOWN_WITHOUT_NEW_RUNTIME"
+      },
+      "prior_exposed_connections": [
+        "EXPOSED_D1_HEAT"
+      ],
+      "legacy_source_group_id": "qualification_heat_44",
+      "reused_run_ids": [
+        "V2_Q03_N",
+        "V2_Q04_X"
+      ]
+    },
+    {
+      "group_id": "D2_G074",
+      "start_day_offset": 74,
+      "calendar_regime_bin": "spring",
+      "partition": "development",
+      "warmup_start_s": 5788800,
+      "scored_start_s": 6393600,
+      "scored_end_s": 6652800,
+      "scored_hours": 72,
+      "warmup_seconds": 604800,
+      "step_seconds": 300,
+      "arms": [
+        "native",
+        "frozen_safe_cooling_variation"
+      ],
+      "source": "PROPOSED_CUSTOM_INITIALIZATION",
+      "new_instances": 2,
+      "new_scored_advances": 1728,
+      "runtime_status": "NOT_TESTED",
+      "collector_compatibility": "D2_NEW_VERSION_REQUIRED; existing frozen v2 rejects custom initialize",
+      "public_weather_only": {
+        "source_role": "EXOGENOUS_PUBLIC_WEATHER_ONLY_NOT_SIMULATED_BUILDING_OUTCOME",
+        "samples": 289,
+        "outdoor_min_c": -7.331396483999981,
+        "outdoor_max_c": 16.700000000000045,
+        "outdoor_mean_c": 2.3780243025501955,
+        "global_solar_peak_wm2": 842.752011877,
+        "global_solar_kwh_m2": 15.122000000000597,
+        "low_solar_samples_below_20_wm2": 149,
+        "heating_or_cooling_building_activity": "UNKNOWN_WITHOUT_NEW_RUNTIME"
+      },
+      "prior_exposed_connections": []
+    },
+    {
+      "group_id": "D2_G100",
+      "start_day_offset": 100,
+      "calendar_regime_bin": "spring",
+      "partition": "validation",
+      "warmup_start_s": 8035200,
+      "scored_start_s": 8640000,
+      "scored_end_s": 8899200,
+      "scored_hours": 72,
+      "warmup_seconds": 604800,
+      "step_seconds": 300,
+      "arms": [
+        "native",
+        "frozen_safe_cooling_variation"
+      ],
+      "source": "PROPOSED_CUSTOM_INITIALIZATION",
+      "new_instances": 2,
+      "new_scored_advances": 1728,
+      "runtime_status": "NOT_TESTED",
+      "collector_compatibility": "D2_NEW_VERSION_REQUIRED; existing frozen v2 rejects custom initialize",
+      "public_weather_only": {
+        "source_role": "EXOGENOUS_PUBLIC_WEATHER_ONLY_NOT_SIMULATED_BUILDING_OUTCOME",
+        "samples": 289,
+        "outdoor_min_c": 0.0,
+        "outdoor_max_c": 13.900000000000034,
+        "outdoor_mean_c": 4.779117106401408,
+        "global_solar_peak_wm2": 855.089879101,
+        "global_solar_kwh_m2": 9.36532469153059,
+        "low_solar_samples_below_20_wm2": 145,
+        "heating_or_cooling_building_activity": "UNKNOWN_WITHOUT_NEW_RUNTIME"
+      },
+      "prior_exposed_connections": []
+    },
+    {
+      "group_id": "D2_G126",
+      "start_day_offset": 126,
+      "calendar_regime_bin": "spring",
+      "partition": "protected_final_test",
+      "warmup_start_s": 10281600,
+      "scored_start_s": 10886400,
+      "scored_end_s": 11145600,
+      "scored_hours": 72,
+      "warmup_seconds": 604800,
+      "step_seconds": 300,
+      "arms": [
+        "native",
+        "frozen_safe_cooling_variation"
+      ],
+      "source": "PROPOSED_CUSTOM_INITIALIZATION",
+      "new_instances": 2,
+      "new_scored_advances": 1728,
+      "runtime_status": "NOT_TESTED",
+      "collector_compatibility": "D2_NEW_VERSION_REQUIRED; existing frozen v2 rejects custom initialize",
+      "public_weather_only": {
+        "source_role": "EXOGENOUS_PUBLIC_WEATHER_ONLY_NOT_SIMULATED_BUILDING_OUTCOME",
+        "samples": 289,
+        "outdoor_min_c": 2.8000000000000114,
+        "outdoor_max_c": 20.600000000000023,
+        "outdoor_mean_c": 10.940506055349502,
+        "global_solar_peak_wm2": 985.445474697,
+        "global_solar_kwh_m2": 16.500000000001084,
+        "low_solar_samples_below_20_wm2": 129,
+        "heating_or_cooling_building_activity": "UNKNOWN_WITHOUT_NEW_RUNTIME"
+      },
+      "prior_exposed_connections": []
+    },
+    {
+      "group_id": "D2_G146",
+      "start_day_offset": 146,
+      "calendar_regime_bin": "spring",
+      "partition": "development",
+      "warmup_start_s": 12009600,
+      "scored_start_s": 12614400,
+      "scored_end_s": 12873600,
+      "scored_hours": 72,
+      "warmup_seconds": 604800,
+      "step_seconds": 300,
+      "arms": [
+        "native",
+        "frozen_safe_cooling_variation"
+      ],
+      "source": "REUSE_QUALIFIED_D1_V2",
+      "new_instances": 0,
+      "new_scored_advances": 0,
+      "runtime_status": "VERIFIED_EXISTING_72H_PAIR",
+      "collector_compatibility": "D2_NEW_VERSION_REQUIRED; existing frozen v2 rejects custom initialize",
+      "public_weather_only": {
+        "source_role": "EXOGENOUS_PUBLIC_WEATHER_ONLY_NOT_SIMULATED_BUILDING_OUTCOME",
+        "samples": 289,
+        "outdoor_min_c": 8.765364583000007,
+        "outdoor_max_c": 19.415104167000038,
+        "outdoor_mean_c": 14.007115051903138,
+        "global_solar_peak_wm2": 753.001498288,
+        "global_solar_kwh_m2": 15.762999999999638,
+        "low_solar_samples_below_20_wm2": 125,
+        "heating_or_cooling_building_activity": "UNKNOWN_WITHOUT_NEW_RUNTIME"
+      },
+      "prior_exposed_connections": [
+        "EXPOSED_D1_COOL_BM01"
+      ],
+      "legacy_source_group_id": "qualification_cool_146",
+      "reused_run_ids": [
+        "V2_Q01_N",
+        "V2_Q02_X"
+      ]
+    },
+    {
+      "group_id": "D2_G174",
+      "start_day_offset": 174,
+      "calendar_regime_bin": "summer",
+      "partition": "development",
+      "warmup_start_s": 14428800,
+      "scored_start_s": 15033600,
+      "scored_end_s": 15292800,
+      "scored_hours": 72,
+      "warmup_seconds": 604800,
+      "step_seconds": 300,
+      "arms": [
+        "native",
+        "frozen_safe_cooling_variation"
+      ],
+      "source": "PROPOSED_CUSTOM_INITIALIZATION",
+      "new_instances": 2,
+      "new_scored_advances": 1728,
+      "runtime_status": "NOT_TESTED",
+      "collector_compatibility": "D2_NEW_VERSION_REQUIRED; existing frozen v2 rejects custom initialize",
+      "public_weather_only": {
+        "source_role": "EXOGENOUS_PUBLIC_WEATHER_ONLY_NOT_SIMULATED_BUILDING_OUTCOME",
+        "samples": 289,
+        "outdoor_min_c": 6.863983051000048,
+        "outdoor_max_c": 31.700000000000045,
+        "outdoor_mean_c": 21.617265895318365,
+        "global_solar_peak_wm2": 1025.18679868,
+        "global_solar_kwh_m2": 26.431999999997576,
+        "low_solar_samples_below_20_wm2": 118,
+        "heating_or_cooling_building_activity": "UNKNOWN_WITHOUT_NEW_RUNTIME"
+      },
+      "prior_exposed_connections": []
+    },
+    {
+      "group_id": "D2_G196",
+      "start_day_offset": 196,
+      "calendar_regime_bin": "summer",
+      "partition": "validation",
+      "warmup_start_s": 16329600,
+      "scored_start_s": 16934400,
+      "scored_end_s": 17193600,
+      "scored_hours": 72,
+      "warmup_seconds": 604800,
+      "step_seconds": 300,
+      "arms": [
+        "native",
+        "frozen_safe_cooling_variation"
+      ],
+      "source": "PROPOSED_CUSTOM_INITIALIZATION",
+      "new_instances": 2,
+      "new_scored_advances": 1728,
+      "runtime_status": "NOT_TESTED",
+      "collector_compatibility": "D2_NEW_VERSION_REQUIRED; existing frozen v2 rejects custom initialize",
+      "public_weather_only": {
+        "source_role": "EXOGENOUS_PUBLIC_WEATHER_ONLY_NOT_SIMULATED_BUILDING_OUTCOME",
+        "samples": 289,
+        "outdoor_min_c": 13.006777596999996,
+        "outdoor_max_c": 31.967934783000032,
+        "outdoor_mean_c": 22.26627842312113,
+        "global_solar_peak_wm2": 978.699796196,
+        "global_solar_kwh_m2": 22.987000000000474,
+        "low_solar_samples_below_20_wm2": 123,
+        "heating_or_cooling_building_activity": "UNKNOWN_WITHOUT_NEW_RUNTIME"
+      },
+      "prior_exposed_connections": []
+    },
+    {
+      "group_id": "D2_G218",
+      "start_day_offset": 218,
+      "calendar_regime_bin": "summer",
+      "partition": "development",
+      "warmup_start_s": 18230400,
+      "scored_start_s": 18835200,
+      "scored_end_s": 19094400,
+      "scored_hours": 72,
+      "warmup_seconds": 604800,
+      "step_seconds": 300,
+      "arms": [
+        "native",
+        "frozen_safe_cooling_variation"
+      ],
+      "source": "PROPOSED_CUSTOM_INITIALIZATION",
+      "new_instances": 2,
+      "new_scored_advances": 1728,
+      "runtime_status": "NOT_TESTED",
+      "collector_compatibility": "D2_NEW_VERSION_REQUIRED; existing frozen v2 rejects custom initialize",
+      "public_weather_only": {
+        "source_role": "EXOGENOUS_PUBLIC_WEATHER_ONLY_NOT_SIMULATED_BUILDING_OUTCOME",
+        "samples": 289,
+        "outdoor_min_c": 12.717434211000011,
+        "outdoor_max_c": 28.446754808000037,
+        "outdoor_mean_c": 18.42892517300348,
+        "global_solar_peak_wm2": 868.983089911,
+        "global_solar_kwh_m2": 14.434085811250812,
+        "low_solar_samples_below_20_wm2": 136,
+        "heating_or_cooling_building_activity": "UNKNOWN_WITHOUT_NEW_RUNTIME"
+      },
+      "prior_exposed_connections": []
+    },
+    {
+      "group_id": "D2_G240",
+      "start_day_offset": 240,
+      "calendar_regime_bin": "summer",
+      "partition": "protected_final_test",
+      "warmup_start_s": 20131200,
+      "scored_start_s": 20736000,
+      "scored_end_s": 20995200,
+      "scored_hours": 72,
+      "warmup_seconds": 604800,
+      "step_seconds": 300,
+      "arms": [
+        "native",
+        "frozen_safe_cooling_variation"
+      ],
+      "source": "PROPOSED_CUSTOM_INITIALIZATION",
+      "new_instances": 2,
+      "new_scored_advances": 1728,
+      "runtime_status": "NOT_TESTED",
+      "collector_compatibility": "D2_NEW_VERSION_REQUIRED; existing frozen v2 rejects custom initialize",
+      "public_weather_only": {
+        "source_role": "EXOGENOUS_PUBLIC_WEATHER_ONLY_NOT_SIMULATED_BUILDING_OUTCOME",
+        "samples": 289,
+        "outdoor_min_c": 13.821701388999998,
+        "outdoor_max_c": 32.80000000000001,
+        "outdoor_mean_c": 22.146777119937738,
+        "global_solar_peak_wm2": 924.109062689,
+        "global_solar_kwh_m2": 18.969000000000893,
+        "low_solar_samples_below_20_wm2": 142,
+        "heating_or_cooling_building_activity": "UNKNOWN_WITHOUT_NEW_RUNTIME"
+      },
+      "prior_exposed_connections": []
+    },
+    {
+      "group_id": "D2_G258",
+      "start_day_offset": 258,
+      "calendar_regime_bin": "autumn",
+      "partition": "development",
+      "warmup_start_s": 21686400,
+      "scored_start_s": 22291200,
+      "scored_end_s": 22550400,
+      "scored_hours": 72,
+      "warmup_seconds": 604800,
+      "step_seconds": 300,
+      "arms": [
+        "native",
+        "frozen_safe_cooling_variation"
+      ],
+      "source": "PROPOSED_CUSTOM_INITIALIZATION",
+      "new_instances": 2,
+      "new_scored_advances": 1728,
+      "runtime_status": "NOT_TESTED",
+      "collector_compatibility": "D2_NEW_VERSION_REQUIRED; existing frozen v2 rejects custom initialize",
+      "public_weather_only": {
+        "source_role": "EXOGENOUS_PUBLIC_WEATHER_ONLY_NOT_SIMULATED_BUILDING_OUTCOME",
+        "samples": 289,
+        "outdoor_min_c": 8.300000000000011,
+        "outdoor_max_c": 29.149537037000016,
+        "outdoor_mean_c": 17.33132704367823,
+        "global_solar_peak_wm2": 863.14420339,
+        "global_solar_kwh_m2": 18.629999999998994,
+        "low_solar_samples_below_20_wm2": 148,
+        "heating_or_cooling_building_activity": "UNKNOWN_WITHOUT_NEW_RUNTIME"
+      },
+      "prior_exposed_connections": []
+    },
+    {
+      "group_id": "D2_G270",
+      "start_day_offset": 270,
+      "calendar_regime_bin": "autumn",
+      "partition": "protected_final_test",
+      "warmup_start_s": 22723200,
+      "scored_start_s": 23328000,
+      "scored_end_s": 23587200,
+      "scored_hours": 72,
+      "warmup_seconds": 604800,
+      "step_seconds": 300,
+      "arms": [
+        "native",
+        "frozen_safe_cooling_variation"
+      ],
+      "source": "PROPOSED_CUSTOM_INITIALIZATION",
+      "new_instances": 2,
+      "new_scored_advances": 1728,
+      "runtime_status": "NOT_TESTED",
+      "collector_compatibility": "D2_NEW_VERSION_REQUIRED; existing frozen v2 rejects custom initialize",
+      "public_weather_only": {
+        "source_role": "EXOGENOUS_PUBLIC_WEATHER_ONLY_NOT_SIMULATED_BUILDING_OUTCOME",
+        "samples": 289,
+        "outdoor_min_c": 2.6631152749999956,
+        "outdoor_max_c": 27.267984803000047,
+        "outdoor_mean_c": 16.260695748861615,
+        "global_solar_peak_wm2": 813.815156305,
+        "global_solar_kwh_m2": 16.33976525453834,
+        "low_solar_samples_below_20_wm2": 154,
+        "heating_or_cooling_building_activity": "UNKNOWN_WITHOUT_NEW_RUNTIME"
+      },
+      "prior_exposed_connections": []
+    },
+    {
+      "group_id": "D2_G288",
+      "start_day_offset": 288,
+      "calendar_regime_bin": "autumn",
+      "partition": "development",
+      "warmup_start_s": 24278400,
+      "scored_start_s": 24883200,
+      "scored_end_s": 25142400,
+      "scored_hours": 72,
+      "warmup_seconds": 604800,
+      "step_seconds": 300,
+      "arms": [
+        "native",
+        "frozen_safe_cooling_variation"
+      ],
+      "source": "PROPOSED_CUSTOM_INITIALIZATION",
+      "new_instances": 2,
+      "new_scored_advances": 1728,
+      "runtime_status": "NOT_TESTED",
+      "collector_compatibility": "D2_NEW_VERSION_REQUIRED; existing frozen v2 rejects custom initialize",
+      "public_weather_only": {
+        "source_role": "EXOGENOUS_PUBLIC_WEATHER_ONLY_NOT_SIMULATED_BUILDING_OUTCOME",
+        "samples": 289,
+        "outdoor_min_c": 0.0,
+        "outdoor_max_c": 26.700000000000045,
+        "outdoor_mean_c": 12.219774545847777,
+        "global_solar_peak_wm2": 719.166804972,
+        "global_solar_kwh_m2": 14.148327829661852,
+        "low_solar_samples_below_20_wm2": 161,
+        "heating_or_cooling_building_activity": "UNKNOWN_WITHOUT_NEW_RUNTIME"
+      },
+      "prior_exposed_connections": [
+        "EXPOSED_C4_D4_PEAK_COOL"
+      ]
+    },
+    {
+      "group_id": "D2_G310",
+      "start_day_offset": 310,
+      "calendar_regime_bin": "autumn",
+      "partition": "validation",
+      "warmup_start_s": 26179200,
+      "scored_start_s": 26784000,
+      "scored_end_s": 27043200,
+      "scored_hours": 72,
+      "warmup_seconds": 604800,
+      "step_seconds": 300,
+      "arms": [
+        "native",
+        "frozen_safe_cooling_variation"
+      ],
+      "source": "PROPOSED_CUSTOM_INITIALIZATION",
+      "new_instances": 2,
+      "new_scored_advances": 1728,
+      "runtime_status": "NOT_TESTED",
+      "collector_compatibility": "D2_NEW_VERSION_REQUIRED; existing frozen v2 rejects custom initialize",
+      "public_weather_only": {
+        "source_role": "EXOGENOUS_PUBLIC_WEATHER_ONLY_NOT_SIMULATED_BUILDING_OUTCOME",
+        "samples": 289,
+        "outdoor_min_c": -3.3984375,
+        "outdoor_max_c": 16.21071428600004,
+        "outdoor_mean_c": 5.846107266425629,
+        "global_solar_peak_wm2": 573.641025641,
+        "global_solar_kwh_m2": 9.01500000000021,
+        "low_solar_samples_below_20_wm2": 171,
+        "heating_or_cooling_building_activity": "UNKNOWN_WITHOUT_NEW_RUNTIME"
+      },
+      "prior_exposed_connections": []
+    },
+    {
+      "group_id": "D2_G340",
+      "start_day_offset": 340,
+      "calendar_regime_bin": "winter",
+      "partition": "protected_final_test",
+      "warmup_start_s": 28771200,
+      "scored_start_s": 29376000,
+      "scored_end_s": 29635200,
+      "scored_hours": 72,
+      "warmup_seconds": 604800,
+      "step_seconds": 300,
+      "arms": [
+        "native",
+        "frozen_safe_cooling_variation"
+      ],
+      "source": "PROPOSED_CUSTOM_INITIALIZATION",
+      "new_instances": 2,
+      "new_scored_advances": 1728,
+      "runtime_status": "NOT_TESTED",
+      "collector_compatibility": "D2_NEW_VERSION_REQUIRED; existing frozen v2 rejects custom initialize",
+      "public_weather_only": {
+        "source_role": "EXOGENOUS_PUBLIC_WEATHER_ONLY_NOT_SIMULATED_BUILDING_OUTCOME",
+        "samples": 289,
+        "outdoor_min_c": -19.399999999999977,
+        "outdoor_max_c": 3.912382813000022,
+        "outdoor_mean_c": -9.621640715117625,
+        "global_solar_peak_wm2": 489.227578285,
+        "global_solar_kwh_m2": 5.885595810185134,
+        "low_solar_samples_below_20_wm2": 187,
+        "heating_or_cooling_building_activity": "UNKNOWN_WITHOUT_NEW_RUNTIME"
+      },
+      "prior_exposed_connections": []
+    },
+    {
+      "group_id": "D2_G354",
+      "start_day_offset": 354,
+      "calendar_regime_bin": "winter",
+      "partition": "validation",
+      "warmup_start_s": 29980800,
+      "scored_start_s": 30585600,
+      "scored_end_s": 30844800,
+      "scored_hours": 72,
+      "warmup_seconds": 604800,
+      "step_seconds": 300,
+      "arms": [
+        "native",
+        "frozen_safe_cooling_variation"
+      ],
+      "source": "PROPOSED_CUSTOM_INITIALIZATION",
+      "new_instances": 2,
+      "new_scored_advances": 1728,
+      "runtime_status": "NOT_TESTED",
+      "collector_compatibility": "D2_NEW_VERSION_REQUIRED; existing frozen v2 rejects custom initialize",
+      "public_weather_only": {
+        "source_role": "EXOGENOUS_PUBLIC_WEATHER_ONLY_NOT_SIMULATED_BUILDING_OUTCOME",
+        "samples": 289,
+        "outdoor_min_c": -2.8083333329999505,
+        "outdoor_max_c": 19.400000000000034,
+        "outdoor_mean_c": 5.088073096892758,
+        "global_solar_peak_wm2": 477.519966015,
+        "global_solar_kwh_m2": 7.1733564450892695,
+        "low_solar_samples_below_20_wm2": 185,
+        "heating_or_cooling_building_activity": "UNKNOWN_WITHOUT_NEW_RUNTIME"
+      },
+      "prior_exposed_connections": []
+    }
+  ],
+  "minimum": [
+    {
+      "group_id": "D2_G020",
+      "start_day_offset": 20,
+      "calendar_regime_bin": "winter",
+      "partition": "development",
+      "warmup_start_s": 1123200,
+      "scored_start_s": 1728000,
+      "scored_end_s": 1987200,
+      "scored_hours": 72,
+      "warmup_seconds": 604800,
+      "step_seconds": 300,
+      "arms": [
+        "native",
+        "frozen_safe_cooling_variation"
+      ],
+      "source": "PROPOSED_CUSTOM_INITIALIZATION",
+      "new_instances": 2,
+      "new_scored_advances": 1728,
+      "runtime_status": "NOT_TESTED",
+      "collector_compatibility": "D2_NEW_VERSION_REQUIRED; existing frozen v2 rejects custom initialize",
+      "public_weather_only": {
+        "source_role": "EXOGENOUS_PUBLIC_WEATHER_ONLY_NOT_SIMULATED_BUILDING_OUTCOME",
+        "samples": 289,
+        "outdoor_min_c": -20.691544117999968,
+        "outdoor_max_c": 11.700000000000045,
+        "outdoor_mean_c": -4.1408814261107025,
+        "global_solar_peak_wm2": 547.347595698,
+        "global_solar_kwh_m2": 9.729999999999663,
+        "low_solar_samples_below_20_wm2": 173,
+        "heating_or_cooling_building_activity": "UNKNOWN_WITHOUT_NEW_RUNTIME"
+      },
+      "prior_exposed_connections": []
+    },
+    {
+      "group_id": "D2_G044",
+      "start_day_offset": 44,
+      "calendar_regime_bin": "winter",
+      "partition": "development",
+      "warmup_start_s": 3196800,
+      "scored_start_s": 3801600,
+      "scored_end_s": 4060800,
+      "scored_hours": 72,
+      "warmup_seconds": 604800,
+      "step_seconds": 300,
+      "arms": [
+        "native",
+        "frozen_safe_cooling_variation"
+      ],
+      "source": "REUSE_QUALIFIED_D1_V2",
+      "new_instances": 0,
+      "new_scored_advances": 0,
+      "runtime_status": "VERIFIED_EXISTING_72H_PAIR",
+      "collector_compatibility": "D2_NEW_VERSION_REQUIRED; existing frozen v2 rejects custom initialize",
+      "public_weather_only": {
+        "source_role": "EXOGENOUS_PUBLIC_WEATHER_ONLY_NOT_SIMULATED_BUILDING_OUTCOME",
+        "samples": 289,
+        "outdoor_min_c": -11.754140624999991,
+        "outdoor_max_c": 6.7000000000000455,
+        "outdoor_mean_c": -3.8426210693252347,
+        "global_solar_peak_wm2": 660.378202936,
+        "global_solar_kwh_m2": 7.570000078126071,
+        "low_solar_samples_below_20_wm2": 173,
+        "heating_or_cooling_building_activity": "UNKNOWN_WITHOUT_NEW_RUNTIME"
+      },
+      "prior_exposed_connections": [
+        "EXPOSED_D1_HEAT"
+      ]
+    },
+    {
+      "group_id": "D2_G074",
+      "start_day_offset": 74,
+      "calendar_regime_bin": "spring",
+      "partition": "development",
+      "warmup_start_s": 5788800,
+      "scored_start_s": 6393600,
+      "scored_end_s": 6652800,
+      "scored_hours": 72,
+      "warmup_seconds": 604800,
+      "step_seconds": 300,
+      "arms": [
+        "native",
+        "frozen_safe_cooling_variation"
+      ],
+      "source": "PROPOSED_CUSTOM_INITIALIZATION",
+      "new_instances": 2,
+      "new_scored_advances": 1728,
+      "runtime_status": "NOT_TESTED",
+      "collector_compatibility": "D2_NEW_VERSION_REQUIRED; existing frozen v2 rejects custom initialize",
+      "public_weather_only": {
+        "source_role": "EXOGENOUS_PUBLIC_WEATHER_ONLY_NOT_SIMULATED_BUILDING_OUTCOME",
+        "samples": 289,
+        "outdoor_min_c": -7.331396483999981,
+        "outdoor_max_c": 16.700000000000045,
+        "outdoor_mean_c": 2.3780243025501955,
+        "global_solar_peak_wm2": 842.752011877,
+        "global_solar_kwh_m2": 15.122000000000597,
+        "low_solar_samples_below_20_wm2": 149,
+        "heating_or_cooling_building_activity": "UNKNOWN_WITHOUT_NEW_RUNTIME"
+      },
+      "prior_exposed_connections": []
+    },
+    {
+      "group_id": "D2_G100",
+      "start_day_offset": 100,
+      "calendar_regime_bin": "spring",
+      "partition": "validation",
+      "warmup_start_s": 8035200,
+      "scored_start_s": 8640000,
+      "scored_end_s": 8899200,
+      "scored_hours": 72,
+      "warmup_seconds": 604800,
+      "step_seconds": 300,
+      "arms": [
+        "native",
+        "frozen_safe_cooling_variation"
+      ],
+      "source": "PROPOSED_CUSTOM_INITIALIZATION",
+      "new_instances": 2,
+      "new_scored_advances": 1728,
+      "runtime_status": "NOT_TESTED",
+      "collector_compatibility": "D2_NEW_VERSION_REQUIRED; existing frozen v2 rejects custom initialize",
+      "public_weather_only": {
+        "source_role": "EXOGENOUS_PUBLIC_WEATHER_ONLY_NOT_SIMULATED_BUILDING_OUTCOME",
+        "samples": 289,
+        "outdoor_min_c": 0.0,
+        "outdoor_max_c": 13.900000000000034,
+        "outdoor_mean_c": 4.779117106401408,
+        "global_solar_peak_wm2": 855.089879101,
+        "global_solar_kwh_m2": 9.36532469153059,
+        "low_solar_samples_below_20_wm2": 145,
+        "heating_or_cooling_building_activity": "UNKNOWN_WITHOUT_NEW_RUNTIME"
+      },
+      "prior_exposed_connections": []
+    },
+    {
+      "group_id": "D2_G146",
+      "start_day_offset": 146,
+      "calendar_regime_bin": "spring",
+      "partition": "development",
+      "warmup_start_s": 12009600,
+      "scored_start_s": 12614400,
+      "scored_end_s": 12873600,
+      "scored_hours": 72,
+      "warmup_seconds": 604800,
+      "step_seconds": 300,
+      "arms": [
+        "native",
+        "frozen_safe_cooling_variation"
+      ],
+      "source": "REUSE_QUALIFIED_D1_V2",
+      "new_instances": 0,
+      "new_scored_advances": 0,
+      "runtime_status": "VERIFIED_EXISTING_72H_PAIR",
+      "collector_compatibility": "D2_NEW_VERSION_REQUIRED; existing frozen v2 rejects custom initialize",
+      "public_weather_only": {
+        "source_role": "EXOGENOUS_PUBLIC_WEATHER_ONLY_NOT_SIMULATED_BUILDING_OUTCOME",
+        "samples": 289,
+        "outdoor_min_c": 8.765364583000007,
+        "outdoor_max_c": 19.415104167000038,
+        "outdoor_mean_c": 14.007115051903138,
+        "global_solar_peak_wm2": 753.001498288,
+        "global_solar_kwh_m2": 15.762999999999638,
+        "low_solar_samples_below_20_wm2": 125,
+        "heating_or_cooling_building_activity": "UNKNOWN_WITHOUT_NEW_RUNTIME"
+      },
+      "prior_exposed_connections": [
+        "EXPOSED_D1_COOL_BM01"
+      ]
+    },
+    {
+      "group_id": "D2_G174",
+      "start_day_offset": 174,
+      "calendar_regime_bin": "summer",
+      "partition": "development",
+      "warmup_start_s": 14428800,
+      "scored_start_s": 15033600,
+      "scored_end_s": 15292800,
+      "scored_hours": 72,
+      "warmup_seconds": 604800,
+      "step_seconds": 300,
+      "arms": [
+        "native",
+        "frozen_safe_cooling_variation"
+      ],
+      "source": "PROPOSED_CUSTOM_INITIALIZATION",
+      "new_instances": 2,
+      "new_scored_advances": 1728,
+      "runtime_status": "NOT_TESTED",
+      "collector_compatibility": "D2_NEW_VERSION_REQUIRED; existing frozen v2 rejects custom initialize",
+      "public_weather_only": {
+        "source_role": "EXOGENOUS_PUBLIC_WEATHER_ONLY_NOT_SIMULATED_BUILDING_OUTCOME",
+        "samples": 289,
+        "outdoor_min_c": 6.863983051000048,
+        "outdoor_max_c": 31.700000000000045,
+        "outdoor_mean_c": 21.617265895318365,
+        "global_solar_peak_wm2": 1025.18679868,
+        "global_solar_kwh_m2": 26.431999999997576,
+        "low_solar_samples_below_20_wm2": 118,
+        "heating_or_cooling_building_activity": "UNKNOWN_WITHOUT_NEW_RUNTIME"
+      },
+      "prior_exposed_connections": []
+    },
+    {
+      "group_id": "D2_G288",
+      "start_day_offset": 288,
+      "calendar_regime_bin": "autumn",
+      "partition": "development",
+      "warmup_start_s": 24278400,
+      "scored_start_s": 24883200,
+      "scored_end_s": 25142400,
+      "scored_hours": 72,
+      "warmup_seconds": 604800,
+      "step_seconds": 300,
+      "arms": [
+        "native",
+        "frozen_safe_cooling_variation"
+      ],
+      "source": "PROPOSED_CUSTOM_INITIALIZATION",
+      "new_instances": 2,
+      "new_scored_advances": 1728,
+      "runtime_status": "NOT_TESTED",
+      "collector_compatibility": "D2_NEW_VERSION_REQUIRED; existing frozen v2 rejects custom initialize",
+      "public_weather_only": {
+        "source_role": "EXOGENOUS_PUBLIC_WEATHER_ONLY_NOT_SIMULATED_BUILDING_OUTCOME",
+        "samples": 289,
+        "outdoor_min_c": 0.0,
+        "outdoor_max_c": 26.700000000000045,
+        "outdoor_mean_c": 12.219774545847777,
+        "global_solar_peak_wm2": 719.166804972,
+        "global_solar_kwh_m2": 14.148327829661852,
+        "low_solar_samples_below_20_wm2": 161,
+        "heating_or_cooling_building_activity": "UNKNOWN_WITHOUT_NEW_RUNTIME"
+      },
+      "prior_exposed_connections": [
+        "EXPOSED_C4_D4_PEAK_COOL"
+      ]
+    },
+    {
+      "group_id": "D2_G354",
+      "start_day_offset": 354,
+      "calendar_regime_bin": "winter",
+      "partition": "validation",
+      "warmup_start_s": 29980800,
+      "scored_start_s": 30585600,
+      "scored_end_s": 30844800,
+      "scored_hours": 72,
+      "warmup_seconds": 604800,
+      "step_seconds": 300,
+      "arms": [
+        "native",
+        "frozen_safe_cooling_variation"
+      ],
+      "source": "PROPOSED_CUSTOM_INITIALIZATION",
+      "new_instances": 2,
+      "new_scored_advances": 1728,
+      "runtime_status": "NOT_TESTED",
+      "collector_compatibility": "D2_NEW_VERSION_REQUIRED; existing frozen v2 rejects custom initialize",
+      "public_weather_only": {
+        "source_role": "EXOGENOUS_PUBLIC_WEATHER_ONLY_NOT_SIMULATED_BUILDING_OUTCOME",
+        "samples": 289,
+        "outdoor_min_c": -2.8083333329999505,
+        "outdoor_max_c": 19.400000000000034,
+        "outdoor_mean_c": 5.088073096892758,
+        "global_solar_peak_wm2": 477.519966015,
+        "global_solar_kwh_m2": 7.1733564450892695,
+        "low_solar_samples_below_20_wm2": 185,
+        "heating_or_cooling_building_activity": "UNKNOWN_WITHOUT_NEW_RUNTIME"
+      },
+      "prior_exposed_connections": []
+    }
+  ],
+  "expanded": [
+    {
+      "group_id": "D2_G020",
+      "start_day_offset": 20,
+      "calendar_regime_bin": "winter",
+      "partition": "development",
+      "warmup_start_s": 1123200,
+      "scored_start_s": 1728000,
+      "scored_end_s": 1987200,
+      "scored_hours": 72,
+      "warmup_seconds": 604800,
+      "step_seconds": 300,
+      "arms": [
+        "native",
+        "frozen_safe_cooling_variation"
+      ],
+      "source": "PROPOSED_CUSTOM_INITIALIZATION",
+      "new_instances": 2,
+      "new_scored_advances": 1728,
+      "runtime_status": "NOT_TESTED",
+      "collector_compatibility": "D2_NEW_VERSION_REQUIRED; existing frozen v2 rejects custom initialize",
+      "public_weather_only": {
+        "source_role": "EXOGENOUS_PUBLIC_WEATHER_ONLY_NOT_SIMULATED_BUILDING_OUTCOME",
+        "samples": 289,
+        "outdoor_min_c": -20.691544117999968,
+        "outdoor_max_c": 11.700000000000045,
+        "outdoor_mean_c": -4.1408814261107025,
+        "global_solar_peak_wm2": 547.347595698,
+        "global_solar_kwh_m2": 9.729999999999663,
+        "low_solar_samples_below_20_wm2": 173,
+        "heating_or_cooling_building_activity": "UNKNOWN_WITHOUT_NEW_RUNTIME"
+      },
+      "prior_exposed_connections": []
+    },
+    {
+      "group_id": "D2_G032",
+      "start_day_offset": 32,
+      "calendar_regime_bin": "winter",
+      "partition": "development",
+      "warmup_start_s": 2160000,
+      "scored_start_s": 2764800,
+      "scored_end_s": 3024000,
+      "scored_hours": 72,
+      "warmup_seconds": 604800,
+      "step_seconds": 300,
+      "arms": [
+        "native",
+        "frozen_safe_cooling_variation"
+      ],
+      "source": "PROPOSED_CUSTOM_INITIALIZATION",
+      "new_instances": 2,
+      "new_scored_advances": 1728,
+      "runtime_status": "NOT_TESTED",
+      "collector_compatibility": "D2_NEW_VERSION_REQUIRED; existing frozen v2 rejects custom initialize"
+    },
+    {
+      "group_id": "D2_G044",
+      "start_day_offset": 44,
+      "calendar_regime_bin": "winter",
+      "partition": "development",
+      "warmup_start_s": 3196800,
+      "scored_start_s": 3801600,
+      "scored_end_s": 4060800,
+      "scored_hours": 72,
+      "warmup_seconds": 604800,
+      "step_seconds": 300,
+      "arms": [
+        "native",
+        "frozen_safe_cooling_variation"
+      ],
+      "source": "REUSE_QUALIFIED_D1_V2",
+      "new_instances": 0,
+      "new_scored_advances": 0,
+      "runtime_status": "VERIFIED_EXISTING_72H_PAIR",
+      "collector_compatibility": "D2_NEW_VERSION_REQUIRED; existing frozen v2 rejects custom initialize",
+      "public_weather_only": {
+        "source_role": "EXOGENOUS_PUBLIC_WEATHER_ONLY_NOT_SIMULATED_BUILDING_OUTCOME",
+        "samples": 289,
+        "outdoor_min_c": -11.754140624999991,
+        "outdoor_max_c": 6.7000000000000455,
+        "outdoor_mean_c": -3.8426210693252347,
+        "global_solar_peak_wm2": 660.378202936,
+        "global_solar_kwh_m2": 7.570000078126071,
+        "low_solar_samples_below_20_wm2": 173,
+        "heating_or_cooling_building_activity": "UNKNOWN_WITHOUT_NEW_RUNTIME"
+      },
+      "prior_exposed_connections": [
+        "EXPOSED_D1_HEAT"
+      ]
+    },
+    {
+      "group_id": "D2_G058",
+      "start_day_offset": 58,
+      "calendar_regime_bin": "winter_spring_transition",
+      "partition": "development",
+      "warmup_start_s": 4406400,
+      "scored_start_s": 5011200,
+      "scored_end_s": 5270400,
+      "scored_hours": 72,
+      "warmup_seconds": 604800,
+      "step_seconds": 300,
+      "arms": [
+        "native",
+        "frozen_safe_cooling_variation"
+      ],
+      "source": "PROPOSED_CUSTOM_INITIALIZATION",
+      "new_instances": 2,
+      "new_scored_advances": 1728,
+      "runtime_status": "NOT_TESTED",
+      "collector_compatibility": "D2_NEW_VERSION_REQUIRED; existing frozen v2 rejects custom initialize"
+    },
+    {
+      "group_id": "D2_G074",
+      "start_day_offset": 74,
+      "calendar_regime_bin": "spring",
+      "partition": "development",
+      "warmup_start_s": 5788800,
+      "scored_start_s": 6393600,
+      "scored_end_s": 6652800,
+      "scored_hours": 72,
+      "warmup_seconds": 604800,
+      "step_seconds": 300,
+      "arms": [
+        "native",
+        "frozen_safe_cooling_variation"
+      ],
+      "source": "PROPOSED_CUSTOM_INITIALIZATION",
+      "new_instances": 2,
+      "new_scored_advances": 1728,
+      "runtime_status": "NOT_TESTED",
+      "collector_compatibility": "D2_NEW_VERSION_REQUIRED; existing frozen v2 rejects custom initialize",
+      "public_weather_only": {
+        "source_role": "EXOGENOUS_PUBLIC_WEATHER_ONLY_NOT_SIMULATED_BUILDING_OUTCOME",
+        "samples": 289,
+        "outdoor_min_c": -7.331396483999981,
+        "outdoor_max_c": 16.700000000000045,
+        "outdoor_mean_c": 2.3780243025501955,
+        "global_solar_peak_wm2": 842.752011877,
+        "global_solar_kwh_m2": 15.122000000000597,
+        "low_solar_samples_below_20_wm2": 149,
+        "heating_or_cooling_building_activity": "UNKNOWN_WITHOUT_NEW_RUNTIME"
+      },
+      "prior_exposed_connections": []
+    },
+    {
+      "group_id": "D2_G086",
+      "start_day_offset": 86,
+      "calendar_regime_bin": "spring",
+      "partition": "validation",
+      "warmup_start_s": 6825600,
+      "scored_start_s": 7430400,
+      "scored_end_s": 7689600,
+      "scored_hours": 72,
+      "warmup_seconds": 604800,
+      "step_seconds": 300,
+      "arms": [
+        "native",
+        "frozen_safe_cooling_variation"
+      ],
+      "source": "PROPOSED_CUSTOM_INITIALIZATION",
+      "new_instances": 2,
+      "new_scored_advances": 1728,
+      "runtime_status": "NOT_TESTED",
+      "collector_compatibility": "D2_NEW_VERSION_REQUIRED; existing frozen v2 rejects custom initialize"
+    },
+    {
+      "group_id": "D2_G100",
+      "start_day_offset": 100,
+      "calendar_regime_bin": "spring",
+      "partition": "validation",
+      "warmup_start_s": 8035200,
+      "scored_start_s": 8640000,
+      "scored_end_s": 8899200,
+      "scored_hours": 72,
+      "warmup_seconds": 604800,
+      "step_seconds": 300,
+      "arms": [
+        "native",
+        "frozen_safe_cooling_variation"
+      ],
+      "source": "PROPOSED_CUSTOM_INITIALIZATION",
+      "new_instances": 2,
+      "new_scored_advances": 1728,
+      "runtime_status": "NOT_TESTED",
+      "collector_compatibility": "D2_NEW_VERSION_REQUIRED; existing frozen v2 rejects custom initialize",
+      "public_weather_only": {
+        "source_role": "EXOGENOUS_PUBLIC_WEATHER_ONLY_NOT_SIMULATED_BUILDING_OUTCOME",
+        "samples": 289,
+        "outdoor_min_c": 0.0,
+        "outdoor_max_c": 13.900000000000034,
+        "outdoor_mean_c": 4.779117106401408,
+        "global_solar_peak_wm2": 855.089879101,
+        "global_solar_kwh_m2": 9.36532469153059,
+        "low_solar_samples_below_20_wm2": 145,
+        "heating_or_cooling_building_activity": "UNKNOWN_WITHOUT_NEW_RUNTIME"
+      },
+      "prior_exposed_connections": []
+    },
+    {
+      "group_id": "D2_G112",
+      "start_day_offset": 112,
+      "calendar_regime_bin": "spring",
+      "partition": "protected_final_test",
+      "warmup_start_s": 9072000,
+      "scored_start_s": 9676800,
+      "scored_end_s": 9936000,
+      "scored_hours": 72,
+      "warmup_seconds": 604800,
+      "step_seconds": 300,
+      "arms": [
+        "native",
+        "frozen_safe_cooling_variation"
+      ],
+      "source": "PROPOSED_CUSTOM_INITIALIZATION",
+      "new_instances": 2,
+      "new_scored_advances": 1728,
+      "runtime_status": "NOT_TESTED",
+      "collector_compatibility": "D2_NEW_VERSION_REQUIRED; existing frozen v2 rejects custom initialize"
+    },
+    {
+      "group_id": "D2_G126",
+      "start_day_offset": 126,
+      "calendar_regime_bin": "spring",
+      "partition": "protected_final_test",
+      "warmup_start_s": 10281600,
+      "scored_start_s": 10886400,
+      "scored_end_s": 11145600,
+      "scored_hours": 72,
+      "warmup_seconds": 604800,
+      "step_seconds": 300,
+      "arms": [
+        "native",
+        "frozen_safe_cooling_variation"
+      ],
+      "source": "PROPOSED_CUSTOM_INITIALIZATION",
+      "new_instances": 2,
+      "new_scored_advances": 1728,
+      "runtime_status": "NOT_TESTED",
+      "collector_compatibility": "D2_NEW_VERSION_REQUIRED; existing frozen v2 rejects custom initialize",
+      "public_weather_only": {
+        "source_role": "EXOGENOUS_PUBLIC_WEATHER_ONLY_NOT_SIMULATED_BUILDING_OUTCOME",
+        "samples": 289,
+        "outdoor_min_c": 2.8000000000000114,
+        "outdoor_max_c": 20.600000000000023,
+        "outdoor_mean_c": 10.940506055349502,
+        "global_solar_peak_wm2": 985.445474697,
+        "global_solar_kwh_m2": 16.500000000001084,
+        "low_solar_samples_below_20_wm2": 129,
+        "heating_or_cooling_building_activity": "UNKNOWN_WITHOUT_NEW_RUNTIME"
+      },
+      "prior_exposed_connections": []
+    },
+    {
+      "group_id": "D2_G146",
+      "start_day_offset": 146,
+      "calendar_regime_bin": "spring",
+      "partition": "development",
+      "warmup_start_s": 12009600,
+      "scored_start_s": 12614400,
+      "scored_end_s": 12873600,
+      "scored_hours": 72,
+      "warmup_seconds": 604800,
+      "step_seconds": 300,
+      "arms": [
+        "native",
+        "frozen_safe_cooling_variation"
+      ],
+      "source": "REUSE_QUALIFIED_D1_V2",
+      "new_instances": 0,
+      "new_scored_advances": 0,
+      "runtime_status": "VERIFIED_EXISTING_72H_PAIR",
+      "collector_compatibility": "D2_NEW_VERSION_REQUIRED; existing frozen v2 rejects custom initialize",
+      "public_weather_only": {
+        "source_role": "EXOGENOUS_PUBLIC_WEATHER_ONLY_NOT_SIMULATED_BUILDING_OUTCOME",
+        "samples": 289,
+        "outdoor_min_c": 8.765364583000007,
+        "outdoor_max_c": 19.415104167000038,
+        "outdoor_mean_c": 14.007115051903138,
+        "global_solar_peak_wm2": 753.001498288,
+        "global_solar_kwh_m2": 15.762999999999638,
+        "low_solar_samples_below_20_wm2": 125,
+        "heating_or_cooling_building_activity": "UNKNOWN_WITHOUT_NEW_RUNTIME"
+      },
+      "prior_exposed_connections": [
+        "EXPOSED_D1_COOL_BM01"
+      ]
+    },
+    {
+      "group_id": "D2_G160",
+      "start_day_offset": 160,
+      "calendar_regime_bin": "summer",
+      "partition": "development",
+      "warmup_start_s": 13219200,
+      "scored_start_s": 13824000,
+      "scored_end_s": 14083200,
+      "scored_hours": 72,
+      "warmup_seconds": 604800,
+      "step_seconds": 300,
+      "arms": [
+        "native",
+        "frozen_safe_cooling_variation"
+      ],
+      "source": "PROPOSED_CUSTOM_INITIALIZATION",
+      "new_instances": 2,
+      "new_scored_advances": 1728,
+      "runtime_status": "NOT_TESTED",
+      "collector_compatibility": "D2_NEW_VERSION_REQUIRED; existing frozen v2 rejects custom initialize"
+    },
+    {
+      "group_id": "D2_G174",
+      "start_day_offset": 174,
+      "calendar_regime_bin": "summer",
+      "partition": "development",
+      "warmup_start_s": 14428800,
+      "scored_start_s": 15033600,
+      "scored_end_s": 15292800,
+      "scored_hours": 72,
+      "warmup_seconds": 604800,
+      "step_seconds": 300,
+      "arms": [
+        "native",
+        "frozen_safe_cooling_variation"
+      ],
+      "source": "PROPOSED_CUSTOM_INITIALIZATION",
+      "new_instances": 2,
+      "new_scored_advances": 1728,
+      "runtime_status": "NOT_TESTED",
+      "collector_compatibility": "D2_NEW_VERSION_REQUIRED; existing frozen v2 rejects custom initialize",
+      "public_weather_only": {
+        "source_role": "EXOGENOUS_PUBLIC_WEATHER_ONLY_NOT_SIMULATED_BUILDING_OUTCOME",
+        "samples": 289,
+        "outdoor_min_c": 6.863983051000048,
+        "outdoor_max_c": 31.700000000000045,
+        "outdoor_mean_c": 21.617265895318365,
+        "global_solar_peak_wm2": 1025.18679868,
+        "global_solar_kwh_m2": 26.431999999997576,
+        "low_solar_samples_below_20_wm2": 118,
+        "heating_or_cooling_building_activity": "UNKNOWN_WITHOUT_NEW_RUNTIME"
+      },
+      "prior_exposed_connections": []
+    },
+    {
+      "group_id": "D2_G185",
+      "start_day_offset": 185,
+      "calendar_regime_bin": "summer",
+      "partition": "validation",
+      "warmup_start_s": 15379200,
+      "scored_start_s": 15984000,
+      "scored_end_s": 16243200,
+      "scored_hours": 72,
+      "warmup_seconds": 604800,
+      "step_seconds": 300,
+      "arms": [
+        "native",
+        "frozen_safe_cooling_variation"
+      ],
+      "source": "PROPOSED_CUSTOM_INITIALIZATION",
+      "new_instances": 2,
+      "new_scored_advances": 1728,
+      "runtime_status": "NOT_TESTED",
+      "collector_compatibility": "D2_NEW_VERSION_REQUIRED; existing frozen v2 rejects custom initialize"
+    },
+    {
+      "group_id": "D2_G196",
+      "start_day_offset": 196,
+      "calendar_regime_bin": "summer",
+      "partition": "validation",
+      "warmup_start_s": 16329600,
+      "scored_start_s": 16934400,
+      "scored_end_s": 17193600,
+      "scored_hours": 72,
+      "warmup_seconds": 604800,
+      "step_seconds": 300,
+      "arms": [
+        "native",
+        "frozen_safe_cooling_variation"
+      ],
+      "source": "PROPOSED_CUSTOM_INITIALIZATION",
+      "new_instances": 2,
+      "new_scored_advances": 1728,
+      "runtime_status": "NOT_TESTED",
+      "collector_compatibility": "D2_NEW_VERSION_REQUIRED; existing frozen v2 rejects custom initialize",
+      "public_weather_only": {
+        "source_role": "EXOGENOUS_PUBLIC_WEATHER_ONLY_NOT_SIMULATED_BUILDING_OUTCOME",
+        "samples": 289,
+        "outdoor_min_c": 13.006777596999996,
+        "outdoor_max_c": 31.967934783000032,
+        "outdoor_mean_c": 22.26627842312113,
+        "global_solar_peak_wm2": 978.699796196,
+        "global_solar_kwh_m2": 22.987000000000474,
+        "low_solar_samples_below_20_wm2": 123,
+        "heating_or_cooling_building_activity": "UNKNOWN_WITHOUT_NEW_RUNTIME"
+      },
+      "prior_exposed_connections": []
+    },
+    {
+      "group_id": "D2_G207",
+      "start_day_offset": 207,
+      "calendar_regime_bin": "summer",
+      "partition": "protected_final_test",
+      "warmup_start_s": 17280000,
+      "scored_start_s": 17884800,
+      "scored_end_s": 18144000,
+      "scored_hours": 72,
+      "warmup_seconds": 604800,
+      "step_seconds": 300,
+      "arms": [
+        "native",
+        "frozen_safe_cooling_variation"
+      ],
+      "source": "PROPOSED_CUSTOM_INITIALIZATION",
+      "new_instances": 2,
+      "new_scored_advances": 1728,
+      "runtime_status": "NOT_TESTED",
+      "collector_compatibility": "D2_NEW_VERSION_REQUIRED; existing frozen v2 rejects custom initialize"
+    },
+    {
+      "group_id": "D2_G218",
+      "start_day_offset": 218,
+      "calendar_regime_bin": "summer",
+      "partition": "development",
+      "warmup_start_s": 18230400,
+      "scored_start_s": 18835200,
+      "scored_end_s": 19094400,
+      "scored_hours": 72,
+      "warmup_seconds": 604800,
+      "step_seconds": 300,
+      "arms": [
+        "native",
+        "frozen_safe_cooling_variation"
+      ],
+      "source": "PROPOSED_CUSTOM_INITIALIZATION",
+      "new_instances": 2,
+      "new_scored_advances": 1728,
+      "runtime_status": "NOT_TESTED",
+      "collector_compatibility": "D2_NEW_VERSION_REQUIRED; existing frozen v2 rejects custom initialize",
+      "public_weather_only": {
+        "source_role": "EXOGENOUS_PUBLIC_WEATHER_ONLY_NOT_SIMULATED_BUILDING_OUTCOME",
+        "samples": 289,
+        "outdoor_min_c": 12.717434211000011,
+        "outdoor_max_c": 28.446754808000037,
+        "outdoor_mean_c": 18.42892517300348,
+        "global_solar_peak_wm2": 868.983089911,
+        "global_solar_kwh_m2": 14.434085811250812,
+        "low_solar_samples_below_20_wm2": 136,
+        "heating_or_cooling_building_activity": "UNKNOWN_WITHOUT_NEW_RUNTIME"
+      },
+      "prior_exposed_connections": []
+    },
+    {
+      "group_id": "D2_G229",
+      "start_day_offset": 229,
+      "calendar_regime_bin": "summer",
+      "partition": "protected_final_test",
+      "warmup_start_s": 19180800,
+      "scored_start_s": 19785600,
+      "scored_end_s": 20044800,
+      "scored_hours": 72,
+      "warmup_seconds": 604800,
+      "step_seconds": 300,
+      "arms": [
+        "native",
+        "frozen_safe_cooling_variation"
+      ],
+      "source": "PROPOSED_CUSTOM_INITIALIZATION",
+      "new_instances": 2,
+      "new_scored_advances": 1728,
+      "runtime_status": "NOT_TESTED",
+      "collector_compatibility": "D2_NEW_VERSION_REQUIRED; existing frozen v2 rejects custom initialize"
+    },
+    {
+      "group_id": "D2_G240",
+      "start_day_offset": 240,
+      "calendar_regime_bin": "summer",
+      "partition": "protected_final_test",
+      "warmup_start_s": 20131200,
+      "scored_start_s": 20736000,
+      "scored_end_s": 20995200,
+      "scored_hours": 72,
+      "warmup_seconds": 604800,
+      "step_seconds": 300,
+      "arms": [
+        "native",
+        "frozen_safe_cooling_variation"
+      ],
+      "source": "PROPOSED_CUSTOM_INITIALIZATION",
+      "new_instances": 2,
+      "new_scored_advances": 1728,
+      "runtime_status": "NOT_TESTED",
+      "collector_compatibility": "D2_NEW_VERSION_REQUIRED; existing frozen v2 rejects custom initialize",
+      "public_weather_only": {
+        "source_role": "EXOGENOUS_PUBLIC_WEATHER_ONLY_NOT_SIMULATED_BUILDING_OUTCOME",
+        "samples": 289,
+        "outdoor_min_c": 13.821701388999998,
+        "outdoor_max_c": 32.80000000000001,
+        "outdoor_mean_c": 22.146777119937738,
+        "global_solar_peak_wm2": 924.109062689,
+        "global_solar_kwh_m2": 18.969000000000893,
+        "low_solar_samples_below_20_wm2": 142,
+        "heating_or_cooling_building_activity": "UNKNOWN_WITHOUT_NEW_RUNTIME"
+      },
+      "prior_exposed_connections": []
+    },
+    {
+      "group_id": "D2_G258",
+      "start_day_offset": 258,
+      "calendar_regime_bin": "autumn",
+      "partition": "development",
+      "warmup_start_s": 21686400,
+      "scored_start_s": 22291200,
+      "scored_end_s": 22550400,
+      "scored_hours": 72,
+      "warmup_seconds": 604800,
+      "step_seconds": 300,
+      "arms": [
+        "native",
+        "frozen_safe_cooling_variation"
+      ],
+      "source": "PROPOSED_CUSTOM_INITIALIZATION",
+      "new_instances": 2,
+      "new_scored_advances": 1728,
+      "runtime_status": "NOT_TESTED",
+      "collector_compatibility": "D2_NEW_VERSION_REQUIRED; existing frozen v2 rejects custom initialize",
+      "public_weather_only": {
+        "source_role": "EXOGENOUS_PUBLIC_WEATHER_ONLY_NOT_SIMULATED_BUILDING_OUTCOME",
+        "samples": 289,
+        "outdoor_min_c": 8.300000000000011,
+        "outdoor_max_c": 29.149537037000016,
+        "outdoor_mean_c": 17.33132704367823,
+        "global_solar_peak_wm2": 863.14420339,
+        "global_solar_kwh_m2": 18.629999999998994,
+        "low_solar_samples_below_20_wm2": 148,
+        "heating_or_cooling_building_activity": "UNKNOWN_WITHOUT_NEW_RUNTIME"
+      },
+      "prior_exposed_connections": []
+    },
+    {
+      "group_id": "D2_G270",
+      "start_day_offset": 270,
+      "calendar_regime_bin": "autumn",
+      "partition": "protected_final_test",
+      "warmup_start_s": 22723200,
+      "scored_start_s": 23328000,
+      "scored_end_s": 23587200,
+      "scored_hours": 72,
+      "warmup_seconds": 604800,
+      "step_seconds": 300,
+      "arms": [
+        "native",
+        "frozen_safe_cooling_variation"
+      ],
+      "source": "PROPOSED_CUSTOM_INITIALIZATION",
+      "new_instances": 2,
+      "new_scored_advances": 1728,
+      "runtime_status": "NOT_TESTED",
+      "collector_compatibility": "D2_NEW_VERSION_REQUIRED; existing frozen v2 rejects custom initialize",
+      "public_weather_only": {
+        "source_role": "EXOGENOUS_PUBLIC_WEATHER_ONLY_NOT_SIMULATED_BUILDING_OUTCOME",
+        "samples": 289,
+        "outdoor_min_c": 2.6631152749999956,
+        "outdoor_max_c": 27.267984803000047,
+        "outdoor_mean_c": 16.260695748861615,
+        "global_solar_peak_wm2": 813.815156305,
+        "global_solar_kwh_m2": 16.33976525453834,
+        "low_solar_samples_below_20_wm2": 154,
+        "heating_or_cooling_building_activity": "UNKNOWN_WITHOUT_NEW_RUNTIME"
+      },
+      "prior_exposed_connections": []
+    },
+    {
+      "group_id": "D2_G288",
+      "start_day_offset": 288,
+      "calendar_regime_bin": "autumn",
+      "partition": "development",
+      "warmup_start_s": 24278400,
+      "scored_start_s": 24883200,
+      "scored_end_s": 25142400,
+      "scored_hours": 72,
+      "warmup_seconds": 604800,
+      "step_seconds": 300,
+      "arms": [
+        "native",
+        "frozen_safe_cooling_variation"
+      ],
+      "source": "PROPOSED_CUSTOM_INITIALIZATION",
+      "new_instances": 2,
+      "new_scored_advances": 1728,
+      "runtime_status": "NOT_TESTED",
+      "collector_compatibility": "D2_NEW_VERSION_REQUIRED; existing frozen v2 rejects custom initialize",
+      "public_weather_only": {
+        "source_role": "EXOGENOUS_PUBLIC_WEATHER_ONLY_NOT_SIMULATED_BUILDING_OUTCOME",
+        "samples": 289,
+        "outdoor_min_c": 0.0,
+        "outdoor_max_c": 26.700000000000045,
+        "outdoor_mean_c": 12.219774545847777,
+        "global_solar_peak_wm2": 719.166804972,
+        "global_solar_kwh_m2": 14.148327829661852,
+        "low_solar_samples_below_20_wm2": 161,
+        "heating_or_cooling_building_activity": "UNKNOWN_WITHOUT_NEW_RUNTIME"
+      },
+      "prior_exposed_connections": [
+        "EXPOSED_C4_D4_PEAK_COOL"
+      ]
+    },
+    {
+      "group_id": "D2_G310",
+      "start_day_offset": 310,
+      "calendar_regime_bin": "autumn",
+      "partition": "validation",
+      "warmup_start_s": 26179200,
+      "scored_start_s": 26784000,
+      "scored_end_s": 27043200,
+      "scored_hours": 72,
+      "warmup_seconds": 604800,
+      "step_seconds": 300,
+      "arms": [
+        "native",
+        "frozen_safe_cooling_variation"
+      ],
+      "source": "PROPOSED_CUSTOM_INITIALIZATION",
+      "new_instances": 2,
+      "new_scored_advances": 1728,
+      "runtime_status": "NOT_TESTED",
+      "collector_compatibility": "D2_NEW_VERSION_REQUIRED; existing frozen v2 rejects custom initialize",
+      "public_weather_only": {
+        "source_role": "EXOGENOUS_PUBLIC_WEATHER_ONLY_NOT_SIMULATED_BUILDING_OUTCOME",
+        "samples": 289,
+        "outdoor_min_c": -3.3984375,
+        "outdoor_max_c": 16.21071428600004,
+        "outdoor_mean_c": 5.846107266425629,
+        "global_solar_peak_wm2": 573.641025641,
+        "global_solar_kwh_m2": 9.01500000000021,
+        "low_solar_samples_below_20_wm2": 171,
+        "heating_or_cooling_building_activity": "UNKNOWN_WITHOUT_NEW_RUNTIME"
+      },
+      "prior_exposed_connections": []
+    },
+    {
+      "group_id": "D2_G340",
+      "start_day_offset": 340,
+      "calendar_regime_bin": "winter",
+      "partition": "protected_final_test",
+      "warmup_start_s": 28771200,
+      "scored_start_s": 29376000,
+      "scored_end_s": 29635200,
+      "scored_hours": 72,
+      "warmup_seconds": 604800,
+      "step_seconds": 300,
+      "arms": [
+        "native",
+        "frozen_safe_cooling_variation"
+      ],
+      "source": "PROPOSED_CUSTOM_INITIALIZATION",
+      "new_instances": 2,
+      "new_scored_advances": 1728,
+      "runtime_status": "NOT_TESTED",
+      "collector_compatibility": "D2_NEW_VERSION_REQUIRED; existing frozen v2 rejects custom initialize",
+      "public_weather_only": {
+        "source_role": "EXOGENOUS_PUBLIC_WEATHER_ONLY_NOT_SIMULATED_BUILDING_OUTCOME",
+        "samples": 289,
+        "outdoor_min_c": -19.399999999999977,
+        "outdoor_max_c": 3.912382813000022,
+        "outdoor_mean_c": -9.621640715117625,
+        "global_solar_peak_wm2": 489.227578285,
+        "global_solar_kwh_m2": 5.885595810185134,
+        "low_solar_samples_below_20_wm2": 187,
+        "heating_or_cooling_building_activity": "UNKNOWN_WITHOUT_NEW_RUNTIME"
+      },
+      "prior_exposed_connections": []
+    },
+    {
+      "group_id": "D2_G354",
+      "start_day_offset": 354,
+      "calendar_regime_bin": "winter",
+      "partition": "validation",
+      "warmup_start_s": 29980800,
+      "scored_start_s": 30585600,
+      "scored_end_s": 30844800,
+      "scored_hours": 72,
+      "warmup_seconds": 604800,
+      "step_seconds": 300,
+      "arms": [
+        "native",
+        "frozen_safe_cooling_variation"
+      ],
+      "source": "PROPOSED_CUSTOM_INITIALIZATION",
+      "new_instances": 2,
+      "new_scored_advances": 1728,
+      "runtime_status": "NOT_TESTED",
+      "collector_compatibility": "D2_NEW_VERSION_REQUIRED; existing frozen v2 rejects custom initialize",
+      "public_weather_only": {
+        "source_role": "EXOGENOUS_PUBLIC_WEATHER_ONLY_NOT_SIMULATED_BUILDING_OUTCOME",
+        "samples": 289,
+        "outdoor_min_c": -2.8083333329999505,
+        "outdoor_max_c": 19.400000000000034,
+        "outdoor_mean_c": 5.088073096892758,
+        "global_solar_peak_wm2": 477.519966015,
+        "global_solar_kwh_m2": 7.1733564450892695,
+        "low_solar_samples_below_20_wm2": 185,
+        "heating_or_cooling_building_activity": "UNKNOWN_WITHOUT_NEW_RUNTIME"
+      },
+      "prior_exposed_connections": []
+    }
+  ],
+  "new_runtime_authorization": false,
+  "step_s": 300,
+  "scored_days_per_run": 3,
+  "warmup_days": 7,
+  "cross_group_embargo_s": 3600,
+  "existing_exposed_footprints": [
+    {
+      "group_id": "EXPOSED_D1_HEAT",
+      "warmup_start_s": 3196800,
+      "scored_end_s": 4060800
+    },
+    {
+      "group_id": "EXPOSED_D1_COOL_BM01",
+      "warmup_start_s": 12009600,
+      "scored_end_s": 12873600
+    },
+    {
+      "group_id": "EXPOSED_C4_D4_PEAK_COOL",
+      "warmup_start_s": 23760000,
+      "scored_end_s": 24451200
+    }
+  ],
+  "footprints_include_warmup_and_all_scored_feature_target_support": true,
+  "all_partitions_planned_not_datasets": true,
+  "statistically_independent_weather_years": 1,
+  "legacy_2_groups_reused_only_in_development": true,
+  "pre_freeze_partition_design_note": "Peak-heating selected day341 is reserved through custom start340 in protected partition; winter354 is validation. Minimum plan never exposes340 and remains compatible with later expansion. No simulated outcomes were inspected."
+}

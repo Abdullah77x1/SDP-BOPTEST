@@ -1,0 +1,93 @@
+{
+  "run_id": "ESV01_G174_WARM45",
+  "partition": "development",
+  "dataset_partition": "development",
+  "classification": "PASS_VALID_RAW",
+  "mode": "AUTHORIZED_SINGLE_G174_WARM45",
+  "data_is_fabricated": false,
+  "training_release": false,
+  "dataset_constructed": false,
+  "cleanup": "STOP_ACK_AND_REMOVAL_VERIFIED",
+  "advances": 864,
+  "endpoints": 865,
+  "native_samples": 8641,
+  "pending_events_resolved": 6,
+  "optional_channel_status": {
+    "InternalGainsCon[1]": true,
+    "InternalGainsRad[1]": true,
+    "InternalGainsLat[1]": true,
+    "HDirNor": true,
+    "HDifHor": true,
+    "relHum": true,
+    "winSpe": true,
+    "winDir": true,
+    "pAtm": true
+  },
+  "coverage": {
+    "episodes": [
+      {
+        "day": 1,
+        "scheduled_start_s": 15073200,
+        "scheduled_release_s": 15075900,
+        "requested_intervals": 9,
+        "applied_intervals": 9,
+        "actual_activation_s": 15073200,
+        "actual_release_s": 15075900,
+        "readback_target_k": [
+          297.65
+        ],
+        "vetoes": [],
+        "native_recovery_intervals": 24
+      },
+      {
+        "day": 2,
+        "scheduled_start_s": 15159600,
+        "scheduled_release_s": 15162300,
+        "requested_intervals": 9,
+        "applied_intervals": 9,
+        "actual_activation_s": 15159600,
+        "actual_release_s": 15162300,
+        "readback_target_k": [
+          297.65
+        ],
+        "vetoes": [],
+        "native_recovery_intervals": 24
+      },
+      {
+        "day": 3,
+        "scheduled_start_s": 15246000,
+        "scheduled_release_s": 15248700,
+        "requested_intervals": 9,
+        "applied_intervals": 9,
+        "actual_activation_s": 15246000,
+        "actual_release_s": 15248700,
+        "readback_target_k": [
+          297.65
+        ],
+        "vetoes": [],
+        "native_recovery_intervals": 24
+      }
+    ],
+    "requested_intervals": 27,
+    "applied_intervals": 27
+  },
+  "cleanup_evidence": {
+    "acknowledgement": "OK",
+    "instance_removed": true,
+    "removal_checks": [
+      {
+        "utc": "2026-11-20T23:43:08.441979+00:00",
+        "instance_directory_exists": true
+      },
+      {
+        "utc": "2026-11-20T23:43:09.581425+00:00",
+        "instance_directory_exists": false
+      }
+    ]
+  },
+  "deploy_attempts": 1,
+  "initialization_attempts": 1,
+  "advance_requests_attempted": 864,
+  "advance_responses_received": 864,
+  "unresolved_events": 0
+}

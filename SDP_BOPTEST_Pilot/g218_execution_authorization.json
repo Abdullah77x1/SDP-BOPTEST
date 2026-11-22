@@ -1,0 +1,20 @@
+{
+  "campaign": "G218_STAGE1_NATIVE_AUTONOMOUS",
+  "campaign_sha256": "8481f52acaf89532f86709316215627c7069a5f8b5b77a7652c93feddf8c283c",
+  "implementation_sha256": "19e41ea63cfd6dadc174ca0c95a354598bc21979702bfc2c140818f9ddb7b74f",
+  "run_ids": [
+    "G218_STAGE1_NATIVE_AUTONOMOUS_A",
+    "G218_STAGE1_NATIVE_AUTONOMOUS_B"
+  ],
+  "budgets": {
+    "instances": 2,
+    "initializations": 2,
+    "advances_per_arm": 864,
+    "total_advances": 1728,
+    "warm_starts": 3,
+    "warm_intervals": 27
+  },
+  "automatic_retries": false,
+  "status": "EXPLICITLY_AUTHORIZED_G218_PAIR",
+  "approval_text": "I explicitly authorize **one bounded G218 native-versus-autonomous development experiment** by submitting this prompt, within the existing documented execution limits. Record this authorization in the repository's required campaign format.\nFollow-up user instruction for this same bounded campaign: remove the need for advisor approval."
+}

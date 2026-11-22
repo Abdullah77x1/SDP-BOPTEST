@@ -1,0 +1,54 @@
+{
+  "run_id": "B1V01_G174_NREF",
+  "partition": "development",
+  "dataset_partition": "development",
+  "classification": "PASS_VALID_RAW",
+  "mode": "AUTHORIZED_B1_PILOT_RAW",
+  "data_is_fabricated": false,
+  "training_release": false,
+  "dataset_constructed": false,
+  "cleanup": "STOP_ACK_AND_REMOVAL_VERIFIED",
+  "advances": 864,
+  "endpoints": 865,
+  "native_samples": 8641,
+  "pending_events_resolved": 6,
+  "optional_channel_status": {
+    "InternalGainsCon[1]": true,
+    "InternalGainsRad[1]": true,
+    "InternalGainsLat[1]": true,
+    "HDirNor": true,
+    "HDifHor": true,
+    "relHum": true,
+    "winSpe": true,
+    "winDir": true,
+    "pAtm": true
+  },
+  "coverage": {
+    "requested_intervals": 0,
+    "applied_intervals": 0,
+    "episodes": []
+  },
+  "cleanup_evidence": {
+    "acknowledgement": "OK",
+    "instance_removed": true,
+    "removal_checks": [
+      {
+        "utc": "2026-11-18T19:06:05.797626+00:00",
+        "instance_directory_exists": true
+      },
+      {
+        "utc": "2026-11-18T19:06:06.943987+00:00",
+        "instance_directory_exists": true
+      },
+      {
+        "utc": "2026-11-18T19:06:08.062163+00:00",
+        "instance_directory_exists": false
+      }
+    ]
+  },
+  "deploy_attempts": 1,
+  "initialization_attempts": 1,
+  "advance_requests_attempted": 864,
+  "advance_responses_received": 864,
+  "unresolved_events": 0
+}
