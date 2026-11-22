@@ -13,7 +13,7 @@ Install Git for Windows with Git LFS, 64-bit Python 3.12 with the Windows Python
 
 ~~~powershell
 git lfs install
-git clone --branch feature/complete-boptest-handoff https://github.com/Abdullah77x1/SDP-BOPTEST.git
+git clone https://github.com/Abdullah77x1/SDP-BOPTEST.git
 Set-Location -LiteralPath .\SDP-BOPTEST
 git lfs pull
 py -3.12 -B .\scripts\Initialize-CoreAssets.py
