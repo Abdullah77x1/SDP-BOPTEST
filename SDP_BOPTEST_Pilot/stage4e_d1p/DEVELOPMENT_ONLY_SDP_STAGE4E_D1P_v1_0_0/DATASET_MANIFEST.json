@@ -1,0 +1,127 @@
+{
+  "dataset_status": "DEVELOPMENT_ONLY_PREVIEW",
+  "evaluation_status": "NON_FINAL_EVALUATION",
+  "release_status": "LOCAL_REVIEW_ONLY_NOT_APPROVED_FOR_SHARING_OR_TRAINING",
+  "dataset_version": "SDP_STAGE4E_D1P_PREVIEW_1.0.0",
+  "created_utc": "2026-11-14T18:33:13.345389+00:00",
+  "source_campaign": "SDP_STAGE4E_D1_V2_QUALIFICATION_2.1.0",
+  "source_proposal_sha256": "ec9c64f9abffcda7095d537e375eda7bb8f6b6d367aa1aa2238bcc606bcbeb5c",
+  "source_results_manifest_sha256": "881c880b601f35b5132991935856b7e3b191e004448c5b4d0bde46ccd77dc596",
+  "observational_rows": 3408,
+  "feature_columns": 168,
+  "target_columns": 8,
+  "metadata_columns": 27,
+  "numeric_target_values": 27264,
+  "action_eligibility_counts": {
+    "300": 3408,
+    "600": 3366,
+    "900": 3359,
+    "1800": 3338
+  },
+  "dependency_groups": [
+    "qualification_cool_146",
+    "qualification_heat_44"
+  ],
+  "all_partitions": "development",
+  "independent_final_test_set": false,
+  "QA": "PASS",
+  "files": {
+    "BUILD_SUMMARY.json": {
+      "sha256": "596509edb64ce1d129ae351150da8be2abf90be276bc39259ae185d8aa2a3b87",
+      "bytes": 1302
+    },
+    "CODE_PROVENANCE.json": {
+      "sha256": "e78951f5a1bf43ac7f8a347fceeeca6e8d53963c9a53931f0d8e5b6a2719c686",
+      "bytes": 1118
+    },
+    "DATA_DICTIONARY.json": {
+      "sha256": "771eafc464c693b5bdd1f64a811d285b1f0a2ec117f8be5374f6bee0b5a918b2",
+      "bytes": 88603
+    },
+    "DATA_DICTIONARY.md": {
+      "sha256": "0bcd7cbbe603c88db6e6a56ccd7542552eb2833e6584c1067ca79f40a8c60717",
+      "bytes": 31845
+    },
+    "DATASET_QA_REPORT.md": {
+      "sha256": "26d220e49a32afb9f5d3d9acaad928bac17cf698013cc84a907abce587fee557",
+      "bytes": 2618
+    },
+    "DEVELOPMENT_ONLY_ACTION_ELIGIBILITY.csv": {
+      "sha256": "980f077c973ec1ccb939211d3d5abed5cc09731aa1cf28268febfa773971a39a",
+      "bytes": 617002,
+      "columns": 11,
+      "data_rows": 3408
+    },
+    "DEVELOPMENT_ONLY_ACTION_PATHS.jsonl": {
+      "sha256": "439cb1694369714783feaf21cad509822826f1f0c52a9a28c118c0030bf081af",
+      "bytes": 11388202,
+      "records": 3408
+    },
+    "DEVELOPMENT_ONLY_EVENT_VALIDATION_POSTHOC.jsonl": {
+      "sha256": "285e614f3348f17e77b4de4d07230ba9eedd7aa338780acb7be5e1d1551c9f20",
+      "bytes": 53431,
+      "records": 24
+    },
+    "DEVELOPMENT_ONLY_OBSERVATIONAL.csv": {
+      "sha256": "33f2fe9c541bc95e86ae25a70f8f43d72d46bb7da4bc3b4427ffc25fbd7093b0",
+      "bytes": 7153815,
+      "columns": 203,
+      "data_rows": 3408
+    },
+    "DEVELOPMENT_ONLY_ORIGIN_PROVENANCE.jsonl": {
+      "sha256": "22449bbc0066d6c677fd23d7fce495d05630126a4fb8f73452b1cb6f8055b739",
+      "bytes": 3166524,
+      "records": 3408
+    },
+    "DEVELOPMENT_ONLY_REALIZED_ACTIONS_POSTHOC.jsonl": {
+      "sha256": "29d3877f422eff53589bbae4556844df21c268163543ad952a4167c1c2395ec8",
+      "bytes": 2119152,
+      "records": 3456
+    },
+    "FEATURE_GROUPS.json": {
+      "sha256": "7a0ac7cdd613cef3e658889f92ed066016e502e32aa237fedead6647ea884b9f",
+      "bytes": 14602
+    },
+    "INPUT_TARGET_DEFINITIONS.md": {
+      "sha256": "abae379c753fe96d4568c193c654a2aebdcddd46959fcbfbf049bfe0d98f8a8a",
+      "bytes": 6845
+    },
+    "load_preview.py": {
+      "sha256": "8f3d59fc56def8167605b19f892fffb5b2a2ba0575cecc12a5e04cabab3eae35",
+      "bytes": 2338
+    },
+    "OFFLINE_TEST_RESULTS.txt": {
+      "sha256": "634d8eddb593a84d081a8244d12da8486e282ef03c5c383447730c62c452f452",
+      "bytes": 958
+    },
+    "OFFLINE_TEST_SUMMARY.json": {
+      "sha256": "6b9d256df2befe12d0db11f1b02f48ea6dbfcc9ec141b18105429cb3edb44292",
+      "bytes": 266
+    },
+    "QA_RESULTS.json": {
+      "sha256": "862fa1ac837a4fae436e0e293cf7b3e43827f4c2c4e4767d8521e325c1563001",
+      "bytes": 1649
+    },
+    "RAW_SOURCE_HASHES.json": {
+      "sha256": "908c5ab0eaa9662b6daff992b5e78bc851c0e216863dc5a3cd69febb915e9ede",
+      "bytes": 1441251
+    },
+    "README.md": {
+      "sha256": "f2edca21f9332b26052e329c4db51202e13b90e3f880bcee85411d7a2d44cc5b",
+      "bytes": 4913
+    },
+    "STAGE4E_D1P_DATASET_PREVIEW_RESULTS.md": {
+      "sha256": "96b19d6a8a3a38225f2bb273267cbf065f0050b5f41a52fa44a7a63c150a8e81",
+      "bytes": 11756
+    }
+  },
+  "exclusions_from_files_hash_map": [
+    "DATASET_MANIFEST.json (self)",
+    "MANIFEST_SHA256.txt (self digest)",
+    "SHA256SUMS.txt (checksum list)"
+  ],
+  "simulator_executions": 0,
+  "model_fitting_tuning_scoring": false,
+  "automatically_shared": false,
+  "training_release": false
+}

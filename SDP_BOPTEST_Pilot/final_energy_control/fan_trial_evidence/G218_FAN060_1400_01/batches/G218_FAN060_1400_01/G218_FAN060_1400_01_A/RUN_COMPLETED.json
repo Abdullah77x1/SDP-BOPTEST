@@ -1,0 +1,24 @@
+{
+  "classification": "PASS_VALID_RAW",
+  "cleanup": "STOP_ACK_AND_REMOVAL_VERIFIED",
+  "fabricated": false,
+  "run_id": "G218_FAN060_1400_01_A",
+  "cleanup_evidence": {
+    "acknowledgement": "OK",
+    "instance_removed": true,
+    "removal_checks": [
+      {
+        "utc": "2026-11-21T18:58:58.359791+00:00",
+        "instance_directory_exists": true
+      },
+      {
+        "utc": "2026-11-21T18:58:59.484212+00:00",
+        "instance_directory_exists": false
+      }
+    ]
+  },
+  "verified_advances": 36,
+  "advance_attempts": 36,
+  "realized_fan_advances": 0,
+  "vetoes": []
+}

@@ -1,0 +1,401 @@
+{
+  "endpoint": "http://127.0.0.1:80",
+  "testid": "bfe66b6d-db71-461a-b469-8f5e6eb9ca4f",
+  "version": {
+    "version": "0.9.0"
+  },
+  "name": {
+    "name": "bestest_air"
+  },
+  "measurements": {
+    "fcu_reaFloSup_y": {
+      "Unit": "kg/s",
+      "Description": "Supply air mass flow rate",
+      "Minimum": null,
+      "Maximum": null
+    },
+    "fcu_reaPCoo_y": {
+      "Unit": "W",
+      "Description": "Cooling electrical power consumption",
+      "Minimum": null,
+      "Maximum": null
+    },
+    "fcu_reaPFan_y": {
+      "Unit": "W",
+      "Description": "Supply fan electrical power consumption",
+      "Minimum": null,
+      "Maximum": null
+    },
+    "fcu_reaPHea_y": {
+      "Unit": "W",
+      "Description": "Heating thermal power consumption",
+      "Minimum": null,
+      "Maximum": null
+    },
+    "zon_reaCO2RooAir_y": {
+      "Unit": "ppm",
+      "Description": "Zone air CO2 concentration",
+      "Minimum": null,
+      "Maximum": null
+    },
+    "zon_reaPLig_y": {
+      "Unit": "W",
+      "Description": "Lighting power submeter",
+      "Minimum": null,
+      "Maximum": null
+    },
+    "zon_reaPPlu_y": {
+      "Unit": "W",
+      "Description": "Plug load power submeter",
+      "Minimum": null,
+      "Maximum": null
+    },
+    "zon_reaTRooAir_y": {
+      "Unit": "K",
+      "Description": "Zone air temperature",
+      "Minimum": null,
+      "Maximum": null
+    },
+    "zon_weaSta_reaWeaCeiHei_y": {
+      "Unit": "m",
+      "Description": "Cloud cover ceiling height measurement",
+      "Minimum": null,
+      "Maximum": null
+    },
+    "zon_weaSta_reaWeaCloTim_y": {
+      "Unit": "s",
+      "Description": "Day number with units of seconds",
+      "Minimum": null,
+      "Maximum": null
+    },
+    "zon_weaSta_reaWeaHDifHor_y": {
+      "Unit": "W/m2",
+      "Description": "Horizontal diffuse solar radiation measurement",
+      "Minimum": null,
+      "Maximum": null
+    },
+    "zon_weaSta_reaWeaHDirNor_y": {
+      "Unit": "W/m2",
+      "Description": "Direct normal radiation measurement",
+      "Minimum": null,
+      "Maximum": null
+    },
+    "zon_weaSta_reaWeaHGloHor_y": {
+      "Unit": "W/m2",
+      "Description": "Global horizontal solar irradiation measurement",
+      "Minimum": null,
+      "Maximum": null
+    },
+    "zon_weaSta_reaWeaHHorIR_y": {
+      "Unit": "W/m2",
+      "Description": "Horizontal infrared irradiation measurement",
+      "Minimum": null,
+      "Maximum": null
+    },
+    "zon_weaSta_reaWeaLat_y": {
+      "Unit": "rad",
+      "Description": "Latitude of the location",
+      "Minimum": null,
+      "Maximum": null
+    },
+    "zon_weaSta_reaWeaLon_y": {
+      "Unit": "rad",
+      "Description": "Longitude of the location",
+      "Minimum": null,
+      "Maximum": null
+    },
+    "zon_weaSta_reaWeaNOpa_y": {
+      "Unit": "1",
+      "Description": "Opaque sky cover measurement",
+      "Minimum": null,
+      "Maximum": null
+    },
+    "zon_weaSta_reaWeaNTot_y": {
+      "Unit": "1",
+      "Description": "Sky cover measurement",
+      "Minimum": null,
+      "Maximum": null
+    },
+    "zon_weaSta_reaWeaPAtm_y": {
+      "Unit": "Pa",
+      "Description": "Atmospheric pressure measurement",
+      "Minimum": null,
+      "Maximum": null
+    },
+    "zon_weaSta_reaWeaRelHum_y": {
+      "Unit": "1",
+      "Description": "Outside relative humidity measurement",
+      "Minimum": null,
+      "Maximum": null
+    },
+    "zon_weaSta_reaWeaSolAlt_y": {
+      "Unit": "rad",
+      "Description": "Solar altitude angle measurement",
+      "Minimum": null,
+      "Maximum": null
+    },
+    "zon_weaSta_reaWeaSolDec_y": {
+      "Unit": "rad",
+      "Description": "Solar declination angle measurement",
+      "Minimum": null,
+      "Maximum": null
+    },
+    "zon_weaSta_reaWeaSolHouAng_y": {
+      "Unit": "rad",
+      "Description": "Solar hour angle measurement",
+      "Minimum": null,
+      "Maximum": null
+    },
+    "zon_weaSta_reaWeaSolTim_y": {
+      "Unit": "s",
+      "Description": "Solar time",
+      "Minimum": null,
+      "Maximum": null
+    },
+    "zon_weaSta_reaWeaSolZen_y": {
+      "Unit": "rad",
+      "Description": "Solar zenith angle measurement",
+      "Minimum": null,
+      "Maximum": null
+    },
+    "zon_weaSta_reaWeaTBlaSky_y": {
+      "Unit": "K",
+      "Description": "Black-body sky temperature measurement",
+      "Minimum": null,
+      "Maximum": null
+    },
+    "zon_weaSta_reaWeaTDewPoi_y": {
+      "Unit": "K",
+      "Description": "Dew point temperature measurement",
+      "Minimum": null,
+      "Maximum": null
+    },
+    "zon_weaSta_reaWeaTDryBul_y": {
+      "Unit": "K",
+      "Description": "Outside drybulb temperature measurement",
+      "Minimum": null,
+      "Maximum": null
+    },
+    "zon_weaSta_reaWeaTWetBul_y": {
+      "Unit": "K",
+      "Description": "Wet bulb temperature measurement",
+      "Minimum": null,
+      "Maximum": null
+    },
+    "zon_weaSta_reaWeaWinDir_y": {
+      "Unit": "rad",
+      "Description": "Wind direction measurement",
+      "Minimum": null,
+      "Maximum": null
+    },
+    "zon_weaSta_reaWeaWinSpe_y": {
+      "Unit": "m/s",
+      "Description": "Wind speed measurement",
+      "Minimum": null,
+      "Maximum": null
+    }
+  },
+  "inputs": {
+    "con_oveTSetCoo_activate": {
+      "Unit": null,
+      "Description": "Activation for Zone temperature setpoint for cooling",
+      "Minimum": null,
+      "Maximum": null
+    },
+    "con_oveTSetCoo_u": {
+      "Unit": "K",
+      "Description": "Zone temperature setpoint for cooling",
+      "Minimum": 278.15,
+      "Maximum": 308.15
+    },
+    "con_oveTSetHea_activate": {
+      "Unit": null,
+      "Description": "Activation for Zone temperature setpoint for heating",
+      "Minimum": null,
+      "Maximum": null
+    },
+    "con_oveTSetHea_u": {
+      "Unit": "K",
+      "Description": "Zone temperature setpoint for heating",
+      "Minimum": 278.15,
+      "Maximum": 308.15
+    },
+    "fcu_oveFan_activate": {
+      "Unit": null,
+      "Description": "Activation for Fan control signal as air mass flow rate normalized to the design air mass flow rate",
+      "Minimum": null,
+      "Maximum": null
+    },
+    "fcu_oveFan_u": {
+      "Unit": "1",
+      "Description": "Fan control signal as air mass flow rate normalized to the design air mass flow rate",
+      "Minimum": 0,
+      "Maximum": 1
+    },
+    "fcu_oveTSup_activate": {
+      "Unit": null,
+      "Description": "Activation for Supply air temperature setpoint",
+      "Minimum": null,
+      "Maximum": null
+    },
+    "fcu_oveTSup_u": {
+      "Unit": "K",
+      "Description": "Supply air temperature setpoint",
+      "Minimum": 285.15,
+      "Maximum": 313.15
+    }
+  },
+  "forecast_points": {
+    "pAtm": {
+      "Description": "Atmospheric pressure",
+      "Unit": "Pa"
+    },
+    "lon": {
+      "Description": "Longitude of the location",
+      "Unit": "rad"
+    },
+    "lat": {
+      "Description": "Latitude of the location",
+      "Unit": "rad"
+    },
+    "TDewPoi": {
+      "Description": "Dew point temperature",
+      "Unit": "K"
+    },
+    "HDirNor": {
+      "Description": "Direct normal radiation",
+      "Unit": "W/m2"
+    },
+    "HDifHor": {
+      "Description": "Horizontal diffuse solar radiation",
+      "Unit": "W/m2"
+    },
+    "HGloHor": {
+      "Description": "Horizontal global radiation",
+      "Unit": "W/m2"
+    },
+    "relHum": {
+      "Description": "Relative Humidity",
+      "Unit": "1"
+    },
+    "nTot": {
+      "Description": "Total sky Cover [0, 1]",
+      "Unit": "1"
+    },
+    "ceiHei": {
+      "Description": "Ceiling height",
+      "Unit": "m"
+    },
+    "winSpe": {
+      "Description": "Wind speed",
+      "Unit": "m/s"
+    },
+    "winDir": {
+      "Description": "Wind direction",
+      "Unit": "rad"
+    },
+    "nOpa": {
+      "Description": "Opaque sky cover [0, 1]",
+      "Unit": "1"
+    },
+    "TBlaSky": {
+      "Description": "Black Sky temperature",
+      "Unit": "K"
+    },
+    "HHorIR": {
+      "Description": "Horizontal infrared irradiation",
+      "Unit": "W/m2"
+    },
+    "cloTim": {
+      "Description": "One-based day number in seconds",
+      "Unit": "s"
+    },
+    "solZen": {
+      "Description": "Zenith angle",
+      "Unit": "rad"
+    },
+    "solAlt": {
+      "Description": "Altitude angel",
+      "Unit": "rad"
+    },
+    "solDec": {
+      "Description": "Declination angle",
+      "Unit": "rad"
+    },
+    "solTim": {
+      "Description": "Solar time",
+      "Unit": "s"
+    },
+    "solHouAng": {
+      "Description": "Solar hour angle.",
+      "Unit": "rad"
+    },
+    "TDryBul": {
+      "Description": "Dry bulb temperature at ground level",
+      "Unit": "K"
+    },
+    "TWetBul": {
+      "Description": "Wet bulb temperature",
+      "Unit": "K"
+    },
+    "EmissionsElectricPower": {
+      "Description": "Kilograms of carbon dioxide to produce 1 kWh of electricity",
+      "Unit": "kgCO2/kWh"
+    },
+    "EmissionsGasPower": {
+      "Description": "Kilograms of carbon dioxide to produce 1 kWh thermal from gas",
+      "Unit": "kgCO2/kWh"
+    },
+    "PriceGasPower": {
+      "Description": "Price to produce 1 kWh thermal from gas",
+      "Unit": "($/Euro)/kWh"
+    },
+    "UpperSetp[1]": {
+      "Description": "Upper temperature set point for thermal comfort of zone",
+      "Unit": "K"
+    },
+    "LowerSetp[1]": {
+      "Description": "Lower temperature set point for thermal comfort of zone",
+      "Unit": "K"
+    },
+    "InternalGainsRad[1]": {
+      "Description": "Radiative internal gains of zone",
+      "Unit": "W"
+    },
+    "InternalGainsCon[1]": {
+      "Description": "Convective internal gains of zone",
+      "Unit": "W"
+    },
+    "InternalGainsLat[1]": {
+      "Description": "Latent internal gains of zone",
+      "Unit": "W"
+    },
+    "Occupancy[1]": {
+      "Description": "Number of occupants of zone",
+      "Unit": "number of people"
+    },
+    "UpperCO2[1]": {
+      "Description": "Upper CO2 set point for indoor air quality of zone",
+      "Unit": "ppm"
+    },
+    "PriceElectricPowerConstant": {
+      "Description": "Completely constant electricity price",
+      "Unit": "($/Euro)/kWh"
+    },
+    "PriceElectricPowerHighlyDynamic": {
+      "Description": "Spot electricity price",
+      "Unit": "($/Euro)/kWh"
+    },
+    "PriceElectricPowerDynamic": {
+      "Description": "Electricity price for a day/night tariff",
+      "Unit": "($/Euro)/kWh"
+    }
+  },
+  "step": 3600,
+  "scenario": {
+    "electricity_price": "constant",
+    "temperature_uncertainty": null,
+    "solar_uncertainty": null,
+    "seed": null
+  }
+}

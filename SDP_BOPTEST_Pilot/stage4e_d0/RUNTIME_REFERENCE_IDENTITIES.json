@@ -1,0 +1,12 @@
+{
+  "source": "preserved Stage4D Docker inspection; not a new runtime inspection",
+  "building_fmu_sha256": "158008fa3b635280a67dfed8bab5804d1f9a96d218b467dfebab77e5cbf8b86a",
+  "container_image_ids": {
+    "provision": "sha256:8a4255e212d70433c71082d9d9c4bb7d484a10e0ab296df4a7301d61df636fe0",
+    "web": "sha256:b7903164b45936f3732b9459171ad30666c7028de19983575ff1b914501d3fdf",
+    "worker": "sha256:4f7f4f5f834c9b3540f2ec03375134144373709a5d73afd24b7bb27d125524e2",
+    "redis": "sha256:1f88291b4c57bdf249f02eb085a8669889b2d2954e91d4de5118a5da6b78dd53",
+    "mc": "sha256:2582c2f48b1e31545143ba5285c67d7b38c8b8f6912142d0630686dc7aaac28b",
+    "minio": "sha256:3f97c5651cb6662b880c787a232b6b34fec8d8922e08d6617b25d241a21164bb"
+  }
+}

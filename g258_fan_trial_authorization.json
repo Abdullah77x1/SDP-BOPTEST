@@ -1,0 +1,22 @@
+{
+  "campaign": "G258_FAN060_1400_01",
+  "campaign_sha256": "a848e1fcdc5343f2a6d8dd29a7ac95308cff8cf11ac8864f239692ccb7c61ca0",
+  "budgets": {
+    "instances": 2,
+    "concurrent_instances": 1,
+    "initializations": 2,
+    "advances_per_arm": 36,
+    "total_advances": 72,
+    "maximum_fan_advances": 6
+  },
+  "implementation_sha256": "c418913f9908ae7df537843ce4d0ddfe366f5941ef43c7af6b91a7e963fc3a95",
+  "archive_manifest_sha256": "eae2b6954f9bbd3962d92582f86e1781eb98f6bf5756cb7974ee91962f795e1b",
+  "run_ids": [
+    "G258_FAN060_1400_01_A",
+    "G258_FAN060_1400_01_B"
+  ],
+  "automatic_retries": false,
+  "partition_plan_sha256": "9de1468aec7bd710ce08416bb4fa80dbdf07223380103d3ebd609cc04b634d20",
+  "status": "EXPLICITLY_AUTHORIZED_G258_FAN060_1400_01",
+  "approval_text": "I explicitly authorize the frozen campaign G258_FAN060_1400_01. Exactly 2 sequential disposable BOPTEST instances, exactly 36 five-minute advances per arm, maximum 72 advances total, and zero retries, replacements, or additional experiments. Scenario G258, benchmark day 258. Arm A unchanged native HVAC. Arm B normalized fan command 0.60 from 14:00 to 14:30, followed by 120 minutes of native recovery. Occupied cooling target native 24°C and supply-air temperature under native control. Preserve all frozen initialization, warmup, weather, safety, scoring, command-verification, and cleanup requirements. Stop without executing if the frozen configuration differs or preflight verification fails."
+}

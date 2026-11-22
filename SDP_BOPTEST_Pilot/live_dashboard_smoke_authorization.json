@@ -1,0 +1,14 @@
+{
+  "session": "LIVE_DASHBOARD_SMOKE_01",
+  "config_sha256": "70b6a58cba06feb3630fe35155b0b23688659de094b731d80d4c71959faa1497",
+  "budgets": {
+    "instances": 1,
+    "initializations": 1,
+    "advances": 13,
+    "external_overrides": 0
+  },
+  "implementation_sha256": "ffb79d25da71393755ac74bc6741aa7a7bf67ed68973f1873475b14ff2f4e9ae",
+  "automatic_retries": false,
+  "status": "EXPLICITLY_AUTHORIZED_LIVE_DASHBOARD_SMOKE",
+  "approval_text": "## Task 2 \u2014 Run a small real BOPTEST smoke test\nCreate a separately identified, disposable **live-dashboard smoke-test session**, not a new energy-performance experiment.\nPerform the minimum simulation advances needed to show actual data flowing from BOPTEST into the dashboard.\nDo not consume, alter, or reuse G299's frozen experiment slots.\nDo not force a 24.5\u00b0C action under unsuitable conditions merely to produce an impressive demonstration."
+}

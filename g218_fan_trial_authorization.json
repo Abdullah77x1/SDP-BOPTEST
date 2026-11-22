@@ -1,0 +1,21 @@
+{
+  "campaign": "G218_FAN060_1400_01",
+  "campaign_sha256": "05b76ee9d150e4b9c84368b3aa549d0760c9803657806cda3578bf7b3b5fe47b",
+  "budgets": {
+    "instances": 2,
+    "concurrent_instances": 1,
+    "initializations": 2,
+    "advances_per_arm": 36,
+    "total_advances": 72,
+    "maximum_fan_advances": 6
+  },
+  "implementation_sha256": "df9b3553e817d6cf68ffffd5063d0e06e12e433b82a0c243827da593e0a62139",
+  "archive_manifest_sha256": "e2f5a45ca22e6ac39abd5e92f7294ef55bf6e19be6d9e591c0cd953fe4a4dda5",
+  "run_ids": [
+    "G218_FAN060_1400_01_A",
+    "G218_FAN060_1400_01_B"
+  ],
+  "automatic_retries": false,
+  "status": "EXPLICITLY_AUTHORIZED_G218_FAN060_1400_01",
+  "approval_text": "I explicitly authorize execution of the frozen campaign G218_FAN060_1400_01. Authorization is limited to 2 sequential genuine BOPTEST instances, 36 five-minute advances per arm, 72 total advances maximum, and no retries, replacement runs, or additional experiments. Arm A uses native HVAC control throughout. Arm B uses fan override command 0.60 from 14:00 to 14:30, followed by 120 minutes of native recovery. Keep native room cooling setpoint and supply-air-temperature control unchanged. Use the existing frozen G218 configuration, warmup, weather, schedules, scoring rules, command-verification procedures, and cleanup requirements."
+}

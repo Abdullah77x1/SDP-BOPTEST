@@ -1,0 +1,630 @@
+{
+  "technical_validation": "PASS",
+  "fabricated": false,
+  "fixed_vs_native": {
+    "technical_validation": "PASS",
+    "fabricated": false,
+    "forcing_equivalence": {
+      "endpoints": 133,
+      "fields_compared": 5320,
+      "through_s": 14122800,
+      "tolerance": 1e-07,
+      "warmup_samples": 20161,
+      "native_samples_shared": 1321,
+      "matching_forecast_origins": 864,
+      "full_native_reproduction": false
+    },
+    "passed_proposed_criteria": false,
+    "criteria": {
+      "complete_72_hour_pair": true,
+      "confirmed_warmer_action": true,
+      "hold_max_at_or_below_25_5_c": true,
+      "no_occupied_project_excursions_in_hold_and_recovery": true,
+      "no_added_full_period_project_burden": false,
+      "recovery_marker_within_120_minutes": true,
+      "material_net_savings": true
+    },
+    "full": {
+      "start": 14083200,
+      "end": 14342400,
+      "native": {
+        "cooling_kwh": 15.899674554191673,
+        "fan_kwh": 0.6236079122273126,
+        "electricity_kwh": 16.523282466418987,
+        "official_replayed_kh": 1.2987544022871949,
+        "project_replayed_kh": 0.053917987080181244,
+        "occupied_project_violation_minutes": 11.5,
+        "occupied_max_c": 26.697295969791867,
+        "occupied_project_peak_excursion_k": 0.6972959697918668,
+        "maximum_indoor_c": 28.13975780740111,
+        "official_reported_kh": 1.2987544022871944
+      },
+      "controller": {
+        "cooling_kwh": 15.832631331127018,
+        "fan_kwh": 0.6159710747068744,
+        "electricity_kwh": 16.448602405833892,
+        "official_replayed_kh": 2.4316264227303286,
+        "project_replayed_kh": 0.05565306514914568,
+        "occupied_project_violation_minutes": 11.5,
+        "occupied_max_c": 26.708410092001316,
+        "occupied_project_peak_excursion_k": 0.7084100920013157,
+        "maximum_indoor_c": 28.15352342184542,
+        "official_reported_kh": 2.4316264227303304
+      },
+      "saved_kwh": 0.07468006058509502,
+      "saved_percent": 0.4519686735179325,
+      "added_project_kh": 0.0017350780689644324
+    },
+    "windows": [
+      {
+        "activation": 14122800,
+        "released_to_native": 14125500,
+        "delivered_minutes": 45,
+        "recovery_minutes_scored": 120,
+        "rejoined_after_minutes": 15,
+        "hold": {
+          "start": 14122800,
+          "end": 14125500,
+          "native": {
+            "cooling_kwh": 0.3275846882648784,
+            "fan_kwh": 0.01122399476944366,
+            "electricity_kwh": 0.33880868303432204,
+            "official_replayed_kh": 0.01526226203033687,
+            "project_replayed_kh": 0.0,
+            "occupied_project_violation_minutes": 0.0,
+            "occupied_max_c": 24.02185662578205,
+            "occupied_project_peak_excursion_k": 0.0,
+            "maximum_indoor_c": 24.02185662578205
+          },
+          "controller": {
+            "cooling_kwh": 0.2788713479452496,
+            "fan_kwh": 0.0076287812487761284,
+            "electricity_kwh": 0.28650012919402573,
+            "official_replayed_kh": 0.37394474054329596,
+            "project_replayed_kh": 0.0,
+            "occupied_project_violation_minutes": 0.0,
+            "occupied_max_c": 24.57357350293148,
+            "occupied_project_peak_excursion_k": 0.0,
+            "maximum_indoor_c": 24.57357350293148
+          },
+          "saved_kwh": 0.05230855384029631,
+          "saved_percent": 15.438964955628762,
+          "added_project_kh": 0.0
+        },
+        "recovery": {
+          "start": 14125500,
+          "end": 14132700,
+          "native": {
+            "cooling_kwh": 1.1358647293841087,
+            "fan_kwh": 0.04455230662552957,
+            "electricity_kwh": 1.1804170360096382,
+            "official_replayed_kh": 0.02138238769128596,
+            "project_replayed_kh": 0.0,
+            "occupied_project_violation_minutes": 0.0,
+            "occupied_max_c": 24.019468348489056,
+            "occupied_project_peak_excursion_k": 0.0,
+            "maximum_indoor_c": 24.019468348489056
+          },
+          "controller": {
+            "cooling_kwh": 1.1497741159298713,
+            "fan_kwh": 0.04526985122801003,
+            "electricity_kwh": 1.1950439671578814,
+            "official_replayed_kh": 0.03907013533098151,
+            "project_replayed_kh": 0.0,
+            "occupied_project_violation_minutes": 0.0,
+            "occupied_max_c": 24.521019181293468,
+            "occupied_project_peak_excursion_k": 0.0,
+            "maximum_indoor_c": 24.521019181293468
+          },
+          "saved_kwh": -0.014626931148243205,
+          "saved_percent": -1.2391325016528967,
+          "added_project_kh": 0.0
+        },
+        "joint": {
+          "start": 14122800,
+          "end": 14132700,
+          "native": {
+            "cooling_kwh": 1.4634494176489878,
+            "fan_kwh": 0.055776301394973235,
+            "electricity_kwh": 1.519225719043961,
+            "official_replayed_kh": 0.03664464972162283,
+            "project_replayed_kh": 0.0,
+            "occupied_project_violation_minutes": 0.0,
+            "occupied_max_c": 24.02185662578205,
+            "occupied_project_peak_excursion_k": 0.0,
+            "maximum_indoor_c": 24.02185662578205
+          },
+          "controller": {
+            "cooling_kwh": 1.4286454638751214,
+            "fan_kwh": 0.05289863247678613,
+            "electricity_kwh": 1.4815440963519075,
+            "official_replayed_kh": 0.4130148758742776,
+            "project_replayed_kh": 0.0,
+            "occupied_project_violation_minutes": 0.0,
+            "occupied_max_c": 24.57357350293148,
+            "occupied_project_peak_excursion_k": 0.0,
+            "maximum_indoor_c": 24.57357350293148
+          },
+          "saved_kwh": 0.03768162269205355,
+          "saved_percent": 2.4803175867616534,
+          "added_project_kh": 0.0
+        },
+        "recovery_penalty_kwh": 0.014626931148243205
+      },
+      {
+        "activation": 14209200,
+        "released_to_native": 14211900,
+        "delivered_minutes": 45,
+        "recovery_minutes_scored": 120,
+        "rejoined_after_minutes": 20,
+        "hold": {
+          "start": 14209200,
+          "end": 14211900,
+          "native": {
+            "cooling_kwh": 0.4449242398630229,
+            "fan_kwh": 0.01776628984016616,
+            "electricity_kwh": 0.462690529703189,
+            "official_replayed_kh": 0.009259082027206727,
+            "project_replayed_kh": 0.0,
+            "occupied_project_violation_minutes": 0.0,
+            "occupied_max_c": 24.01346487521357,
+            "occupied_project_peak_excursion_k": 0.0,
+            "maximum_indoor_c": 24.01346487521357
+          },
+          "controller": {
+            "cooling_kwh": 0.38880937125711457,
+            "fan_kwh": 0.012827999345913109,
+            "electricity_kwh": 0.4016373706030277,
+            "official_replayed_kh": 0.3678068627542084,
+            "project_replayed_kh": 0.0,
+            "occupied_project_violation_minutes": 0.0,
+            "occupied_max_c": 24.546883329623654,
+            "occupied_project_peak_excursion_k": 0.0,
+            "maximum_indoor_c": 24.546883329623654
+          },
+          "saved_kwh": 0.06105315910016135,
+          "saved_percent": 13.195247185916315,
+          "added_project_kh": 0.0
+        },
+        "recovery": {
+          "start": 14211900,
+          "end": 14219100,
+          "native": {
+            "cooling_kwh": 1.3415924360993146,
+            "fan_kwh": 0.057058744743952554,
+            "electricity_kwh": 1.3986511808432671,
+            "official_replayed_kh": 0.010102290786882644,
+            "project_replayed_kh": 0.0,
+            "occupied_project_violation_minutes": 0.0,
+            "occupied_max_c": 24.010874247556842,
+            "occupied_project_peak_excursion_k": 0.0,
+            "maximum_indoor_c": 24.010874247556842
+          },
+          "controller": {
+            "cooling_kwh": 1.359242886625972,
+            "fan_kwh": 0.05807502488030975,
+            "electricity_kwh": 1.4173179115062817,
+            "official_replayed_kh": 0.028208112088268913,
+            "project_replayed_kh": 0.0,
+            "occupied_project_violation_minutes": 0.0,
+            "occupied_max_c": 24.512704679220974,
+            "occupied_project_peak_excursion_k": 0.0,
+            "maximum_indoor_c": 24.512704679220974
+          },
+          "saved_kwh": -0.018666730663014608,
+          "saved_percent": -1.3346237374039298,
+          "added_project_kh": 0.0
+        },
+        "joint": {
+          "start": 14209200,
+          "end": 14219100,
+          "native": {
+            "cooling_kwh": 1.7865166759623365,
+            "fan_kwh": 0.0748250345841187,
+            "electricity_kwh": 1.8613417105464551,
+            "official_replayed_kh": 0.01936137281408937,
+            "project_replayed_kh": 0.0,
+            "occupied_project_violation_minutes": 0.0,
+            "occupied_max_c": 24.01346487521357,
+            "occupied_project_peak_excursion_k": 0.0,
+            "maximum_indoor_c": 24.01346487521357
+          },
+          "controller": {
+            "cooling_kwh": 1.748052257883086,
+            "fan_kwh": 0.0709030242262229,
+            "electricity_kwh": 1.818955282109309,
+            "official_replayed_kh": 0.39601497484247705,
+            "project_replayed_kh": 0.0,
+            "occupied_project_violation_minutes": 0.0,
+            "occupied_max_c": 24.546883329623654,
+            "occupied_project_peak_excursion_k": 0.0,
+            "maximum_indoor_c": 24.546883329623654
+          },
+          "saved_kwh": 0.04238642843714624,
+          "saved_percent": 2.2771975826352904,
+          "added_project_kh": 0.0
+        },
+        "recovery_penalty_kwh": 0.018666730663014608
+      },
+      {
+        "activation": 14295600,
+        "released_to_native": 14298300,
+        "delivered_minutes": 45,
+        "recovery_minutes_scored": 120,
+        "rejoined_after_minutes": 20,
+        "hold": {
+          "start": 14295600,
+          "end": 14298300,
+          "native": {
+            "cooling_kwh": 0.3891760873762522,
+            "fan_kwh": 0.014542785720178702,
+            "electricity_kwh": 0.4037188730964309,
+            "official_replayed_kh": 0.012917501673185209,
+            "project_replayed_kh": 0.0,
+            "occupied_project_violation_minutes": 0.0,
+            "occupied_max_c": 24.01875092023738,
+            "occupied_project_peak_excursion_k": 0.0,
+            "maximum_indoor_c": 24.01875092023738
+          },
+          "controller": {
+            "cooling_kwh": 0.33699031740134866,
+            "fan_kwh": 0.010267594993209412,
+            "electricity_kwh": 0.34725791239455805,
+            "official_replayed_kh": 0.3715510849811536,
+            "project_replayed_kh": 0.0,
+            "occupied_project_violation_minutes": 0.0,
+            "occupied_max_c": 24.559894627823326,
+            "occupied_project_peak_excursion_k": 0.0,
+            "maximum_indoor_c": 24.559894627823326
+          },
+          "saved_kwh": 0.05646096070187284,
+          "saved_percent": 13.98521705681735,
+          "added_project_kh": 0.0
+        },
+        "recovery": {
+          "start": 14298300,
+          "end": 14305500,
+          "native": {
+            "cooling_kwh": 1.2623822114937782,
+            "fan_kwh": 0.05219828029167985,
+            "electricity_kwh": 1.314580491785458,
+            "official_replayed_kh": 0.017770199974191315,
+            "project_replayed_kh": 0.0,
+            "occupied_project_violation_minutes": 0.0,
+            "occupied_max_c": 24.014600546150348,
+            "occupied_project_peak_excursion_k": 0.0,
+            "maximum_indoor_c": 24.014600546150348
+          },
+          "controller": {
+            "cooling_kwh": 1.279502028881023,
+            "fan_kwh": 0.05315210595968808,
+            "electricity_kwh": 1.332654134840711,
+            "official_replayed_kh": 0.03562521516366554,
+            "project_replayed_kh": 0.0,
+            "occupied_project_violation_minutes": 0.0,
+            "occupied_max_c": 24.516334776792405,
+            "occupied_project_peak_excursion_k": 0.0,
+            "maximum_indoor_c": 24.516334776792405
+          },
+          "saved_kwh": -0.018073643055253052,
+          "saved_percent": -1.3748601297669876,
+          "added_project_kh": 0.0
+        },
+        "joint": {
+          "start": 14295600,
+          "end": 14305500,
+          "native": {
+            "cooling_kwh": 1.6515582988700295,
+            "fan_kwh": 0.06674106601185857,
+            "electricity_kwh": 1.718299364881888,
+            "official_replayed_kh": 0.03068770164737652,
+            "project_replayed_kh": 0.0,
+            "occupied_project_violation_minutes": 0.0,
+            "occupied_max_c": 24.01875092023738,
+            "occupied_project_peak_excursion_k": 0.0,
+            "maximum_indoor_c": 24.01875092023738
+          },
+          "controller": {
+            "cooling_kwh": 1.6164923462823724,
+            "fan_kwh": 0.06341970095289748,
+            "electricity_kwh": 1.6799120472352698,
+            "official_replayed_kh": 0.4071763001448189,
+            "project_replayed_kh": 0.0,
+            "occupied_project_violation_minutes": 0.0,
+            "occupied_max_c": 24.559894627823326,
+            "occupied_project_peak_excursion_k": 0.0,
+            "maximum_indoor_c": 24.559894627823326
+          },
+          "saved_kwh": 0.03838731764661829,
+          "saved_percent": 2.2340296709157514,
+          "added_project_kh": 0.0
+        },
+        "recovery_penalty_kwh": 0.018073643055253052
+      }
+    ],
+    "hold_and_recovery_saved_kwh": 0.11845536877581808,
+    "behavior": {
+      "total_verified_intervals": 864,
+      "warmer_actions_delivered": 3,
+      "warmer_intervals": 27,
+      "native_intervals": 837,
+      "warm_starts_selected": 0,
+      "safety_veto_count": 0,
+      "safety_vetoes": [],
+      "fallback_count": 0,
+      "fallback_origins": []
+    }
+  },
+  "optimizer_vs_native": {
+    "technical_validation": "PASS",
+    "fabricated": false,
+    "forcing_equivalence": {
+      "endpoints": 421,
+      "fields_compared": 16840,
+      "through_s": 14209200,
+      "tolerance": 1e-07,
+      "warmup_samples": 20161,
+      "native_samples_shared": 4201,
+      "matching_forecast_origins": 864,
+      "full_native_reproduction": false
+    },
+    "passed_proposed_criteria": false,
+    "criteria": {
+      "complete_72_hour_pair": true,
+      "confirmed_warmer_action": true,
+      "hold_max_at_or_below_25_5_c": true,
+      "no_occupied_project_excursions_in_hold_and_recovery": true,
+      "no_added_full_period_project_burden": false,
+      "recovery_marker_within_120_minutes": true,
+      "material_net_savings": true
+    },
+    "full": {
+      "start": 14083200,
+      "end": 14342400,
+      "native": {
+        "cooling_kwh": 15.899674554191673,
+        "fan_kwh": 0.6236079122273126,
+        "electricity_kwh": 16.523282466418987,
+        "official_replayed_kh": 1.2987544022871949,
+        "project_replayed_kh": 0.053917987080181244,
+        "occupied_project_violation_minutes": 11.5,
+        "occupied_max_c": 26.697295969791867,
+        "occupied_project_peak_excursion_k": 0.6972959697918668,
+        "maximum_indoor_c": 28.13975780740111,
+        "official_reported_kh": 1.2987544022871944
+      },
+      "controller": {
+        "cooling_kwh": 15.850229184437916,
+        "fan_kwh": 0.6178326606352649,
+        "electricity_kwh": 16.46806184507318,
+        "official_replayed_kh": 2.0541063739703023,
+        "project_replayed_kh": 0.055002473644843994,
+        "occupied_project_violation_minutes": 11.5,
+        "occupied_max_c": 26.70794140304025,
+        "occupied_project_peak_excursion_k": 0.7079414030402518,
+        "maximum_indoor_c": 28.152900958688974,
+        "official_reported_kh": 2.054106373970306
+      },
+      "saved_kwh": 0.055220621345807075,
+      "saved_percent": 0.33419885823554996,
+      "added_project_kh": 0.0010844865646627497
+    },
+    "windows": [
+      {
+        "activation": 14209200,
+        "released_to_native": 14211900,
+        "delivered_minutes": 45,
+        "recovery_minutes_scored": 120,
+        "rejoined_after_minutes": 20,
+        "hold": {
+          "start": 14209200,
+          "end": 14211900,
+          "native": {
+            "cooling_kwh": 0.4449242398630229,
+            "fan_kwh": 0.01776628984016616,
+            "electricity_kwh": 0.462690529703189,
+            "official_replayed_kh": 0.009259082027206727,
+            "project_replayed_kh": 0.0,
+            "occupied_project_violation_minutes": 0.0,
+            "occupied_max_c": 24.01346487521357,
+            "occupied_project_peak_excursion_k": 0.0,
+            "maximum_indoor_c": 24.01346487521357
+          },
+          "controller": {
+            "cooling_kwh": 0.38824934504984565,
+            "fan_kwh": 0.01279915571371342,
+            "electricity_kwh": 0.4010485007635591,
+            "official_replayed_kh": 0.3678167896677288,
+            "project_replayed_kh": 0.0,
+            "occupied_project_violation_minutes": 0.0,
+            "occupied_max_c": 24.54694885547906,
+            "occupied_project_peak_excursion_k": 0.0,
+            "maximum_indoor_c": 24.54694885547906
+          },
+          "saved_kwh": 0.061642028939629945,
+          "saved_percent": 13.32251796447458,
+          "added_project_kh": 0.0
+        },
+        "recovery": {
+          "start": 14211900,
+          "end": 14219100,
+          "native": {
+            "cooling_kwh": 1.3415924360993146,
+            "fan_kwh": 0.057058744743952554,
+            "electricity_kwh": 1.3986511808432671,
+            "official_replayed_kh": 0.010102290786882644,
+            "project_replayed_kh": 0.0,
+            "occupied_project_violation_minutes": 0.0,
+            "occupied_max_c": 24.010874247556842,
+            "occupied_project_peak_excursion_k": 0.0,
+            "maximum_indoor_c": 24.010874247556842
+          },
+          "controller": {
+            "cooling_kwh": 1.3578685838111337,
+            "fan_kwh": 0.057986928519247,
+            "electricity_kwh": 1.4158555123303806,
+            "official_replayed_kh": 0.028235464577889738,
+            "project_replayed_kh": 0.0,
+            "occupied_project_violation_minutes": 0.0,
+            "occupied_max_c": 24.51272056002159,
+            "occupied_project_peak_excursion_k": 0.0,
+            "maximum_indoor_c": 24.51272056002159
+          },
+          "saved_kwh": -0.017204331487113533,
+          "saved_percent": -1.2300659179897016,
+          "added_project_kh": 0.0
+        },
+        "joint": {
+          "start": 14209200,
+          "end": 14219100,
+          "native": {
+            "cooling_kwh": 1.7865166759623365,
+            "fan_kwh": 0.0748250345841187,
+            "electricity_kwh": 1.8613417105464551,
+            "official_replayed_kh": 0.01936137281408937,
+            "project_replayed_kh": 0.0,
+            "occupied_project_violation_minutes": 0.0,
+            "occupied_max_c": 24.01346487521357,
+            "occupied_project_peak_excursion_k": 0.0,
+            "maximum_indoor_c": 24.01346487521357
+          },
+          "controller": {
+            "cooling_kwh": 1.7461179288609792,
+            "fan_kwh": 0.07078608423296044,
+            "electricity_kwh": 1.8169040130939396,
+            "official_replayed_kh": 0.3960522542456186,
+            "project_replayed_kh": 0.0,
+            "occupied_project_violation_minutes": 0.0,
+            "occupied_max_c": 24.54694885547906,
+            "occupied_project_peak_excursion_k": 0.0,
+            "maximum_indoor_c": 24.54694885547906
+          },
+          "saved_kwh": 0.04443769745251558,
+          "saved_percent": 2.3874013675581094,
+          "added_project_kh": 0.0
+        },
+        "recovery_penalty_kwh": 0.017204331487113533
+      },
+      {
+        "activation": 14295600,
+        "released_to_native": 14298300,
+        "delivered_minutes": 45,
+        "recovery_minutes_scored": 120,
+        "rejoined_after_minutes": 20,
+        "hold": {
+          "start": 14295600,
+          "end": 14298300,
+          "native": {
+            "cooling_kwh": 0.3891760873762522,
+            "fan_kwh": 0.014542785720178702,
+            "electricity_kwh": 0.4037188730964309,
+            "official_replayed_kh": 0.012917501673185209,
+            "project_replayed_kh": 0.0,
+            "occupied_project_violation_minutes": 0.0,
+            "occupied_max_c": 24.01875092023738,
+            "occupied_project_peak_excursion_k": 0.0,
+            "maximum_indoor_c": 24.01875092023738
+          },
+          "controller": {
+            "cooling_kwh": 0.3368613072070776,
+            "fan_kwh": 0.010261465797809049,
+            "electricity_kwh": 0.34712277300488664,
+            "official_replayed_kh": 0.37155396348251446,
+            "project_replayed_kh": 0.0,
+            "occupied_project_violation_minutes": 0.0,
+            "occupied_max_c": 24.55991261936788,
+            "occupied_project_peak_excursion_k": 0.0,
+            "maximum_indoor_c": 24.55991261936788
+          },
+          "saved_kwh": 0.056596100091544255,
+          "saved_percent": 14.018690693715948,
+          "added_project_kh": 0.0
+        },
+        "recovery": {
+          "start": 14298300,
+          "end": 14305500,
+          "native": {
+            "cooling_kwh": 1.2623822114937782,
+            "fan_kwh": 0.05219828029167985,
+            "electricity_kwh": 1.314580491785458,
+            "official_replayed_kh": 0.017770199974191315,
+            "project_replayed_kh": 0.0,
+            "occupied_project_violation_minutes": 0.0,
+            "occupied_max_c": 24.014600546150348,
+            "occupied_project_peak_excursion_k": 0.0,
+            "maximum_indoor_c": 24.014600546150348
+          },
+          "controller": {
+            "cooling_kwh": 1.279168189393986,
+            "fan_kwh": 0.05313144061430066,
+            "electricity_kwh": 1.3322996300082866,
+            "official_replayed_kh": 0.03563284201107966,
+            "project_replayed_kh": 0.0,
+            "occupied_project_violation_minutes": 0.0,
+            "occupied_max_c": 24.516343184450648,
+            "occupied_project_peak_excursion_k": 0.0,
+            "maximum_indoor_c": 24.516343184450648
+          },
+          "saved_kwh": -0.017719138222828557,
+          "saved_percent": -1.347892984381846,
+          "added_project_kh": 0.0
+        },
+        "joint": {
+          "start": 14295600,
+          "end": 14305500,
+          "native": {
+            "cooling_kwh": 1.6515582988700295,
+            "fan_kwh": 0.06674106601185857,
+            "electricity_kwh": 1.718299364881888,
+            "official_replayed_kh": 0.03068770164737652,
+            "project_replayed_kh": 0.0,
+            "occupied_project_violation_minutes": 0.0,
+            "occupied_max_c": 24.01875092023738,
+            "occupied_project_peak_excursion_k": 0.0,
+            "maximum_indoor_c": 24.01875092023738
+          },
+          "controller": {
+            "cooling_kwh": 1.616029496601063,
+            "fan_kwh": 0.06339290641210973,
+            "electricity_kwh": 1.6794224030131728,
+            "official_replayed_kh": 0.40718680549359393,
+            "project_replayed_kh": 0.0,
+            "occupied_project_violation_minutes": 0.0,
+            "occupied_max_c": 24.55991261936788,
+            "occupied_project_peak_excursion_k": 0.0,
+            "maximum_indoor_c": 24.55991261936788
+          },
+          "saved_kwh": 0.038876961868715254,
+          "saved_percent": 2.2625255332843337,
+          "added_project_kh": 0.0
+        },
+        "recovery_penalty_kwh": 0.017719138222828557
+      }
+    ],
+    "hold_and_recovery_saved_kwh": 0.08331465932123083,
+    "behavior": {
+      "total_verified_intervals": 864,
+      "warmer_actions_delivered": 2,
+      "warmer_intervals": 18,
+      "native_intervals": 846,
+      "warm_starts_selected": 0,
+      "safety_veto_count": 0,
+      "safety_vetoes": [],
+      "fallback_count": 0,
+      "fallback_origins": []
+    }
+  },
+  "optimizer_saved_vs_fixed_kwh": -0.019459439239287946,
+  "optimizer_added_project_vs_fixed_kh": -0.0006505915043016827,
+  "optimizer_start_choices": {
+    "A0": 1,
+    "A3": 2
+  },
+  "optimizer_candidate_rejections": {
+    "No matched release/recovery evidence for this duration": 6,
+    "Initial state or issued weather outside the measured response envelope": 1,
+    "Setpoint exceeds the qualified actuator/response domain": 27
+  },
+  "optimizer_passed": false,
+  "optimizer_positive_energy_vs_fixed": false
+}

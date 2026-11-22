@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>G163 optimizer comparison</title>
+<style>
+  body{margin:0;background:#edf2f7;color:#172a40;font:16px system-ui}main{max-width:1180px;margin:auto;padding:24px}h1{margin:.4rem 0}h2{font-size:1.1rem;margin:0 0 12px}p{margin:.5rem 0}small{color:#52667c}.badge{display:inline-block;background:#d7edf2;color:#194c65;border-radius:5px;padding:6px 10px}.card{background:white;padding:18px;border-radius:10px;margin:14px 0}.scroll{overflow:auto}label,button,select{font:inherit}button,select{padding:7px;margin:3px 2px;border:1px solid #aabbce;border-radius:6px;background:white}button:disabled{opacity:.55}input[type=range]{width:min(100%,650px)}table{border-collapse:collapse;width:100%;font-size:.88rem;text-align:left}th,td{padding:8px;border-bottom:1px solid #ddd;white-space:nowrap}tbody tr:nth-child(even){background:#f4f7fa}.plots{display:grid;grid-template-columns:repeat(auto-fit,minmax(245px,1fr));gap:12px}.plots .card{margin:0}canvas{width:100%;height:155px}.legend{display:flex;gap:12px;flex-wrap:wrap;font-size:.88rem;margin-bottom:8px}.dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:5px}#error{color:#8a1821}
+</style>
+<main>
+  <strong class="badge">MEASURED REPLAY</strong>
+  <h1>G163 optimizer comparison</h1>
+  <p id="time" aria-live="polite"></p>
+  <section class="card" aria-label="Replay controls">
+    <button id="play">Play replay</button><button id="pause">Pause</button><button id="finish">Show final frame</button>
+    <label for="jump">Jump to decision</label> <select id="jump"><option value="">Select a day</option></select>
+    <p><label for="timeline">Verified interval <span id="frame"></span></label></p>
+    <input type="range" id="timeline" min="1" value="1">
+  </section>
+  <p id="error" role="alert"></p>
+  <div id="evidence" hidden>
+    <section class="card">
+      <h2>Measured state and HVAC control</h2>
+      <div class="scroll"><table><thead><tr><th>Arm</th><th>Indoor °C</th><th>Cooling W</th><th>Fan W</th><th>Requested cooling</th><th>Verified °C</th><th>Override</th><th>Recorded decision</th></tr></thead><tbody id="control"></tbody></table></div>
+    </section>
+    <section class="card">
+      <h2>Cumulative electricity and comfort</h2>
+      <div class="scroll"><table><thead><tr><th>Arm</th><th>Cooling + fan kWh</th><th>Official K·h</th><th>Project 20–26°C K·h</th><th>Occupied violation min</th></tr></thead><tbody id="metrics"></tbody></table></div>
+      <p id="savings"></p><small id="scoring"></small>
+    </section>
+    <section class="card" id="optimization" hidden>
+      <h2>Latest 11:00 fixed-hold optimizer evaluation</h2><p id="rank-summary"></p>
+      <div class="scroll"><table><thead><tr><th>Candidate</th><th>Predicted peak °C</th><th>Predicted cooling kWh</th><th>Predicted fan kWh</th><th>Predicted combined kWh</th><th>Decision at origin</th></tr></thead><tbody id="candidates"></tbody></table></div>
+    </section>
+    <div class="legend" id="legend" aria-label="Chart legend"></div>
+    <div class="plots">
+      <section class="card"><h2>Indoor temperature · °C</h2><canvas id="temperature" aria-label="Measured indoor temperature for all arms"></canvas></section>
+      <section class="card"><h2>Cooling + fan power · W</h2><canvas id="power" aria-label="Measured cooling and fan power for all arms"></canvas></section>
+      <section class="card"><h2>Cooling + fan energy · kWh</h2><canvas id="energy" aria-label="Cumulative measured cooling and fan energy for all arms"></canvas></section>
+    </div>
+  </div>
+</main>
+<script>
+"use strict";
+const byId = id => document.getElementById(id);
+const colors = ["#246bab", "#ad580c", "#6d499c"];
+const number = (x, digits = 2) => Number.isFinite(x) ? x.toFixed(digits) : "—";
+const clock = stamp => `${String(Math.floor(stamp % 86400 / 3600)).padStart(2,"0")}:${String(Math.floor(stamp % 3600 / 60)).padStart(2,"0")}`;
+const day = (stamp, start) => 1 + Math.floor((stamp - start) / 86400);
+const words = reason => reason.replaceAll("_", " ");
+let latest, pending = false, dragging = false;
+
+function cells(id, rows) {
+  const table = byId(id);
+  table.replaceChildren();
+  for (const values of rows) {
+    const row = table.insertRow();
+    for (const value of values) row.insertCell().textContent = value;
+  }
+}
+
+function chart(id, arms, field, elapsed) {
+  const canvas = byId(id);
+  const width = canvas.width = Math.max(240, canvas.clientWidth), height = canvas.height = 155;
+  const context = canvas.getContext("2d");
+  const values = arms.flatMap(arm => arm.series.map(row => row[field]));
+  const min = Math.min(...values), max = Math.max(...values), span = Math.max(max - min, .01);
+  const left = 38, right = width - 8, top = 12, bottom = height - 26;
+  context.fillStyle = "#52667c";
+  context.font = "11px system-ui";
+  context.fillText(number(max, 1), 0, top);
+  context.fillText(number(min, 1), 0, bottom);
+  context.fillText("0 h", left, height - 4);
+  context.fillText(`${number(elapsed, 1)} h`, width - 42, height - 4);
+  arms.forEach((arm, index) => {
+    context.beginPath();
+    context.strokeStyle = colors[index];
+    context.lineWidth = 2;
+    context.setLineDash(index === 0 ? [] : index === 1 ? [8, 4] : [3, 4]);
+    arm.series.forEach((row, i) => {
+      const x = left + (right - left) * i / (arm.series.length - 1);
+      const y = bottom - (bottom - top) * (row[field] - min) / span;
+      if (i === 0) context.moveTo(x, y);
+      else context.lineTo(x, y);
+    });
+    context.stroke();
+  });
+}
+
+function render(s) {
+  latest = s;
+  byId("evidence").hidden = !s.ready;
+  byId("error").textContent = s.error || "";
+  if (!s.ready) return;
+  byId("time").textContent = `Campaign day ${day(s.now, s.start)} · ${clock(s.now)} · ${number((s.now - s.start) / 3600, 2)} hours elapsed`;
+  byId("play").disabled = s.playing || s.cursor === s.total;
+  byId("pause").disabled = !s.playing;
+  byId("timeline").max = s.total;
+  if (!dragging) {
+    byId("timeline").value = s.cursor;
+    byId("frame").textContent = `${s.cursor} / ${s.total}`;
+  }
+  if (byId("jump").options.length === 1) {
+    for (const decision of s.decisions) byId("jump").add(new Option(`Day ${day(decision.origin, s.start)} · ${clock(decision.origin)}`, decision.cursor));
+    for (const [index, arm] of s.arms.entries()) {
+      const name = document.createElement("span"), dot = document.createElement("i");
+      dot.className = "dot";
+      dot.style.backgroundColor = colors[index];
+      name.append(dot, arm.name);
+      byId("legend").append(name);
+    }
+  }
+  cells("control", s.arms.map(a => [a.name, number(a.temperature_c,3), number(a.cooling_w,1), number(a.fan_w,1),
+    a.requested_c === null ? "Native schedule" : `${number(a.requested_c,1)}°C`, number(a.verified_c),
+    a.override ? "Active" : "Released", words(a.decision) + (a.fallback ? " · safety fallback" : "")]));
+  cells("metrics", s.arms.map(a => [a.name, number(a.energy_kwh,5), number(a.official_kh,6), number(a.project_kh,6), number(a.occupied_violation_min,1)]));
+  byId("savings").textContent = `Optimizer electricity saved · ${number(s.optimizer_saved[0],5)} kWh vs native · ${number(s.optimizer_saved[1],5)} kWh vs fixed warmer`;
+  byId("scoring").textContent = `Official discomfort source ${s.official_source}` + (s.cursor === s.total ? ` · frozen optimizer outcome ${s.passed ? "PASS" : "FAIL"}` : "");
+  byId("optimization").hidden = !s.rank;
+  if (s.rank) {
+    const rank = s.rank;
+    byId("rank-summary").textContent = `Day ${day(rank.origin,s.start)} · ${clock(rank.origin)} · selected ${rank.selected} · ${words(rank.trigger)} · ${number(rank.reserve_c,1)}°C reserve · ${number(rank.uncertainty_kwh,4)} kWh uncertainty`;
+    cells("candidates", rank.candidates.map(c => [c.id === "A0" ? "A0 · Native" : "A3 · 24.5°C / 45 min", number(c.predicted?.peak_c,3),
+      number(c.predicted?.cooling_kwh,5), number(c.predicted?.fan_kwh,5), number(c.predicted?.total_kwh,5),
+      c.id === rank.selected ? "Selected" : c.feasible ? "Feasible" : c.reasons.join(" · ")]));
+  }
+  ["temperature","power","energy"].forEach((id, index) => chart(id,s.arms,index,(s.now - s.start) / 3600));
+}
+
+async function refresh() {
+  if (pending) return;
+  pending = true;
+  try {
+    const response = await fetch("/state");
+    if (!response.ok) throw Error("Recorded evidence is unavailable");
+    render(await response.json());
+  } catch (error) { byId("error").textContent = error.message; }
+  finally { pending = false; }
+}
+
+async function command(action, cursor) {
+  try {
+    const result = await fetch("/command", {method:"POST", headers:{"Content-Type":"application/json"}, body:JSON.stringify({action,cursor})});
+    if (!result.ok) throw Error((await result.json()).error);
+    await refresh();
+  } catch (error) { byId("error").textContent = error.message; }
+}
+
+byId("play").onclick = () => command("play");
+byId("pause").onclick = () => command("pause");
+byId("finish").onclick = () => command("seek", latest.total);
+byId("jump").onchange = event => {
+  if (event.target.value) command("seek", Number(event.target.value));
+  event.target.value = "";
+};
+byId("timeline").oninput = () => { dragging = true; byId("frame").textContent = `${byId("timeline").value} / ${latest.total}`; };
+byId("timeline").onchange = () => { dragging = false; command("seek", Number(byId("timeline").value)); };
+setInterval(refresh, 450);
+refresh();
+</script>
+</html>

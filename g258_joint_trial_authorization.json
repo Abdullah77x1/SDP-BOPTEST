@@ -1,0 +1,26 @@
+{
+  "campaign": "G258_JOINT060_1400_01",
+  "campaign_sha256": "4ff7cc5cef2c68fe52b3fa4735b55b29288059b20b470dcc7e7824b671632971",
+  "budgets": {
+    "instances": 2,
+    "concurrent_instances": 1,
+    "initializations": 2,
+    "advances_per_arm": 36,
+    "total_advances": 72,
+    "maximum_fan_advances": 6,
+    "maximum_joint_advances": 6,
+    "retries": 0,
+    "replacements": 0
+  },
+  "implementation_sha256": "1efc0ed4a0f91510c88ba9ef4d222566864c01b1d3affa02034c10b111a2e7c9",
+  "archive_manifest_sha256": "eae2b6954f9bbd3962d92582f86e1781eb98f6bf5756cb7974ee91962f795e1b",
+  "run_ids": [
+    "G258_JOINT060_1400_01_A",
+    "G258_JOINT060_1400_01_B"
+  ],
+  "automatic_retries": false,
+  "native_screen_seal_sha256": "8262980cffe19e0a9e332d935c935ae9ed1f006b2c515ea8cfc8e70977c04a56",
+  "partition_plan_sha256": "9de1468aec7bd710ce08416bb4fa80dbdf07223380103d3ebd609cc04b634d20",
+  "status": "EXPLICITLY_AUTHORIZED_G258_JOINT060_1400_01",
+  "approval_text": "I explicitly authorize execution of the frozen campaign G258_JOINT060_1400_01 on genuine pinned BOPTEST BESTEST Air 0.9.0. Two sequential disposable BOPTEST instances, 36 five-minute advances per arm, 72 total advances maximum, and zero retries or replacements. Identical frozen G258 initialization and seven-day native warmup. Arm A completely native. Arm B fan command 0.60 and supply-temperature override calculated at 14:00 using the frozen decision-time equation. Both overrides active from 14:00 to 14:30 and released at 14:30, followed by 120 minutes of native recovery. The room cooling setpoint remains native at 24°C. Preserve frozen safety, scoring, command verification and cleanup. Stop if any frozen detail or preflight differs. No additional experiments or optimizer integration."
+}

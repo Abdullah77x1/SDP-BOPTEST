@@ -1,0 +1,28 @@
+{
+  "classification": "PASS_VALID_RAW",
+  "run_id": "OPTIMIZER_G163_NATIVE_FIXED_PREDICTIVE_C",
+  "cleanup": "STOP_ACK_AND_REMOVAL_VERIFIED",
+  "fabricated": false,
+  "cleanup_evidence": {
+    "acknowledgement": "OK",
+    "instance_removed": true,
+    "removal_checks": [
+      {
+        "utc": "2026-11-21T14:01:07.302225+00:00",
+        "instance_directory_exists": true
+      },
+      {
+        "utc": "2026-11-21T14:01:08.475509+00:00",
+        "instance_directory_exists": true
+      },
+      {
+        "utc": "2026-11-21T14:01:09.633055+00:00",
+        "instance_directory_exists": false
+      }
+    ]
+  },
+  "verified_advances": 864,
+  "advance_attempts": 864,
+  "deployments": 1,
+  "initializations": 1
+}
