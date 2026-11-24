@@ -40,13 +40,21 @@ For a browser replay, use the same Python and working directory with `-B -m sdp_
 
 ## Live verification scope
 
-The source host verified one supervised live BOPTEST session on 24 November. The command was applied at 11:05 and native return confirmed at 11:50. The separate setup audit is needed before any new live demonstration. This offline package does not provision Docker images or authorize a simulator advance. [Saved live evidence locations](../research/EVIDENCE_INDEX.md#e15).
+To run live with an authorized operator, install and verify BOPTEST BESTEST Air 0.9.0 using the [setup repository](https://github.com/Abdullah77x1/SDP-BOPTEST-Setup). Leave its local Docker stack running at `http://127.0.0.1:80`. Use the same Python environment as the offline install. From the unpacked archive's `SDP-BOPTEST/SDP_BOPTEST_Pilot` directory, run:
+
+```powershell
+& $py -B -m sdp_redesign.native_twin --live --port 8770
+```
+
+Open [the local dashboard](http://127.0.0.1:8770/). Live mode checks the benchmark version and FMU identity, initializes its own simulator instance and waits for the operator to step it. The dashboard reports command readback and native release. Use Stop to close the simulator instance, then Ctrl+C to exit the dashboard server.
+
+The source host verified one supervised live session on 24 November. The command was applied at 11:05 and native return confirmed at 11:50. [Saved live evidence locations](../research/EVIDENCE_INDEX.md#e15).
 
 The [historical GitHub README](https://github.com/Abdullah77x1/SDP-BOPTEST/blob/2abf4e1846f22149a65a45d35454b4a4b0d8c5f9/README.md) describes the earlier O25 rolling system. The final implementation uses the frozen 27-input checkpoint in the release archive.
 
 ## Isolated verification
 
-A fresh Python 3.12.14 environment with the original pinned requirements verified the model, both replay summaries and all 59 regression checks on 24 November. The new replay summaries are identical as data to the archived verification summaries. The review archive has SHA-256 `5581548980707ec01f75062475f471b8032f3312599f1845611714094128843a`. A separate startup check returned HTTP 200 and the expected archived-replay dashboard HTML.
+A fresh Python 3.12.14 environment with the original pinned requirements verified the model, both replay summaries and all 59 regression checks on 24 November. The new replay summaries are identical as data to the archived verification summaries. The uploaded release asset was downloaded, and its byte count and checksum matched the tested archive. The archive has SHA-256 `5581548980707ec01f75062475f471b8032f3312599f1845611714094128843a`. A separate startup check returned HTTP 200 and the expected archived-replay dashboard HTML.
 
 ## Review the implementation
 
