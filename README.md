@@ -12,6 +12,10 @@ We investigated how a digital twin can forecast HVAC behavior and evaluate chang
 - [Repository inventory](REPOSITORY_INDEX.md), [published research records](docs/research/artifacts/README.md), [experiment results](docs/research/EXPERIMENT_INDEX.md), and [engineering decisions](docs/design-decisions/DECISION_RECORDS.md).
 - [Requirements and specification](docs/requirements/BASELINE.md), [individual contributions](CONTRIBUTIONS.md), [AI-assisted development](docs/ai-prompts/README.md), and [final submission](docs/final-submission/README.md).
 
+## Final report
+
+[Word](docs/final-submission/COSC14%20SDP1%20Final%20report.docx) · [PDF](docs/final-submission/COSC14%20SDP1%20Final%20report.pdf)
+
 ## Run or verify the final dashboard
 
 Download the [final implementation ZIP](https://github.com/Abdullah77x1/SDP-BOPTEST/releases/download/cosc14-sdp1-offline-v1/COSC14_SDP1_Offline_Handoff.zip) from the private release and unpack it. The [handoff guide](docs/final-implementation/HANDOFF.md) lists the model location, Python 3.12.14 setup, replay commands and optional live BOPTEST connection. Review the [dashboard source](docs/final-implementation/source/native_twin.py), [ordered model schema](docs/final-implementation/selected_model.json) and [saved regression results](docs/final-implementation/verification/offline-regression.txt).

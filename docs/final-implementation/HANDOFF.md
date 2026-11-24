@@ -46,7 +46,7 @@ The [historical GitHub README](https://github.com/Abdullah77x1/SDP-BOPTEST/blob/
 
 ## Isolated verification
 
-A fresh Python 3.12.14 environment with the original pinned requirements verified the model, both replay summaries and all 59 regression checks on 24 November. The new replay summaries are identical as data to the archived verification summaries. The review archive has SHA-256 `5581548980707ec01f75062475f471b8032f3312599f1845611714094128843a`. A separate startup check returned HTTP 200 and the expected archived-replay dashboard HTML.
+A fresh Python 3.12.14 environment with the original pinned requirements verified the model, both replay summaries and all 59 regression checks on 24 November. The new replay summaries are identical as data to the archived verification summaries. The uploaded release asset was downloaded, and its byte count and checksum matched the tested archive. The archive has SHA-256 `5581548980707ec01f75062475f471b8032f3312599f1845611714094128843a`. A separate startup check returned HTTP 200 and the expected archived-replay dashboard HTML.
 
 ## Review the implementation
 
