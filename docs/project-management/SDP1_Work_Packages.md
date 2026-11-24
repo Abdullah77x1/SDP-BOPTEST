@@ -1,6 +1,6 @@
 # SDP I work packages
 
-The [Gantt date register](GANTT_DATE_EVIDENCE.md) explains the dates and uncertainty. The [schedule](GANTT.md) displays the original 19–25 October sprint separately from the reconstructed work. The 26 October note assigns Abdullah Alhashmi to the simulator, Hamad Saleh to the dashboard, Alhoor Alhosani to prediction and Abdulla Alrashdi to optimization. The [team contribution summaries](../../CONTRIBUTIONS.md) describe the assigned roles, documented individual work and shared deliverables.
+The [Gantt date register](GANTT_DATE_EVIDENCE.md) explains the dates and uncertainty. The [schedule](GANTT.md) displays the original 19–25 October sprint separately from the reconstructed work. The 26 October note assigns Abdullah Alhashmi to the simulator, Hamad Saleh to the dashboard, Alhoor Alhosani to prediction and Abdulla Alrashdi to optimization. The [team contribution summaries](../../CONTRIBUTIONS.md) describe the revised end-of-semester roles, documented earlier work and shared deliverables. The original allocation is retained as a historical record.
 
 The AED 7,500 in the proposal is an allowance for cloud services and APIs. No actual expenditure or complete original effort plan was verified.
 
@@ -33,7 +33,7 @@ The AED 7,500 in the proposal is an allowance for cloud services and APIs. No ac
 - **Timing and status.** 2026-10-05 to 2026-11-08. Reconstructed. Complete.
 - **Dependencies.** WP2, WP3.
 - **Work and deliverables.** Audit CU-BEMS Zone 4, compare measured forecasting and investigate other datasets. Data suitability and real-data benchmark. Recovered CU-BEMS audit, Model B and data cards.
-- **Responsibility.** Abdullah Alhashmi’s documented CU-BEMS audit and Model B commits; the broader dataset investigations are recorded as team research.
+- **Responsibility.** Abdulla Alrashdi’s revised contribution area includes real-building dataset investigation. Abdullah Alhashmi’s earlier CU-BEMS audit and Model B commits remain documented; dataset investigations are shared team research.
 - **Evidence and limits.** D06–D08, D12–D13. Dated CUBEMS design, header analysis and notebook precede the local Model B work.
 
 ## WP5 · Simulator V2 and synthetic data
@@ -73,7 +73,7 @@ The AED 7,500 in the proposal is an allowance for cloud services and APIs. No ac
 - **Timing and status.** 2026-11-08 to 2026-11-14. Reconstructed. Complete.
 - **Dependencies.** WP4, WP5, WP7, WP8.
 - **Work and deliverables.** Review EnergyPlus, run interface and baseline suitability checks, compare with BOPTEST. Simulator decision and bounded baseline evidence. BOPTEST selected for reproducible command/readback workflow.
-- **Responsibility.** Shared team simulator evaluation and design decision, documented in the EnergyPlus study files and selection records.
+- **Responsibility.** Shared team simulator evaluation and design decision; comparing simulation alternatives is part of Abdulla Alrashdi’s revised contribution area. The EnergyPlus study files and selection records document the work.
 - **Evidence and limits.** E06, E08. EnergyPlus baselines ran, but a completed paired controller workflow was unavailable.
 
 ## WP10 · BOPTEST setup and data collection
@@ -81,7 +81,7 @@ The AED 7,500 in the proposal is an allowance for cloud services and APIs. No ac
 - **Timing and status.** 2026-11-14 to 2026-11-24. Reconstructed. Complete.
 - **Dependencies.** WP9.
 - **Work and deliverables.** Pin BESTEST Air 0.9.0, collect native and colder pairs, then add warmer-control cases. Setup tooling and 31-recording archive. Recovered manifests and command receipts.
-- **Responsibility.** BOPTEST setup publication by `Abdullah77x1`; data collection and review are documented as shared team deliverables.
+- **Responsibility.** Abdullah Alhashmi was responsible for BOPTEST setup, including publication under `Abdullah77x1`; data collection and review are documented as shared team deliverables.
 - **Evidence and limits.** E09, E10, E11. The setup repo packages installation and collection. The final archive and raw replays have separate delivery requirements.
 
 ## WP11 · Feature selection and model evaluation
@@ -89,7 +89,7 @@ The AED 7,500 in the proposal is an allowance for cloud services and APIs. No ac
 - **Timing and status.** 2026-11-16 to 2026-11-24. Reconstructed. Complete.
 - **Dependencies.** WP10.
 - **Work and deliverables.** Expand 8 to 16 targets, screen inputs, audit unusually small errors, use grouped comparisons and freeze 27-input forest. Input/output manifest, frozen model and score tables. Development +30 min temperature MAE 0.11545 °C.
-- **Responsibility.** Abdullah Alhashmi’s three documented local offline experiment repositories; later model evaluation is recorded as team work in the machine learning responsibility area.
+- **Responsibility.** Shared machine learning evaluation: Abdullah Alhashmi focused on control-related forecasting, Alhoor Alhosani on prediction accuracy and algorithm comparison, and Hamad Saleh on prediction-to-measurement comparison and visualization. Abdullah’s three documented local offline experiment repositories remain part of the historical evidence.
 - **Evidence and limits.** E10, E11. Repeated weather and known schedules limit claims. The reserved public groups were previously examined.
 
 ## WP12 · Occupancy forecasting
@@ -97,7 +97,7 @@ The AED 7,500 in the proposal is an allowance for cloud services and APIs. No ac
 - **Timing and status.** 2026-11-23 to 2026-11-24. Reconstructed. Complete.
 - **Dependencies.** WP4, WP10, WP11.
 - **Work and deliverables.** Compare UCI classifiers and failed transfer, then test replacing schedule and adding probability without schedule or clock. Two controlled HVAC comparisons. Final system retains known scheduled occupancy.
-- **Responsibility.** Team occupancy research, documented through the teammate handoff and local A/B Random Forest experiment artifacts.
+- **Responsibility.** Team occupancy research in Alhoor Alhosani’s revised machine learning contribution area, documented through the teammate handoff and local A/B Random Forest experiment artifacts.
 - **Evidence and limits.** E12. Fixed lighting and thermostat cues limit claims for irregular occupancy. Historical pre-cooling code is separate.
 
 ## WP13 · Advanced HVAC optimization
@@ -105,7 +105,7 @@ The AED 7,500 in the proposal is an allowance for cloud services and APIs. No ac
 - **Timing and status.** 2026-11-18 to 2026-11-24. Reconstructed. Complete.
 - **Dependencies.** WP7, WP10.
 - **Work and deliverables.** Test fixed, rule-based, action forest, Ridge, StepModel, fan-only and coordinated approaches. Matched control evidence, acceptance criteria and negative findings. Autonomous optimization declined.
-- **Responsibility.** Team control research in the optimization responsibility area, supported by earlier controller commits and the historical rolling handoff.
+- **Responsibility.** Team control research in Abdullah Alhashmi’s revised optimization contribution area, supported by the earlier controller commits and historical rolling handoff. The original optimization allocation remains documented.
 - **Evidence and limits.** E07, E13. Some small savings came with discomfort. Wrong-sign electrical response and incomplete recoveries limited decisions.
 
 ## WP14 · Final supervised integration
@@ -113,7 +113,7 @@ The AED 7,500 in the proposal is an allowance for cloud services and APIs. No ac
 - **Timing and status.** 2026-11-23 to 2026-11-24. Reconstructed. Complete.
 - **Dependencies.** WP10, WP11, WP13.
 - **Work and deliverables.** Combine observation, 27-input frozen inference, operator request validation, readback and native release. Supervised dashboard and native/warmer offline modes. Local checkout proof.
-- **Responsibility.** Shared integration of simulation, forecasting, visualization and control research. The final source and verification records document the integrated team system.
+- **Responsibility.** Shared integration of simulation, forecasting, visualization and control research, including Abdullah Alhashmi’s system integration contribution. The final source and verification records document the integrated team system.
 - **Evidence and limits.** E11, E14. Historical O25 and rolling controller remain separate. The final source and assets are available through the [private release handoff](../final-implementation/HANDOFF.md); access requires repository permission.
 
 ## WP15 · Testing and live verification
