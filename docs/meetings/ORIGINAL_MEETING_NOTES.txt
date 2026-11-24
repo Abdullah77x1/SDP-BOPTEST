@@ -1,0 +1,85 @@
+### General project management notes
+
+- Break the project into work packages.
+- Use a Gantt chart to document activities and time.
+
+### Monday, 19 October 2026 — SDP group meeting
+
+Foundation plan:
+
+- Read and understand the handbook.
+- Identify the required tasks.
+- Divide the tasks among team members.
+- Communicate regularly and provide frequent progress updates.
+- Review the tasks identified in the foundation planning document.
+
+The note refers to tasks 1–10 in another document. Locate that document if available. Do not invent the task descriptions.
+
+### Tuesday, 20 October 2026 — Suggested project improvements
+
+Literature review:
+
+- Add a comparison table for the three reviewed papers.
+- Include each paper's main contribution, limitations and application to our project.
+
+Proposed solution:
+
+- Explain the roles of simulation, optimization and the LLM.
+- Add an interactive dashboard for building measurements, predictions and recommendations.
+
+System architecture:
+
+- Create a diagram showing the project components and their interactions.
+- Show the dashboard as the digital twin's user interface.
+
+System specifications and scope:
+
+- Define functional and non-functional requirements.
+- Specify what users should be able to view and interact with through the dashboard.
+
+Findings and challenges:
+
+- Explain the limitations arising from the lack of a simulation model.
+- At this stage, recommendations were expected to use energy-related quantities rather than actual AC control commands.
+
+### Monday, 26 October 2026 — Technical discussion and task allocation
+
+Discussion topics:
+
+- Use room characteristics to determine cooling requirements.
+- Explain the role of sensors.
+- Investigate sensor noise.
+- Investigate missing or non-functioning sensors.
+- Consider combining real and simulated data.
+- Clearly identify SDP I deliverables.
+
+Recorded task assignments:
+
+- Hamad Saleh — Dashboard.
+- Abdulla Alrashdi — Optimization.
+- Alhoor Alhosani — Machine learning prediction model.
+- Abdullah Alhashmi — Simulator.
+
+These are the responsibilities recorded on that date. They must not automatically be treated as the complete list of actual contributions throughout the semester.
+
+### Monday, 2 November 2026 — Project feedback
+
+The following improvements were identified:
+
+- Show changing data through real-time visualization.
+- Explain the purpose of every dashboard component.
+- Explain how the selected machine learning models work.
+- Compare alternative models and justify their selection.
+- Explain the dataset thoroughly.
+- Investigate online learning and model adaptation.
+- Explore alternative models and input features.
+- Investigate automated decision-making without user interaction.
+- Quantify energy consumption with and without the digital twin.
+
+Additional technical notes mention Linear Regression, XGBoost, modeling policies and feature importance.
+
+### Monday, 9 November 2026 — Incomplete dated note
+
+A date is present in the original notes, but there is no clearly associated meeting description.
+
+Investigate available documents and records to determine whether additional meeting evidence exists. Do not assign the preceding technical notes to this date without supporting evidence.
