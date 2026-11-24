@@ -1,8 +1,8 @@
-# Alhoor Alhosani — Machine learning and prediction
+# Alhoor Alhosani — Machine learning, prediction and evaluation
 
 ## Contribution summary
 
-Alhoor was assigned responsibility for machine learning research and prediction models. This responsibility area covers the study of building measurements as prediction inputs, forecasting approaches, model training and the evaluation of prediction accuracy.
+Alhoor’s contribution areas include machine learning research, prediction model development, occupancy forecasting, feature selection and machine learning evaluation. Her evaluation role focuses on prediction accuracy, comparing algorithms and analyzing model performance. These areas build on the original machine learning allocation.
 
 The team's work in this area progressed from the earlier neural forecasting prototype to comparative BOPTEST forecasting and occupancy prediction studies. These studies contributed to the final model selection and the integration of forecasts into the dashboard.
 
@@ -13,6 +13,6 @@ The team's work in this area progressed from the earlier neural forecasting prot
 - [Final HVAC forecasting research](../research/EVIDENCE_INDEX.md#e11).
 - [Occupancy prediction experiments](../research/EVIDENCE_INDEX.md#e12).
 
-The linked research artifacts document the team's deliverables in the assigned area; they do not identify a particular individual as author. The allocation is the source of the individual responsibility described above.
+The linked research artifacts document shared team deliverables. The individual responsibility description draws on the original allocation and the revised end-of-semester contribution summary.
 
 [Team contribution summary](../../CONTRIBUTIONS.md)
