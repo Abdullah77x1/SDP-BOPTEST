@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Smart Building Digital Twin</title>
+<style>
+body{font:16px system-ui,sans-serif;background:#ecf2f6;color:#152938;margin:0}main{max-width:1150px;padding:28px;margin:auto}
+header{margin-bottom:18px}h1{margin:.35rem 0}h2{font-size:1.16rem;margin-top:0}p{color:#3f5264}small{color:#4c6174}
+.label{font-weight:700;color:#286166}.menu{display:flex;flex-wrap:wrap;gap:8px;align-items:center}button, input{font:inherit}button{padding:9px 14px;border:1px solid #9cafbb;border-radius:6px;background:white;color:#152938;cursor:pointer}button:disabled{opacity:.5;cursor:default}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}.panel{background:white;border-radius:10px;padding:18px;margin:12px 0;box-shadow:0 2px 7px #233e5010}.cards .panel{margin:0}.value{font-size:23px;font-weight:650;margin:.25rem 0}.scroll{overflow:auto}table{border-collapse:collapse;width:100%;font-size:14px}th,td{text-align:left;padding:8px;border-bottom:1px solid #dce5ec;white-space:nowrap}canvas{width:100%;height:185px}#error{color:#91228a}
+</style>
+<main>
+  <header><div class="label" id="connection">Connecting</div><h1>Smart Building Digital Twin</h1><p id="clock" aria-live="polite"></p></header>
+  <nav class="menu"><button id="step">Advance 5 minutes</button><button id="stop">Stop session</button><label id="timeline-label" hidden>Recorded step <input id="timeline" type="range" min="1" value="1"></label><small id="progress"></small></nav>
+  <p id="error" role="alert"></p>
+  <div class="cards">
+    <section class="panel">Room / outdoor<div class="value" id="temperature"></div><small>Measured temperature</small></section>
+    <section class="panel">Cooling / fan<div class="value" id="electric"></div><small>Measured electrical power</small></section>
+    <section class="panel">Estimated delivered heat<div class="value" id="gas"></div><small id="operation"></small></section>
+    <section class="panel">Measured cooling + fan energy<div class="value" id="energy"></div><small id="energy-parts"></small><br><small id="gas-energy"></small></section>
+  </div>
+  <section class="panel"><h2>Occupancy and official comfort</h2><p id="comfort"></p></section>
+  <section class="panel"><h2>Cooling-setpoint control</h2>
+    <button id="request" hidden>Request 24.5 °C at 11:00 for 45 minutes</button>
+    <p id="command"></p><p id="issued"></p><p id="release"></p></section>
+  <section class="panel" id="forecast-panel"><h2>Temperature and HVAC power forecasts</h2><p id="forecast-status"></p><div class="scroll"><table>
+    <thead><tr><th>Lead and target time</th><th>Room °C</th><th>Cooling kW (electric)</th><th>Fan kW (electric)</th><th>Delivered heating kW (thermal)</th></tr></thead><tbody id="forecasts"></tbody>
+  </table></div><small>Power covers the final five minutes of each forecast lead.</small></section>
+  <section class="panel" id="feedback-panel" hidden><h2>Latest forecasts with measured results</h2><small>Cells show forecast / measured (signed error).</small><div class="scroll"><table>
+    <thead><tr><th>Lead and observed time</th><th>Room °C</th><th>Cooling kW (electric)</th><th>Fan kW (electric)</th><th>Delivered heating kW (thermal)</th></tr></thead><tbody id="feedback"></tbody>
+  </table></div></section>
+  <div class="cards">
+    <section class="panel"><h2>Temperature history (°C)</h2><canvas id="temperature-chart" aria-label="Measured indoor and outdoor temperature"></canvas><small>Blue: room · orange: outdoor</small></section>
+    <section class="panel"><h2>Electric power history (W)</h2><canvas id="power-chart" aria-label="Measured cooling and fan electric power"></canvas><small>Blue: cooling · orange: fan</small></section>
+  </div>
+</main>
+<script>
+"use strict";
+const element = id => document.getElementById(id);
+const show = (id, value) => { element(id).textContent = value; };
+const number = (value, digits=2) => Number.isFinite(value) ? value.toFixed(digits) : "—";
+const stamp = value => new Date(Date.UTC(2001,0,1)+value*1000);
+const clock = value => stamp(value).toISOString().slice(11,16);
+const date = new Intl.DateTimeFormat("en", {month:"short",day:"numeric",timeZone:"UTC"});
+const quantities = ["indoor_temperature", "cooling", "fan", "heating"];
+let working = false;
+let refreshing = false;
+function table(id, data) {
+  const target = element(id);
+  target.replaceChildren();
+  for (const values of data) {
+    const row = target.insertRow();
+    values.forEach(value => row.insertCell().textContent = value);
+  }
+}
+function chart(id, rows, keys, offset) {
+  const canvas = element(id), ctx = canvas.getContext("2d");
+  const w = canvas.width = Math.max(canvas.clientWidth,240), h = canvas.height = 185;
+  const values = rows.flatMap(r => keys.map(key => r[key]-offset));
+  if (!values.length) return;
+  const low = Math.min(...values), high = Math.max(Math.max(...values), low+1);
+  const first = rows[0].time, span = Math.max(rows.at(-1).time-first,300);
+  ctx.font = "11px system-ui";
+  ctx.fillStyle = "#486075";
+  ctx.fillText(number(high,1), 0, 14);
+  ctx.fillText(number(low,1), 0, h-24);
+  ctx.fillText(clock(first), 44, h-6);
+  ctx.fillText(clock(rows.at(-1).time), w-43, h-6);
+  keys.forEach((key,index) => {
+    ctx.strokeStyle = ["#226ca3","#b36a19"][index];
+    ctx.beginPath();
+    rows.forEach((row,i) => {
+      const x = 44+(w-57)*(row.time-first)/span;
+      const y = 15+(h-42)*(1-(row[key]-offset-low)/(high-low));
+      if (i) ctx.lineTo(x,y); else ctx.moveTo(x,y);
+    });
+    ctx.stroke();
+  });
+}
+async function render() {
+  if (refreshing) return;
+  refreshing = true;
+  try {
+    const response = await fetch("/state");
+    if (!response.ok) throw new Error("Dashboard did not receive verified measurements");
+    const s = await response.json();
+    const commandReplay = s.mode === "command-replay";
+    const replay = commandReplay || s.mode.startsWith("archive-");
+    show("connection",replay ? "Read-only BOPTEST recording" : "Live BOPTEST");
+    show("clock",`${date.format(stamp(s.now))} · ${clock(s.now)} · benchmark day ${Math.floor(s.now/86400)}`);
+    show("progress",`${s.cursor} / ${s.total} ${replay ? "recorded observations" : "verified advances"}`+(s.cleanup ? ` · instance ${s.cleanup}` : ""));
+    show("error",s.error || "");
+    element("step").disabled = working || s.closed || s.cursor>=s.total;
+    show("step",replay ? "Next recorded step" : "Advance 5 minutes");
+    element("stop").hidden = replay;
+    element("stop").disabled = working || s.closed;
+    element("request").hidden = replay;
+    element("request").disabled = working || !s.can_request;
+    element("timeline-label").hidden = !replay;
+    element("timeline").max = s.total;
+    if (document.activeElement!==element("timeline")) element("timeline").value = s.cursor;
+    show("temperature",`${number(s.indoor)} / ${number(s.outdoor)} °C`);
+    show("electric",`${number(s.cooling_w,1)} / ${number(s.fan_w,1)} W`);
+    show("gas",`${number(s.heating_thermal_w,1)} W thermal`);
+    show("operation",s.hvac_mode);
+    show("energy",`${number(s.energy.electricity_kwh,4)} kWh`);
+    show("energy-parts",`Cooling ${number(s.energy.cooling_kwh,4)} kWh · fan ${number(s.energy.fan_kwh,4)} kWh`);
+    show("gas-energy",`Boiler gas input ${number(s.heating_input_kwh,4)} kWh`);
+    const band = s.official_band.join("–");
+    const excursion = s.official_excursion_k>1e-7 ? `outside bounds by ${number(s.official_excursion_k,4)} K` : "within bounds";
+    show("comfort",`${s.occupied ? "Occupied" : "Unoccupied"} · official ${band}°C · ${excursion} · ${replay ? "replayed" : "official"} cumulative discomfort ${number(s.official_kpi,5)} K·h`);
+    const plan = s.control_plan;
+    const planText = plan ? `${replay ? "Recorded plan" : "Requested at "+clock(s.requested_at)} ${number(plan[2]-273.15,1)} °C · ${date.format(stamp(plan[0]))} ${clock(plan[0])}–${clock(plan[1])}` : "Native schedule";
+    show("command",`${planText} · measured cooling setpoint ${number(s.effective_c)} °C · heating setpoint ${number(s.heating_setpoint_c)} °C`);
+    const issued = s.command_status;
+    let issuedText = s.override ? "Recorded override active" : "Native control observed";
+    if (issued) {
+      const target = issued.issued_c == null ? "native command" : number(issued.issued_c,1)+" °C";
+      const readback = issued.readback_at == null ? "readback unverified" :
+        `readback at ${clock(issued.readback_at)} · ${issued.verified_active ? "override verified active" : "native verified"}`;
+      const issueLabel = replay ? "Recorded issue" : issued.readback_at == null ? "Issue attempted" : "Issued";
+      issuedText = `${issueLabel} at ${clock(issued.issued_at)} · ${target} · ${readback}${issued.reason ? " · "+issued.reason.replaceAll("_"," ") : ""}`;
+    } else if (commandReplay && s.requested_c != null) {
+      issuedText = `Recorded request ${number(s.requested_c,1)} °C · verified in the archived readback`;
+    }
+    show("issued",issuedText);
+    const schedule = plan ? `Scheduled release ${date.format(stamp(plan[1]))} ${clock(plan[1])}` : "";
+    const release = s.release ? `Returned to native ${date.format(stamp(s.release.issued_at))} ${clock(s.release.issued_at)} · confirmed by ${clock(s.release.readback_at)} readback` : "";
+    show("release",[schedule,release].filter(Boolean).join(" · "));
+    element("forecast-panel").hidden = commandReplay;
+    show("forecast-status",s.forecast.source + (s.forecast.reason ? ` · ${s.forecast.reason}` : ""));
+    table("forecasts",s.forecast.values.map(row => [`+${row.horizon_min} min · ${clock(row.target)}`, ...quantities.map((key,i)=>number(row[key],i===0?3:4))]));
+    element("feedback-panel").hidden = !s.forecast_feedback.length;
+    table("feedback",[...s.forecast_feedback].sort((a,b)=>a.lead-b.lead).map(row => [
+      `+${row.lead} min · ${clock(row.target)} · ${row.source}`, ...quantities.map((key,i) => {
+        const digits = i===0 ? 3 : 4;
+        return `${number(row.predicted[key],digits)} / ${number(row.measured[key],digits)} (${number(row.errors[key],digits)})`;
+      })
+    ]));
+    chart("temperature-chart",s.history,["zon_reaTRooAir_y","zon_weaSta_reaWeaTDryBul_y"],273.15);
+    chart("power-chart",s.history,["fcu_reaPCoo_y","fcu_reaPFan_y"],0);
+  } catch (error) { show("error",error.message); }
+  finally { refreshing = false; }
+}
+async function send(message) {
+  if (working) return;
+  working = true;
+  element("step").disabled = true;
+  try {
+    const response = await fetch("/command",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(message)});
+    const result = await response.json();
+    if (!response.ok) throw new Error(result.error);
+    working = false;
+    await render();
+  } catch (error) { show("error",error.message); }
+  finally { working = false; }
+}
+element("step").onclick = () => send({action:"step"});
+element("stop").onclick = () => send({action:"stop"});
+element("request").onclick = () => send({action:"request-warmer"});
+element("timeline").onchange = event => send({action:"seek",cursor:Number(event.target.value)});
+render();
+setInterval(render,1000);
+</script>
+</html>

@@ -1,0 +1,24 @@
+{
+  "verified_2026_11_24": "Isolated offline reproduction, fresh CPython 3.12.14 environment with pinned dependencies",
+  "model_sha256": "a2e2e0e75df700c57dff21c07dd3f1ccaaa36cd9529b44400a7d537afae3b3e5",
+  "features": 27,
+  "targets": 16,
+  "regression_checks_passed": 59,
+  "replays": {
+    "native": {
+      "origins": 852,
+      "applied_intervals": 0,
+      "releases": 0,
+      "official_discomfort_kh": 1.5309526440778745,
+      "measured_energy_kwh": 22.341757951827717
+    },
+    "override": {
+      "origins": 852,
+      "applied_intervals": 27,
+      "releases": 3,
+      "official_discomfort_kh": 2.6624695413298625,
+      "measured_energy_kwh": 22.259925222325617
+    }
+  },
+  "original_live_run": "Separate earlier recorded 24 November verification. No new live simulator session was started during handoff review."
+}
