@@ -1,8 +1,10 @@
-# Abdullah Alhashmi — Simulation and system integration
+# Abdullah Alhashmi — HVAC optimization and system integration
 
 ## Contribution summary
 
-Abdullah was responsible for building simulation, data generation and system integration. His documented work includes the Simulator V2 prototype, Model A forecasting integration, investigations of CU-BEMS building measurements, the Model B archive, sensor-fault experiments and prototype verification. He also contributed to integrating Hamad’s dashboard with the forecasting system and publishing the BOPTEST setup and earlier controller handoff.
+Abdullah’s end-of-semester contribution areas include HVAC optimization research, control strategies and machine learning evaluation, particularly assessing the suitability of forecasts for control decisions. He was responsible for setting up BOPTEST and contributed to final system integration and verification.
+
+His earlier documented work, under the original simulator allocation, includes the Simulator V2 prototype, Model A integration, CU-BEMS audit, Model B archive, sensor-fault experiments and prototype verification. He also contributed to integrating Hamad’s dashboard and publishing the earlier controller handoff. The revised contribution emphasis does not replace these historical contributions.
 
 ## Project evidence
 
