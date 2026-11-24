@@ -1,5 +1,7 @@
 # GitHub evidence before final publication
 
+**Historical record — pre-publication audit (24 November 2026).** The findings below describe the repository before the final upload and are retained unchanged as historical evidence. The final implementation and semester records have since been published privately. See the [current README](README.md), [final handoff](docs/final-implementation/HANDOFF.md), [team contributions](CONTRIBUTIONS.md) and [final report](docs/final-submission/README.md) for the current project state.
+
 Read-only source and GitHub checks were performed on 24 November 2026. The authenticated owner inventory returned the three private project repositories below. The collaborator inventory yielded no additional repository. Targeted searches included the owner’s related names, COSC14, the identified dashboard account and the optimization account. The latter account query was unavailable to the connector. No additional project repository or fork was verified in the accessible scope. The local worktrees and experiment repositories remain documented in the [repository index](REPOSITORY_INDEX.md).
 
 | Repository | What was verified |
