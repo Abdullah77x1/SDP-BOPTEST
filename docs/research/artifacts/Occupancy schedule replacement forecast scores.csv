@@ -1,0 +1,991 @@
+model,target,quantity,horizon_min,unit,slice,weather_groups,events,n,MAE,RMSE,bias
+forest_action,target_indoor_temp_5min_c,indoor_temperature,5,degC,group_macro,4,26,7668,0.06454833934178061,0.18618480919374944,0.03275254353894411
+forest_action,target_indoor_temp_5min_c,indoor_temperature,5,degC,all,4,26,7668,0.0593782744617454,0.19238590240106568,0.029123470381916292
+forest_action,target_indoor_temp_5min_c,indoor_temperature,5,degC,native_reference,4,0,3408,0.06320613386012061,0.20153002641763168,0.03242595936905858
+forest_action,target_indoor_temp_5min_c,indoor_temperature,5,degC,applied_native,4,26,7503,0.05962976969109334,0.19393407366710386,0.02927618761819966
+forest_action,target_indoor_temp_5min_c,indoor_temperature,5,degC,active_colder,4,23,138,0.04606297597265093,0.08881789657657294,0.03669417897891213
+forest_action,target_indoor_temp_5min_c,indoor_temperature,5,degC,active_warmer,1,3,27,0.057546514672761485,0.14023004161499766,-0.05200968555214013
+forest_action,target_indoor_temp_5min_c,indoor_temperature,5,degC,heating_active_target_interval,3,0,633,0.08890842941649994,0.42987538008629694,-0.0711983934267762
+forest_action,target_indoor_temp_5min_c,indoor_temperature,5,degC,cooling_active_target_interval,4,25,2232,0.01662628416315569,0.080197599799828,0.0050445796144512
+forest_action,target_indoor_temp_5min_c,indoor_temperature,5,degC,major_temperature_transition,4,0,39,1.340140723570806,1.7640991138837283,-1.0513684625847655
+forest_action,target_indoor_temp_5min_c,indoor_temperature,5,degC,major_electrical_transition,3,22,91,0.24092574993759874,0.38766332397497283,0.1467840080376489
+forest_action,target_indoor_temp_5min_c,indoor_temperature,5,degC,cold_before_start,4,23,46,0.025354347833705514,0.031935525963348074,-0.022071804549763478
+forest_action,target_indoor_temp_5min_c,indoor_temperature,5,degC,warm_before_start,1,3,6,0.013333011311481494,0.016609884235946542,0.013333011311481494
+forest_action,target_indoor_temp_5min_c,indoor_temperature,5,degC,cold_active_override,4,23,138,0.04606297597265093,0.08881789657657294,0.03669417897891213
+forest_action,target_indoor_temp_5min_c,indoor_temperature,5,degC,warm_active_override,1,3,27,0.057546514672761485,0.14023004161499766,-0.05200968555214013
+forest_action,target_indoor_temp_5min_c,indoor_temperature,5,degC,cold_approaching_release,4,23,46,0.015562020106317808,0.023688781141001185,0.0030945230714420516
+forest_action,target_indoor_temp_5min_c,indoor_temperature,5,degC,warm_approaching_release,1,3,6,0.040502418081709735,0.05623149103542303,-0.0396546886626196
+forest_action,target_indoor_temp_5min_c,indoor_temperature,5,degC,cold_after_release,4,23,138,0.025981942213764184,0.0448660169593871,-0.020693689883880175
+forest_action,target_indoor_temp_5min_c,indoor_temperature,5,degC,warm_after_release,1,3,18,0.0288543504167781,0.053499119550848476,0.025126478170213754
+forest_action,target_indoor_temp_5min_c,indoor_temperature,5,degC,cold_recovery_30_to_120min,4,23,390,0.004436836510776751,0.007724206843308259,-0.00016475459179036514
+forest_action,target_indoor_temp_5min_c,indoor_temperature,5,degC,warm_recovery_30_to_120min,1,3,54,0.0016086394349166255,0.0019629995428266924,0.00020527097439163548
+forest_action,target_indoor_temp_5min_c,indoor_temperature,5,degC,group:D2_G100,1,2,1704,0.13613737648316496,0.28976542347392353,0.10500882814826788
+forest_action,target_indoor_temp_5min_c,indoor_temperature,5,degC,group:D2_G196,1,12,2556,0.018017755421463697,0.07464014993312648,9.088512569380986e-05
+forest_action,target_indoor_temp_5min_c,indoor_temperature,5,degC,group:D2_G310,1,7,1704,0.04178828522257492,0.1592804824945473,0.004731420112081893
+forest_action,target_indoor_temp_5min_c,indoor_temperature,5,degC,group:D2_G354,1,5,1704,0.06224994023991887,0.2210531808734004,0.02117904076973284
+forest_action,target_indoor_temp_10min_c,indoor_temperature,10,degC,group_macro,4,26,7668,0.0669053593253298,0.17432584831115416,0.025877779345071454
+forest_action,target_indoor_temp_10min_c,indoor_temperature,10,degC,all,4,26,7668,0.06262088775121394,0.17699412672897727,0.023090420470929407
+forest_action,target_indoor_temp_10min_c,indoor_temperature,10,degC,native_reference,4,0,3408,0.06571606634162425,0.18307668215246037,0.025899312684820486
+forest_action,target_indoor_temp_10min_c,indoor_temperature,10,degC,applied_native,4,26,7503,0.06318661780203928,0.1786060208291396,0.023418693785373996
+forest_action,target_indoor_temp_10min_c,indoor_temperature,10,degC,active_colder,4,23,138,0.038310362916003336,0.07224501949355619,0.014188070736253862
+forest_action,target_indoor_temp_10min_c,indoor_temperature,10,degC,active_warmer,1,3,27,0.02966458611849145,0.07404446048107262,-0.02263218748805395
+forest_action,target_indoor_temp_10min_c,indoor_temperature,10,degC,heating_active_target_interval,3,0,633,0.07578016947204559,0.2948610251676251,-0.05274267561535499
+forest_action,target_indoor_temp_10min_c,indoor_temperature,10,degC,cooling_active_target_interval,4,25,2232,0.0233567784716467,0.11631287020106307,0.010628267932939025
+forest_action,target_indoor_temp_10min_c,indoor_temperature,10,degC,major_temperature_transition,4,0,93,0.706109485667707,0.959389966331026,-0.1570392743310969
+forest_action,target_indoor_temp_10min_c,indoor_temperature,10,degC,major_electrical_transition,4,22,208,0.1655794061576028,0.3726878888651605,0.10382701278469904
+forest_action,target_indoor_temp_10min_c,indoor_temperature,10,degC,cold_before_start,4,23,46,0.042462111611969194,0.0788723484729298,0.0022114270924825023
+forest_action,target_indoor_temp_10min_c,indoor_temperature,10,degC,warm_before_start,1,3,6,0.0926276554384297,0.11068941864252635,-0.060194444313639885
+forest_action,target_indoor_temp_10min_c,indoor_temperature,10,degC,cold_active_override,4,23,138,0.038310362916003336,0.07224501949355619,0.014188070736253862
+forest_action,target_indoor_temp_10min_c,indoor_temperature,10,degC,warm_active_override,1,3,27,0.02966458611849145,0.07404446048107262,-0.02263218748805395
+forest_action,target_indoor_temp_10min_c,indoor_temperature,10,degC,cold_approaching_release,4,23,46,0.03656059621419555,0.06552842090771843,-0.01782048627381967
+forest_action,target_indoor_temp_10min_c,indoor_temperature,10,degC,warm_approaching_release,1,3,6,0.007192416277710834,0.008605082694250183,-0.007192416277710834
+forest_action,target_indoor_temp_10min_c,indoor_temperature,10,degC,cold_after_release,4,23,138,0.031368234018943425,0.06252168381078749,-0.022604514505691713
+forest_action,target_indoor_temp_10min_c,indoor_temperature,10,degC,warm_after_release,1,3,18,0.011694714084463383,0.016859849057682223,0.006446383238523386
+forest_action,target_indoor_temp_10min_c,indoor_temperature,10,degC,cold_recovery_30_to_120min,4,23,390,0.0065585752903124,0.010640894316856012,0.0021694011161972233
+forest_action,target_indoor_temp_10min_c,indoor_temperature,10,degC,warm_recovery_30_to_120min,1,3,54,0.0024347682084014657,0.002718359883494595,-0.002344910635200695
+forest_action,target_indoor_temp_10min_c,indoor_temperature,10,degC,known_release_crossing,4,39,39,0.045126285738727,0.07510461665138683,-0.027703781307234172
+forest_action,target_indoor_temp_10min_c,indoor_temperature,10,degC,group:D2_G100,1,2,1704,0.11489325917807242,0.26229660910869246,0.07391062395945633
+forest_action,target_indoor_temp_10min_c,indoor_temperature,10,degC,group:D2_G196,1,12,2556,0.02834511515828716,0.11105309094974392,0.0007915494777930014
+forest_action,target_indoor_temp_10min_c,indoor_temperature,10,degC,group:D2_G310,1,7,1704,0.0658814979353114,0.18646614737782502,0.010086778506357493
+forest_action,target_indoor_temp_10min_c,indoor_temperature,10,degC,group:D2_G354,1,5,1704,0.05850156502964821,0.13748754580835534,0.018722165436678994
+forest_action,target_indoor_temp_15min_c,indoor_temperature,15,degC,group_macro,4,26,7668,0.07672086179467186,0.17980587978373777,0.016822276144108184
+forest_action,target_indoor_temp_15min_c,indoor_temperature,15,degC,all,4,26,7668,0.07234199715031456,0.18390626328750406,0.014712890991034254
+forest_action,target_indoor_temp_15min_c,indoor_temperature,15,degC,native_reference,4,0,3408,0.07558297068510009,0.18931300563626952,0.016577524254612872
+forest_action,target_indoor_temp_15min_c,indoor_temperature,15,degC,applied_native,4,26,7503,0.07315112192981932,0.1856532715565658,0.015024398584221277
+forest_action,target_indoor_temp_15min_c,indoor_temperature,15,degC,active_colder,4,23,138,0.03971259020669885,0.07247403375794055,0.0026366613829510105
+forest_action,target_indoor_temp_15min_c,indoor_temperature,15,degC,active_warmer,1,3,27,0.014267735579747488,0.020721390580939462,-0.010128656629956974
+forest_action,target_indoor_temp_15min_c,indoor_temperature,15,degC,heating_active_target_interval,3,0,635,0.0742755015606057,0.22259512422785696,-0.04664528500710489
+forest_action,target_indoor_temp_15min_c,indoor_temperature,15,degC,cooling_active_target_interval,4,25,2232,0.028171248341245497,0.12751691903340065,0.012690519727314543
+forest_action,target_indoor_temp_15min_c,indoor_temperature,15,degC,major_temperature_transition,4,0,151,0.5944289186609668,0.7623246358569564,-0.00976992432564273
+forest_action,target_indoor_temp_15min_c,indoor_temperature,15,degC,major_electrical_transition,4,23,432,0.11790244979603683,0.2928701847396042,0.06676608680821772
+forest_action,target_indoor_temp_15min_c,indoor_temperature,15,degC,cold_before_start,4,23,46,0.05291077551526822,0.10035630793940771,0.024323981375862728
+forest_action,target_indoor_temp_15min_c,indoor_temperature,15,degC,warm_before_start,1,3,6,0.02971368473936901,0.03426892868069211,-0.016769670108275864
+forest_action,target_indoor_temp_15min_c,indoor_temperature,15,degC,cold_active_override,4,23,138,0.03971259020669885,0.07247403375794055,0.0026366613829510105
+forest_action,target_indoor_temp_15min_c,indoor_temperature,15,degC,warm_active_override,1,3,27,0.014267735579747488,0.020721390580939462,-0.010128656629956974
+forest_action,target_indoor_temp_15min_c,indoor_temperature,15,degC,cold_approaching_release,4,23,46,0.06323991757700305,0.09474651598319501,-0.03484024170716244
+forest_action,target_indoor_temp_15min_c,indoor_temperature,15,degC,warm_approaching_release,1,3,6,0.013446557629061218,0.013965677455935042,0.0032982841063139054
+forest_action,target_indoor_temp_15min_c,indoor_temperature,15,degC,cold_after_release,4,23,138,0.028099915579605388,0.05929044466672864,-0.019893328408128415
+forest_action,target_indoor_temp_15min_c,indoor_temperature,15,degC,warm_after_release,1,3,18,0.006755650964054085,0.009349506074298443,0.005055980891460384
+forest_action,target_indoor_temp_15min_c,indoor_temperature,15,degC,cold_recovery_30_to_120min,4,23,390,0.007983204144870025,0.01159543340299852,0.002447385745787282
+forest_action,target_indoor_temp_15min_c,indoor_temperature,15,degC,warm_recovery_30_to_120min,1,3,54,0.001572214261736704,0.0020586918527455834,0.001476222108852783
+forest_action,target_indoor_temp_15min_c,indoor_temperature,15,degC,known_release_crossing,4,39,78,0.05586397525399579,0.08640899011834584,-0.027532116291521556
+forest_action,target_indoor_temp_15min_c,indoor_temperature,15,degC,group:D2_G100,1,2,1704,0.12592993058502913,0.2652068182926143,0.05764471003248594
+forest_action,target_indoor_temp_15min_c,indoor_temperature,15,degC,group:D2_G196,1,12,2556,0.03731107999545614,0.12466525169829965,-0.0021621902335571958
+forest_action,target_indoor_temp_15min_c,indoor_temperature,15,degC,group:D2_G310,1,7,1704,0.08451955092630925,0.21111831858143246,0.013606731600528037
+forest_action,target_indoor_temp_15min_c,indoor_temperature,15,degC,group:D2_G354,1,5,1704,0.05912288567189289,0.11823313056260461,-0.001800146823024043
+forest_action,target_indoor_temp_30min_c,indoor_temperature,30,degC,group_macro,4,26,7668,0.09278441089470792,0.1751355365070395,0.005525263424628592
+forest_action,target_indoor_temp_30min_c,indoor_temperature,30,degC,all,4,26,7668,0.08751197359120576,0.18334829959166557,0.0033921027400700124
+forest_action,target_indoor_temp_30min_c,indoor_temperature,30,degC,native_reference,4,0,3408,0.09188960998112322,0.19173213791685204,0.005113199762070112
+forest_action,target_indoor_temp_30min_c,indoor_temperature,30,degC,applied_native,4,26,7503,0.0884621027880358,0.18495029635993582,0.0037036882521652675
+forest_action,target_indoor_temp_30min_c,indoor_temperature,30,degC,active_colder,4,23,138,0.0501647325966151,0.08981667004605766,-0.012459834206272558
+forest_action,target_indoor_temp_30min_c,indoor_temperature,30,degC,active_warmer,1,3,27,0.01436752520000479,0.01565763780706691,-0.0021730379508716276
+forest_action,target_indoor_temp_30min_c,indoor_temperature,30,degC,heating_active_target_interval,3,0,641,0.06443673525252287,0.12743468660411536,0.01645890184810492
+forest_action,target_indoor_temp_30min_c,indoor_temperature,30,degC,cooling_active_target_interval,4,25,2232,0.026061253947971808,0.060270996737552006,0.002609570925483123
+forest_action,target_indoor_temp_30min_c,indoor_temperature,30,degC,major_temperature_transition,4,0,411,0.38023511940773785,0.580119919762761,0.0448115400078922
+forest_action,target_indoor_temp_30min_c,indoor_temperature,30,degC,major_electrical_transition,4,25,1264,0.04947732256371258,0.10874662628225838,0.0052484767447062595
+forest_action,target_indoor_temp_30min_c,indoor_temperature,30,degC,cold_before_start,4,23,46,0.03880659749550413,0.09365043343602103,0.03788346868738657
+forest_action,target_indoor_temp_30min_c,indoor_temperature,30,degC,warm_before_start,1,3,6,0.0031490845603574513,0.003352806006335354,0.0031490845603574513
+forest_action,target_indoor_temp_30min_c,indoor_temperature,30,degC,cold_active_override,4,23,138,0.0501647325966151,0.08981667004605766,-0.012459834206272558
+forest_action,target_indoor_temp_30min_c,indoor_temperature,30,degC,warm_active_override,1,3,27,0.01436752520000479,0.01565763780706691,-0.0021730379508716276
+forest_action,target_indoor_temp_30min_c,indoor_temperature,30,degC,cold_approaching_release,4,23,46,0.054220532020312226,0.08607121856253071,-0.03639662352606937
+forest_action,target_indoor_temp_30min_c,indoor_temperature,30,degC,warm_approaching_release,1,3,6,0.008544762965900787,0.008631850308129319,0.008544762965900787
+forest_action,target_indoor_temp_30min_c,indoor_temperature,30,degC,cold_after_release,4,23,138,0.021010394695212275,0.04189571448866059,-0.012391550919776713
+forest_action,target_indoor_temp_30min_c,indoor_temperature,30,degC,warm_after_release,1,3,18,0.00896110350823894,0.016493173124617313,0.006391816141684912
+forest_action,target_indoor_temp_30min_c,indoor_temperature,30,degC,cold_recovery_30_to_120min,4,23,390,0.014125379686497944,0.018524247431230375,0.006875700090087496
+forest_action,target_indoor_temp_30min_c,indoor_temperature,30,degC,warm_recovery_30_to_120min,1,3,54,0.0021578838496194163,0.002590081320804864,0.0012428370212926208
+forest_action,target_indoor_temp_30min_c,indoor_temperature,30,degC,known_release_crossing,4,39,195,0.09759505950430644,0.20270619944489685,-0.01926244015132484
+forest_action,target_indoor_temp_30min_c,indoor_temperature,30,degC,group:D2_G100,1,2,1704,0.14327897369862272,0.3017094723092338,0.05009185153428188
+forest_action,target_indoor_temp_30min_c,indoor_temperature,30,degC,group:D2_G196,1,12,2556,0.04533247516318834,0.08255532335992546,-0.013673182736398622
+forest_action,target_indoor_temp_30min_c,indoor_temperature,30,degC,group:D2_G310,1,7,1704,0.0946106698697523,0.15622342644438214,-0.001998765648034925
+forest_action,target_indoor_temp_30min_c,indoor_temperature,30,degC,group:D2_G354,1,5,1704,0.08791552484726835,0.16005392391461656,-0.012318849451333968
+forest_action,target_cooling_electric_power_5min_kw,cooling_power,5,kW electric,group_macro,4,26,7668,0.0030140641176242653,0.014470701982140748,6.428704384432394e-05
+forest_action,target_cooling_electric_power_5min_kw,cooling_power,5,kW electric,all,4,26,7668,0.0032060673337153626,0.017212261513770165,4.43994272475334e-05
+forest_action,target_cooling_electric_power_5min_kw,cooling_power,5,kW electric,native_reference,4,0,3408,0.0024395166133729645,0.014787369296667418,0.00021613928401624738
+forest_action,target_cooling_electric_power_5min_kw,cooling_power,5,kW electric,applied_native,4,26,7503,0.0028547232586041125,0.016688635574489748,0.0002464801139272889
+forest_action,target_cooling_electric_power_5min_kw,cooling_power,5,kW electric,active_colder,4,23,138,0.01871876662431949,0.031580109201883706,-0.01431068503971287
+forest_action,target_cooling_electric_power_5min_kw,cooling_power,5,kW electric,active_warmer,1,3,27,0.021553552276542844,0.040571855969764495,0.017258853659926437
+forest_action,target_cooling_electric_power_5min_kw,cooling_power,5,kW electric,heating_active_target_interval,3,0,633,0.0006290348623437013,0.004870253302326865,0.0006284884721449335
+forest_action,target_cooling_electric_power_5min_kw,cooling_power,5,kW electric,cooling_active_target_interval,4,25,2232,0.009829259721353845,0.03131052294121051,-0.0010189630164771303
+forest_action,target_cooling_electric_power_5min_kw,cooling_power,5,kW electric,major_temperature_transition,4,0,39,0.08413493472393563,0.15596040892179427,0.024797813193308874
+forest_action,target_cooling_electric_power_5min_kw,cooling_power,5,kW electric,major_electrical_transition,3,22,91,0.11179020583090474,0.14767434352197056,-0.0071023785702426095
+forest_action,target_cooling_electric_power_5min_kw,cooling_power,5,kW electric,cold_before_start,4,23,46,0.004721943840951342,0.007726104841597141,0.00041084902676266936
+forest_action,target_cooling_electric_power_5min_kw,cooling_power,5,kW electric,warm_before_start,1,3,6,0.0023515900002639887,0.002892337023447021,0.002311829923835699
+forest_action,target_cooling_electric_power_5min_kw,cooling_power,5,kW electric,cold_active_override,4,23,138,0.01871876662431949,0.031580109201883706,-0.01431068503971287
+forest_action,target_cooling_electric_power_5min_kw,cooling_power,5,kW electric,warm_active_override,1,3,27,0.021553552276542844,0.040571855969764495,0.017258853659926437
+forest_action,target_cooling_electric_power_5min_kw,cooling_power,5,kW electric,cold_approaching_release,4,23,46,0.011444398672536753,0.014408852113410855,-0.010986173886591795
+forest_action,target_cooling_electric_power_5min_kw,cooling_power,5,kW electric,warm_approaching_release,1,3,6,0.010306293537936884,0.011438953888046298,0.010306293537936884
+forest_action,target_cooling_electric_power_5min_kw,cooling_power,5,kW electric,cold_after_release,4,23,138,0.01646964921968197,0.027614626559286384,0.0053418224350052015
+forest_action,target_cooling_electric_power_5min_kw,cooling_power,5,kW electric,warm_after_release,1,3,18,0.027299659987348433,0.04624567623381181,-0.00892436345589411
+forest_action,target_cooling_electric_power_5min_kw,cooling_power,5,kW electric,cold_recovery_30_to_120min,4,23,390,0.0036267275035108426,0.00488412278416022,0.0015136361793036605
+forest_action,target_cooling_electric_power_5min_kw,cooling_power,5,kW electric,warm_recovery_30_to_120min,1,3,54,0.003922194739147026,0.004939693031752878,0.0032818499458072054
+forest_action,target_cooling_electric_power_5min_kw,cooling_power,5,kW electric,group:D2_G100,1,2,1704,0.0012604575748044852,0.005334859900118226,0.00109261090902739
+forest_action,target_cooling_electric_power_5min_kw,cooling_power,5,kW electric,group:D2_G196,1,12,2556,0.004742093062444139,0.024685689280918077,-0.00011470150552679145
+forest_action,target_cooling_electric_power_5min_kw,cooling_power,5,kW electric,group:D2_G310,1,7,1704,0.002930718453654755,0.012815240812826867,-0.0004179308610593528
+forest_action,target_cooling_electric_power_5min_kw,cooling_power,5,kW electric,group:D2_G354,1,5,1704,0.0031229873795936823,0.015047017934699822,-0.00030283036706394995
+forest_action,target_cooling_electric_power_10min_kw,cooling_power,10,kW electric,group_macro,4,26,7668,0.003611424289321062,0.01358673946297321,0.0001615126092981961
+forest_action,target_cooling_electric_power_10min_kw,cooling_power,10,kW electric,all,4,26,7668,0.003929273846583173,0.017683553697662707,8.9336658637092e-05
+forest_action,target_cooling_electric_power_10min_kw,cooling_power,10,kW electric,native_reference,4,0,3408,0.0027211142926686117,0.014000799176980903,0.0004881591624033349
+forest_action,target_cooling_electric_power_10min_kw,cooling_power,10,kW electric,applied_native,4,26,7503,0.0033788858707918283,0.016943025238283085,0.00025084365008494974
+forest_action,target_cooling_electric_power_10min_kw,cooling_power,10,kW electric,active_colder,4,23,138,0.027438579537718662,0.03628525872288322,-0.010884054431750168
+forest_action,target_cooling_electric_power_10min_kw,cooling_power,10,kW electric,active_warmer,1,3,27,0.036717303364574336,0.04803353429118791,0.011294559386050626
+forest_action,target_cooling_electric_power_10min_kw,cooling_power,10,kW electric,heating_active_target_interval,3,0,633,0.0001670083032767729,0.0009426171345095487,0.00016649326110375475
+forest_action,target_cooling_electric_power_10min_kw,cooling_power,10,kW electric,cooling_active_target_interval,4,25,2232,0.012230786456986774,0.0314126200489269,-0.0009523629018001595
+forest_action,target_cooling_electric_power_10min_kw,cooling_power,10,kW electric,major_temperature_transition,4,0,93,0.05040169377251942,0.11570440593282444,-0.027734399455493428
+forest_action,target_cooling_electric_power_10min_kw,cooling_power,10,kW electric,major_electrical_transition,4,22,208,0.06497199712071854,0.1004691581319845,-0.024844340481654945
+forest_action,target_cooling_electric_power_10min_kw,cooling_power,10,kW electric,cold_before_start,4,23,46,0.03536524156712753,0.05196423656103296,-0.030741537180740453
+forest_action,target_cooling_electric_power_10min_kw,cooling_power,10,kW electric,warm_before_start,1,3,6,0.06168723606489775,0.08388089910458849,0.06113804638693673
+forest_action,target_cooling_electric_power_10min_kw,cooling_power,10,kW electric,cold_active_override,4,23,138,0.027438579537718662,0.03628525872288322,-0.010884054431750168
+forest_action,target_cooling_electric_power_10min_kw,cooling_power,10,kW electric,warm_active_override,1,3,27,0.036717303364574336,0.04803353429118791,0.011294559386050626
+forest_action,target_cooling_electric_power_10min_kw,cooling_power,10,kW electric,cold_approaching_release,4,23,46,0.03249449291293,0.0398580768709961,0.007194336751776483
+forest_action,target_cooling_electric_power_10min_kw,cooling_power,10,kW electric,warm_approaching_release,1,3,6,0.05980351838310394,0.06866429051116332,-0.03160278546351136
+forest_action,target_cooling_electric_power_10min_kw,cooling_power,10,kW electric,cold_after_release,4,23,138,0.0166639776425535,0.024594069712566682,-0.0006788900222963266
+forest_action,target_cooling_electric_power_10min_kw,cooling_power,10,kW electric,warm_after_release,1,3,18,0.025229894956082934,0.03633764100370488,0.0019737570412713835
+forest_action,target_cooling_electric_power_10min_kw,cooling_power,10,kW electric,cold_recovery_30_to_120min,4,23,390,0.00705662156635689,0.013603387464736454,0.002373439166856951
+forest_action,target_cooling_electric_power_10min_kw,cooling_power,10,kW electric,warm_recovery_30_to_120min,1,3,54,0.007847538053070249,0.009098788533724448,0.005900997599018121
+forest_action,target_cooling_electric_power_10min_kw,cooling_power,10,kW electric,known_release_crossing,4,39,39,0.030627834159892904,0.04476910112039697,0.01656455596550456
+forest_action,target_cooling_electric_power_10min_kw,cooling_power,10,kW electric,group:D2_G100,1,2,1704,0.0010465986699540841,0.004181094165674886,0.000670742144020888
+forest_action,target_cooling_electric_power_10min_kw,cooling_power,10,kW electric,group:D2_G196,1,12,2556,0.006472070304680057,0.027272839002760334,-0.000488070946651741
+forest_action,target_cooling_electric_power_10min_kw,cooling_power,10,kW electric,group:D2_G310,1,7,1704,0.0029630358454224444,0.009002349673771391,8.436520207713323e-05
+forest_action,target_cooling_electric_power_10min_kw,cooling_power,10,kW electric,group:D2_G354,1,5,1704,0.003963992337227662,0.01389067500968623,0.00037901403774650416
+forest_action,target_cooling_electric_power_15min_kw,cooling_power,15,kW electric,group_macro,4,26,7668,0.004127889293856947,0.012621984940824135,0.0001749065584683208
+forest_action,target_cooling_electric_power_15min_kw,cooling_power,15,kW electric,all,4,26,7668,0.004387998631933313,0.014589621793188673,0.0001457326170054343
+forest_action,target_cooling_electric_power_15min_kw,cooling_power,15,kW electric,native_reference,4,0,3408,0.003149337547219174,0.010694367586775297,0.0005818980099663861
+forest_action,target_cooling_electric_power_15min_kw,cooling_power,15,kW electric,applied_native,4,26,7503,0.0038222689482032774,0.013620793257406375,0.0002531986407722261
+forest_action,target_cooling_electric_power_15min_kw,cooling_power,15,kW electric,active_colder,4,23,138,0.028413559338203602,0.036308127238772546,-0.006815680311284653
+forest_action,target_cooling_electric_power_15min_kw,cooling_power,15,kW electric,active_warmer,1,3,27,0.03880068157864252,0.04645334885914279,0.005862673645960747
+forest_action,target_cooling_electric_power_15min_kw,cooling_power,15,kW electric,heating_active_target_interval,3,0,635,0.00030208574549772345,0.0017207350915445616,0.0003015674990781665
+forest_action,target_cooling_electric_power_15min_kw,cooling_power,15,kW electric,cooling_active_target_interval,4,25,2232,0.014041226765507038,0.02629553517609429,-0.0005225880942868351
+forest_action,target_cooling_electric_power_15min_kw,cooling_power,15,kW electric,major_temperature_transition,4,0,151,0.021531865229868555,0.05889251723104035,-0.015248568791158826
+forest_action,target_cooling_electric_power_15min_kw,cooling_power,15,kW electric,major_electrical_transition,4,23,432,0.03574455491569707,0.05430718692189469,-0.00992041784238261
+forest_action,target_cooling_electric_power_15min_kw,cooling_power,15,kW electric,cold_before_start,4,23,46,0.059229444636812546,0.06835668895726675,-0.05813913027952064
+forest_action,target_cooling_electric_power_15min_kw,cooling_power,15,kW electric,warm_before_start,1,3,6,0.10621597150474425,0.10722914421641187,0.10621597150474425
+forest_action,target_cooling_electric_power_15min_kw,cooling_power,15,kW electric,cold_active_override,4,23,138,0.028413559338203602,0.036308127238772546,-0.006815680311284653
+forest_action,target_cooling_electric_power_15min_kw,cooling_power,15,kW electric,warm_active_override,1,3,27,0.03880068157864252,0.04645334885914279,0.005862673645960747
+forest_action,target_cooling_electric_power_15min_kw,cooling_power,15,kW electric,cold_approaching_release,4,23,46,0.028587156980028797,0.037574474544020194,0.02604652364640202
+forest_action,target_cooling_electric_power_15min_kw,cooling_power,15,kW electric,warm_approaching_release,1,3,6,0.06415854435980119,0.06767291433952245,-0.06415854435980119
+forest_action,target_cooling_electric_power_15min_kw,cooling_power,15,kW electric,cold_after_release,4,23,138,0.017279130092156585,0.025768256493607027,-0.005341407920725221
+forest_action,target_cooling_electric_power_15min_kw,cooling_power,15,kW electric,warm_after_release,1,3,18,0.023939032115213747,0.03572226284965115,0.010765644537821948
+forest_action,target_cooling_electric_power_15min_kw,cooling_power,15,kW electric,cold_recovery_30_to_120min,4,23,390,0.01080538086532457,0.018398013191642748,0.0030678792501814952
+forest_action,target_cooling_electric_power_15min_kw,cooling_power,15,kW electric,warm_recovery_30_to_120min,1,3,54,0.011375231610455717,0.012932687075380875,0.006886414633870332
+forest_action,target_cooling_electric_power_15min_kw,cooling_power,15,kW electric,known_release_crossing,4,39,78,0.022154118037263266,0.03447750318572033,0.010784886819829115
+forest_action,target_cooling_electric_power_15min_kw,cooling_power,15,kW electric,group:D2_G100,1,2,1704,0.0017590203087200784,0.006609227084929273,0.0011940374921792503
+forest_action,target_cooling_electric_power_15min_kw,cooling_power,15,kW electric,group:D2_G196,1,12,2556,0.006468873336544234,0.020614097434796266,-8.765891469765789e-05
+forest_action,target_cooling_electric_power_15min_kw,cooling_power,15,kW electric,group:D2_G310,1,7,1704,0.003658525641647065,0.00987984865585866,-0.00023522170807056217
+forest_action,target_cooling_electric_power_15min_kw,cooling_power,15,kW electric,group:D2_G354,1,5,1704,0.004625137888516408,0.013384766587712338,-0.00017153063553774708
+forest_action,target_cooling_electric_power_30min_kw,cooling_power,30,kW electric,group_macro,4,26,7668,0.007074581249263693,0.01846977863024842,4.9302050793523775e-05
+forest_action,target_cooling_electric_power_30min_kw,cooling_power,30,kW electric,all,4,26,7668,0.007217904756414649,0.01880725632218297,-2.8594001699126867e-05
+forest_action,target_cooling_electric_power_30min_kw,cooling_power,30,kW electric,native_reference,4,0,3408,0.005905908538537823,0.015206079743100264,0.00036594417042091045
+forest_action,target_cooling_electric_power_30min_kw,cooling_power,30,kW electric,applied_native,4,26,7503,0.006513842863446721,0.01752517682437576,-0.00022789311165184823
+forest_action,target_cooling_electric_power_30min_kw,cooling_power,30,kW electric,active_colder,4,23,138,0.03994209451470596,0.051046177149104116,0.0077691720788261405
+forest_action,target_cooling_electric_power_30min_kw,cooling_power,30,kW electric,active_warmer,1,3,27,0.03561191202656872,0.04228303819867928,0.015499165363589052
+forest_action,target_cooling_electric_power_30min_kw,cooling_power,30,kW electric,heating_active_target_interval,3,0,641,0.00021807203407136775,0.0009939794559807387,0.00021753289589982494
+forest_action,target_cooling_electric_power_30min_kw,cooling_power,30,kW electric,cooling_active_target_interval,4,25,2232,0.02365352750580054,0.034418415257387994,-0.0012376933015153225
+forest_action,target_cooling_electric_power_30min_kw,cooling_power,30,kW electric,major_temperature_transition,4,0,411,0.008714473811244529,0.024618032598912886,-0.004308276826627096
+forest_action,target_cooling_electric_power_30min_kw,cooling_power,30,kW electric,major_electrical_transition,4,25,1264,0.02535625115522182,0.038214140798914685,-0.0061971232660804655
+forest_action,target_cooling_electric_power_30min_kw,cooling_power,30,kW electric,cold_before_start,4,23,46,0.052140359443650024,0.0656342124787815,-0.047074391068079015
+forest_action,target_cooling_electric_power_30min_kw,cooling_power,30,kW electric,warm_before_start,1,3,6,0.06300791703346524,0.06515280409800743,0.06300791703346524
+forest_action,target_cooling_electric_power_30min_kw,cooling_power,30,kW electric,cold_active_override,4,23,138,0.03994209451470596,0.051046177149104116,0.0077691720788261405
+forest_action,target_cooling_electric_power_30min_kw,cooling_power,30,kW electric,warm_active_override,1,3,27,0.03561191202656872,0.04228303819867928,0.015499165363589052
+forest_action,target_cooling_electric_power_30min_kw,cooling_power,30,kW electric,cold_approaching_release,4,23,46,0.03494759426038195,0.043558061713275316,0.005486674574462506
+forest_action,target_cooling_electric_power_30min_kw,cooling_power,30,kW electric,warm_approaching_release,1,3,6,0.021639631218503413,0.026792847157138058,0.014910545864402084
+forest_action,target_cooling_electric_power_30min_kw,cooling_power,30,kW electric,cold_after_release,4,23,138,0.028587149846016336,0.03773742828932686,-0.005006988478543263
+forest_action,target_cooling_electric_power_30min_kw,cooling_power,30,kW electric,warm_after_release,1,3,18,0.029785248147086996,0.042468435619525034,0.02695806909711797
+forest_action,target_cooling_electric_power_30min_kw,cooling_power,30,kW electric,cold_recovery_30_to_120min,4,23,390,0.022253571435977115,0.030721966377582663,0.0028378635112946853
+forest_action,target_cooling_electric_power_30min_kw,cooling_power,30,kW electric,warm_recovery_30_to_120min,1,3,54,0.01159370302789773,0.013457564476111994,-0.002887848672439145
+forest_action,target_cooling_electric_power_30min_kw,cooling_power,30,kW electric,known_release_crossing,4,39,195,0.02436647321467595,0.038167543484085874,0.010618381053476279
+forest_action,target_cooling_electric_power_30min_kw,cooling_power,30,kW electric,group:D2_G100,1,2,1704,0.0038559697699853263,0.014376056108942941,0.003728471507518816
+forest_action,target_cooling_electric_power_30min_kw,cooling_power,30,kW electric,group:D2_G196,1,12,2556,0.008364492813622303,0.019105083133343213,-0.000651762421640335
+forest_action,target_cooling_electric_power_30min_kw,cooling_power,30,kW electric,group:D2_G310,1,7,1704,0.006770178149216101,0.016917790311976873,-0.0006449302768641985
+forest_action,target_cooling_electric_power_30min_kw,cooling_power,30,kW electric,group:D2_G354,1,5,1704,0.009307684264231042,0.02348018496673064,-0.0022345706058401874
+forest_action,target_fan_electric_power_5min_kw,fan_power,5,kW electric,group_macro,4,26,7668,0.00022493688664574707,0.0010936232416321175,5.7427143497618955e-06
+forest_action,target_fan_electric_power_5min_kw,fan_power,5,kW electric,all,4,26,7668,0.00023244358457164498,0.0011388989461241484,4.253579087104562e-06
+forest_action,target_fan_electric_power_5min_kw,fan_power,5,kW electric,native_reference,4,0,3408,0.00018606353222781457,0.001044034858023448,2.186337135538167e-05
+forest_action,target_fan_electric_power_5min_kw,fan_power,5,kW electric,applied_native,4,26,7503,0.00020317399605078188,0.0010892531187883026,2.2913648198515983e-05
+forest_action,target_fan_electric_power_5min_kw,fan_power,5,kW electric,active_colder,4,23,138,0.0014542575765084452,0.0023495179769187045,-0.0014244929460995605
+forest_action,target_fan_electric_power_5min_kw,fan_power,5,kW electric,active_warmer,1,3,27,0.002121309946970065,0.003232920032143602,0.002121309946970065
+forest_action,target_fan_electric_power_5min_kw,fan_power,5,kW electric,heating_active_target_interval,3,0,633,0.0007926384174435552,0.002567057112203303,0.00010742613070874694
+forest_action,target_fan_electric_power_5min_kw,fan_power,5,kW electric,cooling_active_target_interval,4,25,2232,0.0005579865221146344,0.0016066969826668777,-3.1505270342185274e-05
+forest_action,target_fan_electric_power_5min_kw,fan_power,5,kW electric,major_temperature_transition,4,0,39,0.010058723272279746,0.012032447920763538,-0.0006362976117015975
+forest_action,target_fan_electric_power_5min_kw,fan_power,5,kW electric,major_electrical_transition,3,22,91,0.005578614799500035,0.007017330861788306,0.0012833942822300494
+forest_action,target_fan_electric_power_5min_kw,fan_power,5,kW electric,cold_before_start,4,23,46,0.0002093368481731355,0.0002772444529687063,0.00015584842119374318
+forest_action,target_fan_electric_power_5min_kw,fan_power,5,kW electric,warm_before_start,1,3,6,0.0001996095198698155,0.0002444232731674281,0.0001996095198698155
+forest_action,target_fan_electric_power_5min_kw,fan_power,5,kW electric,cold_active_override,4,23,138,0.0014542575765084452,0.0023495179769187045,-0.0014244929460995605
+forest_action,target_fan_electric_power_5min_kw,fan_power,5,kW electric,warm_active_override,1,3,27,0.002121309946970065,0.003232920032143602,0.002121309946970065
+forest_action,target_fan_electric_power_5min_kw,fan_power,5,kW electric,cold_approaching_release,4,23,46,0.0010864833153865318,0.0013515908767910206,-0.0010815954737750952
+forest_action,target_fan_electric_power_5min_kw,fan_power,5,kW electric,warm_approaching_release,1,3,6,0.0018902691320417761,0.001960184261639553,0.0018902691320417761
+forest_action,target_fan_electric_power_5min_kw,fan_power,5,kW electric,cold_after_release,4,23,138,0.0008889870712344177,0.001670679214006564,0.0002591047493720277
+forest_action,target_fan_electric_power_5min_kw,fan_power,5,kW electric,warm_after_release,1,3,18,0.001738633976725864,0.0032095860638067233,-0.0008534935423332652
+forest_action,target_fan_electric_power_5min_kw,fan_power,5,kW electric,cold_recovery_30_to_120min,4,23,390,0.00020262301799840098,0.00029483186772945444,4.6446162931197094e-05
+forest_action,target_fan_electric_power_5min_kw,fan_power,5,kW electric,warm_recovery_30_to_120min,1,3,54,0.00017910845578900385,0.0002251387014561004,6.156869423353796e-05
+forest_action,target_fan_electric_power_5min_kw,fan_power,5,kW electric,group:D2_G100,1,2,1704,0.00017273115604684645,0.0010957062465232245,5.0147212527808726e-05
+forest_action,target_fan_electric_power_5min_kw,fan_power,5,kW electric,group:D2_G196,1,12,2556,0.0002924971679788282,0.0013203443078502462,-7.659503014154107e-06
+forest_action,target_fan_electric_power_5min_kw,fan_power,5,kW electric,group:D2_G310,1,7,1704,0.00018139607110109822,0.0007515981775527543,7.726782952786435e-06
+forest_action,target_fan_electric_power_5min_kw,fan_power,5,kW electric,group:D2_G354,1,5,1704,0.00025312315145621547,0.0012068442346022449,-2.724363506739347e-05
+forest_action,target_fan_electric_power_10min_kw,fan_power,10,kW electric,group_macro,4,26,7668,0.0002868052341368275,0.0010279979266845387,4.4433928497885456e-05
+forest_action,target_fan_electric_power_10min_kw,fan_power,10,kW electric,all,4,26,7668,0.0002923194965020547,0.001036076428015856,4.483207544021836e-05
+forest_action,target_fan_electric_power_10min_kw,fan_power,10,kW electric,native_reference,4,0,3408,0.00022217751703038462,0.0008827669932149488,6.941175338448268e-05
+forest_action,target_fan_electric_power_10min_kw,fan_power,10,kW electric,applied_native,4,26,7503,0.00024834981189990026,0.000939544728856354,6.149474152969887e-05
+forest_action,target_fan_electric_power_10min_kw,fan_power,10,kW electric,active_colder,4,23,138,0.002094882919279176,0.002866581572952934,-0.0012045208787928906
+forest_action,target_fan_electric_power_10min_kw,fan_power,10,kW electric,active_warmer,1,3,27,0.003297904356751014,0.004190074674273182,0.00180004407598825
+forest_action,target_fan_electric_power_10min_kw,fan_power,10,kW electric,heating_active_target_interval,3,0,633,0.0009112809268700978,0.002290731190238007,0.0002418631902870325
+forest_action,target_fan_electric_power_10min_kw,fan_power,10,kW electric,cooling_active_target_interval,4,25,2232,0.0007003095941325501,0.0014170170448675327,4.011681433113917e-05
+forest_action,target_fan_electric_power_10min_kw,fan_power,10,kW electric,major_temperature_transition,4,0,93,0.0036376511271194903,0.005427729161937623,-0.0004279656471269272
+forest_action,target_fan_electric_power_10min_kw,fan_power,10,kW electric,major_electrical_transition,4,22,208,0.002984098691635217,0.004101862623824279,-3.449222062859634e-05
+forest_action,target_fan_electric_power_10min_kw,fan_power,10,kW electric,cold_before_start,4,23,46,0.002288685128167731,0.003549629485570418,-0.0018411482211874142
+forest_action,target_fan_electric_power_10min_kw,fan_power,10,kW electric,warm_before_start,1,3,6,0.0046170948781439425,0.006331850284121274,0.0046170948781439425
+forest_action,target_fan_electric_power_10min_kw,fan_power,10,kW electric,cold_active_override,4,23,138,0.002094882919279176,0.002866581572952934,-0.0012045208787928906
+forest_action,target_fan_electric_power_10min_kw,fan_power,10,kW electric,warm_active_override,1,3,27,0.003297904356751014,0.004190074674273182,0.00180004407598825
+forest_action,target_fan_electric_power_10min_kw,fan_power,10,kW electric,cold_approaching_release,4,23,46,0.0022884760505561667,0.002905595286457431,0.00025796655258026707
+forest_action,target_fan_electric_power_10min_kw,fan_power,10,kW electric,warm_approaching_release,1,3,6,0.004946204737247333,0.005265023087941621,-0.0017109168078665935
+forest_action,target_fan_electric_power_10min_kw,fan_power,10,kW electric,cold_after_release,4,23,138,0.0009791447032035984,0.0015027747450871863,-6.054261452983461e-06
+forest_action,target_fan_electric_power_10min_kw,fan_power,10,kW electric,warm_after_release,1,3,18,0.002085588131540469,0.002896687231460402,9.236813977613847e-05
+forest_action,target_fan_electric_power_10min_kw,fan_power,10,kW electric,cold_recovery_30_to_120min,4,23,390,0.00048172696519931574,0.001084019872289037,0.0001495350758587042
+forest_action,target_fan_electric_power_10min_kw,fan_power,10,kW electric,warm_recovery_30_to_120min,1,3,54,0.00048322252769652136,0.0005718797560131493,0.0003609904667621772
+forest_action,target_fan_electric_power_10min_kw,fan_power,10,kW electric,known_release_crossing,4,39,39,0.002068507461322271,0.0031775136524849505,0.0009866955119764052
+forest_action,target_fan_electric_power_10min_kw,fan_power,10,kW electric,group:D2_G100,1,2,1704,0.00020876913969152924,0.001025660077635237,5.84444198357274e-05
+forest_action,target_fan_electric_power_10min_kw,fan_power,10,kW electric,group:D2_G196,1,12,2556,0.0003364335954238722,0.001044603693475105,4.8017250978881745e-05
+forest_action,target_fan_electric_power_10min_kw,fan_power,10,kW electric,group:D2_G310,1,7,1704,0.000244332086417451,0.0008513879369770107,4.000216558348468e-05
+forest_action,target_fan_electric_power_10min_kw,fan_power,10,kW electric,group:D2_G354,1,5,1704,0.0003576861150144575,0.0011903399986508017,3.127187759344797e-05
+forest_action,target_fan_electric_power_15min_kw,fan_power,15,kW electric,group_macro,4,26,7668,0.000339879382714107,0.0011483947848235742,3.9378369747643285e-05
+forest_action,target_fan_electric_power_15min_kw,fan_power,15,kW electric,all,4,26,7668,0.0003447118852094587,0.0011546186585775966,4.28553942575259e-05
+forest_action,target_fan_electric_power_15min_kw,fan_power,15,kW electric,native_reference,4,0,3408,0.00026183765686997156,0.000974431064037348,6.873104576628474e-05
+forest_action,target_fan_electric_power_15min_kw,fan_power,15,kW electric,applied_native,4,26,7503,0.0002997862145083011,0.0010716161020303775,5.406535880754429e-05
+forest_action,target_fan_electric_power_15min_kw,fan_power,15,kW electric,active_colder,4,23,138,0.002141386869829029,0.0028418639430822954,-0.0007955745783036184
+forest_action,target_fan_electric_power_15min_kw,fan_power,15,kW electric,active_warmer,1,3,27,0.0036460511219977903,0.004268240431025042,0.0012130395496149303
+forest_action,target_fan_electric_power_15min_kw,fan_power,15,kW electric,heating_active_target_interval,3,0,635,0.001072373437906135,0.002626099620397362,6.983205183451538e-05
+forest_action,target_fan_electric_power_15min_kw,fan_power,15,kW electric,cooling_active_target_interval,4,25,2232,0.0008169726440117429,0.0015083748071170204,6.52020689315079e-05
+forest_action,target_fan_electric_power_15min_kw,fan_power,15,kW electric,major_temperature_transition,4,0,151,0.0026520503675077807,0.004911513763264733,-0.000429153985238433
+forest_action,target_fan_electric_power_15min_kw,fan_power,15,kW electric,major_electrical_transition,4,23,432,0.0020183490041418093,0.0030558633287093456,0.00010332364880223356
+forest_action,target_fan_electric_power_15min_kw,fan_power,15,kW electric,cold_before_start,4,23,46,0.0039257340061578,0.004769142457381362,-0.0039152125291751876
+forest_action,target_fan_electric_power_15min_kw,fan_power,15,kW electric,warm_before_start,1,3,6,0.008908179179857936,0.008942632697681743,0.008908179179857936
+forest_action,target_fan_electric_power_15min_kw,fan_power,15,kW electric,cold_active_override,4,23,138,0.002141386869829029,0.0028418639430822954,-0.0007955745783036184
+forest_action,target_fan_electric_power_15min_kw,fan_power,15,kW electric,warm_active_override,1,3,27,0.0036460511219977903,0.004268240431025042,0.0012130395496149303
+forest_action,target_fan_electric_power_15min_kw,fan_power,15,kW electric,cold_approaching_release,4,23,46,0.001973391833658258,0.002721181537471794,0.0019025733613278837
+forest_action,target_fan_electric_power_15min_kw,fan_power,15,kW electric,warm_approaching_release,1,3,6,0.005474276037861434,0.005501562710549088,-0.005474276037861434
+forest_action,target_fan_electric_power_15min_kw,fan_power,15,kW electric,cold_after_release,4,23,138,0.0009314815395051675,0.0014336607322293622,-0.00022200065854176046
+forest_action,target_fan_electric_power_15min_kw,fan_power,15,kW electric,warm_after_release,1,3,18,0.001957315764106124,0.002607972421545707,0.0006383728342875519
+forest_action,target_fan_electric_power_15min_kw,fan_power,15,kW electric,cold_recovery_30_to_120min,4,23,390,0.0006847764792305166,0.0014107338236189816,0.0001582852728913605
+forest_action,target_fan_electric_power_15min_kw,fan_power,15,kW electric,warm_recovery_30_to_120min,1,3,54,0.0007314219791611761,0.0008543190494746394,0.00043348222666172764
+forest_action,target_fan_electric_power_15min_kw,fan_power,15,kW electric,known_release_crossing,4,39,78,0.0016397140827746292,0.0025914131788459024,0.0006892476100422427
+forest_action,target_fan_electric_power_15min_kw,fan_power,15,kW electric,group:D2_G100,1,2,1704,0.00024213938452638317,0.0011204808899745353,2.0453717152497078e-05
+forest_action,target_fan_electric_power_15min_kw,fan_power,15,kW electric,group:D2_G196,1,12,2556,0.00038337190517227256,0.0011185124359300801,7.067159033658684e-05
+forest_action,target_fan_electric_power_15min_kw,fan_power,15,kW electric,group:D2_G310,1,7,1704,0.0003034558119856343,0.0009593142320401672,4.2023286134524177e-05
+forest_action,target_fan_electric_power_15min_kw,fan_power,15,kW electric,group:D2_G354,1,5,1704,0.0004305504291721379,0.001395271581349514,2.4364885366965047e-05
+forest_action,target_fan_electric_power_30min_kw,fan_power,30,kW electric,group_macro,4,26,7668,0.0004853764696302908,0.0012890178635280222,-1.642041296581381e-06
+forest_action,target_fan_electric_power_30min_kw,fan_power,30,kW electric,all,4,26,7668,0.0004895237341777485,0.001306225623486574,7.424229611303733e-06
+forest_action,target_fan_electric_power_30min_kw,fan_power,30,kW electric,native_reference,4,0,3408,0.00040624386920030383,0.0011009531494281897,1.4497802997971768e-05
+forest_action,target_fan_electric_power_30min_kw,fan_power,30,kW electric,applied_native,4,26,7503,0.0004512733935740897,0.0012454744971657583,-1.1591729671519773e-06
+forest_action,target_fan_electric_power_30min_kw,fan_power,30,kW electric,active_colder,4,23,138,0.0019905096217472,0.002655228660505194,9.282227684955229e-05
+forest_action,target_fan_electric_power_30min_kw,fan_power,30,kW electric,active_warmer,1,3,27,0.0034471627365728454,0.004179753453821718,0.0019561775269177815
+forest_action,target_fan_electric_power_30min_kw,fan_power,30,kW electric,heating_active_target_interval,3,0,641,0.0013627845890008818,0.002801710373563302,-0.0003189253729952307
+forest_action,target_fan_electric_power_30min_kw,fan_power,30,kW electric,cooling_active_target_interval,4,25,2232,0.0012020639738096358,0.0018667460679103103,2.8783097745124127e-05
+forest_action,target_fan_electric_power_30min_kw,fan_power,30,kW electric,major_temperature_transition,4,0,411,0.0013073653147643379,0.0031769024071730133,-0.00035174571141159206
+forest_action,target_fan_electric_power_30min_kw,fan_power,30,kW electric,major_electrical_transition,4,25,1264,0.0013057699305421206,0.0020003713635741243,-0.00010754031387456569
+forest_action,target_fan_electric_power_30min_kw,fan_power,30,kW electric,cold_before_start,4,23,46,0.0029406943710241556,0.003671699736113826,-0.0028302947883041547
+forest_action,target_fan_electric_power_30min_kw,fan_power,30,kW electric,warm_before_start,1,3,6,0.0076932744479449935,0.007704492543642921,0.0076932744479449935
+forest_action,target_fan_electric_power_30min_kw,fan_power,30,kW electric,cold_active_override,4,23,138,0.0019905096217472,0.002655228660505194,9.282227684955229e-05
+forest_action,target_fan_electric_power_30min_kw,fan_power,30,kW electric,warm_active_override,1,3,27,0.0034471627365728454,0.004179753453821718,0.0019561775269177815
+forest_action,target_fan_electric_power_30min_kw,fan_power,30,kW electric,cold_approaching_release,4,23,46,0.001569618576619231,0.0020002249857521276,0.00015528187026465036
+forest_action,target_fan_electric_power_30min_kw,fan_power,30,kW electric,warm_approaching_release,1,3,6,0.0013532136354599937,0.0016043263920807668,0.0002691912010268291
+forest_action,target_fan_electric_power_30min_kw,fan_power,30,kW electric,cold_after_release,4,23,138,0.0014459559130916297,0.002040953776723009,-0.0005302011515740501
+forest_action,target_fan_electric_power_30min_kw,fan_power,30,kW electric,warm_after_release,1,3,18,0.002423480059264336,0.003609124039274554,0.00207999475049248
+forest_action,target_fan_electric_power_30min_kw,fan_power,30,kW electric,cold_recovery_30_to_120min,4,23,390,0.001132852281456434,0.0016618968959052614,0.00017141941338178675
+forest_action,target_fan_electric_power_30min_kw,fan_power,30,kW electric,warm_recovery_30_to_120min,1,3,54,0.0009871829691429133,0.0015526173466973426,0.000742499199868704
+forest_action,target_fan_electric_power_30min_kw,fan_power,30,kW electric,known_release_crossing,4,39,195,0.0013441873224319958,0.0019561201873964642,0.0003819322770540165
+forest_action,target_fan_electric_power_30min_kw,fan_power,30,kW electric,group:D2_G100,1,2,1704,0.0004045965609996114,0.0012649749750953253,-3.2619263709013286e-05
+forest_action,target_fan_electric_power_30min_kw,fan_power,30,kW electric,group:D2_G196,1,12,2556,0.0005227018505574099,0.0012897415593685745,7.995439687438466e-05
+forest_action,target_fan_electric_power_30min_kw,fan_power,30,kW electric,group:D2_G310,1,7,1704,0.0003973200204300504,0.0009850995170049381,1.0226226794225474e-05
+forest_action,target_fan_electric_power_30min_kw,fan_power,30,kW electric,group:D2_G354,1,5,1704,0.0006168874465340916,0.001616255402643251,-6.412952514592238e-05
+forest_action,target_heating_thermal_power_5min_kw,delivered_heating_power,5,kW thermal,group_macro,4,26,7668,0.015948392450566163,0.10012102900510053,0.0015010110888411012
+forest_action,target_heating_thermal_power_5min_kw,delivered_heating_power,5,kW thermal,all,4,26,7668,0.014176478264991011,0.11211311166481285,0.0013343614990108073
+forest_action,target_heating_thermal_power_5min_kw,delivered_heating_power,5,kW thermal,native_reference,4,0,3408,0.01593321946297921,0.1189104286237189,0.0015051658548165038
+forest_action,target_heating_thermal_power_5min_kw,delivered_heating_power,5,kW thermal,applied_native,4,26,7503,0.01448819971908772,0.11333915887742978,0.0013636693496973159
+forest_action,target_heating_thermal_power_5min_kw,delivered_heating_power,5,kW thermal,active_colder,4,23,138,1.974463169484968e-06,9.97290819634106e-06,1.974463169484968e-06
+forest_action,target_heating_thermal_power_5min_kw,delivered_heating_power,5,kW thermal,active_warmer,1,3,27,1.3619204188869011e-08,1.363702402030395e-08,1.3619204188869011e-08
+forest_action,target_heating_thermal_power_5min_kw,delivered_heating_power,5,kW thermal,heating_active_target_interval,3,0,633,0.1045838732733318,0.37719448195704336,-0.05096947424916319
+forest_action,target_heating_thermal_power_5min_kw,delivered_heating_power,5,kW thermal,cooling_active_target_interval,4,25,2232,1.3311544712477315e-06,7.446093462265755e-06,1.3311544468059696e-06
+forest_action,target_heating_thermal_power_5min_kw,delivered_heating_power,5,kW thermal,major_temperature_transition,4,0,39,0.9382723234020659,1.4625171059678364,-0.8985726279429165
+forest_action,target_heating_thermal_power_5min_kw,delivered_heating_power,5,kW thermal,major_electrical_transition,3,22,91,1.2201238012367904e-05,2.3835540665644513e-05,1.2201237412873263e-05
+forest_action,target_heating_thermal_power_5min_kw,delivered_heating_power,5,kW thermal,cold_before_start,4,23,46,1.0038739271070813e-06,3.487290767103943e-06,1.0038739271070813e-06
+forest_action,target_heating_thermal_power_5min_kw,delivered_heating_power,5,kW thermal,warm_before_start,1,3,6,3.546150443210507e-08,3.546150443210507e-08,3.546150443210507e-08
+forest_action,target_heating_thermal_power_5min_kw,delivered_heating_power,5,kW thermal,cold_active_override,4,23,138,1.974463169484968e-06,9.97290819634106e-06,1.974463169484968e-06
+forest_action,target_heating_thermal_power_5min_kw,delivered_heating_power,5,kW thermal,warm_active_override,1,3,27,1.3619204188869011e-08,1.363702402030395e-08,1.3619204188869011e-08
+forest_action,target_heating_thermal_power_5min_kw,delivered_heating_power,5,kW thermal,cold_approaching_release,4,23,46,4.7210221576383037e-07,1.3696533641873864e-06,4.7210221576383037e-07
+forest_action,target_heating_thermal_power_5min_kw,delivered_heating_power,5,kW thermal,warm_approaching_release,1,3,6,1.2995857484544898e-08,1.2995857484544898e-08,1.2995857484544898e-08
+forest_action,target_heating_thermal_power_5min_kw,delivered_heating_power,5,kW thermal,cold_after_release,4,23,138,7.720929126328601e-07,1.792813176811158e-06,7.720929126328601e-07
+forest_action,target_heating_thermal_power_5min_kw,delivered_heating_power,5,kW thermal,warm_after_release,1,3,18,1.29958574845449e-08,1.2995857484544898e-08,1.29958574845449e-08
+forest_action,target_heating_thermal_power_5min_kw,delivered_heating_power,5,kW thermal,cold_recovery_30_to_120min,4,23,390,2.0110379532534965e-08,5.090537431498571e-08,2.0110379532534965e-08
+forest_action,target_heating_thermal_power_5min_kw,delivered_heating_power,5,kW thermal,warm_recovery_30_to_120min,1,3,54,1.29958574845449e-08,1.2995857484544896e-08,1.29958574845449e-08
+forest_action,target_heating_thermal_power_5min_kw,delivered_heating_power,5,kW thermal,group:D2_G100,1,2,1704,0.03698211569708451,0.151757967233346,0.008437289538061197
+forest_action,target_heating_thermal_power_5min_kw,delivered_heating_power,5,kW thermal,group:D2_G196,1,12,2556,1.1647803897980223e-06,6.583575458989282e-06,1.164780368454512e-06
+forest_action,target_heating_thermal_power_5min_kw,delivered_heating_power,5,kW thermal,group:D2_G310,1,7,1704,0.008995357682098365,0.08829815210387094,-2.7831601907193465e-05
+forest_action,target_heating_thermal_power_5min_kw,delivered_heating_power,5,kW thermal,group:D2_G354,1,5,1704,0.01781493164269198,0.16042141310772615,-0.002406578361158054
+forest_action,target_heating_thermal_power_10min_kw,delivered_heating_power,10,kW thermal,group_macro,4,26,7668,0.016510370343214426,0.09467783292686845,-0.004616066298008157
+forest_action,target_heating_thermal_power_10min_kw,delivered_heating_power,10,kW thermal,all,4,26,7668,0.014675907471042112,0.10649123640492708,-0.0041031473213557325
+forest_action,target_heating_thermal_power_10min_kw,delivered_heating_power,10,kW thermal,native_reference,4,0,3408,0.016486119037404094,0.11288217274225,-0.0046004764703986905
+forest_action,target_heating_thermal_power_10min_kw,delivered_heating_power,10,kW thermal,applied_native,4,26,7503,0.01499845237898263,0.10765580370277394,-0.004193576429241635
+forest_action,target_heating_thermal_power_10min_kw,delivered_heating_power,10,kW thermal,active_colder,4,23,138,1.0651779108149461e-05,4.673412173227024e-05,1.0651779108149461e-05
+forest_action,target_heating_thermal_power_10min_kw,delivered_heating_power,10,kW thermal,active_warmer,1,3,27,1.2701010984854522e-08,1.2701079727896907e-08,1.2701010984854522e-08
+forest_action,target_heating_thermal_power_10min_kw,delivered_heating_power,10,kW thermal,heating_active_target_interval,3,0,633,0.13932974914286786,0.36646745300176004,-0.08815472773473829
+forest_action,target_heating_thermal_power_10min_kw,delivered_heating_power,10,kW thermal,cooling_active_target_interval,4,25,2232,1.0340114050029044e-06,1.238854480318914e-05,1.0340093437594907e-06
+forest_action,target_heating_thermal_power_10min_kw,delivered_heating_power,10,kW thermal,major_temperature_transition,4,0,93,0.454060055921761,0.898110194782566,-0.4167788598954899
+forest_action,target_heating_thermal_power_10min_kw,delivered_heating_power,10,kW thermal,major_electrical_transition,4,22,208,2.6013963253798654e-06,1.3809638632847934e-05,2.601374206652465e-06
+forest_action,target_heating_thermal_power_10min_kw,delivered_heating_power,10,kW thermal,cold_before_start,4,23,46,1.070259518916265e-05,2.9303618893961853e-05,1.070259518916265e-05
+forest_action,target_heating_thermal_power_10min_kw,delivered_heating_power,10,kW thermal,warm_before_start,1,3,6,5.021768732447594e-07,5.021826267798707e-07,5.021768732447594e-07
+forest_action,target_heating_thermal_power_10min_kw,delivered_heating_power,10,kW thermal,cold_active_override,4,23,138,1.0651779108149461e-05,4.673412173227024e-05,1.0651779108149461e-05
+forest_action,target_heating_thermal_power_10min_kw,delivered_heating_power,10,kW thermal,warm_active_override,1,3,27,1.2701010984854522e-08,1.2701079727896907e-08,1.2701010984854522e-08
+forest_action,target_heating_thermal_power_10min_kw,delivered_heating_power,10,kW thermal,cold_approaching_release,4,23,46,2.242454118108387e-06,6.384117801965265e-06,2.242454118108387e-06
+forest_action,target_heating_thermal_power_10min_kw,delivered_heating_power,10,kW thermal,warm_approaching_release,1,3,6,1.2738469664421277e-08,1.2738469664421278e-08,1.2738469664421277e-08
+forest_action,target_heating_thermal_power_10min_kw,delivered_heating_power,10,kW thermal,cold_after_release,4,23,138,2.219471142671139e-06,1.1296693561805875e-05,2.219471142671139e-06
+forest_action,target_heating_thermal_power_10min_kw,delivered_heating_power,10,kW thermal,warm_after_release,1,3,18,1.2738469664421278e-08,1.2738469664421278e-08,1.2738469664421278e-08
+forest_action,target_heating_thermal_power_10min_kw,delivered_heating_power,10,kW thermal,cold_recovery_30_to_120min,4,23,390,5.451379135435481e-08,1.3298248543077624e-07,5.451379135435481e-08
+forest_action,target_heating_thermal_power_10min_kw,delivered_heating_power,10,kW thermal,warm_recovery_30_to_120min,1,3,54,1.2738469664421282e-08,1.2738469664421277e-08,1.2738469664421282e-08
+forest_action,target_heating_thermal_power_10min_kw,delivered_heating_power,10,kW thermal,known_release_crossing,4,39,39,0.011878520913240972,0.03460637641924105,-0.008924495773767551
+forest_action,target_heating_thermal_power_10min_kw,delivered_heating_power,10,kW thermal,group:D2_G100,1,2,1704,0.03931319483833784,0.1469331383606018,-0.010571049180935712
+forest_action,target_heating_thermal_power_10min_kw,delivered_heating_power,10,kW thermal,group:D2_G196,1,12,2556,2.044936636121379e-07,8.338370080102417e-07,2.0449186365310063e-07
+forest_action,target_heating_thermal_power_10min_kw,delivered_heating_power,10,kW thermal,group:D2_G310,1,7,1704,0.008556532523038118,0.07995814886889946,-0.0005686091450527272
+forest_action,target_heating_thermal_power_10min_kw,delivered_heating_power,10,kW thermal,group:D2_G354,1,5,1704,0.018171549517818127,0.1518192106409645,-0.007324811357907839
+forest_action,target_heating_thermal_power_15min_kw,delivered_heating_power,15,kW thermal,group_macro,4,26,7668,0.019265053151480138,0.09635665557044387,-0.0050097290684547055
+forest_action,target_heating_thermal_power_15min_kw,delivered_heating_power,15,kW thermal,all,4,26,7668,0.01712454155946284,0.1088487766704241,-0.00445304263603479
+forest_action,target_heating_thermal_power_15min_kw,delivered_heating_power,15,kW thermal,native_reference,4,0,3408,0.019242935093075026,0.11534174878878933,-0.004991998074474855
+forest_action,target_heating_thermal_power_15min_kw,delivered_heating_power,15,kW thermal,applied_native,4,26,7503,0.017500942430843013,0.11003912564621075,-0.00455115881013738
+forest_action,target_heating_thermal_power_15min_kw,delivered_heating_power,15,kW thermal,active_colder,4,23,138,1.0232254930175895e-05,3.6480646271061775e-05,1.0232254930175895e-05
+forest_action,target_heating_thermal_power_15min_kw,delivered_heating_power,15,kW thermal,active_warmer,1,3,27,5.80802083272825e-08,5.8081110582811565e-08,5.80802083272825e-08
+forest_action,target_heating_thermal_power_15min_kw,delivered_heating_power,15,kW thermal,heating_active_target_interval,3,0,635,0.16131304363562368,0.37181832410980686,-0.09924884243165846
+forest_action,target_heating_thermal_power_15min_kw,delivered_heating_power,15,kW thermal,cooling_active_target_interval,4,25,2232,1.6067685570778408e-06,1.3606084010579724e-05,1.6067685570778408e-06
+forest_action,target_heating_thermal_power_15min_kw,delivered_heating_power,15,kW thermal,major_temperature_transition,4,0,151,0.31868262061259567,0.7167725895103269,-0.257564772602044
+forest_action,target_heating_thermal_power_15min_kw,delivered_heating_power,15,kW thermal,major_electrical_transition,4,23,432,4.201807394993053e-06,2.4368883125647465e-05,4.201807394993053e-06
+forest_action,target_heating_thermal_power_15min_kw,delivered_heating_power,15,kW thermal,cold_before_start,4,23,46,3.665710206105028e-05,9.131863969420334e-05,3.665710206105028e-05
+forest_action,target_heating_thermal_power_15min_kw,delivered_heating_power,15,kW thermal,warm_before_start,1,3,6,5.028108504461141e-08,5.028108504461141e-08,5.028108504461141e-08
+forest_action,target_heating_thermal_power_15min_kw,delivered_heating_power,15,kW thermal,cold_active_override,4,23,138,1.0232254930175895e-05,3.6480646271061775e-05,1.0232254930175895e-05
+forest_action,target_heating_thermal_power_15min_kw,delivered_heating_power,15,kW thermal,warm_active_override,1,3,27,5.80802083272825e-08,5.8081110582811565e-08,5.80802083272825e-08
+forest_action,target_heating_thermal_power_15min_kw,delivered_heating_power,15,kW thermal,cold_approaching_release,4,23,46,3.675782380828162e-06,1.5619000851849753e-05,3.675782380828162e-06
+forest_action,target_heating_thermal_power_15min_kw,delivered_heating_power,15,kW thermal,warm_approaching_release,1,3,6,5.8369769639961054e-08,5.836976963996106e-08,5.8369769639961054e-08
+forest_action,target_heating_thermal_power_15min_kw,delivered_heating_power,15,kW thermal,cold_after_release,4,23,138,7.633151552008535e-07,4.600298366792422e-06,7.633151552008535e-07
+forest_action,target_heating_thermal_power_15min_kw,delivered_heating_power,15,kW thermal,warm_after_release,1,3,18,5.8369769639961054e-08,5.836976963996106e-08,5.8369769639961054e-08
+forest_action,target_heating_thermal_power_15min_kw,delivered_heating_power,15,kW thermal,cold_recovery_30_to_120min,4,23,390,6.06347670701071e-08,6.077027684693603e-08,6.06347670701071e-08
+forest_action,target_heating_thermal_power_15min_kw,delivered_heating_power,15,kW thermal,warm_recovery_30_to_120min,1,3,54,5.836976963996105e-08,5.8369769639961054e-08,5.836976963996105e-08
+forest_action,target_heating_thermal_power_15min_kw,delivered_heating_power,15,kW thermal,known_release_crossing,4,39,78,0.018026578425911433,0.05063432794572246,-0.005641828839206516
+forest_action,target_heating_thermal_power_15min_kw,delivered_heating_power,15,kW thermal,group:D2_G100,1,2,1704,0.04944527027480938,0.1556791675425217,-0.011693671838621614
+forest_action,target_heating_thermal_power_15min_kw,delivered_heating_power,15,kW thermal,group:D2_G196,1,12,2556,4.488233245308642e-07,1.9070695069475625e-06,4.488233245308642e-07
+forest_action,target_heating_thermal_power_15min_kw,delivered_heating_power,15,kW thermal,group:D2_G310,1,7,1704,0.00864708275975806,0.07820711365609366,-0.0009481354958712041
+forest_action,target_heating_thermal_power_15min_kw,delivered_heating_power,15,kW thermal,group:D2_G354,1,5,1704,0.018967410748028567,0.15153843401365316,-0.007397557762650533
+forest_action,target_heating_thermal_power_30min_kw,delivered_heating_power,30,kW thermal,group_macro,4,26,7668,0.03411293336045193,0.12297889795228589,0.005370610284614866
+forest_action,target_heating_thermal_power_30min_kw,delivered_heating_power,30,kW thermal,all,4,26,7668,0.030322616737414283,0.14470686131999624,0.004773885114448001
+forest_action,target_heating_thermal_power_30min_kw,delivered_heating_power,30,kW thermal,native_reference,4,0,3408,0.0340974640769883,0.1534887703885487,0.005403436454259659
+forest_action,target_heating_thermal_power_30min_kw,delivered_heating_power,30,kW thermal,applied_native,4,26,7503,0.030989307346437223,0.14628934733391918,0.004878728366708392
+forest_action,target_heating_thermal_power_30min_kw,delivered_heating_power,30,kW thermal,active_colder,4,23,138,7.618213188292641e-06,4.448760816415516e-05,7.618213188292641e-06
+forest_action,target_heating_thermal_power_30min_kw,delivered_heating_power,30,kW thermal,active_warmer,1,3,27,2.995385991156769e-08,2.9986771805636646e-08,2.995385991156769e-08
+forest_action,target_heating_thermal_power_30min_kw,delivered_heating_power,30,kW thermal,heating_active_target_interval,3,0,641,0.3291104892027749,0.4875540746038728,0.023482477060883918
+forest_action,target_heating_thermal_power_30min_kw,delivered_heating_power,30,kW thermal,cooling_active_target_interval,4,25,2232,6.5899629482321305e-06,7.775734181082461e-05,6.5899629482321305e-06
+forest_action,target_heating_thermal_power_30min_kw,delivered_heating_power,30,kW thermal,major_temperature_transition,4,0,411,0.16025459972985553,0.44286745291747814,-0.12135539008356129
+forest_action,target_heating_thermal_power_30min_kw,delivered_heating_power,30,kW thermal,major_electrical_transition,4,25,1264,8.261802679023064e-06,8.797841124734582e-05,8.261802679023064e-06
+forest_action,target_heating_thermal_power_30min_kw,delivered_heating_power,30,kW thermal,cold_before_start,4,23,46,0.00011087749907804207,0.00033847440671798087,0.00011087749907804207
+forest_action,target_heating_thermal_power_30min_kw,delivered_heating_power,30,kW thermal,warm_before_start,1,3,6,1.954311461657825e-08,2.0020739850991196e-08,1.954311461657825e-08
+forest_action,target_heating_thermal_power_30min_kw,delivered_heating_power,30,kW thermal,cold_active_override,4,23,138,7.618213188292641e-06,4.448760816415516e-05,7.618213188292641e-06
+forest_action,target_heating_thermal_power_30min_kw,delivered_heating_power,30,kW thermal,warm_active_override,1,3,27,2.995385991156769e-08,2.9986771805636646e-08,2.995385991156769e-08
+forest_action,target_heating_thermal_power_30min_kw,delivered_heating_power,30,kW thermal,cold_approaching_release,4,23,46,5.336451983551756e-07,2.4097700198994283e-06,5.336451983551756e-07
+forest_action,target_heating_thermal_power_30min_kw,delivered_heating_power,30,kW thermal,warm_approaching_release,1,3,6,3.2442638282665785e-08,3.2442638282665785e-08,3.2442638282665785e-08
+forest_action,target_heating_thermal_power_30min_kw,delivered_heating_power,30,kW thermal,cold_after_release,4,23,138,1.772532875997634e-07,1.208376290275086e-06,1.772532875997634e-07
+forest_action,target_heating_thermal_power_30min_kw,delivered_heating_power,30,kW thermal,warm_after_release,1,3,18,3.2442638282665785e-08,3.2442638282665785e-08,3.2442638282665785e-08
+forest_action,target_heating_thermal_power_30min_kw,delivered_heating_power,30,kW thermal,cold_recovery_30_to_120min,4,23,390,1.9707398528009054e-06,1.9863369448847538e-05,1.9364926482426872e-06
+forest_action,target_heating_thermal_power_30min_kw,delivered_heating_power,30,kW thermal,warm_recovery_30_to_120min,1,3,54,2.9977747815593666e-08,2.9983708198478175e-08,2.9977747815593666e-08
+forest_action,target_heating_thermal_power_30min_kw,delivered_heating_power,30,kW thermal,known_release_crossing,4,39,195,0.07965871837192803,0.21858107382939965,0.05331054366101652
+forest_action,target_heating_thermal_power_30min_kw,delivered_heating_power,30,kW thermal,group:D2_G100,1,2,1704,0.0928485250679751,0.2395871268407649,0.02155405211918699
+forest_action,target_heating_thermal_power_30min_kw,delivered_heating_power,30,kW thermal,group:D2_G196,1,12,2556,8.375311308946928e-08,2.766742080776886e-07,8.375311308946928e-08
+forest_action,target_heating_thermal_power_30min_kw,delivered_heating_power,30,kW thermal,group:D2_G310,1,7,1704,0.008838241842426093,0.0761961441338819,3.254685544758534e-05
+forest_action,target_heating_thermal_power_30min_kw,delivered_heating_power,30,kW thermal,group:D2_G354,1,5,1704,0.03476488277829343,0.17613204416028874,-0.00010424158928820349
+forest_action,cooling_plus_fan_5min_kw,cooling_plus_fan,5,kW electric,group_macro,4,26,7668,0.003215504193939181,0.015006156493708178,7.002975819408563e-05
+forest_action,cooling_plus_fan_5min_kw,cooling_plus_fan,5,kW electric,all,4,26,7668,0.003413435072539316,0.01784787169291018,4.865300633463764e-05
+forest_action,cooling_plus_fan_5min_kw,cooling_plus_fan,5,kW electric,native_reference,4,0,3408,0.0026033221853568713,0.015270939253632381,0.00023800265537162886
+forest_action,cooling_plus_fan_5min_kw,cooling_plus_fan,5,kW electric,applied_native,4,26,7503,0.0030380335465868278,0.017258498967160654,0.00026939376212580446
+forest_action,cooling_plus_fan_5min_kw,cooling_plus_fan,5,kW electric,active_colder,4,23,138,0.019911172763844298,0.033658106463818144,-0.01573517798581243
+forest_action,cooling_plus_fan_5min_kw,cooling_plus_fan,5,kW electric,active_warmer,1,3,27,0.023411577584444218,0.0436598709212095,0.01938016360689651
+forest_action,cooling_plus_fan_5min_kw,cooling_plus_fan,5,kW electric,heating_active_target_interval,3,0,633,0.001417481013055067,0.005550433516773606,0.0007359146028536807
+forest_action,cooling_plus_fan_5min_kw,cooling_plus_fan,5,kW electric,cooling_active_target_interval,4,25,2232,0.010302399711343677,0.03247090217638772,-0.0010504682868193167
+forest_action,cooling_plus_fan_5min_kw,cooling_plus_fan,5,kW electric,major_temperature_transition,4,0,39,0.09418630401627867,0.16259680302791554,0.024161515581607274
+forest_action,cooling_plus_fan_5min_kw,cooling_plus_fan,5,kW electric,major_electrical_transition,3,22,91,0.11736882063040478,0.15299193360088947,-0.005818984288012559
+forest_action,cooling_plus_fan_5min_kw,cooling_plus_fan,5,kW electric,cold_before_start,4,23,46,0.004894458270455401,0.007850693973882595,0.0005666974479564154
+forest_action,cooling_plus_fan_5min_kw,cooling_plus_fan,5,kW electric,warm_before_start,1,3,6,0.0025408949712788878,0.0031209145772452245,0.0025114394437055023
+forest_action,cooling_plus_fan_5min_kw,cooling_plus_fan,5,kW electric,cold_active_override,4,23,138,0.019911172763844298,0.033658106463818144,-0.01573517798581243
+forest_action,cooling_plus_fan_5min_kw,cooling_plus_fan,5,kW electric,warm_active_override,1,3,27,0.023411577584444218,0.0436598709212095,0.01938016360689651
+forest_action,cooling_plus_fan_5min_kw,cooling_plus_fan,5,kW electric,cold_approaching_release,4,23,46,0.012452880029958912,0.01546327834544921,-0.01206776936036689
+forest_action,cooling_plus_fan_5min_kw,cooling_plus_fan,5,kW electric,warm_approaching_release,1,3,6,0.012196562669978669,0.013334121522982204,0.012196562669978669
+forest_action,cooling_plus_fan_5min_kw,cooling_plus_fan,5,kW electric,cold_after_release,4,23,138,0.017311953662776713,0.029217174425684212,0.005600927184377229
+forest_action,cooling_plus_fan_5min_kw,cooling_plus_fan,5,kW electric,warm_after_release,1,3,18,0.02903409615245771,0.04943498880184411,-0.009777856998227375
+forest_action,cooling_plus_fan_5min_kw,cooling_plus_fan,5,kW electric,cold_recovery_30_to_120min,4,23,390,0.0037576350876461716,0.005056798799004862,0.001560082342234859
+forest_action,cooling_plus_fan_5min_kw,cooling_plus_fan,5,kW electric,warm_recovery_30_to_120min,1,3,54,0.004025543237083048,0.005069225538385648,0.0033434186400407295
+forest_action,cooling_plus_fan_5min_kw,cooling_plus_fan,5,kW electric,group:D2_G100,1,2,1704,0.0014283971175539398,0.005492941663333196,0.0011427581215551986
+forest_action,cooling_plus_fan_5min_kw,cooling_plus_fan,5,kW electric,group:D2_G196,1,12,2556,0.004996882101340401,0.025580410542007142,-0.00012236100854094673
+forest_action,cooling_plus_fan_5min_kw,cooling_plus_fan,5,kW electric,group:D2_G310,1,7,1704,0.0030824918587952954,0.0133217915640132,-0.0004102040781065663
+forest_action,cooling_plus_fan_5min_kw,cooling_plus_fan,5,kW electric,group:D2_G354,1,5,1704,0.003354245698067087,0.015629482205479175,-0.00033007400213134314
+forest_action,cooling_plus_fan_10min_kw,cooling_plus_fan,10,kW electric,group_macro,4,26,7668,0.003872128708394911,0.014106176075957922,0.0002059465377960814
+forest_action,cooling_plus_fan_10min_kw,cooling_plus_fan,10,kW electric,all,4,26,7668,0.004194598938993514,0.01819469914596931,0.00013416873407731016
+forest_action,cooling_plus_fan_10min_kw,cooling_plus_fan,10,kW electric,native_reference,4,0,3408,0.0029144439049905747,0.014284709649721238,0.0005575709157878172
+forest_action,cooling_plus_fan_10min_kw,cooling_plus_fan,10,kW electric,applied_native,4,26,7503,0.003601598586137893,0.01734176498038291,0.00031233839161464827
+forest_action,cooling_plus_fan_10min_kw,cooling_plus_fan,10,kW electric,active_colder,4,23,138,0.02944994898077384,0.038896825889225314,-0.012088575310543057
+forest_action,cooling_plus_fan_10min_kw,cooling_plus_fan,10,kW electric,active_warmer,1,3,27,0.039899907891217265,0.0520867433422368,0.013094603462038883
+forest_action,cooling_plus_fan_10min_kw,cooling_plus_fan,10,kW electric,heating_active_target_interval,3,0,633,0.0010649511344668389,0.0025582661438640067,0.00040835645139078723
+forest_action,cooling_plus_fan_10min_kw,cooling_plus_fan,10,kW electric,cooling_active_target_interval,4,25,2232,0.012842328303197236,0.03228213158123423,-0.0009122460874690217
+forest_action,cooling_plus_fan_10min_kw,cooling_plus_fan,10,kW electric,major_temperature_transition,4,0,93,0.05402215725309017,0.11801034688562222,-0.028162365102620362
+forest_action,cooling_plus_fan_10min_kw,cooling_plus_fan,10,kW electric,major_electrical_transition,4,22,208,0.06776932868231576,0.10304733700856074,-0.02487883270228354
+forest_action,cooling_plus_fan_10min_kw,cooling_plus_fan,10,kW electric,cold_before_start,4,23,46,0.03763341619004667,0.05527276717370404,-0.032582685401927866
+forest_action,cooling_plus_fan_10min_kw,cooling_plus_fan,10,kW electric,warm_before_start,1,3,6,0.06625719176781314,0.09020646776035311,0.06575514126508065
+forest_action,cooling_plus_fan_10min_kw,cooling_plus_fan,10,kW electric,cold_active_override,4,23,138,0.02944994898077384,0.038896825889225314,-0.012088575310543057
+forest_action,cooling_plus_fan_10min_kw,cooling_plus_fan,10,kW electric,warm_active_override,1,3,27,0.039899907891217265,0.0520867433422368,0.013094603462038883
+forest_action,cooling_plus_fan_10min_kw,cooling_plus_fan,10,kW electric,cold_approaching_release,4,23,46,0.034768650218974816,0.0426151922180302,0.007452303304356756
+forest_action,cooling_plus_fan_10min_kw,cooling_plus_fan,10,kW electric,warm_approaching_release,1,3,6,0.06474972312035128,0.07384167824458193,-0.03331370227137794
+forest_action,cooling_plus_fan_10min_kw,cooling_plus_fan,10,kW electric,cold_after_release,4,23,138,0.017595161206877312,0.025932762584907558,-0.0006849442837493136
+forest_action,cooling_plus_fan_10min_kw,cooling_plus_fan,10,kW electric,warm_after_release,1,3,18,0.027071171872370552,0.039037633988118055,0.00206612518104754
+forest_action,cooling_plus_fan_10min_kw,cooling_plus_fan,10,kW electric,cold_recovery_30_to_120min,4,23,390,0.007476221234408518,0.01457000640027209,0.0025229742427156586
+forest_action,cooling_plus_fan_10min_kw,cooling_plus_fan,10,kW electric,warm_recovery_30_to_120min,1,3,54,0.00828426329010627,0.009609658415712902,0.006261988065780293
+forest_action,cooling_plus_fan_10min_kw,cooling_plus_fan,10,kW electric,known_release_crossing,4,39,39,0.03268110395176322,0.047852119472134164,0.01755125147748096
+forest_action,cooling_plus_fan_10min_kw,cooling_plus_fan,10,kW electric,group:D2_G100,1,2,1704,0.001241683868549977,0.004386348482779928,0.0007291865638566154
+forest_action,cooling_plus_fan_10min_kw,cooling_plus_fan,10,kW electric,group:D2_G196,1,12,2556,0.006774360783782343,0.027872522137273457,-0.00044005369567285996
+forest_action,cooling_plus_fan_10min_kw,cooling_plus_fan,10,kW electric,group:D2_G310,1,7,1704,0.003170087732013454,0.009517590421342214,0.00012436736766061756
+forest_action,cooling_plus_fan_10min_kw,cooling_plus_fan,10,kW electric,group:D2_G354,1,5,1704,0.00430238244923387,0.014648243262436092,0.0004102859153399525
+forest_action,cooling_plus_fan_15min_kw,cooling_plus_fan,15,kW electric,group_macro,4,26,7668,0.004432615432415639,0.013170117496533514,0.0002142849282159636
+forest_action,cooling_plus_fan_15min_kw,cooling_plus_fan,15,kW electric,all,4,26,7668,0.004696262591371842,0.015171644538281789,0.00018858801126295975
+forest_action,cooling_plus_fan_15min_kw,cooling_plus_fan,15,kW electric,native_reference,4,0,3408,0.0033756244596589323,0.010959150594014776,0.0006506290557326703
+forest_action,cooling_plus_fan_15min_kw,cooling_plus_fan,15,kW electric,applied_native,4,26,7503,0.004088015849624215,0.014081545930478766,0.00030726399957976987
+forest_action,cooling_plus_fan_15min_kw,cooling_plus_fan,15,kW electric,active_colder,4,23,138,0.03041613357726834,0.038848265189338115,-0.007611254889588274
+forest_action,cooling_plus_fan_15min_kw,cooling_plus_fan,15,kW electric,active_warmer,1,3,27,0.04226415545354679,0.05054287913719211,0.0070757131955756876
+forest_action,cooling_plus_fan_15min_kw,cooling_plus_fan,15,kW electric,heating_active_target_interval,3,0,635,0.0013586387935972638,0.0032052007945821883,0.00037139955091268197
+forest_action,cooling_plus_fan_15min_kw,cooling_plus_fan,15,kW electric,cooling_active_target_interval,4,25,2232,0.014737743698583527,0.027298672067540344,-0.0004573860253553286
+forest_action,cooling_plus_fan_15min_kw,cooling_plus_fan,15,kW electric,major_temperature_transition,4,0,151,0.024088843167225045,0.059845440761594884,-0.01567772277639726
+forest_action,cooling_plus_fan_15min_kw,cooling_plus_fan,15,kW electric,major_electrical_transition,4,23,432,0.037551997977863356,0.056269838593893055,-0.009817094193580378
+forest_action,cooling_plus_fan_15min_kw,cooling_plus_fan,15,kW electric,cold_before_start,4,23,46,0.06315346252188665,0.07272870314015503,-0.06205434280869581
+forest_action,cooling_plus_fan_15min_kw,cooling_plus_fan,15,kW electric,warm_before_start,1,3,6,0.1151241506846022,0.11610516032754417,0.1151241506846022
+forest_action,cooling_plus_fan_15min_kw,cooling_plus_fan,15,kW electric,cold_active_override,4,23,138,0.03041613357726834,0.038848265189338115,-0.007611254889588274
+forest_action,cooling_plus_fan_15min_kw,cooling_plus_fan,15,kW electric,warm_active_override,1,3,27,0.04226415545354679,0.05054287913719211,0.0070757131955756876
+forest_action,cooling_plus_fan_15min_kw,cooling_plus_fan,15,kW electric,cold_approaching_release,4,23,46,0.030447260663711184,0.04009027830603084,0.0279490970077299
+forest_action,cooling_plus_fan_15min_kw,cooling_plus_fan,15,kW electric,warm_approaching_release,1,3,6,0.06963282039766262,0.07299964153106925,-0.06963282039766262
+forest_action,cooling_plus_fan_15min_kw,cooling_plus_fan,15,kW electric,cold_after_release,4,23,138,0.018154330067056437,0.027042802735621225,-0.0055634085792669805
+forest_action,cooling_plus_fan_15min_kw,cooling_plus_fan,15,kW electric,warm_after_release,1,3,18,0.02577131788437649,0.038197534543475714,0.01140401737210951
+forest_action,cooling_plus_fan_15min_kw,cooling_plus_fan,15,kW electric,cold_recovery_30_to_120min,4,23,390,0.011436774581153516,0.01960727381754219,0.003226164523072853
+forest_action,cooling_plus_fan_15min_kw,cooling_plus_fan,15,kW electric,warm_recovery_30_to_120min,1,3,54,0.012046112076430308,0.013618498803297498,0.007319896860532058
+forest_action,cooling_plus_fan_15min_kw,cooling_plus_fan,15,kW electric,known_release_crossing,4,39,78,0.02372533708660455,0.036900438409436354,0.011474134429871347
+forest_action,cooling_plus_fan_15min_kw,cooling_plus_fan,15,kW electric,group:D2_G100,1,2,1704,0.0019851859686009004,0.006783806226486194,0.001214491209331747
+forest_action,cooling_plus_fan_15min_kw,cooling_plus_fan,15,kW electric,group:D2_G196,1,12,2556,0.006805439863021461,0.021290432804268133,-1.6987324361071993e-05
+forest_action,cooling_plus_fan_15min_kw,cooling_plus_fan,15,kW electric,group:D2_G310,1,7,1704,0.003921608414184509,0.01041532978288115,-0.0001931984219360382
+forest_action,cooling_plus_fan_15min_kw,cooling_plus_fan,15,kW electric,group:D2_G354,1,5,1704,0.0050182274838556865,0.01419090117249858,-0.0001471657501707824
+forest_action,cooling_plus_fan_30min_kw,cooling_plus_fan,30,kW electric,group_macro,4,26,7668,0.00750192878056569,0.01924876661809599,4.7660009496942445e-05
+forest_action,cooling_plus_fan_30min_kw,cooling_plus_fan,30,kW electric,all,4,26,7668,0.007642841594213093,0.019652345980471053,-2.1169772087823207e-05
+forest_action,cooling_plus_fan_30min_kw,cooling_plus_fan,30,kW electric,native_reference,4,0,3408,0.006250417751849515,0.015746893165318705,0.0003804419734188822
+forest_action,cooling_plus_fan_30min_kw,cooling_plus_fan,30,kW electric,applied_native,4,26,7503,0.0069012784617961224,0.01829333775524128,-0.0002290522846190004
+forest_action,cooling_plus_fan_30min_kw,cooling_plus_fan,30,kW electric,active_colder,4,23,138,0.041869627727215225,0.05336556515979883,0.007861994355675687
+forest_action,cooling_plus_fan_30min_kw,cooling_plus_fan,30,kW electric,active_warmer,1,3,27,0.03877808960051804,0.04620242279104264,0.017455342890506848
+forest_action,cooling_plus_fan_30min_kw,cooling_plus_fan,30,kW electric,heating_active_target_interval,3,0,641,0.0015384323430089318,0.0030902479047610746,-0.00010139247709540577
+forest_action,cooling_plus_fan_30min_kw,cooling_plus_fan,30,kW electric,cooling_active_target_interval,4,25,2232,0.02464642868731086,0.03595017617282167,-0.001208910203770198
+forest_action,cooling_plus_fan_30min_kw,cooling_plus_fan,30,kW electric,major_temperature_transition,4,0,411,0.009935516225606388,0.02537372245040088,-0.004660022538038689
+forest_action,cooling_plus_fan_30min_kw,cooling_plus_fan,30,kW electric,major_electrical_transition,4,25,1264,0.026555046197570757,0.03997729481236176,-0.006304663579955031
+forest_action,cooling_plus_fan_30min_kw,cooling_plus_fan,30,kW electric,cold_before_start,4,23,46,0.05494421917668791,0.06899366944030302,-0.04990468585638316
+forest_action,cooling_plus_fan_30min_kw,cooling_plus_fan,30,kW electric,warm_before_start,1,3,6,0.07070119148141028,0.07271210168841404,0.07070119148141028
+forest_action,cooling_plus_fan_30min_kw,cooling_plus_fan,30,kW electric,cold_active_override,4,23,138,0.041869627727215225,0.05336556515979883,0.007861994355675687
+forest_action,cooling_plus_fan_30min_kw,cooling_plus_fan,30,kW electric,warm_active_override,1,3,27,0.03877808960051804,0.04620242279104264,0.017455342890506848
+forest_action,cooling_plus_fan_30min_kw,cooling_plus_fan,30,kW electric,cold_approaching_release,4,23,46,0.036427746059277746,0.04524748837903719,0.005641956444727144
+forest_action,cooling_plus_fan_30min_kw,cooling_plus_fan,30,kW electric,warm_approaching_release,1,3,6,0.02275862779317252,0.028246219625598822,0.015179737065428911
+forest_action,cooling_plus_fan_30min_kw,cooling_plus_fan,30,kW electric,cold_after_release,4,23,138,0.029928571327138817,0.03954831536838914,-0.005537189630117307
+forest_action,cooling_plus_fan_30min_kw,cooling_plus_fan,30,kW electric,warm_after_release,1,3,18,0.03214469896204523,0.04598480676822647,0.029038063847610467
+forest_action,cooling_plus_fan_30min_kw,cooling_plus_fan,30,kW electric,cold_recovery_30_to_120min,4,23,390,0.02317174142917005,0.03210356257369885,0.003009282924676472
+forest_action,cooling_plus_fan_30min_kw,cooling_plus_fan,30,kW electric,warm_recovery_30_to_120min,1,3,54,0.011370359180191969,0.01352877518924302,-0.0021453494725704497
+forest_action,cooling_plus_fan_30min_kw,cooling_plus_fan,30,kW electric,known_release_crossing,4,39,195,0.025656471348789095,0.039767358241393394,0.01100031333053029
+forest_action,cooling_plus_fan_30min_kw,cooling_plus_fan,30,kW electric,group:D2_G100,1,2,1704,0.00424591243435331,0.014689510319323728,0.003695852243809803
+forest_action,cooling_plus_fan_30min_kw,cooling_plus_fan,30,kW electric,group:D2_G196,1,12,2556,0.008770144103392327,0.020141460670710522,-0.0005718080247659506
+forest_action,cooling_plus_fan_30min_kw,cooling_plus_fan,30,kW electric,group:D2_G310,1,7,1704,0.007102169987131243,0.01756343173881842,-0.0006347040500699735
+forest_action,cooling_plus_fan_30min_kw,cooling_plus_fan,30,kW electric,group:D2_G354,1,5,1704,0.009889488597385879,0.02460066374353129,-0.002298700130986109
+forest_predicted_occupancy,target_indoor_temp_5min_c,indoor_temperature,5,degC,group_macro,4,26,7668,0.07192303929549226,0.20730055531742397,0.039613117282742645
+forest_predicted_occupancy,target_indoor_temp_5min_c,indoor_temperature,5,degC,all,4,26,7668,0.06602434226746327,0.21647528574932134,0.0351489083986558
+forest_predicted_occupancy,target_indoor_temp_5min_c,indoor_temperature,5,degC,native_reference,4,0,3408,0.07059268682359754,0.22729828604572394,0.039236393085152574
+forest_predicted_occupancy,target_indoor_temp_5min_c,indoor_temperature,5,degC,applied_native,4,26,7503,0.06640012604439477,0.21831977817950313,0.03542849676876223
+forest_predicted_occupancy,target_indoor_temp_5min_c,indoor_temperature,5,degC,active_colder,4,23,138,0.04650566995348003,0.0907480758701289,0.03740953219034682
+forest_predicted_occupancy,target_indoor_temp_5min_c,indoor_temperature,5,degC,active_warmer,1,3,27,0.06136030897163583,0.14637202095150445,-0.05409989249622842
+forest_predicted_occupancy,target_indoor_temp_5min_c,indoor_temperature,5,degC,heating_active_target_interval,3,0,633,0.09219629115101649,0.45153726467685956,-0.0754211080416906
+forest_predicted_occupancy,target_indoor_temp_5min_c,indoor_temperature,5,degC,cooling_active_target_interval,4,25,2232,0.0168836162204227,0.08269602271419015,0.005495019736743795
+forest_predicted_occupancy,target_indoor_temp_5min_c,indoor_temperature,5,degC,major_temperature_transition,4,0,39,1.3961270731621864,1.8504890117857213,-1.1116437242130213
+forest_predicted_occupancy,target_indoor_temp_5min_c,indoor_temperature,5,degC,major_electrical_transition,3,22,91,0.2460113482678622,0.39767971231988025,0.1554954922805659
+forest_predicted_occupancy,target_indoor_temp_5min_c,indoor_temperature,5,degC,cold_before_start,4,23,46,0.023958414388311085,0.029774841097802193,-0.02138614450817253
+forest_predicted_occupancy,target_indoor_temp_5min_c,indoor_temperature,5,degC,warm_before_start,1,3,6,0.015066036504985428,0.017269542158596416,0.015066036504985428
+forest_predicted_occupancy,target_indoor_temp_5min_c,indoor_temperature,5,degC,cold_active_override,4,23,138,0.04650566995348003,0.0907480758701289,0.03740953219034682
+forest_predicted_occupancy,target_indoor_temp_5min_c,indoor_temperature,5,degC,warm_active_override,1,3,27,0.06136030897163583,0.14637202095150445,-0.05409989249622842
+forest_predicted_occupancy,target_indoor_temp_5min_c,indoor_temperature,5,degC,cold_approaching_release,4,23,46,0.015537406397452791,0.023341563452786863,0.002206470427193738
+forest_predicted_occupancy,target_indoor_temp_5min_c,indoor_temperature,5,degC,warm_approaching_release,1,3,6,0.04562477101971988,0.06176157015112294,-0.04401634541401478
+forest_predicted_occupancy,target_indoor_temp_5min_c,indoor_temperature,5,degC,cold_after_release,4,23,138,0.0255816229614804,0.044494135580285386,-0.019782905401473417
+forest_predicted_occupancy,target_indoor_temp_5min_c,indoor_temperature,5,degC,warm_after_release,1,3,18,0.02803737844251882,0.05348186511856633,0.024419419185740903
+forest_predicted_occupancy,target_indoor_temp_5min_c,indoor_temperature,5,degC,cold_recovery_30_to_120min,4,23,390,0.004367322463696838,0.00751464292259589,-0.00014028499685087272
+forest_predicted_occupancy,target_indoor_temp_5min_c,indoor_temperature,5,degC,warm_recovery_30_to_120min,1,3,54,0.0012188929510068805,0.0015500354420137118,0.00016294069120671974
+forest_predicted_occupancy,target_indoor_temp_5min_c,indoor_temperature,5,degC,group:D2_G100,1,2,1704,0.15553903883434453,0.3327461285244555,0.1252509421371732
+forest_predicted_occupancy,target_indoor_temp_5min_c,indoor_temperature,5,degC,group:D2_G196,1,12,2556,0.018834766043231244,0.07765541663878786,-0.0005647626740389679
+forest_predicted_occupancy,target_indoor_temp_5min_c,indoor_temperature,5,degC,group:D2_G310,1,7,1704,0.04287423717170919,0.1680818359658653,0.004710485934914185
+forest_predicted_occupancy,target_indoor_temp_5min_c,indoor_temperature,5,degC,group:D2_G354,1,5,1704,0.07044411513268412,0.25071884014058726,0.02905580373292219
+forest_predicted_occupancy,target_indoor_temp_10min_c,indoor_temperature,10,degC,group_macro,4,26,7668,0.06429364329267465,0.1671224715383055,0.019719017462536056
+forest_predicted_occupancy,target_indoor_temp_10min_c,indoor_temperature,10,degC,all,4,26,7668,0.06034095067755186,0.1701541702917672,0.017507954506573938
+forest_predicted_occupancy,target_indoor_temp_10min_c,indoor_temperature,10,degC,native_reference,4,0,3408,0.0630845273803667,0.17550625263865083,0.019692156406238
+forest_predicted_occupancy,target_indoor_temp_10min_c,indoor_temperature,10,degC,applied_native,4,26,7503,0.06083284873237415,0.17163649234786463,0.017754302982179792
+forest_predicted_occupancy,target_indoor_temp_10min_c,indoor_temperature,10,degC,active_colder,4,23,138,0.03891465053236778,0.07515363796279038,0.012799404161916052
+forest_predicted_occupancy,target_indoor_temp_10min_c,indoor_temperature,10,degC,active_warmer,1,3,27,0.033160147518432624,0.08528179800026996,-0.026883625675202017
+forest_predicted_occupancy,target_indoor_temp_10min_c,indoor_temperature,10,degC,heating_active_target_interval,3,0,633,0.07342218967490774,0.3033711916702936,-0.05304121865676354
+forest_predicted_occupancy,target_indoor_temp_10min_c,indoor_temperature,10,degC,cooling_active_target_interval,4,25,2232,0.02483730480614399,0.11701285424329616,0.011160785773183055
+forest_predicted_occupancy,target_indoor_temp_10min_c,indoor_temperature,10,degC,major_temperature_transition,4,0,93,0.693070978448713,0.9681249614303563,-0.15827153518901696
+forest_predicted_occupancy,target_indoor_temp_10min_c,indoor_temperature,10,degC,major_electrical_transition,4,22,208,0.1701795896725769,0.37337448664253836,0.10666848749388744
+forest_predicted_occupancy,target_indoor_temp_10min_c,indoor_temperature,10,degC,cold_before_start,4,23,46,0.04658758377023685,0.08067790468531717,0.0038659020271002383
+forest_predicted_occupancy,target_indoor_temp_10min_c,indoor_temperature,10,degC,warm_before_start,1,3,6,0.10676140693380039,0.13307107726095152,-0.07924718608842933
+forest_predicted_occupancy,target_indoor_temp_10min_c,indoor_temperature,10,degC,cold_active_override,4,23,138,0.03891465053236778,0.07515363796279038,0.012799404161916052
+forest_predicted_occupancy,target_indoor_temp_10min_c,indoor_temperature,10,degC,warm_active_override,1,3,27,0.033160147518432624,0.08528179800026996,-0.026883625675202017
+forest_predicted_occupancy,target_indoor_temp_10min_c,indoor_temperature,10,degC,cold_approaching_release,4,23,46,0.03576678234781221,0.06436549368504134,-0.022115086302255758
+forest_predicted_occupancy,target_indoor_temp_10min_c,indoor_temperature,10,degC,warm_approaching_release,1,3,6,0.007111023478051,0.008743089612342783,-0.007111023478051
+forest_predicted_occupancy,target_indoor_temp_10min_c,indoor_temperature,10,degC,cold_after_release,4,23,138,0.03215408299740039,0.06429659743826513,-0.023267546054627886
+forest_predicted_occupancy,target_indoor_temp_10min_c,indoor_temperature,10,degC,warm_after_release,1,3,18,0.011497552484741134,0.016218894083880487,0.00594938847867077
+forest_predicted_occupancy,target_indoor_temp_10min_c,indoor_temperature,10,degC,cold_recovery_30_to_120min,4,23,390,0.007882903894609756,0.013640040030530069,0.0029084790295372024
+forest_predicted_occupancy,target_indoor_temp_10min_c,indoor_temperature,10,degC,warm_recovery_30_to_120min,1,3,54,0.0026617671070879746,0.0030012588560071217,-0.0026278905460080815
+forest_predicted_occupancy,target_indoor_temp_10min_c,indoor_temperature,10,degC,known_release_crossing,4,39,39,0.044953636867096344,0.07476048856107989,-0.028397936766718493
+forest_predicted_occupancy,target_indoor_temp_10min_c,indoor_temperature,10,degC,group:D2_G100,1,2,1704,0.1094240031638542,0.25164418635396246,0.061146906834053084
+forest_predicted_occupancy,target_indoor_temp_10min_c,indoor_temperature,10,degC,group:D2_G196,1,12,2556,0.028719409756569576,0.11113267770973458,-0.0001805491411230444
+forest_predicted_occupancy,target_indoor_temp_10min_c,indoor_temperature,10,degC,group:D2_G310,1,7,1704,0.06352640123494095,0.18205631377399403,0.005899471131865864
+forest_predicted_occupancy,target_indoor_temp_10min_c,indoor_temperature,10,degC,group:D2_G354,1,5,1704,0.05550475901533386,0.12365670831553101,0.012010241025348327
+forest_predicted_occupancy,target_indoor_temp_15min_c,indoor_temperature,15,degC,group_macro,4,26,7668,0.06997388663116552,0.16848155726716765,0.019129339685565662
+forest_predicted_occupancy,target_indoor_temp_15min_c,indoor_temperature,15,degC,all,4,26,7668,0.06647857613008509,0.17288172003307126,0.016811374896599125
+forest_predicted_occupancy,target_indoor_temp_15min_c,indoor_temperature,15,degC,native_reference,4,0,3408,0.06889097317444422,0.17667595182768883,0.018746253858845388
+forest_predicted_occupancy,target_indoor_temp_15min_c,indoor_temperature,15,degC,applied_native,4,26,7503,0.06715893743094555,0.17450929512852348,0.017117249775798808
+forest_predicted_occupancy,target_indoor_temp_15min_c,indoor_temperature,15,degC,active_colder,4,23,138,0.03947758120236476,0.07001378913005206,0.005559517605275869
+forest_predicted_occupancy,target_indoor_temp_15min_c,indoor_temperature,15,degC,active_warmer,1,3,27,0.015418815377099548,0.021802839587741783,-0.010678362600905234
+forest_predicted_occupancy,target_indoor_temp_15min_c,indoor_temperature,15,degC,heating_active_target_interval,3,0,635,0.06768900831836598,0.20914582186174963,-0.03651019978604351
+forest_predicted_occupancy,target_indoor_temp_15min_c,indoor_temperature,15,degC,cooling_active_target_interval,4,25,2232,0.030022148916515792,0.1348375977744265,0.014174982477280803
+forest_predicted_occupancy,target_indoor_temp_15min_c,indoor_temperature,15,degC,major_temperature_transition,4,0,151,0.5721845146929135,0.7632822381410492,0.056977979206384616
+forest_predicted_occupancy,target_indoor_temp_15min_c,indoor_temperature,15,degC,major_electrical_transition,4,23,432,0.12273332148608823,0.3084825164897797,0.07477502097611347
+forest_predicted_occupancy,target_indoor_temp_15min_c,indoor_temperature,15,degC,cold_before_start,4,23,46,0.05185126429378907,0.09394379244216627,0.02362501612942194
+forest_predicted_occupancy,target_indoor_temp_15min_c,indoor_temperature,15,degC,warm_before_start,1,3,6,0.030610573136116887,0.04120732134696397,-0.0296007657059351
+forest_predicted_occupancy,target_indoor_temp_15min_c,indoor_temperature,15,degC,cold_active_override,4,23,138,0.03947758120236476,0.07001378913005206,0.005559517605275869
+forest_predicted_occupancy,target_indoor_temp_15min_c,indoor_temperature,15,degC,warm_active_override,1,3,27,0.015418815377099548,0.021802839587741783,-0.010678362600905234
+forest_predicted_occupancy,target_indoor_temp_15min_c,indoor_temperature,15,degC,cold_approaching_release,4,23,46,0.06142551057221569,0.0930397871227062,-0.029207910392129454
+forest_predicted_occupancy,target_indoor_temp_15min_c,indoor_temperature,15,degC,warm_approaching_release,1,3,6,0.014196630878791675,0.01565835645221592,0.00652779183173872
+forest_predicted_occupancy,target_indoor_temp_15min_c,indoor_temperature,15,degC,cold_after_release,4,23,138,0.027604532947112095,0.05766243160230116,-0.018774641210819884
+forest_predicted_occupancy,target_indoor_temp_15min_c,indoor_temperature,15,degC,warm_after_release,1,3,18,0.006535520875262237,0.009583579887292954,0.004873457539681109
+forest_predicted_occupancy,target_indoor_temp_15min_c,indoor_temperature,15,degC,cold_recovery_30_to_120min,4,23,390,0.00912662048071328,0.012959901463075576,0.003289293925808478
+forest_predicted_occupancy,target_indoor_temp_15min_c,indoor_temperature,15,degC,warm_recovery_30_to_120min,1,3,54,0.0015053004038614562,0.0018098120460890647,0.0014746163438723757
+forest_predicted_occupancy,target_indoor_temp_15min_c,indoor_temperature,15,degC,known_release_crossing,4,39,78,0.05671221103172796,0.08653377162655053,-0.022114560796778322
+forest_predicted_occupancy,target_indoor_temp_15min_c,indoor_temperature,15,degC,group:D2_G100,1,2,1704,0.10657537626021772,0.24233733757007045,0.06565397321764001
+forest_predicted_occupancy,target_indoor_temp_15min_c,indoor_temperature,15,degC,group:D2_G196,1,12,2556,0.03851609212144167,0.13091805256357056,-0.0017323434151331652
+forest_predicted_occupancy,target_indoor_temp_15min_c,indoor_temperature,15,degC,group:D2_G310,1,7,1704,0.08235606427708689,0.19962149479876473,0.012857164724387918
+forest_predicted_occupancy,target_indoor_temp_15min_c,indoor_temperature,15,degC,group:D2_G354,1,5,1704,0.0524480138659158,0.10104934413626485,-0.0002614357846321172
+forest_predicted_occupancy,target_indoor_temp_30min_c,indoor_temperature,30,degC,group_macro,4,26,7668,0.08863173134367575,0.1716793655457648,0.010062804019814122
+forest_predicted_occupancy,target_indoor_temp_30min_c,indoor_temperature,30,degC,all,4,26,7668,0.08408655487358992,0.17908691644739466,0.007160716021435203
+forest_predicted_occupancy,target_indoor_temp_30min_c,indoor_temperature,30,degC,native_reference,4,0,3408,0.08804690728595087,0.18706267960840833,0.009359601073727006
+forest_predicted_occupancy,target_indoor_temp_30min_c,indoor_temperature,30,degC,applied_native,4,26,7503,0.08499489854432403,0.1807146148034623,0.007487292137210258
+forest_predicted_occupancy,target_indoor_temp_30min_c,indoor_temperature,30,degC,active_colder,4,23,138,0.04685163366721853,0.07986865948648442,-0.007518999843909303
+forest_predicted_occupancy,target_indoor_temp_30min_c,indoor_temperature,30,degC,active_warmer,1,3,27,0.02197976098326669,0.025443013293801095,-0.008561499061627974
+forest_predicted_occupancy,target_indoor_temp_30min_c,indoor_temperature,30,degC,heating_active_target_interval,3,0,641,0.06913089393247954,0.13326555697580147,0.012641997256086956
+forest_predicted_occupancy,target_indoor_temp_30min_c,indoor_temperature,30,degC,cooling_active_target_interval,4,25,2232,0.026428562300662553,0.06134522670922838,0.004515938488568875
+forest_predicted_occupancy,target_indoor_temp_30min_c,indoor_temperature,30,degC,major_temperature_transition,4,0,411,0.394404626252852,0.5767791900963408,0.0390931961543344
+forest_predicted_occupancy,target_indoor_temp_30min_c,indoor_temperature,30,degC,major_electrical_transition,4,25,1264,0.05296520937110437,0.11838171450963535,0.009012149362872248
+forest_predicted_occupancy,target_indoor_temp_30min_c,indoor_temperature,30,degC,cold_before_start,4,23,46,0.038572606943039094,0.0863414620433967,0.03741892787493839
+forest_predicted_occupancy,target_indoor_temp_30min_c,indoor_temperature,30,degC,warm_before_start,1,3,6,0.000850814095530931,0.0009026748932896781,6.751184863181454e-05
+forest_predicted_occupancy,target_indoor_temp_30min_c,indoor_temperature,30,degC,cold_active_override,4,23,138,0.04685163366721853,0.07986865948648442,-0.007518999843909303
+forest_predicted_occupancy,target_indoor_temp_30min_c,indoor_temperature,30,degC,warm_active_override,1,3,27,0.02197976098326669,0.025443013293801095,-0.008561499061627974
+forest_predicted_occupancy,target_indoor_temp_30min_c,indoor_temperature,30,degC,cold_approaching_release,4,23,46,0.039346736887084476,0.06111514617479034,-0.02621719730172361
+forest_predicted_occupancy,target_indoor_temp_30min_c,indoor_temperature,30,degC,warm_approaching_release,1,3,6,0.009824913776538343,0.00990895373237884,0.009824913776538343
+forest_predicted_occupancy,target_indoor_temp_30min_c,indoor_temperature,30,degC,cold_after_release,4,23,138,0.018811607523673297,0.028950011778287547,-0.01091924765236102
+forest_predicted_occupancy,target_indoor_temp_30min_c,indoor_temperature,30,degC,warm_after_release,1,3,18,0.014220509020670057,0.024130932004625124,0.008671770868733041
+forest_predicted_occupancy,target_indoor_temp_30min_c,indoor_temperature,30,degC,cold_recovery_30_to_120min,4,23,390,0.015684667565027947,0.020041812264620283,0.006192354764101146
+forest_predicted_occupancy,target_indoor_temp_30min_c,indoor_temperature,30,degC,warm_recovery_30_to_120min,1,3,54,0.0024839643454668105,0.0028471050810379207,0.00042337911799653175
+forest_predicted_occupancy,target_indoor_temp_30min_c,indoor_temperature,30,degC,known_release_crossing,4,39,195,0.09629498053373205,0.2104498816855532,-0.013353537896503955
+forest_predicted_occupancy,target_indoor_temp_30min_c,indoor_temperature,30,degC,group:D2_G100,1,2,1704,0.13319329374824043,0.2932195914320923,0.07019561715248752
+forest_predicted_occupancy,target_indoor_temp_30min_c,indoor_temperature,30,degC,group:D2_G196,1,12,2556,0.04772514311290335,0.08656335202187393,-0.016055987965596163
+forest_predicted_occupancy,target_indoor_temp_30min_c,indoor_temperature,30,degC,group:D2_G310,1,7,1704,0.09083080292312484,0.15232547816065656,-0.004977452289028075
+forest_predicted_occupancy,target_indoor_temp_30min_c,indoor_temperature,30,degC,group:D2_G354,1,5,1704,0.08277768559043437,0.15460904056843636,-0.008910960818606798
+forest_predicted_occupancy,target_cooling_electric_power_5min_kw,cooling_power,5,kW electric,group_macro,4,26,7668,0.0030941028887605257,0.014680618701806892,1.3198504480473066e-05
+forest_predicted_occupancy,target_cooling_electric_power_5min_kw,cooling_power,5,kW electric,all,4,26,7668,0.0032948215337674073,0.01767927287666038,7.132452513418781e-07
+forest_predicted_occupancy,target_cooling_electric_power_5min_kw,cooling_power,5,kW electric,native_reference,4,0,3408,0.00252741115536656,0.015199666560507823,0.00015177504521358596
+forest_predicted_occupancy,target_cooling_electric_power_5min_kw,cooling_power,5,kW electric,applied_native,4,26,7503,0.0029457826189816147,0.01718385481262165,0.00020623471848511124
+forest_predicted_occupancy,target_cooling_electric_power_5min_kw,cooling_power,5,kW electric,active_colder,4,23,138,0.018656270119081827,0.03149608280979582,-0.014536087480037728
+forest_predicted_occupancy,target_cooling_electric_power_5min_kw,cooling_power,5,kW electric,active_warmer,1,3,27,0.021774787195412326,0.04049046406199611,0.01718778311254468
+forest_predicted_occupancy,target_cooling_electric_power_5min_kw,cooling_power,5,kW electric,heating_active_target_interval,3,0,633,0.0005595795717353776,0.004435742845260727,0.000559052860882806
+forest_predicted_occupancy,target_cooling_electric_power_5min_kw,cooling_power,5,kW electric,cooling_active_target_interval,4,25,2232,0.010128679945035489,0.0322459335936198,-0.0011746079106440652
+forest_predicted_occupancy,target_cooling_electric_power_5min_kw,cooling_power,5,kW electric,major_temperature_transition,4,0,39,0.08877508715954562,0.16237232717955222,0.027709166128890683
+forest_predicted_occupancy,target_cooling_electric_power_5min_kw,cooling_power,5,kW electric,major_electrical_transition,3,22,91,0.11443145051483464,0.1517644546642368,-0.006506113985601228
+forest_predicted_occupancy,target_cooling_electric_power_5min_kw,cooling_power,5,kW electric,cold_before_start,4,23,46,0.004828816311201349,0.00765588550482024,0.0005004831773294793
+forest_predicted_occupancy,target_cooling_electric_power_5min_kw,cooling_power,5,kW electric,warm_before_start,1,3,6,0.002792001398883026,0.003367045448458457,0.002792001398883026
+forest_predicted_occupancy,target_cooling_electric_power_5min_kw,cooling_power,5,kW electric,cold_active_override,4,23,138,0.018656270119081827,0.03149608280979582,-0.014536087480037728
+forest_predicted_occupancy,target_cooling_electric_power_5min_kw,cooling_power,5,kW electric,warm_active_override,1,3,27,0.021774787195412326,0.04049046406199611,0.01718778311254468
+forest_predicted_occupancy,target_cooling_electric_power_5min_kw,cooling_power,5,kW electric,cold_approaching_release,4,23,46,0.011289577001293035,0.014114687372769141,-0.010830587002478274
+forest_predicted_occupancy,target_cooling_electric_power_5min_kw,cooling_power,5,kW electric,warm_approaching_release,1,3,6,0.010904279167307665,0.011866523819500494,0.010904279167307665
+forest_predicted_occupancy,target_cooling_electric_power_5min_kw,cooling_power,5,kW electric,cold_after_release,4,23,138,0.01661285546104067,0.02783643086957887,0.005031210774746333
+forest_predicted_occupancy,target_cooling_electric_power_5min_kw,cooling_power,5,kW electric,warm_after_release,1,3,18,0.02651904531255037,0.0447539823729777,-0.008656397306359198
+forest_predicted_occupancy,target_cooling_electric_power_5min_kw,cooling_power,5,kW electric,cold_recovery_30_to_120min,4,23,390,0.003561460606027414,0.004812696696054033,0.0014662391077916832
+forest_predicted_occupancy,target_cooling_electric_power_5min_kw,cooling_power,5,kW electric,warm_recovery_30_to_120min,1,3,54,0.0037321262389032124,0.005012279814865849,0.0032497623279653643
+forest_predicted_occupancy,target_cooling_electric_power_5min_kw,cooling_power,5,kW electric,group:D2_G100,1,2,1704,0.001226563348010469,0.004955832345053908,0.0010678322288968148
+forest_predicted_occupancy,target_cooling_electric_power_5min_kw,cooling_power,5,kW electric,group:D2_G196,1,12,2556,0.004900570693822461,0.025592576274823756,-9.916882858170795e-05
+forest_predicted_occupancy,target_cooling_electric_power_5min_kw,cooling_power,5,kW electric,group:D2_G310,1,7,1704,0.003020465186942668,0.012949956811601064,-0.0005131226330431325
+forest_predicted_occupancy,target_cooling_electric_power_5min_kw,cooling_power,5,kW electric,group:D2_G354,1,5,1704,0.0032288123262665044,0.01522410937574884,-0.00040274674935008204
+forest_predicted_occupancy,target_cooling_electric_power_10min_kw,cooling_power,10,kW electric,group_macro,4,26,7668,0.0037673860981632173,0.014267719658971268,0.00021445393687643735
+forest_predicted_occupancy,target_cooling_electric_power_10min_kw,cooling_power,10,kW electric,all,4,26,7668,0.004095341368861824,0.018575345549940055,0.00013517737800981163
+forest_predicted_occupancy,target_cooling_electric_power_10min_kw,cooling_power,10,kW electric,native_reference,4,0,3408,0.0028801366317095594,0.014926424673775009,0.0005429122508799956
+forest_predicted_occupancy,target_cooling_electric_power_10min_kw,cooling_power,10,kW electric,applied_native,4,26,7503,0.003548092999328261,0.017885239512259597,0.0002967188122726933
+forest_predicted_occupancy,target_cooling_electric_power_10min_kw,cooling_power,10,kW electric,active_colder,4,23,138,0.027526373009989377,0.03644822970136235,-0.010809531616460493
+forest_predicted_occupancy,target_cooling_electric_power_10min_kw,cooling_power,10,kW electric,active_warmer,1,3,27,0.03641097655903659,0.04807049013182576,0.011184231450695059
+forest_predicted_occupancy,target_cooling_electric_power_10min_kw,cooling_power,10,kW electric,heating_active_target_interval,3,0,633,0.00018159659026659872,0.0009856434823621106,0.00018111540341004037
+forest_predicted_occupancy,target_cooling_electric_power_10min_kw,cooling_power,10,kW electric,cooling_active_target_interval,4,25,2232,0.012620167650991507,0.03289953102017067,-0.0009761149612287528
+forest_predicted_occupancy,target_cooling_electric_power_10min_kw,cooling_power,10,kW electric,major_temperature_transition,4,0,93,0.05418023901610864,0.12370795977341319,-0.028666508257639823
+forest_predicted_occupancy,target_cooling_electric_power_10min_kw,cooling_power,10,kW electric,major_electrical_transition,4,22,208,0.06734803510148189,0.10577612330756345,-0.02556141449874049
+forest_predicted_occupancy,target_cooling_electric_power_10min_kw,cooling_power,10,kW electric,cold_before_start,4,23,46,0.03535985425466571,0.05152198708119451,-0.030562520149017197
+forest_predicted_occupancy,target_cooling_electric_power_10min_kw,cooling_power,10,kW electric,warm_before_start,1,3,6,0.06158970504024489,0.08383630567969323,0.06151130544165725
+forest_predicted_occupancy,target_cooling_electric_power_10min_kw,cooling_power,10,kW electric,cold_active_override,4,23,138,0.027526373009989377,0.03644822970136235,-0.010809531616460493
+forest_predicted_occupancy,target_cooling_electric_power_10min_kw,cooling_power,10,kW electric,warm_active_override,1,3,27,0.03641097655903659,0.04807049013182576,0.011184231450695059
+forest_predicted_occupancy,target_cooling_electric_power_10min_kw,cooling_power,10,kW electric,cold_approaching_release,4,23,46,0.03262036452242165,0.04010092046302796,0.008313223709726246
+forest_predicted_occupancy,target_cooling_electric_power_10min_kw,cooling_power,10,kW electric,warm_approaching_release,1,3,6,0.059536581711964576,0.06949358148712101,-0.03309282685191404
+forest_predicted_occupancy,target_cooling_electric_power_10min_kw,cooling_power,10,kW electric,cold_after_release,4,23,138,0.016617203054209377,0.024409415656925348,-0.0005507904636097318
+forest_predicted_occupancy,target_cooling_electric_power_10min_kw,cooling_power,10,kW electric,warm_after_release,1,3,18,0.024883338878294456,0.035795060024785955,0.0023343405677967444
+forest_predicted_occupancy,target_cooling_electric_power_10min_kw,cooling_power,10,kW electric,cold_recovery_30_to_120min,4,23,390,0.007319758330702344,0.013703774079740019,0.0028252524180427253
+forest_predicted_occupancy,target_cooling_electric_power_10min_kw,cooling_power,10,kW electric,warm_recovery_30_to_120min,1,3,54,0.008605990627785262,0.010103226459613705,0.00640351941525844
+forest_predicted_occupancy,target_cooling_electric_power_10min_kw,cooling_power,10,kW electric,known_release_crossing,4,39,39,0.03142266048174235,0.04559143861728237,0.017171508990372557
+forest_predicted_occupancy,target_cooling_electric_power_10min_kw,cooling_power,10,kW electric,group:D2_G100,1,2,1704,0.0010966869265863453,0.004395347761341179,0.0007998154166106209
+forest_predicted_occupancy,target_cooling_electric_power_10min_kw,cooling_power,10,kW electric,group:D2_G196,1,12,2556,0.006718983534450669,0.028644200556248823,-0.0004990350929231942
+forest_predicted_occupancy,target_cooling_electric_power_10min_kw,cooling_power,10,kW electric,group:D2_G310,1,7,1704,0.003143657003597059,0.00938044773813543,8.17479639437154e-05
+forest_predicted_occupancy,target_cooling_electric_power_10min_kw,cooling_power,10,kW electric,group:D2_G354,1,5,1704,0.004110216928018795,0.014650882580159636,0.00047528745987460727
+forest_predicted_occupancy,target_cooling_electric_power_15min_kw,cooling_power,15,kW electric,group_macro,4,26,7668,0.004359992969610918,0.013255121378320871,0.0002433925846566175
+forest_predicted_occupancy,target_cooling_electric_power_15min_kw,cooling_power,15,kW electric,all,4,26,7668,0.004631638768399231,0.01567254014607378,0.0001958240462134786
+forest_predicted_occupancy,target_cooling_electric_power_15min_kw,cooling_power,15,kW electric,native_reference,4,0,3408,0.0033999205048522675,0.011823495554021745,0.0006399307830782329
+forest_predicted_occupancy,target_cooling_electric_power_15min_kw,cooling_power,15,kW electric,applied_native,4,26,7503,0.00406741742380865,0.014794869038956378,0.0002825531460827175
+forest_predicted_occupancy,target_cooling_electric_power_15min_kw,cooling_power,15,kW electric,active_colder,4,23,138,0.028760780225141357,0.03663107350657262,-0.006023284378278571
+forest_predicted_occupancy,target_cooling_electric_power_15min_kw,cooling_power,15,kW electric,active_warmer,1,3,27,0.03809575830294412,0.045537268519870146,0.00788132501884322
+forest_predicted_occupancy,target_cooling_electric_power_15min_kw,cooling_power,15,kW electric,heating_active_target_interval,3,0,635,0.0001814340817319804,0.000972876319063422,0.00018093908954341302
+forest_predicted_occupancy,target_cooling_electric_power_15min_kw,cooling_power,15,kW electric,cooling_active_target_interval,4,25,2232,0.014648074136875532,0.028165465105398232,-0.000583918256269331
+forest_predicted_occupancy,target_cooling_electric_power_15min_kw,cooling_power,15,kW electric,major_temperature_transition,4,0,151,0.02386200215282468,0.06663014485871838,-0.018667504060822137
+forest_predicted_occupancy,target_cooling_electric_power_15min_kw,cooling_power,15,kW electric,major_electrical_transition,4,23,432,0.03731487943096135,0.058638893304499944,-0.01140703929476431
+forest_predicted_occupancy,target_cooling_electric_power_15min_kw,cooling_power,15,kW electric,cold_before_start,4,23,46,0.060137944348177486,0.06949247178394113,-0.05896062152944285
+forest_predicted_occupancy,target_cooling_electric_power_15min_kw,cooling_power,15,kW electric,warm_before_start,1,3,6,0.10493179648914204,0.10599776377058162,0.10493179648914204
+forest_predicted_occupancy,target_cooling_electric_power_15min_kw,cooling_power,15,kW electric,cold_active_override,4,23,138,0.028760780225141357,0.03663107350657262,-0.006023284378278571
+forest_predicted_occupancy,target_cooling_electric_power_15min_kw,cooling_power,15,kW electric,warm_active_override,1,3,27,0.03809575830294412,0.045537268519870146,0.00788132501884322
+forest_predicted_occupancy,target_cooling_electric_power_15min_kw,cooling_power,15,kW electric,cold_approaching_release,4,23,46,0.0302963154338743,0.038905188874258825,0.027740115266152943
+forest_predicted_occupancy,target_cooling_electric_power_15min_kw,cooling_power,15,kW electric,warm_approaching_release,1,3,6,0.060225273190507765,0.06431155068477798,-0.060225273190507765
+forest_predicted_occupancy,target_cooling_electric_power_15min_kw,cooling_power,15,kW electric,cold_after_release,4,23,138,0.017579639068863645,0.02585267506861605,-0.004100333241591015
+forest_predicted_occupancy,target_cooling_electric_power_15min_kw,cooling_power,15,kW electric,warm_after_release,1,3,18,0.025228920722773204,0.036008651465996654,0.01315469454332254
+forest_predicted_occupancy,target_cooling_electric_power_15min_kw,cooling_power,15,kW electric,cold_recovery_30_to_120min,4,23,390,0.011199545385496718,0.01871347930458292,0.002933993693625102
+forest_predicted_occupancy,target_cooling_electric_power_15min_kw,cooling_power,15,kW electric,warm_recovery_30_to_120min,1,3,54,0.01195382702191923,0.0140530403501214,0.006643147089697171
+forest_predicted_occupancy,target_cooling_electric_power_15min_kw,cooling_power,15,kW electric,known_release_crossing,4,39,78,0.022733635860550175,0.03481587190922127,0.011960494192075117
+forest_predicted_occupancy,target_cooling_electric_power_15min_kw,cooling_power,15,kW electric,group:D2_G100,1,2,1704,0.0017227505644171967,0.0065864441600174415,0.0012263243300974411
+forest_predicted_occupancy,target_cooling_electric_power_15min_kw,cooling_power,15,kW electric,group:D2_G196,1,12,2556,0.006804805158705743,0.022720686356082074,-0.00018472426133163175
+forest_predicted_occupancy,target_cooling_electric_power_15min_kw,cooling_power,15,kW electric,group:D2_G310,1,7,1704,0.003889353146045813,0.010062090663846935,-9.175861519683779e-05
+forest_predicted_occupancy,target_cooling_electric_power_15min_kw,cooling_power,15,kW electric,group:D2_G354,1,5,1704,0.005023063009274917,0.013651264333337033,2.3728885057498258e-05
+forest_predicted_occupancy,target_cooling_electric_power_30min_kw,cooling_power,30,kW electric,group_macro,4,26,7668,0.007445604977760659,0.019410364974603272,0.00015162392108107993
+forest_predicted_occupancy,target_cooling_electric_power_30min_kw,cooling_power,30,kW electric,all,4,26,7668,0.007605899265712646,0.019861153422731127,2.1177173780898787e-05
+forest_predicted_occupancy,target_cooling_electric_power_30min_kw,cooling_power,30,kW electric,native_reference,4,0,3408,0.006271186884713167,0.016267435858616723,0.0004244892239891197
+forest_predicted_occupancy,target_cooling_electric_power_30min_kw,cooling_power,30,kW electric,applied_native,4,26,7503,0.00688081640224209,0.018588523223545764,-0.0001609715824131253
+forest_predicted_occupancy,target_cooling_electric_power_30min_kw,cooling_power,30,kW electric,active_colder,4,23,138,0.041409754195438256,0.05259509689105051,0.006434029255826917
+forest_predicted_occupancy,target_cooling_electric_power_30min_kw,cooling_power,30,kW electric,active_warmer,1,3,27,0.0363231120182109,0.043240728230962,0.017861493114574
+forest_predicted_occupancy,target_cooling_electric_power_30min_kw,cooling_power,30,kW electric,heating_active_target_interval,3,0,641,0.0004176702027145005,0.0014517595840347986,0.0004176702027145005
+forest_predicted_occupancy,target_cooling_electric_power_30min_kw,cooling_power,30,kW electric,cooling_active_target_interval,4,25,2232,0.02468853242511212,0.036150522604332325,-0.0013655943336853876
+forest_predicted_occupancy,target_cooling_electric_power_30min_kw,cooling_power,30,kW electric,major_temperature_transition,4,0,411,0.010814365725326807,0.030087445186584127,-0.005723987285208783
+forest_predicted_occupancy,target_cooling_electric_power_30min_kw,cooling_power,30,kW electric,major_electrical_transition,4,25,1264,0.026712666329678954,0.04056903724889532,-0.00675915126100967
+forest_predicted_occupancy,target_cooling_electric_power_30min_kw,cooling_power,30,kW electric,cold_before_start,4,23,46,0.052773918412196565,0.06667398535514582,-0.047588812568499075
+forest_predicted_occupancy,target_cooling_electric_power_30min_kw,cooling_power,30,kW electric,warm_before_start,1,3,6,0.06202428213976944,0.06380300314533807,0.06202428213976944
+forest_predicted_occupancy,target_cooling_electric_power_30min_kw,cooling_power,30,kW electric,cold_active_override,4,23,138,0.041409754195438256,0.05259509689105051,0.006434029255826917
+forest_predicted_occupancy,target_cooling_electric_power_30min_kw,cooling_power,30,kW electric,warm_active_override,1,3,27,0.0363231120182109,0.043240728230962,0.017861493114574
+forest_predicted_occupancy,target_cooling_electric_power_30min_kw,cooling_power,30,kW electric,cold_approaching_release,4,23,46,0.0377450126729253,0.04623906554834479,0.003774342282150067
+forest_predicted_occupancy,target_cooling_electric_power_30min_kw,cooling_power,30,kW electric,warm_approaching_release,1,3,6,0.02557510461676432,0.03178244204241558,0.020529649911711374
+forest_predicted_occupancy,target_cooling_electric_power_30min_kw,cooling_power,30,kW electric,cold_after_release,4,23,138,0.0291345212661433,0.03890773590060073,-0.004088335782502574
+forest_predicted_occupancy,target_cooling_electric_power_30min_kw,cooling_power,30,kW electric,warm_after_release,1,3,18,0.035658996218527444,0.04714685283181268,0.033181032907532014
+forest_predicted_occupancy,target_cooling_electric_power_30min_kw,cooling_power,30,kW electric,cold_recovery_30_to_120min,4,23,390,0.023100340187783047,0.03170933594844084,0.003922642613486929
+forest_predicted_occupancy,target_cooling_electric_power_30min_kw,cooling_power,30,kW electric,warm_recovery_30_to_120min,1,3,54,0.01125447092818903,0.013197196017548667,-0.0030626568365044573
+forest_predicted_occupancy,target_cooling_electric_power_30min_kw,cooling_power,30,kW electric,known_release_crossing,4,39,195,0.025496095360936038,0.039601125845611714,0.010163533233489145
+forest_predicted_occupancy,target_cooling_electric_power_30min_kw,cooling_power,30,kW electric,group:D2_G100,1,2,1704,0.004238629709563279,0.014987160037049066,0.004143235932091823
+forest_predicted_occupancy,target_cooling_electric_power_30min_kw,cooling_power,30,kW electric,group:D2_G196,1,12,2556,0.008888253569328548,0.021042873935642054,-0.0010223968046205482
+forest_predicted_occupancy,target_cooling_electric_power_30min_kw,cooling_power,30,kW electric,group:D2_G310,1,7,1704,0.007052241644880407,0.017602573581202735,-0.0003303549855321715
+forest_predicted_occupancy,target_cooling_electric_power_30min_kw,cooling_power,30,kW electric,group:D2_G354,1,5,1704,0.009603294987270403,0.024008852344519237,-0.0021839884576147837
+forest_predicted_occupancy,target_fan_electric_power_5min_kw,fan_power,5,kW electric,group_macro,4,26,7668,0.00023037695976437195,0.0010942914971726915,6.27678003558345e-06
+forest_predicted_occupancy,target_fan_electric_power_5min_kw,fan_power,5,kW electric,all,4,26,7668,0.0002388669456464417,0.0011440754252135942,5.184180841581176e-06
+forest_predicted_occupancy,target_fan_electric_power_5min_kw,fan_power,5,kW electric,native_reference,4,0,3408,0.00019141414395145928,0.00104406191345724,2.0951525207379743e-05
+forest_predicted_occupancy,target_fan_electric_power_5min_kw,fan_power,5,kW electric,applied_native,4,26,7503,0.00021032850900157756,0.0010957131302047028,2.3002575654597054e-05
+forest_predicted_occupancy,target_fan_electric_power_5min_kw,fan_power,5,kW electric,active_colder,4,23,138,0.0014243064499574562,0.0023278221063418136,-0.0013754976270083097
+forest_predicted_occupancy,target_fan_electric_power_5min_kw,fan_power,5,kW electric,active_warmer,1,3,27,0.0021104683734796095,0.0032255717050496914,0.0021104683734796095
+forest_predicted_occupancy,target_fan_electric_power_5min_kw,fan_power,5,kW electric,heating_active_target_interval,3,0,633,0.0007921919767744517,0.002574350742986954,8.160375259702048e-05
+forest_predicted_occupancy,target_fan_electric_power_5min_kw,fan_power,5,kW electric,cooling_active_target_interval,4,25,2232,0.0005710161416829432,0.0016149499952070674,-3.017932369655633e-05
+forest_predicted_occupancy,target_fan_electric_power_5min_kw,fan_power,5,kW electric,major_temperature_transition,4,0,39,0.010216794935902397,0.012208902584949,-0.0008270343274626731
+forest_predicted_occupancy,target_fan_electric_power_5min_kw,fan_power,5,kW electric,major_electrical_transition,3,22,91,0.005628680155182353,0.007057601378373677,0.0012674509660306416
+forest_predicted_occupancy,target_fan_electric_power_5min_kw,fan_power,5,kW electric,cold_before_start,4,23,46,0.00022358214819838943,0.0003071248888327688,0.00017791326386349676
+forest_predicted_occupancy,target_fan_electric_power_5min_kw,fan_power,5,kW electric,warm_before_start,1,3,6,0.0002090892677418197,0.00023798703055706715,0.0002090892677418197
+forest_predicted_occupancy,target_fan_electric_power_5min_kw,fan_power,5,kW electric,cold_active_override,4,23,138,0.0014243064499574562,0.0023278221063418136,-0.0013754976270083097
+forest_predicted_occupancy,target_fan_electric_power_5min_kw,fan_power,5,kW electric,warm_active_override,1,3,27,0.0021104683734796095,0.0032255717050496914,0.0021104683734796095
+forest_predicted_occupancy,target_fan_electric_power_5min_kw,fan_power,5,kW electric,cold_approaching_release,4,23,46,0.0010359192414520074,0.0012999333708471966,-0.0010147363090164537
+forest_predicted_occupancy,target_fan_electric_power_5min_kw,fan_power,5,kW electric,warm_approaching_release,1,3,6,0.001893696525327623,0.0019672976565130885,0.001893696525327623
+forest_predicted_occupancy,target_fan_electric_power_5min_kw,fan_power,5,kW electric,cold_after_release,4,23,138,0.0008800993061361352,0.0016785841288163988,0.000293253172439047
+forest_predicted_occupancy,target_fan_electric_power_5min_kw,fan_power,5,kW electric,warm_after_release,1,3,18,0.001766399975114757,0.003191183919389064,-0.0008032686368397175
+forest_predicted_occupancy,target_fan_electric_power_5min_kw,fan_power,5,kW electric,cold_recovery_30_to_120min,4,23,390,0.0002093731086758996,0.00030680976593798124,4.925233978386679e-05
+forest_predicted_occupancy,target_fan_electric_power_5min_kw,fan_power,5,kW electric,warm_recovery_30_to_120min,1,3,54,0.00020648823882553759,0.00028129338892483294,0.00015834064321038554
+forest_predicted_occupancy,target_fan_electric_power_5min_kw,fan_power,5,kW electric,group:D2_G100,1,2,1704,0.00017967815926849762,0.001093867173668749,5.190729881773689e-05
+forest_predicted_occupancy,target_fan_electric_power_5min_kw,fan_power,5,kW electric,group:D2_G196,1,12,2556,0.00030678683270299973,0.0013392716643752228,-3.556612710437027e-06
+forest_predicted_occupancy,target_fan_electric_power_5min_kw,fan_power,5,kW electric,group:D2_G310,1,7,1704,0.0001818955240264155,0.0007338439485382796,6.008565963952253e-06
+forest_predicted_occupancy,target_fan_electric_power_5min_kw,fan_power,5,kW electric,group:D2_G354,1,5,1704,0.0002531473230595749,0.001210183202108515,-2.9252131928918315e-05
+forest_predicted_occupancy,target_fan_electric_power_10min_kw,fan_power,10,kW electric,group_macro,4,26,7668,0.0002904900497610412,0.0010319640550806768,4.280693047988614e-05
+forest_predicted_occupancy,target_fan_electric_power_10min_kw,fan_power,10,kW electric,all,4,26,7668,0.0002968580165979765,0.0010414851331892413,4.362548494108261e-05
+forest_predicted_occupancy,target_fan_electric_power_10min_kw,fan_power,10,kW electric,native_reference,4,0,3408,0.00022595565561003833,0.000890007374866011,6.752444432643029e-05
+forest_predicted_occupancy,target_fan_electric_power_10min_kw,fan_power,10,kW electric,applied_native,4,26,7503,0.00025285032138147996,0.0009458063583930996,6.083354753140033e-05
+forest_predicted_occupancy,target_fan_electric_power_10min_kw,fan_power,10,kW electric,active_colder,4,23,138,0.0021178440197210453,0.002874854929196686,-0.0012213143904907808
+forest_predicted_occupancy,target_fan_electric_power_10min_kw,fan_power,10,kW electric,active_warmer,1,3,27,0.003218845749130938,0.004150258628004464,0.001726944343994539
+forest_predicted_occupancy,target_fan_electric_power_10min_kw,fan_power,10,kW electric,heating_active_target_interval,3,0,633,0.0008865301509757077,0.0023045800164785933,0.00021785076143959409
+forest_predicted_occupancy,target_fan_electric_power_10min_kw,fan_power,10,kW electric,cooling_active_target_interval,4,25,2232,0.000720571319594164,0.001426417294928776,4.041761694746318e-05
+forest_predicted_occupancy,target_fan_electric_power_10min_kw,fan_power,10,kW electric,major_temperature_transition,4,0,93,0.0036382900554748645,0.0055162649649013835,-0.0007082574010964935
+forest_predicted_occupancy,target_fan_electric_power_10min_kw,fan_power,10,kW electric,major_electrical_transition,4,22,208,0.0030097382267488884,0.004080306970623321,-5.7155303429287695e-05
+forest_predicted_occupancy,target_fan_electric_power_10min_kw,fan_power,10,kW electric,cold_before_start,4,23,46,0.0023035347080687997,0.0035350849066763308,-0.0018323177498216251
+forest_predicted_occupancy,target_fan_electric_power_10min_kw,fan_power,10,kW electric,warm_before_start,1,3,6,0.0046808549936084515,0.0063292277848111395,0.0046808549936084515
+forest_predicted_occupancy,target_fan_electric_power_10min_kw,fan_power,10,kW electric,cold_active_override,4,23,138,0.0021178440197210453,0.002874854929196686,-0.0012213143904907808
+forest_predicted_occupancy,target_fan_electric_power_10min_kw,fan_power,10,kW electric,warm_active_override,1,3,27,0.003218845749130938,0.004150258628004464,0.001726944343994539
+forest_predicted_occupancy,target_fan_electric_power_10min_kw,fan_power,10,kW electric,cold_approaching_release,4,23,46,0.002281602903616209,0.002900863214473433,0.0002585673982504324
+forest_predicted_occupancy,target_fan_electric_power_10min_kw,fan_power,10,kW electric,warm_approaching_release,1,3,6,0.0049446096258477,0.005279257445691157,-0.0017681203773657068
+forest_predicted_occupancy,target_fan_electric_power_10min_kw,fan_power,10,kW electric,cold_after_release,4,23,138,0.0009757645294851791,0.0015076574354498339,-6.604073842759408e-06
+forest_predicted_occupancy,target_fan_electric_power_10min_kw,fan_power,10,kW electric,warm_after_release,1,3,18,0.002073513034577954,0.0029078268458875896,6.799878475811175e-05
+forest_predicted_occupancy,target_fan_electric_power_10min_kw,fan_power,10,kW electric,cold_recovery_30_to_120min,4,23,390,0.000491235466494577,0.0010721499772841374,0.00016973167144067496
+forest_predicted_occupancy,target_fan_electric_power_10min_kw,fan_power,10,kW electric,warm_recovery_30_to_120min,1,3,54,0.0005735328883576772,0.0006991111188148905,0.0004698665895924967
+forest_predicted_occupancy,target_fan_electric_power_10min_kw,fan_power,10,kW electric,known_release_crossing,4,39,39,0.002057183448842757,0.003176296473324889,0.0009835762397877705
+forest_predicted_occupancy,target_fan_electric_power_10min_kw,fan_power,10,kW electric,group:D2_G100,1,2,1704,0.0002067751696407291,0.001033856193318731,6.229048059412506e-05
+forest_predicted_occupancy,target_fan_electric_power_10min_kw,fan_power,10,kW electric,group:D2_G196,1,12,2556,0.0003478017512934594,0.001055094281399807,5.017392063065443e-05
+forest_predicted_occupancy,target_fan_electric_power_10min_kw,fan_power,10,kW electric,group:D2_G310,1,7,1704,0.00025192013942230577,0.0008407801135636594,4.3268988819916545e-05
+forest_predicted_occupancy,target_fan_electric_power_10min_kw,fan_power,10,kW electric,group:D2_G354,1,5,1704,0.0003554631386876705,0.0011981256320405102,1.5494331874848516e-05
+forest_predicted_occupancy,target_fan_electric_power_15min_kw,fan_power,15,kW electric,group_macro,4,26,7668,0.00034194017433458463,0.0011400537132874792,3.565964835759045e-05
+forest_predicted_occupancy,target_fan_electric_power_15min_kw,fan_power,15,kW electric,all,4,26,7668,0.00034575976846373417,0.0011465464240925174,3.98287900567456e-05
+forest_predicted_occupancy,target_fan_electric_power_15min_kw,fan_power,15,kW electric,native_reference,4,0,3408,0.00026601577691484705,0.0009738255847847628,6.411457647018287e-05
+forest_predicted_occupancy,target_fan_electric_power_15min_kw,fan_power,15,kW electric,applied_native,4,26,7503,0.0003020148785677648,0.001065479445761057,5.0147138962764404e-05
+forest_predicted_occupancy,target_fan_electric_power_15min_kw,fan_power,15,kW electric,active_colder,4,23,138,0.002082323045092153,0.002786721417705837,-0.0007569068925566502
+forest_predicted_occupancy,target_fan_electric_power_15min_kw,fan_power,15,kW electric,active_warmer,1,3,27,0.003626210757898421,0.0042630021514698194,0.0012446788774193188
+forest_predicted_occupancy,target_fan_electric_power_15min_kw,fan_power,15,kW electric,heating_active_target_interval,3,0,635,0.0011140232766709802,0.0026497934254219335,1.479967186892978e-05
+forest_predicted_occupancy,target_fan_electric_power_15min_kw,fan_power,15,kW electric,cooling_active_target_interval,4,25,2232,0.0008113070246125486,0.0014911020215310625,7.301343552721434e-05
+forest_predicted_occupancy,target_fan_electric_power_15min_kw,fan_power,15,kW electric,major_temperature_transition,4,0,151,0.002641577198658838,0.004988063401606616,-0.0005251917074070701
+forest_predicted_occupancy,target_fan_electric_power_15min_kw,fan_power,15,kW electric,major_electrical_transition,4,23,432,0.0020007241786753143,0.0030143613606555624,0.00011067439453667246
+forest_predicted_occupancy,target_fan_electric_power_15min_kw,fan_power,15,kW electric,cold_before_start,4,23,46,0.0038665559591910814,0.004674385751550367,-0.0038540929484083323
+forest_predicted_occupancy,target_fan_electric_power_15min_kw,fan_power,15,kW electric,warm_before_start,1,3,6,0.008951740145150417,0.008976635088478029,0.008951740145150417
+forest_predicted_occupancy,target_fan_electric_power_15min_kw,fan_power,15,kW electric,cold_active_override,4,23,138,0.002082323045092153,0.002786721417705837,-0.0007569068925566502
+forest_predicted_occupancy,target_fan_electric_power_15min_kw,fan_power,15,kW electric,warm_active_override,1,3,27,0.003626210757898421,0.0042630021514698194,0.0012446788774193188
+forest_predicted_occupancy,target_fan_electric_power_15min_kw,fan_power,15,kW electric,cold_approaching_release,4,23,46,0.0019366940999488767,0.0027065615528976124,0.0018543841380039452
+forest_predicted_occupancy,target_fan_electric_power_15min_kw,fan_power,15,kW electric,warm_approaching_release,1,3,6,0.005358446731077979,0.005413478573301147,-0.005358446731077979
+forest_predicted_occupancy,target_fan_electric_power_15min_kw,fan_power,15,kW electric,cold_after_release,4,23,138,0.0009234226598709908,0.0013947538278326497,-0.00017263416295111434
+forest_predicted_occupancy,target_fan_electric_power_15min_kw,fan_power,15,kW electric,warm_after_release,1,3,18,0.0019776892052577096,0.002596988659962817,0.000596173516806202
+forest_predicted_occupancy,target_fan_electric_power_15min_kw,fan_power,15,kW electric,cold_recovery_30_to_120min,4,23,390,0.0006872450699011483,0.00137483929742804,0.00015759080864101804
+forest_predicted_occupancy,target_fan_electric_power_15min_kw,fan_power,15,kW electric,warm_recovery_30_to_120min,1,3,54,0.0007069505396123286,0.0008323246482966754,0.0004667662216921037
+forest_predicted_occupancy,target_fan_electric_power_15min_kw,fan_power,15,kW electric,known_release_crossing,4,39,78,0.001613916717279397,0.002568817675836707,0.0006611529427068499
+forest_predicted_occupancy,target_fan_electric_power_15min_kw,fan_power,15,kW electric,group:D2_G100,1,2,1704,0.0002567836262150344,0.0011301422322987427,4.114543506186168e-06
+forest_predicted_occupancy,target_fan_electric_power_15min_kw,fan_power,15,kW electric,group:D2_G196,1,12,2556,0.00037631652149693095,0.0011083328052155514,7.318192364998687e-05
+forest_predicted_occupancy,target_fan_electric_power_15min_kw,fan_power,15,kW electric,group:D2_G310,1,7,1704,0.0003018354734144438,0.0009367076897228463,5.324308748703295e-05
+forest_predicted_occupancy,target_fan_electric_power_15min_kw,fan_power,15,kW electric,group:D2_G354,1,5,1704,0.00043282507621192936,0.001385032125912777,1.2099038787155805e-05
+forest_predicted_occupancy,target_fan_electric_power_30min_kw,fan_power,30,kW electric,group_macro,4,26,7668,0.0004976367042433835,0.0013310201577962856,4.99571128461724e-06
+forest_predicted_occupancy,target_fan_electric_power_30min_kw,fan_power,30,kW electric,all,4,26,7668,0.0005012982713967903,0.0013480383567657536,1.5821805434210273e-05
+forest_predicted_occupancy,target_fan_electric_power_30min_kw,fan_power,30,kW electric,native_reference,4,0,3408,0.0004163898187523297,0.001133043636116609,2.3039636419387832e-05
+forest_predicted_occupancy,target_fan_electric_power_30min_kw,fan_power,30,kW electric,applied_native,4,26,7503,0.0004624345434011834,0.0012837817294915534,7.091923408181236e-06
+forest_predicted_occupancy,target_fan_electric_power_30min_kw,fan_power,30,kW electric,active_colder,4,23,138,0.002029985367914365,0.002793106527848988,0.00011339915200675143
+forest_predicted_occupancy,target_fan_electric_power_30min_kw,fan_power,30,kW electric,active_warmer,1,3,27,0.0034878068577528193,0.004269124264230469,0.0019430303615188451
+forest_predicted_occupancy,target_fan_electric_power_30min_kw,fan_power,30,kW electric,heating_active_target_interval,3,0,641,0.0013644410564601223,0.0028503725195740495,-0.0002918846864431813
+forest_predicted_occupancy,target_fan_electric_power_30min_kw,fan_power,30,kW electric,cooling_active_target_interval,4,25,2232,0.0012541622803018393,0.001951271979651211,6.199010083765803e-05
+forest_predicted_occupancy,target_fan_electric_power_30min_kw,fan_power,30,kW electric,major_temperature_transition,4,0,411,0.0012400961734459935,0.003186675876005497,-0.00042670338235702995
+forest_predicted_occupancy,target_fan_electric_power_30min_kw,fan_power,30,kW electric,major_electrical_transition,4,25,1264,0.0013575506604611154,0.0021020601326096626,-0.00012093034905846701
+forest_predicted_occupancy,target_fan_electric_power_30min_kw,fan_power,30,kW electric,cold_before_start,4,23,46,0.0031830114273245684,0.004060474316755796,-0.003109033096532736
+forest_predicted_occupancy,target_fan_electric_power_30min_kw,fan_power,30,kW electric,warm_before_start,1,3,6,0.00776474852924942,0.007789004875848799,0.00776474852924942
+forest_predicted_occupancy,target_fan_electric_power_30min_kw,fan_power,30,kW electric,cold_active_override,4,23,138,0.002029985367914365,0.002793106527848988,0.00011339915200675143
+forest_predicted_occupancy,target_fan_electric_power_30min_kw,fan_power,30,kW electric,warm_active_override,1,3,27,0.0034878068577528193,0.004269124264230469,0.0019430303615188451
+forest_predicted_occupancy,target_fan_electric_power_30min_kw,fan_power,30,kW electric,cold_approaching_release,4,23,46,0.0015817010452873865,0.0020989962294865917,0.00026847765673273285
+forest_predicted_occupancy,target_fan_electric_power_30min_kw,fan_power,30,kW electric,warm_approaching_release,1,3,6,0.0016025518033551064,0.0017716340229878124,-1.3149565536042102e-05
+forest_predicted_occupancy,target_fan_electric_power_30min_kw,fan_power,30,kW electric,cold_after_release,4,23,138,0.0014701176394204371,0.002079738308917405,-0.0004827542706476614
+forest_predicted_occupancy,target_fan_electric_power_30min_kw,fan_power,30,kW electric,warm_after_release,1,3,18,0.002543854235004145,0.003772344221923177,0.0022738976704528564
+forest_predicted_occupancy,target_fan_electric_power_30min_kw,fan_power,30,kW electric,cold_recovery_30_to_120min,4,23,390,0.0011818668816665006,0.0017388905421203864,0.00021069229979087375
+forest_predicted_occupancy,target_fan_electric_power_30min_kw,fan_power,30,kW electric,warm_recovery_30_to_120min,1,3,54,0.0011333716409390965,0.001613279437535239,0.0009018003191868335
+forest_predicted_occupancy,target_fan_electric_power_30min_kw,fan_power,30,kW electric,known_release_crossing,4,39,195,0.0013392313658066406,0.002009110006359615,0.0004309818553371714
+forest_predicted_occupancy,target_fan_electric_power_30min_kw,fan_power,30,kW electric,group:D2_G100,1,2,1704,0.0003954228036820257,0.00127119845623127,-2.5496254903582625e-05
+forest_predicted_occupancy,target_fan_electric_power_30min_kw,fan_power,30,kW electric,group:D2_G196,1,12,2556,0.000530590808624044,0.0013196648406185397,0.0001024305586309546
+forest_predicted_occupancy,target_fan_electric_power_30min_kw,fan_power,30,kW electric,group:D2_G310,1,7,1704,0.00041832437922335674,0.001039518159757835,1.3691270203184725e-05
+forest_predicted_occupancy,target_fan_electric_power_30min_kw,fan_power,30,kW electric,group:D2_G354,1,5,1704,0.0006462088254441077,0.0016936991745774973,-7.064272879208773e-05
+forest_predicted_occupancy,target_heating_thermal_power_5min_kw,delivered_heating_power,5,kW thermal,group_macro,4,26,7668,0.01592177972649817,0.1004650081971055,0.0012759915528219542
+forest_predicted_occupancy,target_heating_thermal_power_5min_kw,delivered_heating_power,5,kW thermal,all,4,26,7668,0.014152909822114281,0.11256758157195867,0.0011344314453124622
+forest_predicted_occupancy,target_heating_thermal_power_5min_kw,delivered_heating_power,5,kW thermal,native_reference,4,0,3408,0.015914717101780877,0.11942307069237544,0.0012824579940772394
+forest_predicted_occupancy,target_heating_thermal_power_5min_kw,delivered_heating_power,5,kW thermal,applied_native,4,26,7503,0.014464106984811374,0.11379859877646448,0.0011593366005229104
+forest_predicted_occupancy,target_heating_thermal_power_5min_kw,delivered_heating_power,5,kW thermal,active_colder,4,23,138,2.2931765872545277e-06,1.1583627741218487e-05,2.2931765872545277e-06
+forest_predicted_occupancy,target_heating_thermal_power_5min_kw,delivered_heating_power,5,kW thermal,active_warmer,1,3,27,5.0020871163577637e-08,5.0020871163577637e-08,5.0020871163577637e-08
+forest_predicted_occupancy,target_heating_thermal_power_5min_kw,delivered_heating_power,5,kW thermal,heating_active_target_interval,3,0,633,0.1072148627161966,0.37981050384735915,-0.05048065218190361
+forest_predicted_occupancy,target_heating_thermal_power_5min_kw,delivered_heating_power,5,kW thermal,cooling_active_target_interval,4,25,2232,2.2196330921649284e-06,1.3950832976596656e-05,2.2196310232653457e-06
+forest_predicted_occupancy,target_heating_thermal_power_5min_kw,delivered_heating_power,5,kW thermal,major_temperature_transition,4,0,39,0.9397531841315191,1.4668544058079547,-0.9009855524421598
+forest_predicted_occupancy,target_heating_thermal_power_5min_kw,delivered_heating_power,5,kW thermal,major_electrical_transition,3,22,91,2.375583006448792e-05,4.968549291875906e-05,2.375577931961024e-05
+forest_predicted_occupancy,target_heating_thermal_power_5min_kw,delivered_heating_power,5,kW thermal,cold_before_start,4,23,46,1.0627039321049502e-06,3.253931384991648e-06,1.0627039321049502e-06
+forest_predicted_occupancy,target_heating_thermal_power_5min_kw,delivered_heating_power,5,kW thermal,warm_before_start,1,3,6,6.03918898313252e-08,6.03918898313252e-08,6.03918898313252e-08
+forest_predicted_occupancy,target_heating_thermal_power_5min_kw,delivered_heating_power,5,kW thermal,cold_active_override,4,23,138,2.2931765872545277e-06,1.1583627741218487e-05,2.2931765872545277e-06
+forest_predicted_occupancy,target_heating_thermal_power_5min_kw,delivered_heating_power,5,kW thermal,warm_active_override,1,3,27,5.0020871163577637e-08,5.0020871163577637e-08,5.0020871163577637e-08
+forest_predicted_occupancy,target_heating_thermal_power_5min_kw,delivered_heating_power,5,kW thermal,cold_approaching_release,4,23,46,4.2060881862856087e-07,5.274370079662823e-07,4.2060881862856087e-07
+forest_predicted_occupancy,target_heating_thermal_power_5min_kw,delivered_heating_power,5,kW thermal,warm_approaching_release,1,3,6,5.002087116357763e-08,5.002087116357763e-08,5.002087116357763e-08
+forest_predicted_occupancy,target_heating_thermal_power_5min_kw,delivered_heating_power,5,kW thermal,cold_after_release,4,23,138,4.864112916953978e-07,1.330040931966399e-06,4.864112916953978e-07
+forest_predicted_occupancy,target_heating_thermal_power_5min_kw,delivered_heating_power,5,kW thermal,warm_after_release,1,3,18,5.0020871163577637e-08,5.0020871163577637e-08,5.0020871163577637e-08
+forest_predicted_occupancy,target_heating_thermal_power_5min_kw,delivered_heating_power,5,kW thermal,cold_recovery_30_to_120min,4,23,390,6.582708934257241e-08,1.3214741930443493e-07,6.582708934257241e-08
+forest_predicted_occupancy,target_heating_thermal_power_5min_kw,delivered_heating_power,5,kW thermal,warm_recovery_30_to_120min,1,3,54,5.0020871163577637e-08,5.0020871163577623e-08,5.0020871163577637e-08
+forest_predicted_occupancy,target_heating_thermal_power_5min_kw,delivered_heating_power,5,kW thermal,group:D2_G100,1,2,1704,0.036985902399998376,0.15252333409702362,0.007432954544711425
+forest_predicted_occupancy,target_heating_thermal_power_5min_kw,delivered_heating_power,5,kW thermal,group:D2_G196,1,12,2556,1.9505870431707264e-06,1.2784471393566752e-05,1.9505852365260204e-06
+forest_predicted_occupancy,target_heating_thermal_power_5min_kw,delivered_heating_power,5,kW thermal,group:D2_G310,1,7,1704,0.008842671535522838,0.08807646063879425,-0.00011793424245546513
+forest_predicted_occupancy,target_heating_thermal_power_5min_kw,delivered_heating_power,5,kW thermal,group:D2_G354,1,5,1704,0.017856594383428293,0.16124745358121054,-0.0022130046762046684
+forest_predicted_occupancy,target_heating_thermal_power_10min_kw,delivered_heating_power,10,kW thermal,group_macro,4,26,7668,0.017159527927925362,0.09613423366817282,-0.002108231849821723
+forest_predicted_occupancy,target_heating_thermal_power_10min_kw,delivered_heating_power,10,kW thermal,all,4,26,7668,0.015252967399031817,0.1081328107376309,-0.0018739301811878167
+forest_predicted_occupancy,target_heating_thermal_power_10min_kw,delivered_heating_power,10,kW thermal,native_reference,4,0,3408,0.017136113935922043,0.11463937598021735,-0.0021027795422621886
+forest_predicted_occupancy,target_heating_thermal_power_10min_kw,delivered_heating_power,10,kW thermal,applied_native,4,26,7503,0.01558822508233843,0.10931533005405547,-0.0019153135882099047
+forest_predicted_occupancy,target_heating_thermal_power_10min_kw,delivered_heating_power,10,kW thermal,active_colder,4,23,138,9.422696840205114e-06,3.5523216802702986e-05,9.422696840205114e-06
+forest_predicted_occupancy,target_heating_thermal_power_10min_kw,delivered_heating_power,10,kW thermal,active_warmer,1,3,27,3.299358477125302e-08,3.299359405721388e-08,3.299358477125302e-08
+forest_predicted_occupancy,target_heating_thermal_power_10min_kw,delivered_heating_power,10,kW thermal,heating_active_target_interval,3,0,633,0.13136249294146407,0.3695482424945546,-0.076108178493602
+forest_predicted_occupancy,target_heating_thermal_power_10min_kw,delivered_heating_power,10,kW thermal,cooling_active_target_interval,4,25,2232,1.296423102570617e-06,1.0599661383725484e-05,1.296423102570617e-06
+forest_predicted_occupancy,target_heating_thermal_power_10min_kw,delivered_heating_power,10,kW thermal,major_temperature_transition,4,0,93,0.46165062846088223,0.9098409495847338,-0.4256922428808616
+forest_predicted_occupancy,target_heating_thermal_power_10min_kw,delivered_heating_power,10,kW thermal,major_electrical_transition,4,22,208,4.117349287657516e-06,1.7216215282475263e-05,4.117349287657516e-06
+forest_predicted_occupancy,target_heating_thermal_power_10min_kw,delivered_heating_power,10,kW thermal,cold_before_start,4,23,46,1.544062993752252e-05,3.621797595665131e-05,1.544062993752252e-05
+forest_predicted_occupancy,target_heating_thermal_power_10min_kw,delivered_heating_power,10,kW thermal,warm_before_start,1,3,6,3.378081250029843e-08,3.379635596456736e-08,3.378081250029843e-08
+forest_predicted_occupancy,target_heating_thermal_power_10min_kw,delivered_heating_power,10,kW thermal,cold_active_override,4,23,138,9.422696840205114e-06,3.5523216802702986e-05,9.422696840205114e-06
+forest_predicted_occupancy,target_heating_thermal_power_10min_kw,delivered_heating_power,10,kW thermal,warm_active_override,1,3,27,3.299358477125302e-08,3.299359405721388e-08,3.299358477125302e-08
+forest_predicted_occupancy,target_heating_thermal_power_10min_kw,delivered_heating_power,10,kW thermal,cold_approaching_release,4,23,46,2.2700189500173174e-06,7.507363139086177e-06,2.2700189500173174e-06
+forest_predicted_occupancy,target_heating_thermal_power_10min_kw,delivered_heating_power,10,kW thermal,warm_approaching_release,1,3,6,3.301572531071099e-08,3.301572531071099e-08,3.301572531071099e-08
+forest_predicted_occupancy,target_heating_thermal_power_10min_kw,delivered_heating_power,10,kW thermal,cold_after_release,4,23,138,1.5634283260170535e-06,9.611192604891613e-06,1.5634283260170535e-06
+forest_predicted_occupancy,target_heating_thermal_power_10min_kw,delivered_heating_power,10,kW thermal,warm_after_release,1,3,18,3.301572531071099e-08,3.301572531071099e-08,3.301572531071099e-08
+forest_predicted_occupancy,target_heating_thermal_power_10min_kw,delivered_heating_power,10,kW thermal,cold_recovery_30_to_120min,4,23,390,3.575547294943116e-08,3.718546117053814e-08,3.575547294943116e-08
+forest_predicted_occupancy,target_heating_thermal_power_10min_kw,delivered_heating_power,10,kW thermal,warm_recovery_30_to_120min,1,3,54,3.3015725310711006e-08,3.301572531071099e-08,3.3015725310711006e-08
+forest_predicted_occupancy,target_heating_thermal_power_10min_kw,delivered_heating_power,10,kW thermal,known_release_crossing,4,39,39,0.00973691251214457,0.029024633968346456,-0.006575800491027908
+forest_predicted_occupancy,target_heating_thermal_power_10min_kw,delivered_heating_power,10,kW thermal,group:D2_G100,1,2,1704,0.04077495841335977,0.1488805895768824,-0.001619250654097897
+forest_predicted_occupancy,target_heating_thermal_power_10min_kw,delivered_heating_power,10,kW thermal,group:D2_G196,1,12,2556,4.831678834340507e-07,2.4681962101042866e-06,4.831678834340507e-07
+forest_predicted_occupancy,target_heating_thermal_power_10min_kw,delivered_heating_power,10,kW thermal,group:D2_G310,1,7,1704,0.008870668368034806,0.0811842952571499,-0.0005416070405283945
+forest_predicted_occupancy,target_heating_thermal_power_10min_kw,delivered_heating_power,10,kW thermal,group:D2_G354,1,5,1704,0.018992001762423445,0.15446958164244887,-0.006272552872544035
+forest_predicted_occupancy,target_heating_thermal_power_15min_kw,delivered_heating_power,15,kW thermal,group_macro,4,26,7668,0.017506779029513284,0.09834738456010703,-0.005515176497924637
+forest_predicted_occupancy,target_heating_thermal_power_15min_kw,delivered_heating_power,15,kW thermal,all,4,26,7668,0.015561647483434212,0.11093066547407579,-0.0049023129853995005
+forest_predicted_occupancy,target_heating_thermal_power_15min_kw,delivered_heating_power,15,kW thermal,native_reference,4,0,3408,0.017487093903375214,0.11756271042190296,-0.005495182199104463
+forest_predicted_occupancy,target_heating_thermal_power_15min_kw,delivered_heating_power,15,kW thermal,applied_native,4,26,7503,0.01590371588259725,0.1121437816045222,-0.005010271705703014
+forest_predicted_occupancy,target_heating_thermal_power_15min_kw,delivered_heating_power,15,kW thermal,active_colder,4,23,138,8.181250074712779e-06,3.281198483212025e-05,8.181250074712779e-06
+forest_predicted_occupancy,target_heating_thermal_power_15min_kw,delivered_heating_power,15,kW thermal,active_warmer,1,3,27,1.3419763104806243e-07,1.3419776269278764e-07,1.3419763104806243e-07
+forest_predicted_occupancy,target_heating_thermal_power_15min_kw,delivered_heating_power,15,kW thermal,heating_active_target_interval,3,0,635,0.15847434313969572,0.3805887820393228,-0.0886398792489708
+forest_predicted_occupancy,target_heating_thermal_power_15min_kw,delivered_heating_power,15,kW thermal,cooling_active_target_interval,4,25,2232,1.5550414251854754e-06,1.2574773875732778e-05,1.5550414251854754e-06
+forest_predicted_occupancy,target_heating_thermal_power_15min_kw,delivered_heating_power,15,kW thermal,major_temperature_transition,4,0,151,0.33330561956349786,0.7432254682142967,-0.2758928269535606
+forest_predicted_occupancy,target_heating_thermal_power_15min_kw,delivered_heating_power,15,kW thermal,major_electrical_transition,4,23,432,3.955473708924529e-06,2.1228104145334677e-05,3.955473708924529e-06
+forest_predicted_occupancy,target_heating_thermal_power_15min_kw,delivered_heating_power,15,kW thermal,cold_before_start,4,23,46,2.8883301731975916e-05,7.202382193629523e-05,2.8883301731975916e-05
+forest_predicted_occupancy,target_heating_thermal_power_15min_kw,delivered_heating_power,15,kW thermal,warm_before_start,1,3,6,1.2412765621358823e-07,1.2412765621358829e-07,1.2412765621358823e-07
+forest_predicted_occupancy,target_heating_thermal_power_15min_kw,delivered_heating_power,15,kW thermal,cold_active_override,4,23,138,8.181250074712779e-06,3.281198483212025e-05,8.181250074712779e-06
+forest_predicted_occupancy,target_heating_thermal_power_15min_kw,delivered_heating_power,15,kW thermal,warm_active_override,1,3,27,1.3419763104806243e-07,1.3419776269278764e-07,1.3419763104806243e-07
+forest_predicted_occupancy,target_heating_thermal_power_15min_kw,delivered_heating_power,15,kW thermal,cold_approaching_release,4,23,46,3.5451275335569106e-06,1.7942141330253722e-05,3.5451275335569106e-06
+forest_predicted_occupancy,target_heating_thermal_power_15min_kw,delivered_heating_power,15,kW thermal,warm_approaching_release,1,3,6,1.3436579356543818e-07,1.343657935654382e-07,1.3436579356543818e-07
+forest_predicted_occupancy,target_heating_thermal_power_15min_kw,delivered_heating_power,15,kW thermal,cold_after_release,4,23,138,6.399541640057939e-07,3.932617362557676e-06,6.399541640057939e-07
+forest_predicted_occupancy,target_heating_thermal_power_15min_kw,delivered_heating_power,15,kW thermal,warm_after_release,1,3,18,1.3436579356543824e-07,1.343657935654382e-07,1.3436579356543824e-07
+forest_predicted_occupancy,target_heating_thermal_power_15min_kw,delivered_heating_power,15,kW thermal,cold_recovery_30_to_120min,4,23,390,1.88641098191603e-07,4.847025437537818e-07,1.88641098191603e-07
+forest_predicted_occupancy,target_heating_thermal_power_15min_kw,delivered_heating_power,15,kW thermal,warm_recovery_30_to_120min,1,3,54,1.343657935654382e-07,1.343657935654382e-07,1.343657935654382e-07
+forest_predicted_occupancy,target_heating_thermal_power_15min_kw,delivered_heating_power,15,kW thermal,known_release_crossing,4,39,78,0.01942239780866344,0.049926024420155854,0.0001585521300083085
+forest_predicted_occupancy,target_heating_thermal_power_15min_kw,delivered_heating_power,15,kW thermal,group:D2_G100,1,2,1704,0.04189058279632842,0.15435183332788407,-0.01265697497799293
+forest_predicted_occupancy,target_heating_thermal_power_15min_kw,delivered_heating_power,15,kW thermal,group:D2_G196,1,12,2556,5.951148016012434e-07,2.141157305826261e-06,5.951148016012434e-07
+forest_predicted_occupancy,target_heating_thermal_power_15min_kw,delivered_heating_power,15,kW thermal,group:D2_G310,1,7,1704,0.008831694634062612,0.08090581732712068,-0.0011372411249655203
+forest_predicted_occupancy,target_heating_thermal_power_15min_kw,delivered_heating_power,15,kW thermal,group:D2_G354,1,5,1704,0.019304243572860508,0.15812974642811753,-0.008267085003541704
+forest_predicted_occupancy,target_heating_thermal_power_30min_kw,delivered_heating_power,30,kW thermal,group_macro,4,26,7668,0.037165081520481896,0.12856871560095756,0.00823514410975026
+forest_predicted_occupancy,target_heating_thermal_power_30min_kw,delivered_heating_power,30,kW thermal,all,4,26,7668,0.03303564407131541,0.15082256519553439,0.0073201441506650705
+forest_predicted_occupancy,target_heating_thermal_power_30min_kw,delivered_heating_power,30,kW thermal,native_reference,4,0,3408,0.037177788260458214,0.159977422442047,0.008272418373289752
+forest_predicted_occupancy,target_heating_thermal_power_30min_kw,delivered_heating_power,30,kW thermal,applied_native,4,26,7503,0.03376189859798407,0.15247193125711586,0.007480883884996354
+forest_predicted_occupancy,target_heating_thermal_power_30min_kw,delivered_heating_power,30,kW thermal,active_colder,4,23,138,1.2988150452250954e-05,6.133233145517464e-05,1.2988150452250954e-05
+forest_predicted_occupancy,target_heating_thermal_power_30min_kw,delivered_heating_power,30,kW thermal,active_warmer,1,3,27,4.4200359418264946e-08,4.420772391263685e-08,4.4200359418264946e-08
+forest_predicted_occupancy,target_heating_thermal_power_30min_kw,delivered_heating_power,30,kW thermal,heating_active_target_interval,3,0,641,0.34404969095983123,0.5073579573957488,0.03642670314021037
+forest_predicted_occupancy,target_heating_thermal_power_30min_kw,delivered_heating_power,30,kW thermal,cooling_active_target_interval,4,25,2232,8.004007161399457e-06,8.600602898121436e-05,8.004007161399457e-06
+forest_predicted_occupancy,target_heating_thermal_power_30min_kw,delivered_heating_power,30,kW thermal,major_temperature_transition,4,0,411,0.17089490410073338,0.4630678324204176,-0.13133863202005305
+forest_predicted_occupancy,target_heating_thermal_power_30min_kw,delivered_heating_power,30,kW thermal,major_electrical_transition,4,25,1264,1.0015727073785589e-05,9.888585365360245e-05,1.0015727073785589e-05
+forest_predicted_occupancy,target_heating_thermal_power_30min_kw,delivered_heating_power,30,kW thermal,cold_before_start,4,23,46,0.00013830021660081178,0.0003750203282591964,0.00013830021660081178
+forest_predicted_occupancy,target_heating_thermal_power_30min_kw,delivered_heating_power,30,kW thermal,warm_before_start,1,3,6,3.821595923988266e-08,3.824121310585946e-08,3.821595923988266e-08
+forest_predicted_occupancy,target_heating_thermal_power_30min_kw,delivered_heating_power,30,kW thermal,cold_active_override,4,23,138,1.2988150452250954e-05,6.133233145517464e-05,1.2988150452250954e-05
+forest_predicted_occupancy,target_heating_thermal_power_30min_kw,delivered_heating_power,30,kW thermal,warm_active_override,1,3,27,4.4200359418264946e-08,4.420772391263685e-08,4.4200359418264946e-08
+forest_predicted_occupancy,target_heating_thermal_power_30min_kw,delivered_heating_power,30,kW thermal,cold_approaching_release,4,23,46,7.196154245721523e-07,3.2370111979381487e-06,7.196154245721523e-07
+forest_predicted_occupancy,target_heating_thermal_power_30min_kw,delivered_heating_power,30,kW thermal,warm_approaching_release,1,3,6,4.4922066100590024e-08,4.4922066100590024e-08,4.4922066100590024e-08
+forest_predicted_occupancy,target_heating_thermal_power_30min_kw,delivered_heating_power,30,kW thermal,cold_after_release,4,23,138,2.400048534605454e-07,1.5922807625740457e-06,2.400048534605454e-07
+forest_predicted_occupancy,target_heating_thermal_power_30min_kw,delivered_heating_power,30,kW thermal,warm_after_release,1,3,18,4.4922066100590024e-08,4.4922066100590024e-08,4.4922066100590024e-08
+forest_predicted_occupancy,target_heating_thermal_power_30min_kw,delivered_heating_power,30,kW thermal,cold_recovery_30_to_120min,4,23,390,1.5319248348360207e-06,1.7088330014952028e-05,1.4977303397545114e-06
+forest_predicted_occupancy,target_heating_thermal_power_30min_kw,delivered_heating_power,30,kW thermal,warm_recovery_30_to_120min,1,3,54,4.492206610059005e-08,4.492206610059003e-08,4.492206610059005e-08
+forest_predicted_occupancy,target_heating_thermal_power_30min_kw,delivered_heating_power,30,kW thermal,known_release_crossing,4,39,195,0.08372182846491409,0.23054258282316734,0.05935739691012078
+forest_predicted_occupancy,target_heating_thermal_power_30min_kw,delivered_heating_power,30,kW thermal,group:D2_G100,1,2,1704,0.1004003177468347,0.24600880664241734,0.03126797617596446
+forest_predicted_occupancy,target_heating_thermal_power_30min_kw,delivered_heating_power,30,kW thermal,group:D2_G196,1,12,2556,1.444779835296218e-07,5.837931824587503e-07,1.444779835296218e-07
+forest_predicted_occupancy,target_heating_thermal_power_30min_kw,delivered_heating_power,30,kW thermal,group:D2_G310,1,7,1704,0.00918367251898619,0.08000329342547025,-0.0004466811750768943
+forest_predicted_occupancy,target_heating_thermal_power_30min_kw,delivered_heating_power,30,kW thermal,group:D2_G354,1,5,1704,0.03907619133812316,0.18826217854276017,0.002119136960129949
+forest_predicted_occupancy,cooling_plus_fan_5min_kw,cooling_plus_fan,5,kW electric,group_macro,4,26,7668,0.0033007228299091903,0.015228970600950206,1.947528451605622e-05
+forest_predicted_occupancy,cooling_plus_fan_5min_kw,cooling_plus_fan,5,kW electric,all,4,26,7668,0.003509131978671855,0.018337277657681516,5.897426092922666e-06
+forest_predicted_occupancy,cooling_plus_fan_5min_kw,cooling_plus_fan,5,kW electric,native_reference,4,0,3408,0.0026958727191524275,0.015703938164125908,0.00017272657042096494
+forest_predicted_occupancy,cooling_plus_fan_5min_kw,cooling_plus_fan,5,kW electric,applied_native,4,26,7503,0.003135149803425672,0.01777893566476615,0.00022923729413970784
+forest_predicted_occupancy,cooling_plus_fan_5min_kw,cooling_plus_fan,5,kW electric,active_colder,4,23,138,0.01989111771260943,0.033570347995976885,-0.015911585107046038
+forest_predicted_occupancy,cooling_plus_fan_5min_kw,cooling_plus_fan,5,kW electric,active_warmer,1,3,27,0.023704473815291238,0.04357201916878824,0.019298251486024313
+forest_predicted_occupancy,cooling_plus_fan_5min_kw,cooling_plus_fan,5,kW electric,heating_active_target_interval,3,0,633,0.0013414064543906742,0.005146383260073884,0.0006406566134798266
+forest_predicted_occupancy,cooling_plus_fan_5min_kw,cooling_plus_fan,5,kW electric,cooling_active_target_interval,4,25,2232,0.01061836934820033,0.03344583761884046,-0.0012047872343406217
+forest_predicted_occupancy,cooling_plus_fan_5min_kw,cooling_plus_fan,5,kW electric,major_temperature_transition,4,0,39,0.09898241106251311,0.1692775292682687,0.026882131801428014
+forest_predicted_occupancy,cooling_plus_fan_5min_kw,cooling_plus_fan,5,kW electric,major_electrical_transition,3,22,91,0.12005926924175066,0.15726490237939228,-0.005238663019570579
+forest_predicted_occupancy,cooling_plus_fan_5min_kw,cooling_plus_fan,5,kW electric,cold_before_start,4,23,46,0.005004034253652413,0.007783907562830407,0.0006783964411929809
+forest_predicted_occupancy,cooling_plus_fan_5min_kw,cooling_plus_fan,5,kW electric,warm_before_start,1,3,6,0.003001090666624832,0.003601575016840614,0.003001090666624832
+forest_predicted_occupancy,cooling_plus_fan_5min_kw,cooling_plus_fan,5,kW electric,cold_active_override,4,23,138,0.01989111771260943,0.033570347995976885,-0.015911585107046038
+forest_predicted_occupancy,cooling_plus_fan_5min_kw,cooling_plus_fan,5,kW electric,warm_active_override,1,3,27,0.023704473815291238,0.04357201916878824,0.019298251486024313
+forest_predicted_occupancy,cooling_plus_fan_5min_kw,cooling_plus_fan,5,kW electric,cold_approaching_release,4,23,46,0.012289982828215326,0.015115873376509525,-0.011845323311494725
+forest_predicted_occupancy,cooling_plus_fan_5min_kw,cooling_plus_fan,5,kW electric,warm_approaching_release,1,3,6,0.012797975692635319,0.013795539750827888,0.012797975692635319
+forest_predicted_occupancy,cooling_plus_fan_5min_kw,cooling_plus_fan,5,kW electric,cold_after_release,4,23,138,0.017454023224773782,0.029450152605450152,0.0053244639471853785
+forest_predicted_occupancy,cooling_plus_fan_5min_kw,cooling_plus_fan,5,kW electric,warm_after_release,1,3,18,0.02827675674233865,0.047925866768851605,-0.00945966594319889
+forest_predicted_occupancy,cooling_plus_fan_5min_kw,cooling_plus_fan,5,kW electric,cold_recovery_30_to_120min,4,23,390,0.003692269694554564,0.004989534838974404,0.0015154914475755531
+forest_predicted_occupancy,cooling_plus_fan_5min_kw,cooling_plus_fan,5,kW electric,warm_recovery_30_to_120min,1,3,54,0.0038827700651208412,0.005225932852418626,0.003408102971175742
+forest_predicted_occupancy,cooling_plus_fan_5min_kw,cooling_plus_fan,5,kW electric,group:D2_G100,1,2,1704,0.0013988636257529525,0.005126526331358131,0.0011197395277145515
+forest_predicted_occupancy,cooling_plus_fan_5min_kw,cooling_plus_fan,5,kW electric,group:D2_G196,1,12,2556,0.005176405168773168,0.026535812587482614,-0.0001027254412921456
+forest_predicted_occupancy,cooling_plus_fan_5min_kw,cooling_plus_fan,5,kW electric,group:D2_G310,1,7,1704,0.0031686184044449396,0.01345189226552477,-0.0005071140670791807
+forest_predicted_occupancy,cooling_plus_fan_5min_kw,cooling_plus_fan,5,kW electric,group:D2_G354,1,5,1704,0.003459004120665701,0.01580165121943531,-0.00043199888127900047
+forest_predicted_occupancy,cooling_plus_fan_10min_kw,cooling_plus_fan,10,kW electric,group_macro,4,26,7668,0.0040347857056656266,0.014797633656190112,0.0002572608673563234
+forest_predicted_occupancy,cooling_plus_fan_10min_kw,cooling_plus_fan,10,kW electric,all,4,26,7668,0.004368253805434737,0.019093511266601245,0.00017880286295089408
+forest_predicted_occupancy,cooling_plus_fan_10min_kw,cooling_plus_fan,10,kW electric,native_reference,4,0,3408,0.003080759525840133,0.015230514904076967,0.0006104366952064256
+forest_predicted_occupancy,cooling_plus_fan_10min_kw,cooling_plus_fan,10,kW electric,applied_native,4,26,7503,0.0037787545861569577,0.018296875671035707,0.0003575523598040934
+forest_predicted_occupancy,cooling_plus_fan_10min_kw,cooling_plus_fan,10,kW electric,active_colder,4,23,138,0.029545378046685562,0.039046847593414424,-0.012030846006951274
+forest_predicted_occupancy,cooling_plus_fan_10min_kw,cooling_plus_fan,10,kW electric,active_warmer,1,3,27,0.03950045739612243,0.05208198536387874,0.012911175794689601
+forest_predicted_occupancy,cooling_plus_fan_10min_kw,cooling_plus_fan,10,kW electric,heating_active_target_interval,3,0,633,0.0010530383648932522,0.002685476544154823,0.00039896616484963443
+forest_predicted_occupancy,cooling_plus_fan_10min_kw,cooling_plus_fan,10,kW electric,cooling_active_target_interval,4,25,2232,0.013262978462574177,0.03377766560883486,-0.0009356973442812904
+forest_predicted_occupancy,cooling_plus_fan_10min_kw,cooling_plus_fan,10,kW electric,major_temperature_transition,4,0,93,0.05779291442616902,0.12610827673819114,-0.02937476565873632
+forest_predicted_occupancy,cooling_plus_fan_10min_kw,cooling_plus_fan,10,kW electric,major_electrical_transition,4,22,208,0.0701964536162464,0.10837625770967277,-0.025618569802169776
+forest_predicted_occupancy,cooling_plus_fan_10min_kw,cooling_plus_fan,10,kW electric,cold_before_start,4,23,46,0.037628556223255887,0.05482032123502498,-0.032394837898838826
+forest_predicted_occupancy,cooling_plus_fan_10min_kw,cooling_plus_fan,10,kW electric,warm_before_start,1,3,6,0.06623991195109706,0.09016297364070683,0.0661921604352657
+forest_predicted_occupancy,cooling_plus_fan_10min_kw,cooling_plus_fan,10,kW electric,cold_active_override,4,23,138,0.029545378046685562,0.039046847593414424,-0.012030846006951274
+forest_predicted_occupancy,cooling_plus_fan_10min_kw,cooling_plus_fan,10,kW electric,warm_active_override,1,3,27,0.03950045739612243,0.05208198536387874,0.012911175794689601
+forest_predicted_occupancy,cooling_plus_fan_10min_kw,cooling_plus_fan,10,kW electric,cold_approaching_release,4,23,46,0.03489197466506124,0.04284526134408688,0.008571791107976678
+forest_predicted_occupancy,cooling_plus_fan_10min_kw,cooling_plus_fan,10,kW electric,warm_approaching_release,1,3,6,0.06448119133781227,0.07466126276426348,-0.034860947229279717
+forest_predicted_occupancy,cooling_plus_fan_10min_kw,cooling_plus_fan,10,kW electric,cold_after_release,4,23,138,0.017558866454348038,0.025772614104616356,-0.0005573945374524948
+forest_predicted_occupancy,cooling_plus_fan_10min_kw,cooling_plus_fan,10,kW electric,warm_after_release,1,3,18,0.02671474813680237,0.038514057922733,0.0024023393525548684
+forest_predicted_occupancy,cooling_plus_fan_10min_kw,cooling_plus_fan,10,kW electric,cold_recovery_30_to_120min,4,23,390,0.007759358310354216,0.014663484977794251,0.002994984089483401
+forest_predicted_occupancy,cooling_plus_fan_10min_kw,cooling_plus_fan,10,kW electric,warm_recovery_30_to_120min,1,3,54,0.009153417518334503,0.010747274856215076,0.006873386004850928
+forest_predicted_occupancy,cooling_plus_fan_10min_kw,cooling_plus_fan,10,kW electric,known_release_crossing,4,39,39,0.03347096503001324,0.048676093974250954,0.018155085230160333
+forest_predicted_occupancy,cooling_plus_fan_10min_kw,cooling_plus_fan,10,kW electric,group:D2_G100,1,2,1704,0.0012920120513236033,0.004615563299029013,0.0008621058972047461
+forest_predicted_occupancy,cooling_plus_fan_10min_kw,cooling_plus_fan,10,kW electric,group:D2_G196,1,12,2556,0.007035998603587621,0.029252632422571877,-0.00044886117229254026
+forest_predicted_occupancy,cooling_plus_fan_10min_kw,cooling_plus_fan,10,kW electric,group:D2_G310,1,7,1704,0.0033628078821542006,0.009918800731887239,0.0001250169527636316
+forest_predicted_occupancy,cooling_plus_fan_10min_kw,cooling_plus_fan,10,kW electric,group:D2_G354,1,5,1704,0.004448324285597081,0.015403538171272319,0.0004907817917494562
+forest_predicted_occupancy,cooling_plus_fan_15min_kw,cooling_plus_fan,15,kW electric,group_macro,4,26,7668,0.004665867543192471,0.01376893406152383,0.00027905223301420777
+forest_predicted_occupancy,cooling_plus_fan_15min_kw,cooling_plus_fan,15,kW electric,all,4,26,7668,0.0049395507153197965,0.016190907024716934,0.00023565283627022433
+forest_predicted_occupancy,cooling_plus_fan_15min_kw,cooling_plus_fan,15,kW electric,native_reference,4,0,3408,0.0036287267599938756,0.012044000418522209,0.0007040453595484156
+forest_predicted_occupancy,cooling_plus_fan_15min_kw,cooling_plus_fan,15,kW electric,applied_native,4,26,7503,0.004333105404842976,0.015194845844723907,0.00033270028504548197
+forest_predicted_occupancy,cooling_plus_fan_15min_kw,cooling_plus_fan,15,kW electric,active_colder,4,23,138,0.030748207968161866,0.03913098005183149,-0.006780191270835224
+forest_predicted_occupancy,cooling_plus_fan_15min_kw,cooling_plus_fan,15,kW electric,active_warmer,1,3,27,0.04155304936774137,0.049629563881143264,0.009126003896262544
+forest_predicted_occupancy,cooling_plus_fan_15min_kw,cooling_plus_fan,15,kW electric,heating_active_target_interval,3,0,635,0.0012735499312912998,0.0028244214025590474,0.00019573876141234278
+forest_predicted_occupancy,cooling_plus_fan_15min_kw,cooling_plus_fan,15,kW electric,cooling_active_target_interval,4,25,2232,0.015335689033821508,0.029068114189962885,-0.0005109048207421165
+forest_predicted_occupancy,cooling_plus_fan_15min_kw,cooling_plus_fan,15,kW electric,major_temperature_transition,4,0,151,0.026324958981152558,0.06738583731690019,-0.019192695768229216
+forest_predicted_occupancy,cooling_plus_fan_15min_kw,cooling_plus_fan,15,kW electric,major_electrical_transition,4,23,432,0.039062490369654784,0.06036326789036565,-0.011296364900227637
+forest_predicted_occupancy,cooling_plus_fan_15min_kw,cooling_plus_fan,15,kW electric,cold_before_start,4,23,46,0.06400389327715351,0.07381496384693202,-0.06281471447785121
+forest_predicted_occupancy,cooling_plus_fan_15min_kw,cooling_plus_fan,15,kW electric,warm_before_start,1,3,6,0.11388353663429246,0.11490149821867274,0.11388353663429246
+forest_predicted_occupancy,cooling_plus_fan_15min_kw,cooling_plus_fan,15,kW electric,cold_active_override,4,23,138,0.030748207968161866,0.03913098005183149,-0.006780191270835224
+forest_predicted_occupancy,cooling_plus_fan_15min_kw,cooling_plus_fan,15,kW electric,warm_active_override,1,3,27,0.04155304936774137,0.049629563881143264,0.009126003896262544
+forest_predicted_occupancy,cooling_plus_fan_15min_kw,cooling_plus_fan,15,kW electric,cold_approaching_release,4,23,46,0.032163318975575554,0.04140136139768144,0.02959449940415688
+forest_predicted_occupancy,cooling_plus_fan_15min_kw,cooling_plus_fan,15,kW electric,warm_approaching_release,1,3,6,0.06558371992158574,0.06950059891366496,-0.06558371992158574
+forest_predicted_occupancy,cooling_plus_fan_15min_kw,cooling_plus_fan,15,kW electric,cold_after_release,4,23,138,0.018430854170100555,0.027089919785121493,-0.00427296740454213
+forest_predicted_occupancy,cooling_plus_fan_15min_kw,cooling_plus_fan,15,kW electric,warm_after_release,1,3,18,0.027165166863114414,0.038440143693147424,0.01375086806012875
+forest_predicted_occupancy,cooling_plus_fan_15min_kw,cooling_plus_fan,15,kW electric,cold_recovery_30_to_120min,4,23,390,0.011834551447607098,0.019900899515521004,0.003091584502266122
+forest_predicted_occupancy,cooling_plus_fan_15min_kw,cooling_plus_fan,15,kW electric,warm_recovery_30_to_120min,1,3,54,0.012599018704461498,0.01468582804085206,0.007109913311389263
+forest_predicted_occupancy,cooling_plus_fan_15min_kw,cooling_plus_fan,15,kW electric,known_release_crossing,4,39,78,0.024304118498190308,0.03719977512862391,0.012621647134781958
+forest_predicted_occupancy,cooling_plus_fan_15min_kw,cooling_plus_fan,15,kW electric,group:D2_G100,1,2,1704,0.001964145514578192,0.006772982793836454,0.0012304388736036273
+forest_predicted_occupancy,cooling_plus_fan_15min_kw,cooling_plus_fan,15,kW electric,group:D2_G196,1,12,2556,0.0071290160923384045,0.02328832493820775,-0.00011154233768164455
+forest_predicted_occupancy,cooling_plus_fan_15min_kw,cooling_plus_fan,15,kW electric,group:D2_G310,1,7,1704,0.004153688954330198,0.010583495753136286,-3.85155277098049e-05
+forest_predicted_occupancy,cooling_plus_fan_15min_kw,cooling_plus_fan,15,kW electric,group:D2_G354,1,5,1704,0.00541661961152309,0.014430932760914825,3.5827923844653373e-05
+forest_predicted_occupancy,cooling_plus_fan_30min_kw,cooling_plus_fan,30,kW electric,group_macro,4,26,7668,0.007877314245684925,0.02021377325930624,0.00015661963236569744
+forest_predicted_occupancy,cooling_plus_fan_30min_kw,cooling_plus_fan,30,kW electric,all,4,26,7668,0.00803620156595335,0.020726257212086954,3.699897921510944e-05
+forest_predicted_occupancy,cooling_plus_fan_30min_kw,cooling_plus_fan,30,kW electric,native_reference,4,0,3408,0.006619502671349481,0.016828448449117118,0.0004475288604085074
+forest_predicted_occupancy,cooling_plus_fan_30min_kw,cooling_plus_fan,30,kW electric,applied_native,4,26,7503,0.007273229440689944,0.01937209060035951,-0.0001538796590049442
+forest_predicted_occupancy,cooling_plus_fan_30min_kw,cooling_plus_fan,30,kW electric,active_colder,4,23,138,0.0433576052942009,0.055048796102713383,0.006547428407833663
+forest_predicted_occupancy,cooling_plus_fan_30min_kw,cooling_plus_fan,30,kW electric,active_warmer,1,3,27,0.039526058653108306,0.04718011246410463,0.019804523476092857
+forest_predicted_occupancy,cooling_plus_fan_30min_kw,cooling_plus_fan,30,kW electric,heating_active_target_interval,3,0,641,0.0016607377310450485,0.003400655556186493,0.00012578551627131932
+forest_predicted_occupancy,cooling_plus_fan_30min_kw,cooling_plus_fan,30,kW electric,cooling_active_target_interval,4,25,2232,0.025733991870075325,0.03772875698226055,-0.0013036042328477297
+forest_predicted_occupancy,cooling_plus_fan_30min_kw,cooling_plus_fan,30,kW electric,major_temperature_transition,4,0,411,0.01186122307150091,0.030700925261989014,-0.006150690667565813
+forest_predicted_occupancy,cooling_plus_fan_30min_kw,cooling_plus_fan,30,kW electric,major_electrical_transition,4,25,1264,0.027952274184064898,0.042367402979407366,-0.006880081610068136
+forest_predicted_occupancy,cooling_plus_fan_30min_kw,cooling_plus_fan,30,kW electric,cold_before_start,4,23,46,0.05587463533590685,0.07044382472037189,-0.05069784566503181
+forest_predicted_occupancy,cooling_plus_fan_30min_kw,cooling_plus_fan,30,kW electric,warm_before_start,1,3,6,0.06978903066901891,0.07150326771933288,0.06978903066901891
+forest_predicted_occupancy,cooling_plus_fan_30min_kw,cooling_plus_fan,30,kW electric,cold_active_override,4,23,138,0.0433576052942009,0.055048796102713383,0.006547428407833663
+forest_predicted_occupancy,cooling_plus_fan_30min_kw,cooling_plus_fan,30,kW electric,warm_active_override,1,3,27,0.039526058653108306,0.04718011246410463,0.019804523476092857
+forest_predicted_occupancy,cooling_plus_fan_30min_kw,cooling_plus_fan,30,kW electric,cold_approaching_release,4,23,46,0.03926507756798199,0.04802822999571991,0.004042819938882795
+forest_predicted_occupancy,cooling_plus_fan_30min_kw,cooling_plus_fan,30,kW electric,warm_approaching_release,1,3,6,0.026781382245544622,0.03312433602970937,0.020516500346175342
+forest_predicted_occupancy,cooling_plus_fan_30min_kw,cooling_plus_fan,30,kW electric,cold_after_release,4,23,138,0.0304801876514872,0.04072721693331303,-0.004571090053150231
+forest_predicted_occupancy,cooling_plus_fan_30min_kw,cooling_plus_fan,30,kW electric,warm_after_release,1,3,18,0.03812902675551004,0.050798881245723675,0.035454930577984885
+forest_predicted_occupancy,cooling_plus_fan_30min_kw,cooling_plus_fan,30,kW electric,cold_recovery_30_to_120min,4,23,390,0.0240568802540581,0.0331420626854826,0.004133334913277804
+forest_predicted_occupancy,cooling_plus_fan_30min_kw,cooling_plus_fan,30,kW electric,warm_recovery_30_to_120min,1,3,54,0.011338191254121565,0.013487930539043218,-0.0021608565173176324
+forest_predicted_occupancy,cooling_plus_fan_30min_kw,cooling_plus_fan,30,kW electric,known_release_crossing,4,39,195,0.02678935598632582,0.041259029499293776,0.010594515088826313
+forest_predicted_occupancy,cooling_plus_fan_30min_kw,cooling_plus_fan,30,kW electric,group:D2_G100,1,2,1704,0.004592286419570891,0.015305259217415717,0.004117739677188241
+forest_predicted_occupancy,cooling_plus_fan_30min_kw,cooling_plus_fan,30,kW electric,group:D2_G196,1,12,2556,0.009307300128100748,0.022032952861895633,-0.0009199662459895937
+forest_predicted_occupancy,cooling_plus_fan_30min_kw,cooling_plus_fan,30,kW electric,group:D2_G310,1,7,1704,0.007394960292807843,0.01830786954717861,-0.0003166637153289863
+forest_predicted_occupancy,cooling_plus_fan_30min_kw,cooling_plus_fan,30,kW electric,group:D2_G354,1,5,1704,0.010214710142260221,0.025209011410735005,-0.0022546311864068713

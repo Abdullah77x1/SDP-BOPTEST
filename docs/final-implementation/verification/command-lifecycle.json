@@ -1,0 +1,183 @@
+{
+  "operator_request": {
+    "requested_at": 16974000,
+    "plan": [
+      16974000,
+      16976700,
+      297.65
+    ]
+  },
+  "decisions_and_readbacks": [
+    {
+      "origin": 16974000,
+      "raw_advance_sequence": 76,
+      "request": {
+        "con_oveTSetCoo_activate": 1,
+        "con_oveTSetHea_activate": 0,
+        "fcu_oveFan_activate": 0,
+        "fcu_oveTSup_activate": 0,
+        "con_oveTSetCoo_u": 297.65
+      },
+      "requested_target_c": 24.5,
+      "veto": null,
+      "readback_time": 16974300,
+      "readback_active": true,
+      "readback_c": 24.5
+    },
+    {
+      "origin": 16974300,
+      "raw_advance_sequence": 81,
+      "request": {
+        "con_oveTSetCoo_activate": 1,
+        "con_oveTSetHea_activate": 0,
+        "fcu_oveFan_activate": 0,
+        "fcu_oveTSup_activate": 0,
+        "con_oveTSetCoo_u": 297.65
+      },
+      "requested_target_c": 24.5,
+      "veto": null,
+      "readback_time": 16974600,
+      "readback_active": true,
+      "readback_c": 24.5
+    },
+    {
+      "origin": 16974600,
+      "raw_advance_sequence": 86,
+      "request": {
+        "con_oveTSetCoo_activate": 1,
+        "con_oveTSetHea_activate": 0,
+        "fcu_oveFan_activate": 0,
+        "fcu_oveTSup_activate": 0,
+        "con_oveTSetCoo_u": 297.65
+      },
+      "requested_target_c": 24.5,
+      "veto": null,
+      "readback_time": 16974900,
+      "readback_active": true,
+      "readback_c": 24.5
+    },
+    {
+      "origin": 16974900,
+      "raw_advance_sequence": 91,
+      "request": {
+        "con_oveTSetCoo_activate": 1,
+        "con_oveTSetHea_activate": 0,
+        "fcu_oveFan_activate": 0,
+        "fcu_oveTSup_activate": 0,
+        "con_oveTSetCoo_u": 297.65
+      },
+      "requested_target_c": 24.5,
+      "veto": null,
+      "readback_time": 16975200,
+      "readback_active": true,
+      "readback_c": 24.5
+    },
+    {
+      "origin": 16975200,
+      "raw_advance_sequence": 96,
+      "request": {
+        "con_oveTSetCoo_activate": 1,
+        "con_oveTSetHea_activate": 0,
+        "fcu_oveFan_activate": 0,
+        "fcu_oveTSup_activate": 0,
+        "con_oveTSetCoo_u": 297.65
+      },
+      "requested_target_c": 24.5,
+      "veto": null,
+      "readback_time": 16975500,
+      "readback_active": true,
+      "readback_c": 24.5
+    },
+    {
+      "origin": 16975500,
+      "raw_advance_sequence": 101,
+      "request": {
+        "con_oveTSetCoo_activate": 1,
+        "con_oveTSetHea_activate": 0,
+        "fcu_oveFan_activate": 0,
+        "fcu_oveTSup_activate": 0,
+        "con_oveTSetCoo_u": 297.65
+      },
+      "requested_target_c": 24.5,
+      "veto": null,
+      "readback_time": 16975800,
+      "readback_active": true,
+      "readback_c": 24.5
+    },
+    {
+      "origin": 16975800,
+      "raw_advance_sequence": 106,
+      "request": {
+        "con_oveTSetCoo_activate": 1,
+        "con_oveTSetHea_activate": 0,
+        "fcu_oveFan_activate": 0,
+        "fcu_oveTSup_activate": 0,
+        "con_oveTSetCoo_u": 297.65
+      },
+      "requested_target_c": 24.5,
+      "veto": null,
+      "readback_time": 16976100,
+      "readback_active": true,
+      "readback_c": 24.5
+    },
+    {
+      "origin": 16976100,
+      "raw_advance_sequence": 111,
+      "request": {
+        "con_oveTSetCoo_activate": 1,
+        "con_oveTSetHea_activate": 0,
+        "fcu_oveFan_activate": 0,
+        "fcu_oveTSup_activate": 0,
+        "con_oveTSetCoo_u": 297.65
+      },
+      "requested_target_c": 24.5,
+      "veto": null,
+      "readback_time": 16976400,
+      "readback_active": true,
+      "readback_c": 24.5
+    },
+    {
+      "origin": 16976400,
+      "raw_advance_sequence": 116,
+      "request": {
+        "con_oveTSetCoo_activate": 1,
+        "con_oveTSetHea_activate": 0,
+        "fcu_oveFan_activate": 0,
+        "fcu_oveTSup_activate": 0,
+        "con_oveTSetCoo_u": 297.65
+      },
+      "requested_target_c": 24.5,
+      "veto": null,
+      "readback_time": 16976700,
+      "readback_active": true,
+      "readback_c": 24.5
+    },
+    {
+      "origin": 16976700,
+      "raw_advance_sequence": 121,
+      "request": {
+        "con_oveTSetCoo_activate": 0,
+        "con_oveTSetHea_activate": 0,
+        "fcu_oveFan_activate": 0,
+        "fcu_oveTSup_activate": 0
+      },
+      "requested_target_c": null,
+      "veto": null,
+      "readback_time": 16977000,
+      "readback_active": false,
+      "readback_c": 24.0
+    }
+  ],
+  "release": [
+    {
+      "issued_at": 16976700,
+      "issued_c": null,
+      "readback_at": 16977000,
+      "verified_active": false,
+      "verified_c": 24.0,
+      "verified_release": true,
+      "reason": null
+    }
+  ],
+  "complete_45_minute_hold": true
+}

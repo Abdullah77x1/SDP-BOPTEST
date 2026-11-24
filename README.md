@@ -1,52 +1,31 @@
-# SDP BOPTEST Digital Twin
+# LLM-Enabled Intelligent Digital Twin for Smart Building Energy Management
 
-This Senior Design Project evaluates simulated HVAC control in the pinned BOPTEST BESTEST Air 0.9.0 single-zone benchmark. The application reads simulator measurements, issues observational forecasts, evaluates qualified control choices, applies and verifies a command, and displays the feedback in a loopback dashboard.
+**Khalifa University · COSC 497 · COSC14 · Fall 2026**
 
-- **O25 Random Forest** issues +5, +10, +15, and +30 minute forecasts on supported native trajectories. The original checkpoint is included through Git LFS.
-- **HVAC action-response model** uses measured evidence to predict relevant native and warmer control trajectories, including recovery. The partial rolling controller reevaluates every five minutes and commits the next five-minute command.
-- **Safety supervision** verifies commands and readbacks, preserves native fallback, and tracks scheduled release and recovery.
-- **Evaluation** reports measured cooling-plus-fan electricity, official BOPTEST discomfort, and separate project-band discomfort at 20–26°C. The recorded rolling demo verifies operation on one simulated arm. Measured savings come from matched experiments.
+**Team** · Abdullah Alhashmi, Hamad Saleh, Alhoor Alhosani and Abdulla Alrashdi
 
-## Windows quick start
+We investigated how a digital twin can forecast HVAC behavior and evaluate changes in building operation. The original proposal included multi-zone simulation, natural-language interaction and automatic energy management. The verified SDP I system is a single-zone simulated twin. It compares forecasts with measurements and allows one supervised cooling action.
 
-Install Git for Windows with Git LFS, 64-bit Python 3.12 with the Windows Python launcher, and a browser. The verified dependency environment used Python 3.12.14. Run in PowerShell:
+## Project record
 
-~~~powershell
-git lfs install
-git clone https://github.com/Abdullah77x1/SDP-BOPTEST.git
-Set-Location -LiteralPath .\SDP-BOPTEST
-git lfs pull
-py -3.12 -B .\scripts\Initialize-CoreAssets.py
-py -3.12 -m venv .\experiments\five_model_hvac16_v1_0_0\.venv
-$py = (Resolve-Path .\experiments\five_model_hvac16_v1_0_0\.venv\Scripts\python.exe).Path
-& $py -m pip install -r .\experiments\five_model_hvac16_v1_0_0\requirements.txt
-Set-Location -LiteralPath .\SDP_BOPTEST_Pilot
-& $py -B -m final_energy_control.live_dashboard --replay rolling --port 8770
-~~~
+- [Semester progress](PROJECT_PROGRESS.md), [editable schedule and work packages](docs/project-management/GANTT.md), and [meeting and feedback records](docs/meetings/README.md).
+- [Repository inventory](REPOSITORY_INDEX.md), [published research records](docs/research/artifacts/README.md), [experiment results](docs/research/EXPERIMENT_INDEX.md), and [engineering decisions](docs/design-decisions/DECISION_RECORDS.md).
+- [Requirements and specification](docs/requirements/BASELINE.md), [individual contributions](CONTRIBUTIONS.md), [AI-assisted development](docs/ai-prompts/README.md), and [final submission](docs/final-submission/README.md).
 
-Open [the rolling replay](http://127.0.0.1:8770/). Seek to intervals **8, 9, 10, 18, and 41** for forecast, entry, reevaluation, release, and recovery. Stop with Ctrl+C. Substitute **--replay g218** for the matched 72-hour replay. The two replays work without Docker. [Windows setup, tests, and live dependencies](HOW_TO_RUN.md)
+## Run or verify the final dashboard
 
-## Repository map
+Download the [final implementation ZIP](https://github.com/Abdullah77x1/SDP-BOPTEST/releases/download/cosc14-sdp1-offline-v1/COSC14_SDP1_Offline_Handoff.zip) from the private release and unpack it. The [handoff guide](docs/final-implementation/HANDOFF.md) lists the model location, Python 3.12.14 setup, replay commands and optional live BOPTEST connection. Review the [dashboard source](docs/final-implementation/source/native_twin.py), [ordered model schema](docs/final-implementation/selected_model.json) and [saved regression results](docs/final-implementation/verification/offline-regression.txt).
 
-| Path | Contents |
-| --- | --- |
-| [SDP_BOPTEST_Pilot/final_energy_control](SDP_BOPTEST_Pilot/final_energy_control/) | Active rolling controller, action-response models, optimizer, dashboard, and essential control-loop tests |
-| [SDP_BOPTEST_Pilot](SDP_BOPTEST_Pilot/) | BOPTEST client, collector, safety, scoring, pinned case files, and supporting modules |
-| [ml_research_v1_0_0](ml_research_v1_0_0/) | Observational inference, feature contract, frozen O25 checkpoint, and retained research references |
-| [assets](assets/) | Runtime evidence bundles with an original-path SHA-256 manifest. Setup restores the sealed inputs |
-| [scripts](scripts/) | Asset initialization, forecast verification, regression test runner, and optional original archive restoration |
-| [experiments](experiments/) | Original experiment registry and pinned Python requirements |
-| [report](report/) | Editable technical report, GitHub-readable version, figures, review checklist, and handbook audit |
-| [references](references/) | Source index, terminology, model provenance, and evidence locators |
+The final entry point is `sdp_redesign.native_twin`. It uses BOPTEST BESTEST Air 0.9.0 and a frozen 27-input, 16-output Random Forest. Forecast leads are +5, +10, +15 and +30 minutes. The browser shows room and outdoor conditions, HVAC power, predictions, matched measurements, energy and comfort. A human can request 24.5 °C for 45 simulated minutes in the supported live window. The dashboard verifies the effective setting and native release.
 
-Calibration code reads the same archived G174, G218, and G163 inputs as the verified controller. Run **Verify-Package-Inference.py** to reproduce recorded O25 forecasts and inspect the action-response qualification without model training. **Run-Regression.ps1** runs the 13 essential regressions. [Model provenance](references/MODELS_AND_DATA.md) · [Verification](CORE_PACKAGE_VERIFICATION.md)
+## Repositories and design history
 
-## Reports and measured evidence
+| Repository | Role |
+|---|---|
+| [SDP-BOPTEST](https://github.com/Abdullah77x1/SDP-BOPTEST) | Main project index. Its existing tracked handoff and [PR 1](https://github.com/Abdullah77x1/SDP-BOPTEST/pull/1) are the earlier O25 and rolling-controller research. [Earlier instructions](https://github.com/Abdullah77x1/SDP-BOPTEST/blob/2abf4e1846f22149a65a45d35454b4a4b0d8c5f9/HOW_TO_RUN.md) retain that context. |
+| [SDP-BOPTEST-Setup](https://github.com/Abdullah77x1/SDP-BOPTEST-Setup) | Official pinned simulator deployment, Windows setup, Docker configuration and research collector. Needed for a live simulator install. |
+| [smart-building-digital-twin](https://github.com/Abdullah77x1/smart-building-digital-twin) | Simulator V2, initial neural forecasting, fault experiments, synthetic baseline comparisons and Hamad’s prototype dashboard. |
 
-- [Technical report on GitHub](report/SDP_BOPTEST_TECHNICAL_REPORT.md) · [Editable Word report](report/SDP_BOPTEST_TECHNICAL_REPORT.docx)
-- [Source index](references/SOURCE_CODE_INDEX.md) · [Terminology](references/NAME_MAPPING.md) · [Team checklist](report/TEAM_REVIEW_CHECKLIST.md) · [Handbook audit](report/REPORT_COMPLETENESS_AUDIT.md)
-- [Experiment evidence](references/EXPERIMENT_EVIDENCE_INDEX.md) · [External histories and restore instructions](EXCLUDED_FILES_INDEX.md) · [GitHub asset and provenance notes](references/GITHUB_HANDOFF.md)
+We began with CU-BEMS and other measured office datasets, built Simulator V2 for controlled prototype tests, and examined EnergyPlus before choosing BOPTEST. We used BOPTEST to compare forecasting methods and HVAC controls with verified command readback. Several tested automatic or airflow policies gave small savings, increased discomfort, or had incomplete recovery evidence. The frozen model forecasts ordinary operation. The final software delegates actuation decisions to the operator. Multi-zone operation, the LLM interface and validated automatic optimization remain future work.
 
-G218 Stage 1 saved **0.074920 kWh (0.504%)** and failed its frozen project-comfort criterion. G163 and the fan/joint strategies retain their original measured outcomes and comfort failures. An archived or technically successful run is insufficient to establish a comfort-compliant energy benefit.
-
-The rolling MPC is partial. Economic early release, delayed starts, re-entry, and fan/joint strategies remain outside the active controller’s qualification. The system has been verified in the simulation benchmark. The full pinned BOPTEST Docker worker stack and a separately versioned, explicitly authorized new campaign are prerequisites for future live runs. [Pinned runtime and license](references/OPTIONAL_EVIDENCE.md#pinned-live-runtime)
+The three team repositories are private and require authorized GitHub access. The [IBPSA BOPTEST v0.9.0 repository](https://github.com/ibpsa/project1-boptest/tree/v0.9.0) is the external upstream. [Submission information](docs/final-submission/README.md)

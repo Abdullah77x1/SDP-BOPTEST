@@ -1,0 +1,148 @@
+{
+  "recording": "override",
+  "start": 16934400,
+  "end": 17193600,
+  "advances": 864,
+  "fully_scored_forest_origins": 852,
+  "forecast_origins": {
+    "Unavailable": 1,
+    "Persistence fallback": 6,
+    "Random Forest": 857
+  },
+  "matured_values": {
+    "Persistence fallback": 96,
+    "Random Forest": 13680
+  },
+  "max_feature_difference": 0.0,
+  "max_prediction_difference": 0.0,
+  "max_measured_difference": 1.1102230246251565e-16,
+  "absolute_errors": {
+    "5": {
+      "indoor_temperature": {
+        "mae": 0.018158779361228543,
+        "rmse": 0.07601616392348556
+      },
+      "cooling": {
+        "mae": 0.004947280541168324,
+        "rmse": 0.02515984663975165
+      },
+      "fan": {
+        "mae": 0.00030530304365340184,
+        "rmse": 0.001370616294089774
+      },
+      "heating": {
+        "mae": 1.1349337400675855e-06,
+        "rmse": 6.5712574655384235e-06
+      },
+      "combined": {
+        "mae": 0.00521967664589556,
+        "rmse": 0.026101196322310182
+      }
+    },
+    "10": {
+      "indoor_temperature": {
+        "mae": 0.028764575723925358,
+        "rmse": 0.11130613062853417
+      },
+      "cooling": {
+        "mae": 0.006876738908832007,
+        "rmse": 0.028049130044936258
+      },
+      "fan": {
+        "mae": 0.0003609112913507293,
+        "rmse": 0.0011254862615017716
+      },
+      "heating": {
+        "mae": 1.7583887303096023e-07,
+        "rmse": 7.635617838830857e-07
+      },
+      "combined": {
+        "mae": 0.007204249303983239,
+        "rmse": 0.028730854138596825
+      }
+    },
+    "15": {
+      "indoor_temperature": {
+        "mae": 0.03733114653826944,
+        "rmse": 0.12453306504292963
+      },
+      "cooling": {
+        "mae": 0.006906941280147713,
+        "rmse": 0.02184146840939218
+      },
+      "fan": {
+        "mae": 0.0004164206040002239,
+        "rmse": 0.0012293648490554088
+      },
+      "heating": {
+        "mae": 4.358176078398003e-07,
+        "rmse": 1.900245724721458e-06
+      },
+      "combined": {
+        "mae": 0.007276299670683732,
+        "rmse": 0.022650972058892545
+      }
+    },
+    "30": {
+      "indoor_temperature": {
+        "mae": 0.04524543473442402,
+        "rmse": 0.08209057848718114
+      },
+      "cooling": {
+        "mae": 0.008453991063136736,
+        "rmse": 0.020479397734504207
+      },
+      "fan": {
+        "mae": 0.0005929312593648539,
+        "rmse": 0.0016132132362670607
+      },
+      "heating": {
+        "mae": 8.390009575497172e-08,
+        "rmse": 2.7668927238862875e-07
+      },
+      "combined": {
+        "mae": 0.008917700463065368,
+        "rmse": 0.02181766781793387
+      }
+    }
+  },
+  "measured_energy": {
+    "cooling_kwh": 21.31284346463059,
+    "fan_kwh": 0.9470817576950247,
+    "electricity_kwh": 22.259925222325617,
+    "boiler_gas_input_kwh": 4.537168015137259e-10
+  },
+  "official_discomfort_kh": 2.6624695413298625,
+  "measured_discomfort_kh": 2.6624695413298625,
+  "applied_intervals": 27,
+  "releases": [
+    {
+      "issued_at": 16976700,
+      "issued_c": null,
+      "readback_at": 16977000,
+      "verified_active": false,
+      "verified_c": 24.0,
+      "verified_release": true,
+      "reason": "scheduled_release"
+    },
+    {
+      "issued_at": 17063100,
+      "issued_c": null,
+      "readback_at": 17063400,
+      "verified_active": false,
+      "verified_c": 24.0,
+      "verified_release": true,
+      "reason": "scheduled_release"
+    },
+    {
+      "issued_at": 17149500,
+      "issued_c": null,
+      "readback_at": 17149800,
+      "verified_active": false,
+      "verified_c": 24.0,
+      "verified_release": true,
+      "reason": "scheduled_release"
+    }
+  ],
+  "model_sha256": "a2e2e0e75df700c57dff21c07dd3f1ccaaa36cd9529b44400a7d537afae3b3e5"
+}

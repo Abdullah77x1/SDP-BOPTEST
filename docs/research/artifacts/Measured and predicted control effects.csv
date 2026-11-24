@@ -1,0 +1,41 @@
+population,group,family,target,unit,starts,origins,measured,predicted,MAE
+Development,All,colder,target_indoor_temp_30min_c,degC,8,24,-0.23190681389575,-0.197107796284585,0.03479923956337568
+Development,All,colder,target_cooling_electric_power_30min_kw,kW electric,8,24,0.025831082028823147,0.0024176612271257737,0.023413420801697372
+Development,All,colder,target_fan_electric_power_30min_kw,kW electric,8,24,0.0017230650718461453,0.0003325504473671938,0.0013905146244789517
+Development,All,colder,target_heating_thermal_power_30min_kw,kW thermal,8,24,3.0684212316155425e-63,-1.7528854843482638e-07,1.7528854843482638e-07
+Development,All,colder,cooling_plus_fan_30min_kw,kW electric,8,24,0.027554147100669286,0.0027502116744929695,0.024803935426176316
+Development,All,warmer,target_indoor_temp_30min_c,degC,4,12,0.5085908133332472,0.4834153648289954,0.0343244426384984
+Development,All,warmer,target_cooling_electric_power_30min_kw,kW electric,4,12,-0.065726032983002,-0.003347925765920981,0.06237810721708102
+Development,All,warmer,target_fan_electric_power_30min_kw,kW electric,4,12,-0.006240532965346807,-7.394707921380246e-05,0.006166585886133004
+Development,All,warmer,target_heating_thermal_power_30min_kw,kW thermal,4,12,0.0,-2.132120022361623e-08,2.132120022361623e-08
+Development,All,warmer,cooling_plus_fan_30min_kw,kW electric,4,12,-0.0719665659483488,-0.0034218728451347762,0.06854469310321402
+Public validation,D2_G196,colder,target_indoor_temp_30min_c,degC,1,3,-0.25132640046901616,-0.23743970740835962,0.01388669306065656
+Public validation,D2_G196,colder,target_cooling_electric_power_30min_kw,kW electric,1,3,0.03317383763979239,0.017900508040810965,0.015273329598981422
+Public validation,D2_G196,colder,target_fan_electric_power_30min_kw,kW electric,1,3,0.003357895013669048,0.002175686128921795,0.0011822088847472528
+Public validation,D2_G196,colder,target_heating_thermal_power_30min_kw,kW thermal,1,3,0.0,-7.791505556791659e-09,7.791505556791659e-09
+Public validation,D2_G196,colder,cooling_plus_fan_30min_kw,kW electric,1,3,0.0365317326534614,0.020076194169732758,0.016455538483728643
+Public validation,D2_G196,warmer,target_indoor_temp_30min_c,degC,1,3,0.5023142144275804,0.5012028524092974,0.010206849214209038
+Public validation,D2_G196,warmer,target_cooling_electric_power_30min_kw,kW electric,1,3,-0.07204170815536448,0.0005811112679278881,0.07262281942329236
+Public validation,D2_G196,warmer,target_fan_electric_power_30min_kw,kW electric,1,3,-0.008397817515310253,-8.119029166719222e-05,0.00831662722364306
+Public validation,D2_G196,warmer,target_heating_thermal_power_30min_kw,kW thermal,1,3,0.0,-7.203911192433538e-09,7.203911192433538e-09
+Public validation,D2_G196,warmer,cooling_plus_fan_30min_kw,kW electric,1,3,-0.08043952567067476,0.000499920976260726,0.08093944664693549
+Public validation,All,colder,target_indoor_temp_30min_c,degC,4,12,-0.2617601835193663,-0.19100150463885543,0.07075871267597922
+Public validation,All,colder,target_cooling_electric_power_30min_kw,kW electric,4,12,0.03435902796248896,0.005175747120887,0.029191219602652353
+Public validation,All,colder,target_fan_electric_power_30min_kw,kW electric,4,12,0.0019076731905915132,0.0006230562804973108,0.0012846169100942024
+Public validation,All,colder,target_heating_thermal_power_30min_kw,kW thermal,4,12,-1.935159180256774e-37,0.00011364166056163883,0.00011493102381838654
+Public validation,All,colder,cooling_plus_fan_30min_kw,kW electric,4,12,0.03626670115308046,0.005798803401384309,0.03047583651274655
+Public validation,All,warmer,target_indoor_temp_30min_c,degC,1,3,0.5023142144275804,0.5012028524092974,0.010206849214209038
+Public validation,All,warmer,target_cooling_electric_power_30min_kw,kW electric,1,3,-0.07204170815536448,0.0005811112679278881,0.07262281942329236
+Public validation,All,warmer,target_fan_electric_power_30min_kw,kW electric,1,3,-0.008397817515310253,-8.119029166719222e-05,0.00831662722364306
+Public validation,All,warmer,target_heating_thermal_power_30min_kw,kW thermal,1,3,0.0,-7.203911192433538e-09,7.203911192433538e-09
+Public validation,All,warmer,cooling_plus_fan_30min_kw,kW electric,1,3,-0.08043952567067476,0.000499920976260726,0.08093944664693549
+Historical day 163,G163,warmer,target_indoor_temp_30min_c,degC,1,3,0.5010297003951601,0.5091141999927634,0.014642181667241516
+Historical day 163,G163,warmer,target_cooling_electric_power_30min_kw,kW electric,1,3,-0.05687439647764825,0.007977461631740235,0.06485185810938848
+Historical day 163,G163,warmer,target_fan_electric_power_30min_kw,kW electric,1,3,-0.00454247122521047,0.0015353300578484403,0.00607780128305891
+Historical day 163,G163,warmer,target_heating_thermal_power_30min_kw,kW thermal,1,3,0.0,-7.203911192433538e-09,7.203911192433538e-09
+Historical day 163,G163,warmer,cooling_plus_fan_30min_kw,kW electric,1,3,-0.06141686770285872,0.009512791689588684,0.0709296593924474
+Historical day 163,All,warmer,target_indoor_temp_30min_c,degC,1,3,0.5010297003951601,0.5091141999927634,0.014642181667241516
+Historical day 163,All,warmer,target_cooling_electric_power_30min_kw,kW electric,1,3,-0.05687439647764825,0.007977461631740235,0.06485185810938848
+Historical day 163,All,warmer,target_fan_electric_power_30min_kw,kW electric,1,3,-0.00454247122521047,0.0015353300578484403,0.00607780128305891
+Historical day 163,All,warmer,target_heating_thermal_power_30min_kw,kW thermal,1,3,0.0,-7.203911192433538e-09,7.203911192433538e-09
+Historical day 163,All,warmer,cooling_plus_fan_30min_kw,kW electric,1,3,-0.06141686770285872,0.009512791689588684,0.0709296593924474
