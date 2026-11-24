@@ -1,8 +1,8 @@
-# Hamad Saleh — Dashboard and visualization
+# Hamad Saleh — Dashboard, visualization and model evaluation
 
 ## Contribution summary
 
-Hamad was responsible for dashboard development, visualization and user interface integration. He developed the prototype interface for viewing building measurements, energy use, forecasts and manual scenario comparisons. He documented the dashboard and its design, and collaborated with Abdullah on integration with Model A. This interface provided a foundation for the later team dashboard.
+Hamad was responsible for dashboard development, visualization and user interface integration. He developed the prototype interface for viewing building measurements, energy use, forecasts and manual scenario comparisons. He documented the dashboard and its design, and collaborated with Abdullah on integration with Model A. This interface provided a foundation for the later team dashboard. His end-of-semester contribution areas also include machine learning evaluation through comparing predicted and measured values and visualizing model performance.
 
 ## Project evidence
 
@@ -11,6 +11,6 @@ Hamad was responsible for dashboard development, visualization and user interfac
 - [Dashboard documentation](https://github.com/Abdullah77x1/smart-building-digital-twin/commit/bee7d8ceab03d77f8847443eae4be0c4bc585610) and [revised outline](https://github.com/Abdullah77x1/smart-building-digital-twin/commit/a1f5d690740ef75475e8752928f5186ca79af7ec).
 - [Dashboard source branch](https://github.com/Abdullah77x1/smart-building-digital-twin/tree/feature/hamad-dashboard/dashboard). The dashboard README names Hamad; the integration record documents his branch and the shared Model A integration.
 
-The later [supervised BOPTEST dashboard](../final-implementation/HANDOFF.md) is documented as an integrated team deliverable.
+The later [supervised BOPTEST dashboard](../final-implementation/HANDOFF.md) and [forecasting comparisons](../research/EVIDENCE_INDEX.md#e11) are documented as integrated team deliverables. The revised evaluation responsibility is based on the end-of-semester contribution summary.
 
 [Team contribution summary](../../CONTRIBUTIONS.md)
