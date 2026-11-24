@@ -1,13 +1,18 @@
-# Alhoor Alhosani · Individual contribution record
+# Alhoor Alhosani — Machine learning and prediction
 
-This record was reconstructed on 24 November 2026. Keep the actual work date separate from the date on which old evidence is archived. [Evidence method](../../CONTRIBUTIONS.md) · [Original allocation](../meetings/2026-10-26-task-allocation.md)
+## Contribution summary
 
-| Evidence type | Record |
-|---|---|
-| Meeting notes | Assigned machine learning prediction on 26 October. The note gives no subsequent role changes. |
-| Verified Git | Reviewed repository, PR and local branch evidence did not identify a commit explicitly attributable to Alhoor. |
-| Dated project artifacts | [ML Model V1](https://github.com/Abdullah77x1/smart-building-digital-twin/blob/main/docs/ML_ORIGINAL_V1_README.md), [final HVAC forecasting](../research/EVIDENCE_INDEX.md#e11) and [both occupancy evaluations](../research/EVIDENCE_INDEX.md#e12) document work in the assigned area. Available sources do not name Alhoor as author or reviewer of a specific artifact. |
-| Student-reported | No separate self-report was provided with the reviewed materials. |
-| Confirmation needed | Confirm the initial model implementation or training, dataset preparation, which losses or models you evaluated, saved tests, reviews and report sections. Confirm separately whether the UCI occupancy handoff or later BOPTEST comparisons include your work. |
+Alhoor was assigned responsibility for machine learning research and prediction models. This responsibility area covers the study of building measurements as prediction inputs, forecasting approaches, model training and the evaluation of prediction accuracy.
 
-Attach your original notebook or model-specific commits, a dated metric output or notes showing your analysis, and the report or review sections you contributed. Use your own account and say which files were shared team work.
+The team's work in this area progressed from the earlier neural forecasting prototype to comparative BOPTEST forecasting and occupancy prediction studies. These studies contributed to the final model selection and the integration of forecasts into the dashboard.
+
+## Project evidence
+
+- [Original allocation, 26 October](../meetings/2026-10-26-task-allocation.md) records Alhoor's machine learning responsibility.
+- [Earlier ML Model V1 documentation](https://github.com/Abdullah77x1/smart-building-digital-twin/blob/main/docs/ML_ORIGINAL_V1_README.md).
+- [Final HVAC forecasting research](../research/EVIDENCE_INDEX.md#e11).
+- [Occupancy prediction experiments](../research/EVIDENCE_INDEX.md#e12).
+
+The linked research artifacts document the team's deliverables in the assigned area; they do not identify a particular individual as author. The allocation is the source of the individual responsibility described above.
+
+[Team contribution summary](../../CONTRIBUTIONS.md)
