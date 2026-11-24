@@ -1,23 +1,22 @@
-# COSC14 contribution evidence
+# COSC14 — Team contributions
 
-This semester documentation review uses the signed-in repository inventory, the 26 October task allocation, named documents and local Git records. The table shows evidence available on 24 November 2026. The four student records are for individual review and logbook preparation.
+The team divided the project into four main responsibility areas on 26 October 2026. These areas guided our research, development and integration throughout SDP I. The final digital twin brings the four components together.
 
-| Student | 26 October responsibility | Completed work supported by evidence | Attribution limits |
-|---|---|---|---|
-| [Alhoor Alhosani](docs/contributions/Alhoor_Alhosani.md) | Machine learning prediction model | Meeting record establishes the assignment. Recovered ML artifacts do not establish personal authorship. No verified student-linked commit found in the reviewed history. | The evidence establishes the ML assignment and team deliverables. Individual authorship remains open. |
-| [Abdullah Alhashmi](docs/contributions/Abdullah_Alhashmi.md) | Simulator | Prototype, shared integration and local real-data/fault/ML commits, BOPTEST setup upload and earlier rolling PR under the project account. | The final live run and review records establish team outcomes. Exact individual roles in those runs remain open. |
-| [Hamad Saleh](docs/contributions/Hamad_Saleh.md) | Dashboard | Earlier dashboard source and documentation commits under `P00l7`, corroborated by named dashboard and integration documents. | Later dashboard work has no separate personal attribution in the reviewed records. |
-| [Abdulla Alrashdi](docs/contributions/Abdulla_Alrashdi.md) | Optimization | `Abdulla18882` has GitHub commits for the synthetic comparison/controller and archive uploads. Their subject matches the assigned optimization area. | The assignment and subject matter support a possible association. Account ownership and later BOPTEST work remain open. |
+| Team member | Main responsibility | Contribution area |
+|---|---|---|
+| [Abdullah Alhashmi](docs/contributions/Abdullah_Alhashmi.md) | Simulation and integration | Simulator V2, data generation, real-building data investigations, forecasting integration, BOPTEST setup and system development. |
+| [Hamad Saleh](docs/contributions/Hamad_Saleh.md) | Dashboard and visualization | Prototype dashboard, building measurements, forecast visualization, scenario comparison and user interface integration. |
+| [Alhoor Alhosani](docs/contributions/Alhoor_Alhosani.md) | Machine learning and prediction | Assigned responsibility for forecasting model research and development, including the study of input features, prediction methods and model evaluation. |
+| [Abdulla Alrashdi](docs/contributions/Abdulla_Alrashdi.md) | Optimization and control | Assigned responsibility for HVAC optimization and control strategies, including comparisons of energy use and comfort under alternative operating settings. |
 
-**Evidence labels.** Git evidence identifies an author field or GitHub account for a specific change. A dated artifact records a deliverable or named contributor. Meeting notes record assignments. Student-reported evidence belongs in the individual record with its confirmation status. An open item has no verified attribution yet.
+## Collaborative development
 
-## Individual review and archive instructions
+Simulation, forecasting, visualization and optimization informed one another throughout the semester. The team developed an initial prototype and subsequently evaluated forecasting and control approaches in BOPTEST. The final supervised dashboard integrates the results of these work areas.
 
-1. Review your own record. Add missing tasks, dates or approximate ranges, and whether you originated, implemented, tested, reviewed or documented the work.
-2. Link your own authentic commits or PRs. For earlier local work, provide dated files with source context and explain your role. Identify shared work and distinguish AI assistance from your own decisions and checks.
-3. Label a newly archived item as historical work and state the archive date separately from the work date. Commit the selected record using your own GitHub account after the team approves authorized access. Keep original dates and authors intact.
-4. Prepare your individual logbook and interview evidence. The course assessment is individual, while the final submission is one report per group.
+The individual records link the original allocation and available project evidence. An assigned responsibility describes the division of work; it does not establish sole authorship of a shared deliverable. Git links identify recorded account activity, and team artifacts are identified as team work where they do not name an individual author. Historical records retain their original dates and attribution.
 
-## Collaborative work
-
-Hamad’s prototype dashboard branch and Abdullah’s Model A integration are linked in their records. The [forecasting results](docs/research/EXPERIMENT_INDEX.md) and [control decisions](docs/design-decisions/DECISION_RECORDS.md) remain team work where records do not identify individual roles.
+- [Original task allocation](docs/meetings/2026-10-26-task-allocation.md)
+- [Project progress](PROJECT_PROGRESS.md)
+- [Research and experiments](docs/research/EXPERIMENT_INDEX.md)
+- [Design decisions](docs/design-decisions/DECISION_RECORDS.md)
+- [Final implementation](docs/final-implementation/HANDOFF.md)
